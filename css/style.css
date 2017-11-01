@@ -1027,9 +1027,29 @@ or wrap each row of columns in a <div class="row"> */
       text-transform: uppercase;
     }
 
+    .work-routine-leisure {
+      border-radius: 30px;
+      background-color: #1db593;
+      padding: 2px 8px 1px 8px;
+      color: #434242;
+      font-size: 10px !important;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .work-routine-full-time {
+      border-radius: 30px;
+      background-color: #f74f42;
+      padding: 2px 8px 1px 8px;
+      color: #434242;
+      font-size: 10px !important;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
     .work-routine-part-time {
       border-radius: 30px;
-      background-color: #F44336;
+      background-color: #3680f4;
       padding: 2px 8px 1px 8px;
       color: #434242;
       font-size: 10px !important;
@@ -1040,6 +1060,16 @@ or wrap each row of columns in a <div class="row"> */
     .work-routine-in-house {
       border-radius: 30px;
       background-color: #f47336;
+      padding: 2px 8px 1px 8px;
+      color: #434242;
+      font-size: 10px !important;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .work-routine-remote {
+      border-radius: 30px;
+      background-color: #8dad15;
       padding: 2px 8px 1px 8px;
       color: #434242;
       font-size: 10px !important;
