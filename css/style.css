@@ -734,7 +734,6 @@ or wrap each row of columns in a <div class="row"> */
   ========================================================================== */
 
   .about {
-    /*background: url(http://placehold.it/804x1080/474645) no-repeat 100% 0 #474645;*/
     background-size: contain;
   }
 
@@ -1215,7 +1214,7 @@ or wrap each row of columns in a <div class="row"> */
         ========================================================================== */
 
         .introduction-end {
-          /*background: url(../images/me_01.jpg)no-repeat right top;*/
+          background: url(http://placehold.it/804x990)no-repeat right top;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
