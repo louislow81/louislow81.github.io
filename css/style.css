@@ -446,7 +446,7 @@ or wrap each row of columns in a <div class="row"> */
 ========================================================================== */
 
 .logo {
-  margin: 0 0 0 15px;
+  margin: 30px 15px 15px 15px;
   text-align: center;
 }
 
