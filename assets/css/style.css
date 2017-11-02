@@ -569,6 +569,7 @@ or wrap each row of columns in a <div class="row"> */
 
 .inner {
 	padding: 70px;
+	cursor: pointer;
 }
 
 .inner p {
