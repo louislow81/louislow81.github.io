@@ -402,7 +402,7 @@
         padding: 130px 30px 40px 30px;
     }
     .introduction .inner {
-        background: url(../images/black-transparent.png) repeat
+        /*background: url(../images/black-transparent.png) repeat*/
     }
     .introduction h2 {
         font-size: 35px;
@@ -532,7 +532,7 @@
     }
     .introduction .owl-theme .owl-controls {
         bottom: 30px;
-        z-index: 11;
+        z-index: 99;
     }
     .blog-left {
         width: 100%;

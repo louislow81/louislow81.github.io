@@ -1,26 +1,3 @@
-/*
-----------------------------------
-
-	Name: carousel.css
-	Version: 1.2
-
-----------------------------------
-
-	Table of Contents
-
-	#Clearfix
-	#Display none until init
-		#Mouse grab icon
-		#Fix
-	#Controls
-		#Next and Prev Buttons
-		#Pagination
-	#If PaginationNumbers is true
-	#Preloading images
-
-*/
-
-
 /* ==========================================================================
    #Clearfix
    ========================================================================== */
@@ -117,7 +94,8 @@
 }
 
 .introduction .owl-pagination {
-    bottom: 5% !important
+    bottom: 5% !important;
+    z-index: 99;
 }
 
 .owl-pagination {
