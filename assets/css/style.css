@@ -716,7 +716,7 @@ or wrap each row of columns in a <div class="row"> */
 
   .introduction .inner {
     position: absolute;
-    z-index: 2;
+    z-index: 99;
     margin: 47% 0 0 0;
   }
 
