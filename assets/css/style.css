@@ -1237,6 +1237,256 @@ a.totop-link {
 }
 
 /*******************************************************************************
+****** Blog / Portforlio
+*******************************************************************************/
+
+.blog-main {
+	clear: both;
+	margin: 0 70px 0 300px;
+	padding: 4% 0;
+}
+
+.blog-top {
+	margin: 0 0 55px 0;
+	width: 100%;
+}
+
+.blog-title {
+	width: 100%;
+}
+
+.breadcrumbs {
+	float: left;
+	margin: 10px 0 40px;
+	width: 100%;
+	text-align: left;
+}
+
+.blog-top .breadcrumbs {
+	font-family: "Oswald", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.blog-details-title .breadcrumbs {
+	margin: 10px 0;
+}
+
+.blog-details-title .post-details {
+	margin: 10px 0 30px;
+}
+
+.blog-left {
+	float: left;
+	margin: 0 0% 0 0;
+	width: 80%;
+}
+
+.blog-left .row .blog-list {
+	position: relative;
+	float: left;
+	margin: 0 2.7% 35px 0;
+	width: 30.5%;
+	min-height: 605px;
+}
+
+.blog-left .row .blog-list:last-child {
+	margin: 0;
+}
+
+.blog-list img {
+	display: block;
+}
+
+.blog-list:hover h3 a {
+	color: #00AADD;
+}
+
+.blog-list iframe, embed, object {
+	min-height: 204px;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe, embed, object {
+	border: 0;
+	max-width: 100%;
+}
+
+.blog-list:hover .title-divider {
+	background-color: #aaaaaa;
+}
+
+.blog-list-details {
+	margin: 20px 0 0 0
+}
+
+.blog-list-details h3 {
+	margin: 0;
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 25px
+}
+
+.blog-list-details h3 a {
+	color: #aaaaaa;
+}
+
+.date {
+	display: block;
+	margin: 0 0 5px;
+	color: #787878;
+	font-size: 15px;
+}
+
+.post-details {
+	display: block;
+	margin: 20px 0 0 0;
+}
+
+.blog-list-details .title-divider {
+	margin: 25px 0;
+}
+
+.blog-list .contact-social a i {
+	font-size: 20px
+}
+
+.blog-right {
+	float: right;
+	margin: 0;
+	width: 16%;
+}
+
+.blog-right h3 {
+	margin: 0 0 20px 0;
+}
+
+.blog-right .search {
+	margin: 0;
+	border: 1px solid rgba(235, 235, 235, 0.1);
+	background: url("../images/icon-search.png") no-repeat scroll 95% center rgba(0, 0, 0, 0);
+	padding: 10px;
+	width: 90%;
+	color: #aaaaaa;
+	font-family: "Roboto", sans-serif;
+	font-size: 13px;
+}
+
+.sidebar-block {
+	margin: 0 0 60px 0;
+}
+
+.sidebar-block ul {
+	margin: 0;
+	padding: 0
+}
+
+.sidebar-block ul li {
+	border-bottom: 1px solid rgba(235, 235, 235, 0.1);
+	padding: 12px 0;
+	list-style: none
+}
+
+.sidebar-block ul li:first-child {
+	padding: 0 0 12px 0
+}
+
+.sidebar-block ul li:last-child {
+	border-bottom: none;
+	padding: 12px 0 0 0
+}
+
+.sidebar-block .date {
+	font-size: 13px
+}
+
+.calendar {
+	width: 100%
+}
+
+.calendar td, .calendar th {
+	font-weight: 400;
+	text-align: center;
+}
+
+.calendar th {
+	font-weight: 600
+}
+
+.calendar a {
+	border-bottom: 2px solid #00AADD;
+	font-weight: 600
+}
+
+.tagcloud {
+	display: table
+}
+
+.tagcloud a {
+	display: inline-block;
+	float: left;
+	margin: 7px 7px 0 0;
+	border: 1px solid #2d2d2d;
+	background: #2d2d2d;
+	padding: 2px 11px 3px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.tagcloud a:hover {
+	border: 1px solid #000;
+	background: #000;
+	color: #aaaaaa;
+}
+
+.pagination {
+	position: relative;
+	float: left;
+	border-top: 1px solid rgba(235, 235, 235, 0.1);
+	padding: 70px 0;
+	width: 100%;
+	text-align: center;
+}
+
+.pagerblock {
+	display: inline-block;
+	margin: 0 0 0 8%;
+	padding: 0;
+	text-align: center;
+}
+
+.pagerblock li {
+	float: left;
+	margin: 0 12px;
+	list-style: none;
+}
+
+.pagerblock li a {
+	display: block;
+	border: 2px solid rgba(235, 235, 235, 0.1);
+	width: 50px;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 52px;
+}
+
+.pagerblock li a:hover, .pagerblock li a.current {
+	border: 2px solid rgba(235, 235, 235, 0.4);
+}
+
+.pagerblock li a i {
+	color: #aaaaaa;
+	font-size: 22px;
+	line-height: 35px;
+}
+
+/*******************************************************************************
 ****** Ipad Fix
 *******************************************************************************/
 
