@@ -371,6 +371,10 @@
 	.blog-left .row .blog-list {
 		min-height: 630px;
 	}
+	.quote-padding {
+		padding: 0;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -396,6 +400,10 @@
 	}
 	.comments-sub {
 		padding-left: 0;
+	}
+	.quote-padding {
+		padding: 0;
+		margin: 0;
 	}
 }
 
@@ -504,6 +512,10 @@
 	.progress-bar-description {
 		margin: 0
 	}
+	.quote-padding {
+		padding: 0;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 620px) {
@@ -582,6 +594,10 @@
 	.no-page-text {
 		margin: 2% 0 0 35px;
 	}
+	.quote-padding {
+		padding: 0;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -632,6 +648,10 @@
 	.no-page-text {
 		margin: 10%;
 	}
+	.quote-padding {
+		padding: 0;
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 360px) {
@@ -639,5 +659,9 @@
 		margin: 0 0 0 0;
 		padding-top: 130px !important;
 		width: 86%;
+	}
+	.quote-padding {
+		padding: 0;
+		margin: 0;
 	}
 }
