@@ -275,11 +275,11 @@ h5 {
 }
 
 .git-panel-last-two {
-	padding: 20px 0 80px 0;
+	padding: 20px 0 70px 0;
 }
 
 .git-panel-last {
-	padding: 50px 0 80px 0;
+	padding: 50px 0 70px 0;
 }
 
 .fa-icon40 {
@@ -289,7 +289,6 @@ h5 {
 .fa-text-lg {
 	font-size: 25px;
   padding: 0 0 0 10px;
-  position: absolute;
   margin: 4px 0 0 0;
 }
 
