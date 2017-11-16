@@ -73,6 +73,8 @@ progressBar(11, $('#progressBar11'));
 progressBar(99, $('#progressBar991'));
 progressBar(99, $('#progressBar993'));
 progressBar(99, $('#progressBar995'));
+progressBar(99, $('#progressBar996'));
+progressBar(99, $('#progressBar997'));
 
 progressBar(88, $('#progressBar881'));
 progressBar(88, $('#progressBar882'));
