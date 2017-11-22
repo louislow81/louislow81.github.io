@@ -382,6 +382,21 @@
     margin: 0;
     padding: 0;
   }
+  .badge-dock-up {
+    display: none;
+  }
+  .badge-dock-up-alt {
+    display: none;
+  }
+  .badge-dock-up-alt-332 {
+    display: none;
+  }
+  .badge-dock-up-alt-170 {
+    display: none;
+  }
+  .badge-dock-up-embed {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
