@@ -97,6 +97,7 @@ progressBar(77, $('#progressBar776'));
 progressBar(66, $('#progressBar661'));
 progressBar(66, $('#progressBar662'));
 progressBar(66, $('#progressBar663'));
+progressBar(66, $('#progressBar664'));
 
 /* ==========================================================================
  #Mobile Menu
