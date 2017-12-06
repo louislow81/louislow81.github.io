@@ -6,7 +6,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  zoom: 95%;
+  /*zoom: 95%;*/
   background-color: #434242;
   overflow-x: hidden;
   overflow-y: hidden;
