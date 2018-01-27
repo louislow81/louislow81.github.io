@@ -668,7 +668,7 @@ or wrap each row of columns in a <div class="row"> */
 }
 
 .inner {
-  cursor: pointer;
+  /*cursor: pointer;*/
   padding: 70px;
 }
 
@@ -1639,6 +1639,7 @@ object {
 .badge-dock-up-embed {
   padding: 30px 0 70px 0;
 }
+
 
 /*******************************************************************************
 ****** Ipad Fix
