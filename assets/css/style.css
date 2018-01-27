@@ -782,10 +782,10 @@ a.totop-link {
 }
 
 .introduction span.title {
-  border-top: 1px solid #7a7a7a;
-  border-bottom: 1px solid #7a7a7a;
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
   padding: 15px 0;
-  color: #aeaeae;
+  color: #dadada;
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
