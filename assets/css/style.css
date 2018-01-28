@@ -691,6 +691,7 @@ a.totop-link {
   position: fixed;
   right: 5px;
   bottom: 5px;
+  border-radius: 30px;
   z-index: 5;
   cursor: pointer;
   background: url(../images/go-to-top-arrow.jpg) left top no-repeat;
