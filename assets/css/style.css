@@ -746,7 +746,11 @@ a.totop-link {
   float: left;
   z-index: -1;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .introduction .owl-carousel {
