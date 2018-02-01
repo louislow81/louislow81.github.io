@@ -1,32 +1,34 @@
-(function( window, $, undefined ) {
-"use strict"; 
-	var $event = $.event, resizeTimeout;
+(function(window, $, undefined) {
+	"use strict";
+	var $event = $.event,
+		resizeTimeout;
 
-	$event.special.smartresize 	= {
+	$event.special.smartresize = {
 		setup: function() {
-			$(this).bind( "resize", $event.special.smartresize.handler );
+			$(this).bind("resize", $event.special.smartresize.handler);
 		},
 		teardown: function() {
-			$(this).unbind( "resize", $event.special.smartresize.handler );
+			$(this).unbind("resize", $event.special.smartresize.handler);
 		},
-		handler: function( event, execAsap ) {
+		handler: function(event, execAsap) {
 			//alert('resize');
 			// Save the context
 			var context = this,
-				args 	= arguments;
+				args = arguments;
 
 			// set correct event type
 			event.type = "smartresize";
 
-			if ( resizeTimeout ) { clearTimeout( resizeTimeout ); }
+			if (resizeTimeout) {
+				clearTimeout(resizeTimeout);
+			}
 			resizeTimeout = setTimeout(function() {
-				jQuery.event.handle.apply( context, args );
-			}, execAsap === "execAsap"? 0 : 50 );
+				jQuery.event.handle.apply(context, args);
+			}, execAsap === "execAsap" ? 0 : 50);
 		}
 	};
 
-	$.fn.smartresize 			= function( fn ) {
-		return fn ? this.bind( "smartresize", fn ) : this.trigger( "smartresize", ["execAsap"] );
+	$.fn.smartresize = function(fn) {
+		return fn ? this.bind("smartresize", fn) : this.trigger("smartresize", ["execAsap"]);
 	};
-})( window, jQuery );
-
+})(window, jQuery);
