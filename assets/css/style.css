@@ -302,6 +302,17 @@ h5 {
   padding: 50px 0 70px 0;
 }
 
+.playstore-panel-first {
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.img-md {
+  padding: 0 20px 7px 20px;
+  width: 103px;
+  height: auto;
+}
+
 .fa-icon40 {
   font-size: 30px;
 }
