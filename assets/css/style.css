@@ -843,6 +843,13 @@ a.totop-link {
   font-size: 45px;
 }
 
+.skills-bottom-line {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  color: #9e9e9e;
+}
+
 /******************************************************************
 ****** Progress Bars
 ******************************************************************/
@@ -1131,6 +1138,7 @@ a.totop-link {
   font-size: 12px !important;
   font-weight: bold;
   text-transform: uppercase;
+  margin-left: 10px;
 }
 
 .edu-level {
@@ -1634,3 +1642,4 @@ iframe, embed, object {
 .link-blue {
   color: #05b7ec;
 }
+
