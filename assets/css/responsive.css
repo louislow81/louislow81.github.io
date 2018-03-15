@@ -408,9 +408,13 @@
 		width: auto;
 	}
 	.introduction img {
-		height: 100%;
-		margin-top: 100px;
-		/*height: auto*/
+    height: 100%;
+    margin-top: 50px;
+    /* height: auto; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	}
 	.contact-form {
 		padding-bottom: 0;
