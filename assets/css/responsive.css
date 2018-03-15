@@ -408,7 +408,9 @@
 		width: auto;
 	}
 	.introduction img {
-		height: auto
+		height: 100%;
+		margin-top: 100px;
+		/*height: auto*/
 	}
 	.contact-form {
 		padding-bottom: 0;
