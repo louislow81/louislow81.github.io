@@ -5,5 +5,5 @@
 - Skills
 - Experience
 - Education
-- Portfolio
+- Pet Projects
 - Contact
