@@ -926,6 +926,24 @@ a.totop-link {
   display: block;
 }
 
+.skills-bottom-line .dot-gray {
+  margin: 20px 0 0 0;
+  height: 5px;
+  width: 5px;
+  border-radius: 30px;
+  background-color: #9e9e9e;
+  display: block;
+}
+
+.skills-bottom-line .dot-pink {
+  margin: 20px 0 0 0;
+  height: 5px;
+  width: 5px;
+  border-radius: 30px;
+  background-color: #f584aa;
+  display: block;
+}
+
 .skills-bottom-line .dot-text {
   line-height: 0.6em;
   margin: -4px 0 0 10px;
