@@ -3,7 +3,9 @@
 *******************************************************************************/
 
 @media screen and (max-width: 1700px) {
-	.blog-list iframe, embed, object {
+	.blog-list iframe,
+	embed,
+	object {
 		height: 94% !important;
 		min-height: auto;
 	}
@@ -64,7 +66,8 @@
 		width: 80%;
 		height: 80%;
 	}
-	.slideshow nav span.nav-prev, .slideshow nav span.nav-next {
+	.slideshow nav span.nav-prev,
+	.slideshow nav span.nav-next {
 		top: 60%;
 	}
 	span.nav-prev {
@@ -102,7 +105,8 @@
 	.blog-left {
 		width: 70%;
 	}
-	.comments-name, .comments-text {
+	.comments-name,
+	.comments-text {
 		width: 100%;
 	}
 	.comments-text {
@@ -294,7 +298,8 @@
 	.introduction .inner {
 		margin: 33% 0 0 0
 	}
-	.experience-details .col-3, .education-con .col-3 {
+	.experience-details .col-3,
+	.education-con .col-3 {
 		width: 30%
 	}
 	.slideshow figure {
@@ -304,7 +309,8 @@
 	.slideshow figcaption h3 {
 		line-height: 30px
 	}
-	.slideshow .nav-prev, .slideshow .nav-next {
+	.slideshow .nav-prev,
+	.slideshow .nav-next {
 		display: none
 	}
 	.slideshow li:after {
@@ -339,7 +345,8 @@
 	.blog-left {
 		width: 60%;
 	}
-	.content-left, .content-right {
+	.content-left,
+	.content-right {
 		width: 100%;
 	}
 	.content-right {
@@ -411,14 +418,14 @@
 		width: auto;
 	}
 	.introduction img {
-    height: 100%;
-    width: 100%;
-    margin-top: 50px;
-    /* height: auto; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+		height: 100%;
+		width: 100%;
+		margin-top: 50px;
+		/* height: auto; */
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 	.contact-form {
 		padding-bottom: 0;
@@ -465,7 +472,8 @@
 	.jspPane {
 		width: 100% !important
 	}
-	.col-6, .col-4 {
+	.col-6,
+	.col-4 {
 		width: 100%
 	}
 	.figcaption-details img {
@@ -494,7 +502,8 @@
 	.skills-con .margin-top50 .row>div:nth-child(3) {
 		margin-bottom: 50px
 	}
-	.experience-details .col-3, .education-con .col-3 {
+	.experience-details .col-3,
+	.education-con .col-3 {
 		width: 100%;
 	}
 	.flot-left {
@@ -507,7 +516,8 @@
 	.email {
 		margin-bottom: 0;
 	}
-	.contact-form input[type="text"], textarea {
+	.contact-form input[type="text"],
+	textarea {
 		width: 92%
 	}
 	.m-margin-top30 {
@@ -566,7 +576,8 @@
 	.owl-pagination {
 		bottom: 0 !important;
 	}
-	.contact-form input[type="text"], textarea {
+	.contact-form input[type="text"],
+	textarea {
 		width: 88%;
 	}
 	.introduction .owl-theme .owl-controls {
@@ -623,6 +634,9 @@
 		margin: 0;
 		padding: 30px 0 0 0;
 	}
+	.where-am-i-now {
+		margin: 0 0 0 0;
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -657,7 +671,8 @@
 		width: 150px;
 		height: 150px;
 	}
-	.comments-details .name, .comments-details .date {
+	.comments-details .name,
+	.comments-details .date {
 		text-align: center;
 	}
 	.comments-name .button {
