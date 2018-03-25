@@ -1,5 +1,4 @@
 @import url('normalize.css');
-
 /*******************************************************************************
 ****** Reset
 *******************************************************************************/
@@ -55,13 +54,11 @@ a:hover {
   -webkit-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
-  outline: 0!important;
+  outline: 0 !important;
   user-select: none;
 }
 
-figure,
-.slideshow li,
-.grid-gallery {
+figure, .slideshow li, .grid-gallery {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -75,7 +72,7 @@ figure,
   -o-transition-duration: 0s;
   transition-duration: 0s;
   transition-timing-function: none;
-  outline: 0!important;
+  outline: 0 !important;
   user-select: none;
 }
 
@@ -93,8 +90,7 @@ img {
   float: right
 }
 
-input[type="text"],
-textarea {
+input[type="text"], textarea {
   -webkit-user-select: text;
   margin: 20px 0 0;
   border: 1px solid #3b3b3b;
@@ -122,8 +118,7 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-input[type="text"]:focus,
-textarea:focus {
+input[type="text"]:focus, textarea:focus {
   outline: none;
   border: 1px solid #00AADD;
   color: #545454;
@@ -134,13 +129,7 @@ input[type="submit"]:hover {
   color: #fff;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="search"],
-input[type="password"],
-textarea,
-input[type="submit"],
-input[type="button"] {
+input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"], input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-user-select: text;
@@ -157,27 +146,18 @@ input[type="button"] {
   color: #add93c;
 }
 
-
 /*******************************************************************************
 ****** Typography
 *******************************************************************************/
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   color: #aaaaaa;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.blog h1,
-.blog h2,
-.blog h3,
-.blog h4,
-.blog h5 {
+.blog h1, .blog h2, .blog h3, .blog h4, .blog h5 {
   color: #00AADD;
 }
 
@@ -281,7 +261,6 @@ h5 {
   height: 200px;
 }
 
-
 /******************************************************************
 ****** Base Grid
 ******************************************************************/
@@ -337,7 +316,6 @@ h5 {
   text-decoration: underline;
 }
 
-
 /******************************************************************
 ****** Base Grid
 ******************************************************************/
@@ -348,18 +326,7 @@ h5 {
   width: 100%;
 }
 
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
   float: left;
 }
@@ -412,9 +379,7 @@ h5 {
   width: 8.33333333%
 }
 
-
 /* #Clearing */
-
 
 /* Self Clearing Goodness */
 
@@ -426,14 +391,10 @@ h5 {
   content: "\0020";
 }
 
-
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
 
-.clearfix:before,
-.clearfix:after,
-.row:before,
-.row:after {
+.clearfix:before, .clearfix:after, .row:before, .row:after {
   display: block;
   visibility: hidden;
   width: 0;
@@ -442,13 +403,11 @@ or wrap each row of columns in a <div class="row"> */
   content: '\0020';
 }
 
-.row:after,
-.clearfix:after {
+.row:after, .clearfix:after {
   clear: both;
 }
 
-.row,
-.clearfix {
+.row, .clearfix {
   zoom: 1;
 }
 
@@ -508,7 +467,6 @@ or wrap each row of columns in a <div class="row"> */
 .margin-right30 {
   margin-right: 30px;
 }
-
 
 /******************************************************************
 ****** Left Side
@@ -637,7 +595,6 @@ or wrap each row of columns in a <div class="row"> */
   text-transform: uppercase
 }
 
-
 /******************************************************************
 ****** Content Area
 ******************************************************************/
@@ -678,8 +635,7 @@ or wrap each row of columns in a <div class="row"> */
   /*null*/
 }
 
-.content:hover .jspVerticalBar,
-.menu nav:hover .jspVerticalBar {
+.content:hover .jspVerticalBar, .menu nav:hover .jspVerticalBar {
   opacity: 1;
 }
 
@@ -707,15 +663,14 @@ a.totop-link {
   position: fixed;
   right: 5px;
   bottom: 5px;
-  border-radius: 30px;
   z-index: 5;
   cursor: pointer;
+  border-radius: 30px;
   background: url(../images/go-to-top-arrow.jpg) left top no-repeat;
   width: 34px;
   height: 34px;
   text-indent: -9999px;
 }
-
 
 /* Codrops Top Bar */
 
@@ -744,11 +699,9 @@ a.totop-link {
   right: 10px;
 }
 
-
 /******************************************************************
 ****** Tooltips
 ******************************************************************/
-
 
 /******************************************************************
 ****** Intro Screen
@@ -759,14 +712,14 @@ a.totop-link {
 }
 
 .introduction img {
-  float: left;
-  z-index: -1;
-  width: 100%;
-  height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  float: left;
+  z-index: -1;
   background-size: cover;
+  width: 100%;
+  height: auto;
 }
 
 .introduction .owl-carousel {
@@ -777,8 +730,7 @@ a.totop-link {
   height: 100%;
 }
 
-.introduction .owl-carousel .owl-wrapper,
-.introduction .owl-carousel .owl-item {
+.introduction .owl-carousel .owl-wrapper, .introduction .owl-carousel .owl-item {
   height: 100%;
 }
 
@@ -811,7 +763,6 @@ a.totop-link {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 
 /******************************************************************
 ****** About Screen
@@ -857,7 +808,6 @@ a.totop-link {
   margin: 20px 0 0 0;
 }
 
-
 /******************************************************************
 ****** Skills Screen
 ******************************************************************/
@@ -898,62 +848,61 @@ a.totop-link {
 
 .skills-bottom-line {
   display: block;
+  color: #9e9e9e;
   font-size: 10px;
   font-weight: bold;
-  color: #9e9e9e;
 }
 
 .skills-bottom-line .dot-green {
+  display: block;
   margin: 20px 0 0 0;
-  height: 5px;
-  width: 5px;
   border-radius: 30px;
   background-color: #8BC34A;
-  display: block;
+  width: 5px;
+  height: 5px;
 }
 
 .skills-bottom-line .dot-orange {
+  display: block;
   margin: 20px 0 0 0;
-  height: 5px;
-  width: 5px;
   border-radius: 30px;
   background-color: #ff8863;
-  display: block;
+  width: 5px;
+  height: 5px;
 }
 
 .skills-bottom-line .dot-blue {
+  display: block;
   margin: 20px 0 0 0;
-  height: 5px;
-  width: 5px;
   border-radius: 30px;
   background-color: #0fccba;
-  display: block;
+  width: 5px;
+  height: 5px;
 }
 
 .skills-bottom-line .dot-gray {
+  display: block;
   margin: 20px 0 0 0;
-  height: 5px;
-  width: 5px;
   border-radius: 30px;
   background-color: #9e9e9e;
-  display: block;
+  width: 5px;
+  height: 5px;
 }
 
 .skills-bottom-line .dot-pink {
+  display: block;
   margin: 20px 0 0 0;
-  height: 5px;
-  width: 5px;
   border-radius: 30px;
   background-color: #f584aa;
-  display: block;
+  width: 5px;
+  height: 5px;
 }
 
 .skills-bottom-line .dot-text {
-  line-height: 0.6em;
-  margin: -4px 0 0 10px;
   position: absolute;
+  margin: -4px 0 0 10px;
+  line-height: 0.6em;
 }
-
 
 /******************************************************************
 ****** Progress Bars
@@ -1000,7 +949,6 @@ a.totop-link {
   font-weight: 500;
 }
 
-
 /*====*/
 
 .progress-sm {
@@ -1045,7 +993,6 @@ a.totop-link {
   font-size: 15px;
   font-weight: 500;
 }
-
 
 /******************************************************************
 ****** PieChart
@@ -1104,7 +1051,6 @@ a.totop-link {
 .chart-text h4 {
   margin: 0 0 0 15px;
 }
-
 
 /******************************************************************
 ****** Experience Screen
@@ -1231,22 +1177,23 @@ a.totop-link {
 }
 
 .where-am-i-now {
-  padding: 0 15px 0 15px;
-  background-color: aliceblue;
   margin: 0 0 0 11px;
-  color: #262627;
   border-radius: 3px;
+  background-color: aliceblue;
+  padding: 0 15px 0 15px;
+  color: #262627;
 }
 
 .where-am-i {
   padding: 25px 0 25px 0;
+  color: #fff;
   font-size: 10px;
   font-weight: bold;
-  color: #fff;
   text-transform: uppercase;
 }
 
 .where-am-i-deco {
+  margin-left: 10px;
   border: 3px solid #262626;
   border-radius: 30px;
   background-color: #262626;
@@ -1255,7 +1202,6 @@ a.totop-link {
   font-size: 12px !important;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 10px;
 }
 
 .edu-level {
@@ -1277,7 +1223,6 @@ a.totop-link {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 
 /******************************************************************
 ****** Education Screen
@@ -1328,7 +1273,6 @@ a.totop-link {
   transition-duration: .2s;
   width: 29%;
 }
-
 
 /******************************************************************
 ****** Contact Screen
@@ -1415,7 +1359,6 @@ a.totop-link {
   font-size: 28px;
 }
 
-
 /******************************************************************
 ****** Last Screen
 ******************************************************************/
@@ -1459,7 +1402,6 @@ a.totop-link {
   font-weight: 300;
   text-transform: uppercase;
 }
-
 
 /******************************************************************
 ****** Blog / Portforlio
@@ -1528,9 +1470,7 @@ a.totop-link {
   color: #00AADD;
 }
 
-.blog-list iframe,
-embed,
-object {
+.blog-list iframe, embed, object {
   min-height: 204px;
 }
 
@@ -1539,9 +1479,7 @@ video {
   height: auto;
 }
 
-iframe,
-embed,
-object {
+iframe, embed, object {
   border: 0;
   max-width: 100%;
 }
@@ -1638,8 +1576,7 @@ object {
   width: 100%
 }
 
-.calendar td,
-.calendar th {
+.calendar td, .calendar th {
   font-weight: 400;
   text-align: center;
 }
@@ -1706,8 +1643,7 @@ object {
   line-height: 52px;
 }
 
-.pagerblock li a:hover,
-.pagerblock li a.current {
+.pagerblock li a:hover, .pagerblock li a.current {
   border: 2px solid rgba(235, 235, 235, 0.4);
 }
 
@@ -1747,7 +1683,6 @@ object {
   padding: 30px 0 70px 0;
 }
 
-
 /******************************************************************
 ****** Ipad Fix
 ******************************************************************/
@@ -1763,11 +1698,16 @@ object {
   display: none !important;
 }
 
-
 /******************************************************************
 ****** Others
 ******************************************************************/
 
 .link-blue {
   color: #05b7ec;
+}
+
+/* Twitter Overrides */
+
+.customisable:hover, .customisable:focus, .customisable:active, .customisable-highlight:hover, .customisable-highlight:focus, a:hover .customisable-highlight, a:focus .customisable-highlight {
+  color: #2e3237 !important;
 }
