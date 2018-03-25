@@ -1230,6 +1230,14 @@ a.totop-link {
   text-transform: uppercase;
 }
 
+.where-am-i-now {
+  padding: 0 15px 0 15px;
+  background-color: aliceblue;
+  margin: 0 0 0 11px;
+  color: #262627;
+  border-radius: 3px;
+}
+
 .where-am-i {
   padding: 25px 0 25px 0;
   font-size: 10px;
