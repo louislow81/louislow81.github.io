@@ -375,6 +375,9 @@
 		margin: 0;
 		padding: 0;
 	}
+	.bottom-page-compensate {
+		height: auto;
+	}
 	.badge-dock-up {
 		display: none;
 	}
