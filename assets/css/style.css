@@ -1711,3 +1711,7 @@ iframe, embed, object {
 .customisable:hover, .customisable:focus, .customisable:active, .customisable-highlight:hover, .customisable-highlight:focus, a:hover .customisable-highlight, a:focus .customisable-highlight {
   color: #2e3237 !important;
 }
+
+.hide {
+  display: none;
+}
