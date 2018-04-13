@@ -2,7 +2,7 @@
   "$jason": {
     "head": {
       "title": "Hello World",
-      "description": "This app displays 'Hello World' on the screen",
+      "description": "This app displays 'Hello World' on the screen"
     }
   }
 }
