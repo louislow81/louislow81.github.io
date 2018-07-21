@@ -1,4 +1,5 @@
 @import url('normalize.css');
+
 /*******************************************************************************
 ****** Reset
 *******************************************************************************/
@@ -58,7 +59,9 @@ a:hover {
   user-select: none;
 }
 
-figure, .slideshow li, .grid-gallery {
+figure,
+.slideshow li,
+.grid-gallery {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -90,7 +93,8 @@ img {
   float: right
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   -webkit-user-select: text;
   margin: 20px 0 0;
   border: 1px solid #3b3b3b;
@@ -118,7 +122,8 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
   outline: none;
   border: 1px solid #00AADD;
   color: #545454;
@@ -129,7 +134,13 @@ input[type="submit"]:hover {
   color: #fff;
 }
 
-input[type="text"], input[type="email"], input[type="search"], input[type="password"], textarea, input[type="submit"], input[type="button"] {
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea,
+input[type="submit"],
+input[type="button"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-user-select: text;
@@ -146,18 +157,27 @@ input[type="text"], input[type="email"], input[type="search"], input[type="passw
   color: #add93c;
 }
 
+
 /*******************************************************************************
 ****** Typography
 *******************************************************************************/
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: #aaaaaa;
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.blog h1, .blog h2, .blog h3, .blog h4, .blog h5 {
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4,
+.blog h5 {
   color: #00AADD;
 }
 
@@ -261,6 +281,7 @@ h5 {
   height: 200px;
 }
 
+
 /******************************************************************
 ****** Base Grid
 ******************************************************************/
@@ -316,6 +337,7 @@ h5 {
   text-decoration: underline;
 }
 
+
 /******************************************************************
 ****** Base Grid
 ******************************************************************/
@@ -326,7 +348,18 @@ h5 {
   width: 100%;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
   position: relative;
   float: left;
 }
@@ -379,7 +412,9 @@ h5 {
   width: 8.33333333%
 }
 
+
 /* #Clearing */
+
 
 /* Self Clearing Goodness */
 
@@ -391,10 +426,14 @@ h5 {
   content: "\0020";
 }
 
+
 /* Use clearfix class on parent to clear nested columns,
 or wrap each row of columns in a <div class="row"> */
 
-.clearfix:before, .clearfix:after, .row:before, .row:after {
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
   display: block;
   visibility: hidden;
   width: 0;
@@ -403,11 +442,13 @@ or wrap each row of columns in a <div class="row"> */
   content: '\0020';
 }
 
-.row:after, .clearfix:after {
+.row:after,
+.clearfix:after {
   clear: both;
 }
 
-.row, .clearfix {
+.row,
+.clearfix {
   zoom: 1;
 }
 
@@ -467,6 +508,7 @@ or wrap each row of columns in a <div class="row"> */
 .margin-right30 {
   margin-right: 30px;
 }
+
 
 /******************************************************************
 ****** Left Side
@@ -589,11 +631,12 @@ or wrap each row of columns in a <div class="row"> */
   padding: 30px;
   color: #747474;
   font-family: 'Oswald', sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 1px;
   line-height: 18px;
   text-transform: uppercase
 }
+
 
 /******************************************************************
 ****** Content Area
@@ -635,7 +678,8 @@ or wrap each row of columns in a <div class="row"> */
   /*null*/
 }
 
-.content:hover .jspVerticalBar, .menu nav:hover .jspVerticalBar {
+.content:hover .jspVerticalBar,
+.menu nav:hover .jspVerticalBar {
   opacity: 1;
 }
 
@@ -672,6 +716,7 @@ a.totop-link {
   text-indent: -9999px;
 }
 
+
 /* Codrops Top Bar */
 
 .codrops-top {
@@ -699,9 +744,11 @@ a.totop-link {
   right: 10px;
 }
 
+
 /******************************************************************
 ****** Tooltips
 ******************************************************************/
+
 
 /******************************************************************
 ****** Intro Screen
@@ -730,7 +777,8 @@ a.totop-link {
   height: 100%;
 }
 
-.introduction .owl-carousel .owl-wrapper, .introduction .owl-carousel .owl-item {
+.introduction .owl-carousel .owl-wrapper,
+.introduction .owl-carousel .owl-item {
   height: 100%;
 }
 
@@ -751,7 +799,7 @@ a.totop-link {
 .introduction .inner {
   position: absolute;
   z-index: 99;
-  margin: 38% 0 0 0;
+  margin: 30% 0 0 0;
 }
 
 .introduction span.title {
@@ -763,6 +811,7 @@ a.totop-link {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 
 /******************************************************************
 ****** About Screen
@@ -807,6 +856,7 @@ a.totop-link {
   top: auto;
   margin: 20px 0 0 0;
 }
+
 
 /******************************************************************
 ****** Skills Screen
@@ -904,6 +954,7 @@ a.totop-link {
   line-height: 0.6em;
 }
 
+
 /******************************************************************
 ****** Progress Bars
 ******************************************************************/
@@ -949,6 +1000,7 @@ a.totop-link {
   font-weight: 500;
 }
 
+
 /*====*/
 
 .progress-sm {
@@ -993,6 +1045,7 @@ a.totop-link {
   font-size: 15px;
   font-weight: 500;
 }
+
 
 /******************************************************************
 ****** PieChart
@@ -1051,6 +1104,7 @@ a.totop-link {
 .chart-text h4 {
   margin: 0 0 0 15px;
 }
+
 
 /******************************************************************
 ****** Experience Screen
@@ -1224,6 +1278,7 @@ a.totop-link {
   text-transform: uppercase;
 }
 
+
 /******************************************************************
 ****** Education Screen
 ******************************************************************/
@@ -1273,6 +1328,7 @@ a.totop-link {
   transition-duration: .2s;
   width: 29%;
 }
+
 
 /******************************************************************
 ****** Contact Screen
@@ -1359,6 +1415,7 @@ a.totop-link {
   font-size: 28px;
 }
 
+
 /******************************************************************
 ****** Last Screen
 ******************************************************************/
@@ -1402,6 +1459,7 @@ a.totop-link {
   font-weight: 300;
   text-transform: uppercase;
 }
+
 
 /******************************************************************
 ****** Blog / Portforlio
@@ -1470,7 +1528,9 @@ a.totop-link {
   color: #00AADD;
 }
 
-.blog-list iframe, embed, object {
+.blog-list iframe,
+embed,
+object {
   min-height: 204px;
 }
 
@@ -1479,7 +1539,9 @@ video {
   height: auto;
 }
 
-iframe, embed, object {
+iframe,
+embed,
+object {
   border: 0;
   max-width: 100%;
 }
@@ -1576,7 +1638,8 @@ iframe, embed, object {
   width: 100%
 }
 
-.calendar td, .calendar th {
+.calendar td,
+.calendar th {
   font-weight: 400;
   text-align: center;
 }
@@ -1643,7 +1706,8 @@ iframe, embed, object {
   line-height: 52px;
 }
 
-.pagerblock li a:hover, .pagerblock li a.current {
+.pagerblock li a:hover,
+.pagerblock li a.current {
   border: 2px solid rgba(235, 235, 235, 0.4);
 }
 
@@ -1683,6 +1747,7 @@ iframe, embed, object {
   padding: 30px 0 70px 0;
 }
 
+
 /******************************************************************
 ****** Ipad Fix
 ******************************************************************/
@@ -1698,6 +1763,7 @@ iframe, embed, object {
   display: none !important;
 }
 
+
 /******************************************************************
 ****** Others
 ******************************************************************/
@@ -1706,12 +1772,34 @@ iframe, embed, object {
   color: #05b7ec;
 }
 
+
 /* Twitter Overrides */
 
-.customisable:hover, .customisable:focus, .customisable:active, .customisable-highlight:hover, .customisable-highlight:focus, a:hover .customisable-highlight, a:focus .customisable-highlight {
+.customisable:hover,
+.customisable:focus,
+.customisable:active,
+.customisable-highlight:hover,
+.customisable-highlight:focus,
+a:hover .customisable-highlight,
+a:focus .customisable-highlight {
   color: #2e3237 !important;
 }
 
 .hide {
   display: none;
+}
+
+.narrow-icon {
+  width: 25px;
+  font-size: 30px !important;
+}
+
+p .interest-tag, p .quirk-tag{
+  padding: 2px 8px 2px 8px;
+  background: #aaaaaa;
+  border-radius: 30px;
+  color: #434242;
+  font-size: 13px;
+  margin-right: 3px;
+  font-weight: bold;
 }
