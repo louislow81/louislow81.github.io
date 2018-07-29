@@ -6,19 +6,19 @@
 // *****************************
 
 head.js({
-	mousewheel: "assets/js/jquery.mousewheel.js"
+  mousewheel: "assets/js/jquery.mousewheel.js"
 }, {
-	mwheelIntent: "assets/js/mwheelIntent.js"
+  mwheelIntent: "assets/js/mwheelIntent.js"
 }, {
-	jScrollPane: "assets/js/jquery.jscrollpane.js"
+  jScrollPane: "assets/js/jquery.jscrollpane.js"
 }, {
-	history: "assets/js/jquery.history.js"
+  history: "assets/js/jquery.history.js"
 }, {
-	stringLib: "assets/js/core.string.js"
+  stringLib: "assets/js/core.string.js"
 }, {
-	easing: "assets/js/jquery.easing.1.3.js"
+  easing: "assets/js/jquery.easing.1.3.js"
 }, {
-	smartresize: "assets/js/jquery.smartresize.js"
+  smartresize: "assets/js/jquery.smartresize.js"
 }, {
-	page: "assets/js/jquery.page.js"
+  page: "assets/js/jquery.page.js"
 });

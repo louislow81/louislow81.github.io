@@ -60,13 +60,11 @@
   user-select: none;
 }
 
-
 /* Mouse grab icon */
 
 .grabbing {
   cursor: url(../images/grabbing.png) 8 8, move;
 }
-
 
 /* Fix */
 
@@ -83,7 +81,6 @@
 .owl-item iframe {
   width: 100%;
 }
-
 
 /*******************************************************************************
 ****** Controls
@@ -115,7 +112,6 @@
   display: none;
 }
 
-
 /*******************************************************************************
 ****** Next and Previous buttons
 *******************************************************************************/
@@ -138,9 +134,7 @@
   font-size: 12px;
 }
 
-
 /* Clickable class fix problem with hover on touch devices */
-
 
 /* Use it for non-touch hover action */
 
@@ -150,7 +144,6 @@
   filter: Alpha(Opacity=100);
   text-decoration: none;
 }
-
 
 /*******************************************************************************
 ****** Pagination
@@ -177,7 +170,6 @@
   background-color: #fff;
 }
 
-
 /*******************************************************************************
 ****** if PagingNumber is true
 *******************************************************************************/
@@ -192,7 +184,6 @@
   color: #FFF;
   font-size: 12px;
 }
-
 
 /* preloading images */
 
