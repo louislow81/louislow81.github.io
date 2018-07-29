@@ -1,0 +1,19 @@
+{
+  "name": "loouislow81.github.io",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loouislow81/loouislow81.github.io.git"
+  },
+  "author": "Loouis Low <loouislow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loouislow81/loouislow81.github.io/issues"
+  },
+  "homepage": "https://github.com/loouislow81/loouislow81.github.io#readme"
+}

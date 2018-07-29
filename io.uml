@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JavaScript-modules-diagram</ID>
+  <OriginalElement>/home/loouis/Documents/play/playground/loouislow81.github.io</OriginalElement>
+  <nodes>
+    <node x="1446.0" y="1184.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/12307307_10206386518956698_4411648875446255946_o.jpg</node>
+    <node x="1445.0" y="769.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13394199_10207780811573142_7583526877850607867_n.jpg</node>
+    <node x="683.0" y="1181.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13394199_10207780811573142_7583526877850634267_n.png</node>
+    <node x="1092.0" y="1340.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13434857_10207780303800448_4283975277848207045_n.jpg</node>
+    <node x="894.0" y="506.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13434857_10207780303800448_4283975277848254261_n.jpg</node>
+    <node x="0.0" y="1008.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/16003038_10209537862898327_1502441352036125173_n.jpg</node>
+    <node x="814.0" y="1450.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/271310_503513749677729_1260665789_o.jpg</node>
+    <node x="380.0" y="1347.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/33984506_10213716012629459_3388552042027941888_o.png</node>
+    <node x="960.0" y="16.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/621265_3960791293095_256692586_o.jpg</node>
+    <node x="737.0" y="526.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/application.js</node>
+    <node x="1748.0" y="594.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/carousel.css</node>
+    <node x="445.0" y="552.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/carousel.js</node>
+    <node x="1315.0" y="646.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/class_helper.js</node>
+    <node x="1025.0" y="1251.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/drift.js</node>
+    <node x="460.0" y="482.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/eizo-rewire-e.webp</node>
+    <node x="408.0" y="868.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/eizo-rewire-pro.webp</node>
+    <node x="665.0" y="336.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/elixir_promo.jpg</node>
+    <node x="555.0" y="723.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/favicon.png</node>
+    <node x="1208.0" y="309.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/global.fx.js</node>
+    <node x="1058.0" y="436.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/google-play.png</node>
+    <node x="1026.0" y="1018.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/head.js</node>
+    <node x="427.0" y="249.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventEmitter#4958;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventie#4983;</node>
+    <node x="932.0" y="705.0">/home/loouis/Documents/play/playground/loouislow81.github.io/index.html</node>
+    <node x="655.0" y="173.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/jquery.easypiechart.js#jquery.js#110;</node>
+    <node x="1019.0" y="357.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/jquery.js</node>
+    <node x="648.0" y="1041.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/lello_promo.jpg</node>
+    <node x="562.0" y="631.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/masonry.js#get-style-property#10669;</node>
+    <node x="398.0" y="746.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/me.png</node>
+    <node x="796.0" y="1111.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/noozy.webp</node>
+    <node x="1319.0" y="839.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/noozy_windows_24hires.jpg</node>
+    <node x="1905.0" y="268.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/normalize.css</node>
+    <node x="1554.0" y="228.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/portfolio.css</node>
+    <node x="1376.0" y="171.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/responsive.css</node>
+    <node x="1664.0" y="477.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/scroll.css</node>
+    <node x="1150.0" y="1006.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/settings.js</node>
+    <node x="620.0" y="408.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide01.jpg</node>
+    <node x="676.0" y="901.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide02.jpg</node>
+    <node x="1156.0" y="1130.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide03.jpg</node>
+    <node x="860.0" y="203.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide04.jpg</node>
+    <node x="1309.0" y="948.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide05.jpg</node>
+    <node x="643.0" y="831.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide06.jpg</node>
+    <node x="1292.0" y="379.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide07.jpg</node>
+    <node x="1276.0" y="576.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide08.jpg</node>
+    <node x="1113.0" y="231.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide09.jpg</node>
+    <node x="557.0" y="971.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide10.jpg</node>
+    <node x="1047.0" y="936.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide11.jpg</node>
+    <node x="851.0" y="953.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide12.jpg</node>
+    <node x="1707.0" y="335.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/style.css</node>
+    <node x="1346.0" y="1114.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/text.rotator.js</node>
+    <node x="1424.0" y="483.0">/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css</node>
+    <node x="228.0" y="75.0">EventEmitter</node>
+    <node x="156.0" y="316.0">eventEmitter</node>
+    <node x="459.0" y="0.0">eventie</node>
+    <node x="234.0" y="636.0">get-style-property</node>
+    <node x="870.0" y="364.0">https://platform.twitter.com/widgets.js</node>
+    <node x="736.0" y="761.0">https://use.fontawesome.com/releases/v5.1.1/css/all.css</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventEmitter#4958;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventie#4983;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/eizo-rewire-pro.webp">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/16003038_10209537862898327_1502441352036125173_n.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventEmitter#4958;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventie#4983;" target="eventie">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/favicon.png">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide05.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/masonry.js#get-style-property#10669;" target="get-style-property">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/12307307_10206386518956698_4411648875446255946_o.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/noozy.webp">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13394199_10207780811573142_7583526877850607867_n.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide04.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/noozy_windows_24hires.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13434857_10207780303800448_4283975277848254261_n.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventEmitter#4958;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventie#4983;" target="EventEmitter">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide12.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/carousel.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/style.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/head.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/jquery.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide08.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/google-play.png">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide03.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/carousel.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="https://platform.twitter.com/widgets.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/class_helper.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide09.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/scroll.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide02.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/style.css" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/normalize.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/drift.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide01.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13434857_10207780303800448_4283975277848207045_n.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/me.png">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventEmitter#4958;/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/imagesloaded.js#eventie#4983;" target="eventEmitter">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/application.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/elixir_promo.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/masonry.js#get-style-property#10669;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/jquery.easypiechart.js#jquery.js#110;">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/eizo-rewire-e.webp">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/portfolio.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/settings.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/271310_503513749677729_1260665789_o.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/responsive.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/33984506_10213716012629459_3388552042027941888_o.png">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/621265_3960791293095_256692586_o.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/13394199_10207780811573142_7583526877850634267_n.png">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/jquery.easypiechart.js#jquery.js#110;" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/jquery.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide11.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/global.fx.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/lello_promo.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/js/text.rotator.js">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide07.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide10.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/css/ui.css">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="/home/loouis/Documents/play/playground/loouislow81.github.io/index.html" target="/home/loouis/Documents/play/playground/loouislow81.github.io/assets/images/slide06.jpg">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8" x="1015.5000000000001" y="739.5" />
+  <SelectedNodes>
+    <node>https://use.fontawesome.com/releases/v5.1.1/css/all.css</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>All</Category>
+  </Categories>
+  <VISIBILITY>Details</VISIBILITY>
+</Diagram>
+
