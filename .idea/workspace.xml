@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e36df2-a3a6-4140-a3e4-9cf491980d62" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,7 +17,7 @@
     <session id="-1421730614">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
@@ -26,14 +25,15 @@
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="7" />
-          <entry key="html" value="2" />
+          <entry key="html" value="3" />
           <entry key="io" value="2" />
           <entry key="json" value="1" />
           <entry key="png" value="1" />
@@ -44,7 +44,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -54,58 +54,37 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="107" />
-          <entry key="html" value="127" />
-          <entry key="txt" value="116" />
+          <entry key="html" value="145" />
+          <entry key="txt" value="159" />
           <entry key="vmoptions" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="107" />
-          <entry key="HTML" value="127" />
-          <entry key="PLAIN_TEXT" value="127" />
+          <entry key="HTML" value="145" />
+          <entry key="PLAIN_TEXT" value="170" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.6640379">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="730" column="16" selection-start-line="730" selection-start-column="16" selection-end-line="730" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="40733">
-                  <caret line="1771" selection-start-line="1771" selection-end-line="1771" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assets/css/carousel.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="46">
-                  <caret line="2" column="43" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="1044" column="239" selection-start-line="1044" selection-start-column="239" selection-end-line="1044" selection-end-column="239" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>exile</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -166,18 +145,6 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="loouislow81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="loouislow81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="loouislow81.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="loouislow81.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="pdf" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -227,7 +194,8 @@
       <workItem from="1533285648210" duration="341000" />
       <workItem from="1533286824440" duration="60000" />
       <workItem from="1533977132915" duration="1315000" />
-      <workItem from="1534066460570" duration="22000" />
+      <workItem from="1534066460570" duration="731000" />
+      <workItem from="1534267935296" duration="244000" />
     </task>
     <task id="LOCAL-00001" summary="reformating code">
       <created>1532855172689</created>
@@ -264,21 +232,35 @@
       <option name="project" value="LOCAL" />
       <updated>1533977430105</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updated Year of Experience">
+      <created>1534066515158</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1534066515158</updated>
+    </task>
+    <task id="LOCAL-00007" summary="missed some typos">
+      <created>1534267999299</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534267999299</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6318000" />
+    <option name="totallyTimeSpent" value="7271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="734" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.6598425" visible="true" weight="0.14787701" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.6598425" visible="true" weight="0.14787701" />
       <window_info id="Structure" order="2" sideWeight="0.4031496" side_tool="true" weight="0.14787701" />
       <window_info x="821" y="141" width="209" height="440" id="npm" order="3" sideWeight="0.34015748" side_tool="true" visible="true" weight="0.14787701" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.22239748" />
+      <window_info anchor="bottom" id="Version Control" order="0" visible="true" weight="0.22239748" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5288184" side_tool="true" weight="0.30283913" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.329653" />
@@ -292,7 +274,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24963397" />
-      <window_info active="true" anchor="right" id="Terminal" order="3" sideWeight="0.5496063" side_tool="true" visible="true" weight="0.3440703" />
+      <window_info anchor="right" id="Terminal" order="3" sideWeight="0.5496063" side_tool="true" visible="true" weight="0.3440703" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +290,9 @@
     <MESSAGE value="added WhatsApp icon-font" />
     <MESSAGE value="remove unwanted library" />
     <MESSAGE value="updated Twisted Noise Article" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated Twisted Noise Article" />
+    <MESSAGE value="updated Year of Experience" />
+    <MESSAGE value="missed some typos" />
+    <option name="LAST_COMMIT_MESSAGE" value="missed some typos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
@@ -723,8 +707,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="730" column="16" selection-start-line="730" selection-start-column="16" selection-end-line="730" selection-end-column="16" />
+        <state relative-caret-position="261">
+          <caret line="1044" column="239" selection-start-line="1044" selection-start-column="239" selection-end-line="1044" selection-end-column="239" />
         </state>
       </provider>
     </entry>
