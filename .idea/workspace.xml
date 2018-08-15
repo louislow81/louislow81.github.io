@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9e36df2-a3a6-4140-a3e4-9cf491980d62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,52 +19,54 @@
     <session id="-1421730614">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="7" />
+          <entry key="css" value="8" />
           <entry key="html" value="3" />
           <entry key="io" value="2" />
           <entry key="json" value="1" />
           <entry key="png" value="1" />
+          <entry key="rnc" value="3" />
           <entry key="uml" value="1" />
           <entry key="vmoptions" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="7" />
+          <entry key="CSS" value="8" />
           <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
+          <entry key="RNG Compact" value="3" />
           <entry key="UML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="107" />
-          <entry key="html" value="145" />
+          <entry key="css" value="165" />
+          <entry key="html" value="320" />
           <entry key="txt" value="159" />
           <entry key="vmoptions" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="107" />
-          <entry key="HTML" value="145" />
+          <entry key="CSS" value="165" />
+          <entry key="HTML" value="320" />
           <entry key="PLAIN_TEXT" value="170" />
         </counts>
       </usages-collector>
@@ -73,8 +77,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="1044" column="239" selection-start-line="1044" selection-start-column="239" selection-end-line="1044" selection-end-column="239" />
+            <state relative-caret-position="303">
+              <caret line="781" column="41" selection-start-line="781" selection-start-column="41" selection-end-line="781" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="1225" column="1" lean-forward="true" selection-start-line="1225" selection-start-column="1" selection-end-line="1225" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -84,6 +97,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>exile</find>
+      <find>Remote</find>
+      <find>work-place</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,8 +107,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/webstorm64.vmoptions" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -127,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -149,7 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,7 +210,8 @@
       <workItem from="1533286824440" duration="60000" />
       <workItem from="1533977132915" duration="1315000" />
       <workItem from="1534066460570" duration="731000" />
-      <workItem from="1534267935296" duration="244000" />
+      <workItem from="1534267935296" duration="295000" />
+      <workItem from="1534340810714" duration="1699000" />
     </task>
     <task id="LOCAL-00001" summary="reformating code">
       <created>1532855172689</created>
@@ -250,7 +266,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7271000" />
+    <option name="totallyTimeSpent" value="9021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="734" extended-state="6" />
@@ -691,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40733">
-          <caret line="1771" selection-start-line="1771" selection-end-line="1771" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/carousel.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -705,10 +714,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="353" column="30" selection-start-line="353" selection-start-column="26" selection-end-line="353" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="244" column="12" selection-start-line="244" selection-start-column="12" selection-end-line="244" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="1225" column="1" lean-forward="true" selection-start-line="1225" selection-start-column="1" selection-end-line="1225" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="1044" column="239" selection-start-line="1044" selection-start-column="239" selection-end-line="1044" selection-end-column="239" />
+        <state relative-caret-position="303">
+          <caret line="781" column="41" selection-start-line="781" selection-start-column="41" selection-end-line="781" selection-end-column="41" />
         </state>
       </provider>
     </entry>
