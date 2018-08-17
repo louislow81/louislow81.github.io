@@ -18,7 +18,7 @@
     <session id="-1421730614">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="2" />
@@ -27,14 +27,15 @@
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
+          <entry key="css" value="9" />
           <entry key="html" value="3" />
           <entry key="io" value="2" />
           <entry key="json" value="1" />
@@ -46,7 +47,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
+          <entry key="CSS" value="9" />
           <entry key="HTML" value="3" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="1" />
@@ -57,16 +58,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="165" />
-          <entry key="html" value="506" />
+          <entry key="css" value="236" />
+          <entry key="html" value="887" />
           <entry key="txt" value="182" />
           <entry key="vmoptions" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="165" />
-          <entry key="HTML" value="506" />
+          <entry key="CSS" value="236" />
+          <entry key="HTML" value="887" />
           <entry key="PLAIN_TEXT" value="193" />
         </counts>
       </usages-collector>
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="851" column="57" selection-start-line="851" selection-start-column="57" selection-end-line="851" selection-end-column="57" />
+            <state relative-caret-position="448">
+              <caret line="1029" column="26" selection-start-line="1029" selection-start-column="26" selection-end-line="1029" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -86,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28175">
-              <caret line="1225" column="1" selection-start-line="1225" selection-start-column="1" selection-end-line="1225" selection-end-column="1" />
+            <state relative-caret-position="322">
+              <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
             </state>
           </provider>
         </entry>
@@ -99,6 +100,7 @@
       <find>exile</find>
       <find>Remote</find>
       <find>work-place</find>
+      <find>percent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,7 +214,8 @@
       <workItem from="1534066460570" duration="731000" />
       <workItem from="1534267935296" duration="295000" />
       <workItem from="1534340810714" duration="2072000" />
-      <workItem from="1534521409248" duration="1915000" />
+      <workItem from="1534521409248" duration="2034000" />
+      <workItem from="1534523809797" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="reformating code">
       <created>1532855172689</created>
@@ -274,7 +277,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11309000" />
+    <option name="totallyTimeSpent" value="13920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1368" height="734" extended-state="6" />
@@ -737,17 +740,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="851" column="57" selection-start-line="851" selection-start-column="57" selection-end-line="851" selection-end-column="57" />
+        <state relative-caret-position="322">
+          <caret line="1037" selection-start-line="1037" selection-end-line="1037" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28175">
-          <caret line="1225" column="1" selection-start-line="1225" selection-start-column="1" selection-end-line="1225" selection-end-column="1" />
+        <state relative-caret-position="448">
+          <caret line="1029" column="26" selection-start-line="1029" selection-start-column="26" selection-end-line="1029" selection-end-column="26" />
         </state>
       </provider>
     </entry>
