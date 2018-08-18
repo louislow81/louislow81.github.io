@@ -508,7 +508,7 @@ or wrap each row of columns in a <div class="row"> */
 ******************************************************************/
 
 .logo {
-  margin: 30px 15px 15px 15px;
+  margin: 30px;
   text-align: center;
 }
 
@@ -534,7 +534,7 @@ or wrap each row of columns in a <div class="row"> */
 
 .menu nav {
   position: absolute;
-  top: 220px;
+  top: 180px;
   right: 0px;
   bottom: 50px;
   left: 0px;
