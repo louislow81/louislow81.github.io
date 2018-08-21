@@ -1225,13 +1225,17 @@ a.totop-link {
   width: 40px;
 }
 
-.adopted-project {
-  margin: 0 0 0 5px;
+.adopted-project a {
+  margin: 0 0 0 3px;
   border-radius: 30px;
-  background-color: #3a3a3a;
+  background-color: #767676;
   padding: 1px 5px 1px 5px;
-  color: #262627;
-  font-size:10px;
+  color: #434242;
+  font-size: 10px;
+}
+
+.adopted-project a:hover {
+  background-color: #fff;
 }
 
 .where-am-i-now {
