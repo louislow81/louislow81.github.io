@@ -32,7 +32,8 @@ a {
 }
 
 a:hover {
-  color: #00AADD;
+  /*color: #00AADD;*/
+  color: #024fff;
 }
 
 ::selection {
@@ -218,7 +219,8 @@ h5 {
 .title-divider {
   margin: 30px 0 50px 0;
   border-radius: 30px;
-  background-color: #00AADD;
+  /*background-color: #00AADD;*/
+  background-color: #024fff;
   width: 70px;
   height: 5px;
 }
@@ -232,11 +234,13 @@ h5 {
 }
 
 .gray-bg {
-  background-color: #4f4f4f;
+  /*background-color: #4f4f4f;*/
+  background-color: #262626;
 }
 
 .white-bg {
-  background-color: #434242;
+  /*background-color: #434242;*/
+  background-color: #262626;
 }
 
 .button {
@@ -327,7 +331,8 @@ h5 {
 }
 
 .fa-text-sm {
-  color: #00aadd;
+  /*color: #00aadd;*/
+  color: #024fff;
   font-size: 17px;
 }
 
@@ -526,7 +531,7 @@ or wrap each row of columns in a <div class="row"> */
   top: 0px;
   left: 0px;
   z-index: 100;
-  background: #252525;
+  background: #262626;
   width: 200px;
   height: 100%;
   color: #f8f8f8;
@@ -560,12 +565,14 @@ or wrap each row of columns in a <div class="row"> */
 }
 
 .menu nav a span.active {
-  color: #00AADD;
+  /*color: #00AADD;*/
+  color: #024fff;
   font-weight: 400
 }
 
 .menu nav a:hover {
-  color: #00AADD;
+  /*color: #00AADD;*/
+  color: #024fff;
   text-decoration: none;
 }
 
@@ -969,7 +976,8 @@ a.totop-link {
   position: absolute;
   top: -19px;
   left: -93px;
-  color: #00AADD;
+  /*color: #00AADD;*/
+  color: #024fff;
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 400
@@ -1055,6 +1063,7 @@ a.totop-link {
   z-index: 2;
   margin: 21px 0 0 0;
   color: #00AADD;
+  color: #024fff;
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -1156,7 +1165,7 @@ a.totop-link {
   border-radius: 30px;
   background-color: #1db593;
   padding: 2px 8px 1px 8px;
-  color: #434242;
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -1166,7 +1175,7 @@ a.totop-link {
   border-radius: 30px;
   background-color: #f74f42;
   padding: 2px 8px 1px 8px;
-  color: #434242;
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -1176,7 +1185,7 @@ a.totop-link {
   border-radius: 30px;
   background-color: #3680f4;
   padding: 2px 8px 1px 8px;
-  color: #434242;
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -1186,7 +1195,7 @@ a.totop-link {
   border-radius: 30px;
   background-color: #f47336;
   padding: 2px 8px 1px 8px;
-  color: #434242;
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -1196,7 +1205,7 @@ a.totop-link {
   border-radius: 30px;
   background-color: #8dad15;
   padding: 2px 8px 1px 8px;
-  color: #434242;
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -1228,9 +1237,9 @@ a.totop-link {
 .adopted-project a {
   margin: 0 0 0 3px;
   border-radius: 30px;
-  background-color: #767676;
+  background-color: #737373;
   padding: 1px 5px 1px 5px;
-  color: #434242;
+  color: #252525;
   font-size: 10px;
 }
 
@@ -1723,9 +1732,11 @@ object {
 
 .technologies {
   border-radius: 30px;
-  background-color: #252525;
+  /*background-color: #252525;*/
+  background-color: #737373;
   padding: 2px 8px 2px 8px;
-  color: #545454;
+  /*color: #545454;*/
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
