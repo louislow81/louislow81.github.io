@@ -250,7 +250,7 @@ h5 {
   display: inline-block;
   transition-duration: .2s;
   margin: 20px 0;
-  border: 2px solid #00AADD;
+  border: 2px solid #024fff;
   border-radius: 30px;
   background: none;
   padding: 10px 20px 10px 20px;
@@ -263,8 +263,8 @@ h5 {
 }
 
 .button:hover {
-  border: 2px solid #00AADD;
-  background-color: #00AADD;
+  border: 2px solid #024fff;
+  background-color: #024fff;
   color: #fff;
 }
 
