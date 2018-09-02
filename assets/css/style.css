@@ -1244,7 +1244,7 @@ a.totop-link {
   border-radius: 0 10px 0 10px;
   background-color: #fb9767;
   padding: 1px 8px 0px 8px;
-  color: #434242;
+  color: #252525;
   font-size: 10px !important;
   font-weight: bold;
   text-transform: uppercase;
@@ -1260,7 +1260,27 @@ a.totop-link {
   font-size: 10px;
 }
 
+.adopted-project-ex a {
+  margin: 0 0 0 3px;
+  border-radius: 30px;
+  background-color: #ff5722c2;
+  padding: 1px 5px 1px 5px;
+  color: #252525;
+  font-size: 10px;
+}
+-webkit-user-select:
+;
+-moz-user-select:
+;
+-ms-user-select:
+;
+user-select:
+;
 .adopted-project a:hover {
+  background-color: #fff;
+}
+
+.adopted-project-ex a:hover {
   background-color: #fff;
 }
 
