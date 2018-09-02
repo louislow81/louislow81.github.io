@@ -1260,24 +1260,17 @@ a.totop-link {
   font-size: 10px;
 }
 
+.adopted-project a:hover {
+  background-color: #fff;
+}
+
 .adopted-project-ex a {
   margin: 0 0 0 3px;
   border-radius: 30px;
-  background-color: #ff5722c2;
+  background-color: rgba(255, 87, 34, 0.7607843137254902);
   padding: 1px 5px 1px 5px;
   color: #252525;
   font-size: 10px;
-}
--webkit-user-select:
-;
--moz-user-select:
-;
--ms-user-select:
-;
-user-select:
-;
-.adopted-project a:hover {
-  background-color: #fff;
 }
 
 .adopted-project-ex a:hover {
