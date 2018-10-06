@@ -1293,17 +1293,44 @@ a.totop-link {
   text-transform: uppercase;
 }
 
+/*-------------------------------------------*/
+
+:root { /*vars*/
+  --where-am-i-deco-dark: #2a2a2a;
+  --where-am-i-deco-white: #dadada;
+  --where-am-i-deco-txtsize: 12px !important;
+  --where-am-i-deco-txtdark: #252525;
+  --where-am-i-deco-txtwhite: #dadada
+}
+
 .where-am-i-deco {
   margin-left: 10px;
-  border: 3px solid #dadada;
+  border: 3px solid var(--where-am-i-deco-white);
   border-radius: 30px;
-  background-color: #dadada;
+  background-color: var(--where-am-i-deco-white);
   padding: 2px 8px 1px 8px;
-  color: #252525;
-  font-size: 12px !important;
+  color: var(--where-am-i-deco-txtdark);
+  font-size: var(--where-am-i-deco-txtsize);
   font-weight: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
+
+.where-am-i-deco:hover {
+  border: 3px solid var(--where-am-i-deco-dark);
+  background-color: var(--where-am-i-deco-dark);
+  color: var(--where-am-i-deco-txtwhite)
+}
+
+.where-am-i-deco a {
+  color: var(--where-am-i-deco-txtdark)
+}
+
+.where-am-i-deco a:hover {
+  color: var(--where-am-i-deco-txtwhite)
+}
+
+/*-------------------------------------------*/
 
 .edu-level {
   border-radius: 30px;
