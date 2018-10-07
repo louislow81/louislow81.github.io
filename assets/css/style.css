@@ -1322,14 +1322,6 @@ a.totop-link {
   color: var(--where-am-i-deco-txtwhite)
 }
 
-.where-am-i-deco a {
-  color: var(--where-am-i-deco-txtdark)
-}
-
-.where-am-i-deco a:hover {
-  color: var(--where-am-i-deco-txtwhite)
-}
-
 /*-------------------------------------------*/
 
 .edu-level {
