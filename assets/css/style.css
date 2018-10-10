@@ -1218,6 +1218,22 @@ a.totop-link {
   text-transform: uppercase;
 }
 
+.work-here {
+  border-radius: 30px;
+  background-color: #aba9aa;
+  padding: 2px 4px 11px 0;
+  margin: 4px 0 0 -55px;
+  position: absolute;
+}
+
+.work-here-too {
+  border-radius: 30px;
+  background-color: #aba9aa;
+  padding: 2px 4px 11px 0;
+  margin: 4px 0 0 -61px;
+  position: absolute;
+}
+
 .work-routine-remote {
   border-radius: 30px;
   background-color: #8dad15;
@@ -1293,9 +1309,11 @@ a.totop-link {
   text-transform: uppercase;
 }
 
+
 /*-------------------------------------------*/
 
-:root { /*vars*/
+:root {
+  /*vars*/
   --where-am-i-deco-dark: #2a2a2a;
   --where-am-i-deco-white: #dadada;
   --where-am-i-deco-txtsize: 12px !important;
@@ -1321,6 +1339,7 @@ a.totop-link {
   background-color: var(--where-am-i-deco-dark);
   color: var(--where-am-i-deco-txtwhite)
 }
+
 
 /*-------------------------------------------*/
 
