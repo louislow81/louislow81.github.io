@@ -1328,11 +1328,11 @@ a.totop-link {
   cursor: pointer;
 }
 
-.where-am-i-deco:hover {
-  border: 3px solid var(--where-am-i-deco-dark);
-  background-color: var(--where-am-i-deco-dark);
-  color: var(--where-am-i-deco-txtwhite)
-}
+/*.where-am-i-deco:hover {*/
+/*  border: 3px solid var(--where-am-i-deco-dark);*/
+/*  background-color: var(--where-am-i-deco-dark);*/
+/*  color: var(--where-am-i-deco-txtwhite)*/
+/*}*/
 
 
 /*-------------------------------------------*/
