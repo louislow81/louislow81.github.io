@@ -5,11 +5,15 @@
 ****************************************/
 
 html {
-  scroll-behaviour: smooth;
+  /*globally smoothing scroll*/
+  scroll-behavior: smooth !important;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
+  /*gpu accelerated*/
+  -moz-osx-font-smoothing: grayscale !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
   /*zoom: 95%;*/
   background-color: #262626;
   overflow-x: hidden;
@@ -24,6 +28,13 @@ body {
 body.blog {
   overflow-x: auto;
   overflow-y: scroll;
+}
+
+img,
+video,
+embed {
+  /*graphic enhancer*/
+  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1) blur(0px) !important;
 }
 
 a {
@@ -96,13 +107,6 @@ img {
 
 .flot-right {
   float: right
-}
-
-img,
-video,
-embed {
-  /*enhancer*/
-  -webkit-filter: saturate(1) contrast(1) brightness(1) blur(0px);
 }
 
 input[type="text"],
