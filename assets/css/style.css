@@ -6,7 +6,7 @@
 
 html {
   /*globally smoothing scroll*/
-  scroll-behavior: smooth !important;
+  /*scroll-behavior: smooth !important;*/
 }
 
 body {
@@ -34,7 +34,7 @@ img,
 video,
 embed {
   /*graphic enhancer*/
-  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1) blur(0px) !important;
+  -webkit-filter: saturate(1) contrast(1.1) brightness(1) blur(0px) !important;
 }
 
 a {
