@@ -1,6 +1,9 @@
 Thumbs.db
 Thumbs.db:encryptable
 
+dat.json
+.datignore
+
 changelog.md
 
 node_modules/*
