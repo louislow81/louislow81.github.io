@@ -4,7 +4,7 @@
 
 html {
   /*globally smoothing scroll*/
-  /*scroll-behavior: smooth !important;*/
+  scroll-behavior: smooth
 }
 
 body {
@@ -302,6 +302,20 @@ h5 {
 /***************************************
   Base Grid
 ****************************************/
+
+.git-panel-new {
+  padding: 10px 0 10px 0;
+  margin: 0 0 50px 0;
+  border-top: 2px dashed #8BC34A;
+  border-bottom: 2px dashed #4CAF50;
+}
+
+.git-panel-hot {
+  padding: 10px 0 10px 0;
+  margin: 0 0 50px 0;
+  border-top: 2px dashed #FF5722;
+  border-bottom: 2px dashed #F44336;
+}
 
 .git-panel-solo {
   padding: 0 0 70px 0;
@@ -1800,14 +1814,13 @@ object {
 
 .technologies {
   border-radius: 30px;
-  /*background-color: #252525;*/
   background-color: #737373;
   padding: 2px 8px 2px 8px;
-  /*color: #545454;*/
   color: #252525;
-  font-size: 10px !important;
-  font-weight: bold;
+  font-size: 10px!important;
+  font-weight: 700;
   text-transform: uppercase;
+  margin: 0 3px 0 3px;
 }
 
 .badge-dock-up {
