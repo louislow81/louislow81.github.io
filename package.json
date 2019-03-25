@@ -4,7 +4,7 @@
   "description": "My Personal Website",
   "main": "index.js",
   "scripts": {
-    "dev-up": "sudo npm i -g minify && sudo apt install -y parallel webp && npm i",
+    "dev-up": "echo; sudo npm i -g minify && sudo apt install -y parallel webp && npm i",
     "build": "npm run min-image && npm run min-index && npm run min-all && npm run merge-all",
     "clean": "rm -rf ./node_modules && rm -rf ./package-lock.json && find . -type f -name '*.webp' -exec rm -f {} \\;",
     "min-all": "npm run min-index && npm run min-js && npm run min-css",
