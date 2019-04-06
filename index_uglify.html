@@ -41,6 +41,20 @@
 
     <!-- ////////// end prefetching ////////// -->
 
+    <!--data saver-->
+    <script src="assets/js/imgcache.js"></script>
+
+    <script>
+      var dataSaver = function () {
+        ImgCache.options.debug = true;
+        ImgCache.options.usePersistentCache = true;
+        ImgCache.options.chromeQuota = 100 * 1024 * 1024;
+        ImgCache.init();
+      };
+
+      dataSaver();
+    </script>
+
     <!--favicon-->
     <link rel="shortcut icon"
           href="assets/images/favicon.webp">
