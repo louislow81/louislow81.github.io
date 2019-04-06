@@ -155,13 +155,14 @@ $(document).ready(function () {
     // });
   });
 
+  // simulate lazy clicking
   setTimeout(function () {
       var counter = 0;
       var interval = setInterval(function () {
         document.getElementById("cache_images").click(); // Clicks the button
         counter++; // Increases counter after every click
-        if (counter == 10) clearInterval(interval); // Stops after 10 clicks
-      }, 30000); // Will click the button every second
+        if (counter == 100) clearInterval(interval); // Stops after 100 clicks
+      }, 10000); // Will click the button every 10 seconds
     }, 10000) // Starts after 10 seconds
 
 });
