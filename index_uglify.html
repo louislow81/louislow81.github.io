@@ -60,10 +60,6 @@
           rel="preload"
           as="script"
           href="assets/css/ui.min.css">
-
-    <!--data saver-->
-    <script src="assets/js/imgcache.js"></script>
-
   </head>
 
   <body>
@@ -2819,44 +2815,6 @@
     </div>
 
     <script src="assets/js/app.min.js"></script>
-
-    <script>
-      var dataSaver = function () {
-        // see console output for debug info
-        ImgCache.options.debug = true;
-        ImgCache.options.usePersistentCache = true;
-        ImgCache.options.chromeQuota = 100 * 1024 * 1024;
-        ImgCache.init();
-      };
-
-      dataSaver();
-
-      $(document).ready(function () {
-
-        $('#cache_images').click(function (e) {
-          e.preventDefault();
-          $('img').each(function () {
-            ImgCache.cacheFile($(this).attr('src'));
-          });
-          // $('div').each(function () {
-          //   var backgroundImageProperty = $(this).css('background-image');
-          //   if (backgroundImageProperty !== "none") {
-          //     ImgCache.cacheBackground($(this));
-          //   }
-          // });
-        });
-
-        setTimeout(function () {
-            var counter = 0;
-            var interval = setInterval(function () {
-              document.getElementById("cache_images").click(); // Clicks the button
-              counter++; // Increases counter after every click
-              if (counter == 10) clearInterval(interval); // Stops after 10 clicks
-            }, 30000); // Will click the button every second
-          }, 10000) // Starts after 10 seconds
-
-      });
-    </script>
 
   </body>
 
