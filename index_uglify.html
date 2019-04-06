@@ -53,6 +53,109 @@
       };
 
       dataSaver();
+
+      $(document).ready(function () {
+
+        var show_img_src = function () {
+          $('img[data-desc]').each(function () {
+            $img = $(this);
+            var $desc = $('#' + $img.attr('data-desc'));
+            $desc.html('src="' + $img.attr('src') + '"');
+          });
+          $('div[data-desc]').each(function () {
+            $div = $(this);
+            var $desc = $('#' + $div.attr('data-desc'));
+            $desc.html('background-image="' + $div.css('background-image') + '"');
+          });
+        };
+
+        var show_img_is_cached = function () {
+          $('img[data-is-cached]').each(function () {
+            $img = $(this);
+            var $desc = $('#' + $img.attr('data-is-cached'));
+            var imgSrc = $img.attr('data-old-src') || $img.attr('src');
+            ImgCache.isCached(imgSrc, function (path, success) {
+              if (success) {
+                $desc.html('Image is cached');
+              }
+              else {
+                $desc.html('Image is not cached');
+              }
+            })
+          });
+          $('div[data-is-cached]').each(function () {
+            $div = $(this);
+            var $desc = $('#' + $div.attr('data-is-cached'));
+            var imgSrc = $div.attr('data-old-background') || $div.attr('src');
+            ImgCache.isBackgroundCached($div, function (path, success) {
+              if (success) {
+                $desc.html('Image is cached');
+              }
+              else {
+                $desc.html('Image is not cached');
+              }
+            })
+          });
+        };
+
+        $('#clear_cache').click(function (e) {
+          e.preventDefault();
+          ImgCache.clearCache();
+        });
+
+        $('#show_src').click(function (e) {
+          e.preventDefault();
+          show_img_src();
+        });
+
+        $('#show_is_cached').click(function (e) {
+          e.preventDefault();
+          show_img_is_cached();
+        });
+
+        $('#cache_images').click(function (e) {
+          e.preventDefault();
+          $('img').each(function () {
+            ImgCache.cacheFile($(this).attr('src'));
+          });
+          $('div').each(function () {
+            var backgroundImageProperty = $(this).css('background-image');
+            if (backgroundImageProperty !== "none") {
+              ImgCache.cacheBackground($(this));
+            }
+          });
+        });
+
+        $('#use_cache').click(function (e) {
+          e.preventDefault();
+          $('img').each(function () {
+            ImgCache.useCachedFile($(this));
+          });
+          $('div').each(function () {
+            var backgroundImageProperty = $(this).css('background-image');
+            if (backgroundImageProperty !== "none") {
+              ImgCache.useCachedBackground($(this));
+            }
+          });
+        });
+
+        $('#use_online').click(function (e) {
+          e.preventDefault();
+          $('img').each(function () {
+            ImgCache.useOnlineFile($(this));
+          });
+          $('div').each(function () {
+            var backgroundImageProperty = $(this).css('background-image');
+            if (backgroundImageProperty !== "none") {
+              ImgCache.useBackgroundOnlineFile($(this));
+            }
+          });
+        });
+
+        $('#cache_folder').click(function (e) {
+          $(this).attr('href', ImgCache.getCacheFolderURI());
+        });
+      });
     </script>
 
     <!--favicon-->
@@ -184,6 +287,22 @@
                   Work in a company
                 </span>
               </div>
+
+
+
+                    <div id="actions">
+        <h2>Actions</h2>
+        <ul>
+          <li><a href="#" id="clear_cache">Clear the local filesystem cache</a></li>
+          <li><a href="#" id="cache_images">Cache images locally</a></li>
+          <li><a href="#" id="use_cache">Replace images with cached files</a></li>
+          <li><a href="#" id="use_online">Revert to original online images</a></li>
+          <li><a href="#" id="show_src">Show/update img src text</a></li>
+          <li><a href="#" id="show_is_cached">Show/update cache status</a></li>
+          <li><a href="#" id="cache_folder" target="new">Navigate into local cache folder</a></li>
+        </ul>
+      </div>
+
 
             </div>
 
