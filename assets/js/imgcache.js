@@ -22,9 +22,9 @@ var ImgCache = {
   // options to override before using the library (but after loading this script!)
   options: {
     debug: false,                           /* call the log method ? */
-    localCacheFolder: 'imgcache',           /* name of the cache folder */
+    localCacheFolder: 'datasaver',           /* name of the cache folder */
     useDataURI: false,                      /* use src="data:.."? otherwise will use src="filesystem:.." */
-    chromeQuota: 10 * 1024 * 1024,          /* allocated cache space : here 10MB */
+    chromeQuota: 50 * 1024 * 1024,          /* allocated cache space : here 50MB */
     usePersistentCache: true,               /* false = use temporary cache storage */
     cacheClearSize: 0,                      /* size in MB that triggers cache clear on init, 0 to disable */
     headers: {},                            /* HTTP headers for the download requests -- e.g: headers: { 'Accept': 'application/jpg' } */
