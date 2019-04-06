@@ -162,7 +162,7 @@ $(document).ready(function () {
         document.getElementById("cache_images").click(); // Clicks the button
         counter++; // Increases counter after every click
         if (counter == 100) clearInterval(interval); // Stops after 100 clicks
-      }, 10000); // Will click the button every 10 seconds
+      }, 60000); // Will click the button every 60 seconds
     }, 10000) // Starts after 10 seconds
 
 });
