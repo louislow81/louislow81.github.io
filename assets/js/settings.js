@@ -1,3 +1,6 @@
+// notice
+console.log("Inspecting web pages, huh? If you're interested please visit https://github.com/loouislow81/loouislow81.github.io")
+
 $(document).ready(function () {
   "use strict";
   try {
