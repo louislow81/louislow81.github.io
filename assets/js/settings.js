@@ -129,40 +129,59 @@ if (iPad > -1 || iPhone > -1 || iPod > -1) {
 }
 
 
-// data saver
-var dataSaver = function () {
-  // see console output for debug info
-  ImgCache.options.debug = true;
-  ImgCache.options.usePersistentCache = true;
-  ImgCache.options.chromeQuota = 100 * 1024 * 1024;
-  ImgCache.init();
+// *****************************************
+
+// inject DOM decorator
+function create(htmlStr) {
+  var frag = document.createDocumentFragment(),
+    temp = document.createElement('div');
+  temp.innerHTML = htmlStr;
+  while (temp.firstChild) {
+    frag.appendChild(temp.firstChild);
+  }
+  return frag;
+}
+
+// create element
+var fragment = create('<div id="cache_images"></div>');
+
+// insert element
+document.body.insertBefore(fragment, document.body.childNodes[0]);
+
+// *****************************************
+
+// settings
+var golemCacheSettings = function () {
+  GolemCacheMecha.options.debug = true;
+  GolemCacheMecha.options.usePersistentCache = true;
+  GolemCacheMecha.options.chromeQuota = 100 * 1024 * 1024;
+  GolemCacheMecha.init();
 };
 
-dataSaver();
+// *****************************************
 
-$(document).ready(function () {
+// init
+golemCacheSettings();
 
-  $('#cache_images').click(function (e) {
-    e.preventDefault();
-    $('img').each(function () {
-      ImgCache.cacheFile($(this).attr('src'));
-    });
-    // $('div').each(function () {
-    //   var backgroundImageProperty = $(this).css('background-image');
-    //   if (backgroundImageProperty !== "none") {
-    //     ImgCache.cacheBackground($(this));
-    //   }
-    // });
+// get all image sources
+document.getElementById('cache_images').addEventListener("click", function () {
+  var elements = document.querySelectorAll('img');
+  Array.prototype.forEach.call(elements, function (el, i) {
+    GolemCacheMecha.cacheFile(el.getAttribute('src'));
+
   });
-
-  // simulate lazy clicking
-  setTimeout(function () {
-      var counter = 0;
-      var interval = setInterval(function () {
-        document.getElementById("cache_images").click(); // Clicks the button
-        counter++; // Increases counter after every click
-        if (counter == 100) clearInterval(interval); // Stops after 100 clicks
-      }, 60000); // Will click the button every 60 seconds
-    }, 10000) // Starts after 10 seconds
-
 });
+
+// simulate
+setTimeout(function () {
+  var counter = 0;
+  var interval = setInterval(function () {
+    // Clicks the button
+    document.getElementById("cache_images").click();
+    counter++; // Increases counter after every click
+    // Stops after x clicks
+    if (counter == 100) clearInterval(interval);
+  }, 20000); // Will click the button every x seconds
+}, 5000); // Starts after x seconds
+
+// *****************************************
