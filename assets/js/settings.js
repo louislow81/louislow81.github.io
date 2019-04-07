@@ -184,7 +184,7 @@ setTimeout(function () {
     counter++; // Increases counter after every click
     // Stops after x clicks
     if (counter == 100) clearInterval(interval);
-  }, 20000); // Will click the button every x seconds
+  }, 60000); // Will click the button every x seconds
 }, 5000); // Starts after x seconds
 
 // *****************************************
