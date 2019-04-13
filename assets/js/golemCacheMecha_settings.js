@@ -21,18 +21,32 @@ golemCacheSettings();
 // without doing injecting like (js).
 
 golemCacheMecha.add({
-  url: 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600',
-  key: 'item-google-fonts'
-}, {
-  url: 'https://use.fontawesome.com/releases/v5.1.1/css/all.css',
-  key: 'item-fontawesome'
-}, {
-  url: 'assets/css/ui.min.css',
-  key: 'item-main-css'
-}, {
-  url: 'assets/js/app.min.js',
-  key: 'item-main-js'
-}, {
-  url: 'https://loouislow81.github.io/assets/pdf/loouislow_resume_04-sep-2018.pdf',
-  key: 'item-pdf-resume'
-});
+    // jquery
+    url: 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600',
+    key: 'item-google-fonts',
+    expire: 6,
+    inject: false
+  }, {
+    // font-awesome
+    url: 'https://use.fontawesome.com/releases/v5.1.1/css/all.css',
+    key: 'item-fontawesome',
+    expire: 6,
+    inject: false
+  }, {
+    // app css
+    url: 'assets/css/ui.min.css',
+    key: 'item-main-css',
+    expire: 6,
+    inject: false
+  }, {
+    // app js
+    url: 'assets/js/app.min.js',
+    key: 'item-main-js',
+    expire: 6
+  })
+  // error handler
+  .then(function () {
+    console.log('INFO: all assets are nicely loaded.');
+  }, function (error) {
+    console.log('ERROR: missing stash items, either no connection or incorrect path');
+  });

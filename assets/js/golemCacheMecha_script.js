@@ -140,7 +140,7 @@ function asynchronous_adapter() {
     obj.key = (obj.key || obj.url);
     source = golemCacheMecha.get(obj.key);
 
-    obj.execute = obj.execute !== false;
+    obj.inject = obj.inject !== false;
 
     shouldFetch = isCacheValid(source, obj);
 
@@ -164,7 +164,7 @@ function asynchronous_adapter() {
     }
     else {
       source.type = obj.type || source.originalType;
-      source.execute = obj.execute;
+      source.inject = obj.inject;
       promise = new RSVP.Promise(function (resolve) {
         resolve(source);
       });
@@ -186,7 +186,7 @@ function asynchronous_adapter() {
     'default': injectScript
   };
 
-  var execute = function (obj) {
+  var inject = function (obj) {
     if (obj.type && handlers[obj.type]) {
       return handlers[obj.type](obj);
     }
@@ -196,8 +196,8 @@ function asynchronous_adapter() {
 
   var performActions = function (resources) {
     return resources.map(function (obj) {
-      if (obj.execute) {
-        execute(obj);
+      if (obj.inject) {
+        inject(obj);
       }
 
       return obj;
@@ -226,12 +226,12 @@ function asynchronous_adapter() {
   window.golemCacheMecha = {
     add: function () {
       for (var a = 0, l = arguments.length; a < l; a++) {
-        arguments[a].execute = arguments[a].execute !== false;
+        arguments[a].inject = arguments[a].inject !== false;
 
         if (arguments[a].once && addStash.indexOf(arguments[a].url) >= 0) {
-          arguments[a].execute = false;
+          arguments[a].inject = false;
         }
-        else if (arguments[a].execute !== false && addStash.indexOf(arguments[a].url) < 0) {
+        else if (arguments[a].inject !== false && addStash.indexOf(arguments[a].url) < 0) {
           addStash.push(arguments[a].url);
         }
       }
