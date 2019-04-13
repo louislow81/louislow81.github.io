@@ -32,4 +32,7 @@ golemCacheMecha.add({
 }, {
   url: 'assets/js/app.min.js',
   key: 'item-main-js'
+}, {
+  url: 'https://loouislow81.github.io/assets/pdf/loouislow_resume_04-sep-2018.pdf',
+  key: 'item-pdf-resume'
 });

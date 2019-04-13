@@ -36,7 +36,8 @@
   height: 7px;
 }
 
-.jspVerticalBar *, .jspHorizontalBar * {
+.jspVerticalBar *,
+.jspHorizontalBar * {
   margin: 0;
   padding: 0;
 }
@@ -66,7 +67,8 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-.jspHorizontalBar .jspTrack, .jspHorizontalBar .jspDrag {
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
   float: left;
   height: 100%;
 }

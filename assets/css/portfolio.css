@@ -41,12 +41,12 @@
   text-transform: uppercase;
 }
 
+
 /*******************************************************************************
 ****** Grid
 *******************************************************************************/
 
-.grid-wrap {
-}
+.grid-wrap {}
 
 .grid {
   margin: 0 auto;
@@ -113,6 +113,7 @@
   width: 82px !important;
   height: 82px !important
 }
+
 
 /*******************************************************************************
 ****** SlideShow
@@ -213,9 +214,11 @@
   font-weight: 300;
 }
 
-.slideshow figcaption h3, .slideshow figcaption span {
+.slideshow figcaption h3,
+.slideshow figcaption span {
   color: #818181;
 }
+
 
 /*******************************************************************************
 ****** Navigation
@@ -235,7 +238,8 @@
   color: #FFF
 }
 
-.slideshow nav span.nav-prev, .slideshow nav span.nav-next {
+.slideshow nav span.nav-prev,
+.slideshow nav span.nav-next {
   -webkit-transform: translateY(-50%);
   top: 50%;
   transform: translateY(-50%);
@@ -254,7 +258,8 @@
   color: #000
 }
 
-.icon:before, .icon:after {
+.icon:before,
+.icon:after {
   speak: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
