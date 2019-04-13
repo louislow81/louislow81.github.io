@@ -11,7 +11,7 @@ var GolemCacheMecha = {
     // engine options
     options: {
       debug: false, //call the log method ?
-      localCacheFolder: 'loouislow', //name of the cache folder
+      localCacheFolder: 'golemCacheMecha', //name of the cache folder
       useDataURI: false, //use src="data:.."? otherwise will use src="filesystem:.."
       chromeQuota: 10 * 1024 * 1024, // allocated cache space : here 10MB
       usePersistentCache: true, //false = use temporary cache storage
@@ -1053,5 +1053,5 @@ var GolemCacheMecha = {
   }
 
 })(window.jQuery || window.Zepto || function () {
-  throw "jQuery is not available";
+  throw "ERR: require jQuery for `$img`";
 });
