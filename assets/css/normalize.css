@@ -2,23 +2,38 @@
 ****** Display Definitions
 *******************************************************************************/
 
+
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block;
 }
+
 
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   *zoom: 1;
   display: inline-block;
   *display: inline;
 }
+
 
 /*
  * Prevents modern browsers from displaying 'audio' without controls
@@ -30,6 +45,7 @@ audio:not([controls]) {
   height: 0;
 }
 
+
 /*
  * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
  * Known issue: no IE6 support
@@ -39,9 +55,11 @@ audio:not([controls]) {
   display: none;
 }
 
+
 /*******************************************************************************
 ****** Base
 *******************************************************************************/
+
 
 /*
  * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
@@ -57,13 +75,19 @@ html {
   /* 2 */
 }
 
+
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
 
-html, button, input, select, textarea {
+html,
+button,
+input,
+select,
+textarea {
   font-family: "Roboto", sans-serif;
 }
+
 
 /*
  * Addresses margins handled incorrectly in IE6/7
@@ -73,9 +97,11 @@ body {
   margin: 0;
 }
 
+
 /*******************************************************************************
 ****** Links
 *******************************************************************************/
+
 
 /*
  * Addresses outline displayed oddly in Chrome
@@ -85,17 +111,21 @@ a:focus {
   outline: thin dotted;
 }
 
+
 /*
  * Improves readability when focused and also mouse hovered in all browsers
  */
 
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
 }
+
 
 /*******************************************************************************
 ****** Typography
 *******************************************************************************/
+
 
 /*
  * Addresses font sizes and margins set differently in IE6/7
@@ -131,6 +161,7 @@ h6 {
   font-size: 0.75em;
 }
 
+
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
@@ -139,17 +170,20 @@ abbr[title] {
   border-bottom: 1px dotted;
 }
 
+
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
 blockquote {
   margin: 1em 40px;
 }
+
 
 /*
  * Addresses styling not present in S5, Chrome
@@ -158,6 +192,7 @@ blockquote {
 dfn {
   font-style: italic;
 }
+
 
 /*
  * Addresses styling not present in IE6/7/8/9
@@ -168,23 +203,30 @@ mark {
   color: #000;
 }
 
+
 /*
  * Addresses margins set differently in IE6/7
  */
 
-p, pre {
+p,
+pre {
   margin: 1em 0;
 }
+
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
  */
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, serif;
   _font-family: 'courier new', monospace;
   font-size: 1em;
 }
+
 
 /*
  * Improves readability of pre-formatted text in all browsers
@@ -196,10 +238,12 @@ pre {
   white-space: pre-wrap;
 }
 
+
 /*
  * 1. Addresses CSS quotes not supported in IE6/7
  * 2. Addresses quote property not supported in S4
  */
+
 
 /* 1 */
 
@@ -207,9 +251,11 @@ q {
   quotes: none;
 }
 
+
 /* 2 */
 
-q:before, q:after {
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -218,11 +264,13 @@ small {
   font-size: 75%;
 }
 
+
 /*
  * Prevents sub and sup affecting line-height in all browsers
  */
 
-sub, sup {
+sub,
+sup {
   position: relative;
   vertical-align: baseline;
   font-size: 75%;
@@ -237,15 +285,20 @@ sub {
   bottom: -0.25em;
 }
 
+
 /*******************************************************************************
 ****** Lists
 *******************************************************************************/
+
 
 /*
  * Addresses margins set differently in IE6/7
  */
 
-dl, menu, ol, ul {
+dl,
+menu,
+ol,
+ul {
   margin: 1em 0;
 }
 
@@ -253,26 +306,33 @@ dd {
   margin: 0 0 0 40px;
 }
 
+
 /*
  * Addresses paddings set differently in IE6/7
  */
 
-menu, ol, ul {
+menu,
+ol,
+ul {
   padding: 0 0 0 40px;
 }
+
 
 /*
  * Corrects list images handled incorrectly in IE7
  */
 
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
   list-style-image: none;
 }
 
+
 /*******************************************************************************
 ****** Embedded Content
 *******************************************************************************/
+
 
 /*
  * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
@@ -286,6 +346,7 @@ img {
   /* 2 */
 }
 
+
 /*
  * Corrects overflow displayed oddly in IE9
  */
@@ -294,9 +355,11 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+
 /*******************************************************************************
 ****** Figures
 *******************************************************************************/
+
 
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
@@ -306,9 +369,11 @@ figure {
   margin: 0;
 }
 
+
 /*******************************************************************************
 ****** Forms
 *******************************************************************************/
+
 
 /*
  * Corrects margin displayed oddly in IE6/7
@@ -317,6 +382,7 @@ figure {
 form {
   margin: 0;
 }
+
 
 /*
  * Define consistent border, margin, and padding
@@ -327,6 +393,7 @@ fieldset {
   border: 1px solid #c0c0c0;
   padding: 0.35em 0.625em 0.75em;
 }
+
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
@@ -344,13 +411,17 @@ legend {
   /* 3 */
 }
 
+
 /*
  * 1. Corrects font size not being inherited in all browsers
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   /* 2 */
   vertical-align: baseline;
   /* 3 */
@@ -361,14 +432,17 @@ button, input, select, textarea {
   /* 3 */
 }
 
+
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
 
-button, input {
+button,
+input {
   line-height: normal;
   /* 1 */
 }
+
 
 /*
  * 1. Improves usability and consistency of cursor style between image-type 'input' and others
@@ -377,7 +451,10 @@ button, input {
  *    Known issue: inner spacing remains in IE6
  */
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   /* 1 */
   -webkit-appearance: button;
   cursor: pointer;
@@ -386,13 +463,16 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   /* 3 */
 }
 
+
 /*
  * Re-set default cursor for disabled elements
  */
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
+
 
 /*
  * 1. Addresses box sizing set to content-box in IE8/9
@@ -401,7 +481,8 @@ button[disabled], input[disabled] {
       Known issue: excess padding remains in IE6
  */
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -411,6 +492,7 @@ input[type="checkbox"], input[type="radio"] {
   *height: 13px;
   /* 3 */
 }
+
 
 /*
  * 1. Addresses appearance set to searchfield in S5, Chrome
@@ -426,22 +508,27 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
+
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
 
-input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
 }
+
 
 /*
  * Removes inner padding and border in FF3+
  */
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
 
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
@@ -455,9 +542,11 @@ textarea {
   /* 2 */
 }
 
+
 /*******************************************************************************
 ****** Tables
 *******************************************************************************/
+
 
 /*
  * Remove most spacing between table cells
