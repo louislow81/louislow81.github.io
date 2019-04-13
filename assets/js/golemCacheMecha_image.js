@@ -690,7 +690,7 @@ var GolemCacheMecha = {
       var savedFS = window.requestFileSystem || window.webkitRequestFileSystem;
       window.storageInfo = window.storageInfo || (GolemCacheMecha.options.usePersistentCache ? navigator.webkitPersistentStorage : navigator.webkitTemporaryStorage);
       if (!window.storageInfo) {
-        GolemCacheMecha.overridables.log('Your browser does not support the html5 File API', LOG_LEVEL_WARNING);
+        GolemCacheMecha.overridables.log('Your browser does not support to use this caching mechanism!', LOG_LEVEL_WARNING);
         if (error_callback) {
           error_callback();
         }
@@ -718,7 +718,7 @@ var GolemCacheMecha = {
 
   GolemCacheMecha.getCurrentSize = function () {
     if (Private.hasLocalStorage()) {
-      var curSize = localStorage.getItem('golemcachemecha:' + GolemCacheMecha.options.localCacheFolder);
+      var curSize = localStorage.getItem('golemCacheMecha:' + GolemCacheMecha.options.localCacheFolder);
       if (curSize === null) {
         return 0;
       }
@@ -1053,5 +1053,5 @@ var GolemCacheMecha = {
   }
 
 })(window.jQuery || window.Zepto || function () {
-  throw "ERR: require jQuery for `$img`";
+  throw "ERR: require jQuery to use for `$img` (will fix with Polyfill in the future)";
 });
