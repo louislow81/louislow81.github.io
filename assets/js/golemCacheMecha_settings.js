@@ -68,6 +68,7 @@ var enableGolemImports = function () {
       url: 'assets/js/app.min.js',
       key: 'item-main-js',
       // expire: 6
+      inject: true
     })
     // error handler
     .then(function () {
