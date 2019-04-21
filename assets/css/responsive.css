@@ -3,6 +3,9 @@
 *******************************************************************************/
 
 @media screen and (max-width: 1700px) {
+  .me {
+    display: none;
+  }
   .blog-list iframe,
   embed,
   object {
@@ -19,6 +22,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .me {
+    display: none;
+  }
   .blog-main {
     margin: 0 30px 0 240px;
   }
@@ -43,6 +49,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .me {
+    display: none;
+  }
   .jspVerticalBar {
     opacity: 1;
   }
@@ -243,7 +252,7 @@
   .menu-link {
     display: block;
     float: right;
-    padding: 14px 15px 0 0;
+    padding: 12px 15px;
     width: 25px;
     height: 25px;
     color: #FFF;
@@ -296,7 +305,7 @@
     height: 600px !important;
   }
   .introduction .inner {
-    margin: 38% 0 0 0
+    margin: 16% 0 0 0
   }
   .experience-details .col-3,
   .education-con .col-3 {
@@ -703,5 +712,15 @@
   .quote-padding {
     margin: 0;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .me {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -35px;
+    left: 29px;
   }
 }
