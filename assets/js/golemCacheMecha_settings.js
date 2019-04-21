@@ -24,7 +24,7 @@ var enableGolemCacheMecha = function () {
   // if specified, use one of the Android File plugin's app directories for storage
   GolemCacheMecha.options.androidFilesystemRoot = null;
   // timeout delay in ms for xhr request
-  GolemCacheMecha.options.timeout = 1000;
+  GolemCacheMecha.options.timeout = 0;
   // activate engine
   GolemCacheMecha.init();
 };
