@@ -19,8 +19,9 @@ var GolemCacheMecha = {
       headers: {}, // HTTP headers for the download requests -- e.g: headers: { 'Accept': 'application/jpg' }
       withCredentials: false, // indicates whether or not cross-site Access-Control requests should be made using credentials
       skipURIencoding: false, // enable if URIs are already encoded (skips call to sanitizeURI)
-      androidFilesystemRoot: null, // if specified, use one of the Android File plugin's app directories for storage
-      timeout: 0 // timeout delay in ms for xhr request
+      androidFilesystemRoot: null, // if specified, use one of the Cordova File plugin's app directories for storage
+      timeout: 0, // timeout delay in ms for xhr request
+      brokenImageHandler: true // throw broken images into dummy placeholder instant
     },
     overridables: {
       hash: function (s) {
@@ -647,7 +648,7 @@ var GolemCacheMecha = {
 
     GolemCacheMecha.attributes.init_callback = success_callback;
 
-    GolemCacheMecha.overridables.log('GolemCacheMecha (image) initialising', LOG_LEVEL_INFO);
+    GolemCacheMecha.overridables.log('GolemCacheMecha initialising', LOG_LEVEL_INFO);
 
     var _checkSize = function (callback) {
       if (GolemCacheMecha.options.cacheClearSize > 0) {
@@ -687,7 +688,7 @@ var GolemCacheMecha = {
     };
 
     if (Helpers.isCordova() && window.requestFileSystem) {
-      // ANDROID
+      // PHONEGAP
       if (GolemCacheMecha.options.androidFilesystemRoot) {
         try {
           window.resolveLocalFileSystemURL(

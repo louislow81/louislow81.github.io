@@ -239,7 +239,7 @@ function asynchronous_adapter() {
       var promise = fetch.apply(null, arguments).then(performActions);
 
       promise.thenRequire = thenRequire;
-      console.log('INFO: GolemCacheMecha (script,binary) initializing');
+      console.log('INFO: GolemCacheMecha initializing');
       console.log('INFO: Store assets to folder: /' + storagePrefix);
       return promise;
     },
