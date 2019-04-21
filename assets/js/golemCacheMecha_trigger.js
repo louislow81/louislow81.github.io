@@ -30,7 +30,7 @@ var enableGolemSimulation = function () {
   });
 
   var maxSimulation = 100;
-  var waitTimeOnEachSimulation = 30000;
+  var waitTimeOnEachSimulation = 60000;
   var startSimulationAfter = 1000;
 
   // trigger
