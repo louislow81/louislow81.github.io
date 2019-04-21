@@ -54,7 +54,7 @@ var enableGolemSimulation = function () {
 var enableNetworkRequestMonitor = function () {
 
   // create new element
-  var fragment = create('<style>#get-network-status{text-align:center;width:88%;border-radius:0 0 5px 5px;color:#ffffff;font-size:15px;font-weight:bold;top:0;left:-30px;z-index:200;position:absolute;box-shadow:0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);}.is-online{background:#2f78f9;padding:15px}.is-online:after{visibility:visible;content:"Connected to internet!";}.is-offline{background:#FF5722;padding:15px}.is-offline:after{visibility:visible;content:"No internet connection!";}</style><div id="get-network-status"></div>');
+  var fragment = create('<style>#get-network-status{text-align:center;width:88%;border-radius:0 0 5px 5px;color:#ffffff;font-size:15px;font-weight:bold;top:0;left:-40px;z-index:200;position:absolute;box-shadow:0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);}.is-online{background:#2f78f9;padding:15px}.is-online:after{visibility:visible;content:"Connected to internet!";}.is-offline{background:#FF5722;padding:15px}.is-offline:after{visibility:visible;content:"No internet connection!";}</style><div id="get-network-status"></div>');
 
   // insert element
   document.body.insertBefore(fragment, document.body.childNodes[0]);
