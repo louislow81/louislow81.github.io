@@ -41,9 +41,9 @@ var enableGolemSimulation = function () {
       document.getElementById("d0ca0fd2bfa3100c95365c4ad784627b").click();
       counter++; // increases counter after every click
       // stops after x clicks
-      if (counter == maxSimulation) clearInterval(interval);
-    }, waitTimeOnEachSimulation);
-  }, startSimulationAfter);
+      if (counter == 100) clearInterval(interval);
+    }, 10000);
+  }, 1000);
 
 };
 
