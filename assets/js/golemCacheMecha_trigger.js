@@ -54,7 +54,9 @@ var enableGolemSimulation = function () {
 var enableNetworkRequestMonitor = function () {
 
   // create new element
-  var fragment = create('<style>#get-network-status{text-align:center;width:88%;border-radius:0 0 5px 5px;color:#ffffff;font-size:15px;font-weight:bold;top:0;left:-40px;z-index:200;position:absolute;box-shadow:0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);}.is-online{background:#2f78f9;padding:15px}.is-online:after{visibility:visible;content:"Connected to internet!";}.is-offline{background:#FF5722;padding:15px}.is-offline:after{visibility:visible;content:"No internet connection!";}</style><div id="get-network-status"></div>');
+  var fragment = create('<div id="ba194bb5a0b6e42d520d17a3b75f5962"></div>');
+
+  // <style>#get-network-status{text-align:center;width:88%;border-radius:0 0 5px 5px;color:#ffffff;font-size:15px;font-weight:bold;top:0;left:-40px;z-index:200;position:absolute;box-shadow:0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05);}.is-online{background:#2f78f9;padding:15px}.is-online:after{visibility:visible;content:"Connected to internet!";}.is-offline{background:#FF5722;padding:15px}.is-offline:after{visibility:visible;content:"No internet connection!";}</style>
 
   // insert element
   document.body.insertBefore(fragment, document.body.childNodes[0]);
@@ -64,9 +66,9 @@ var enableNetworkRequestMonitor = function () {
     window.addEventListener('load', function () {
       function checkStatus() {
         // change color to either green or red
-        window.document.getElementById('get-network-status').className = navigator.onLine ? 'is-online' : 'is-offline';
+        window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className = navigator.onLine ? 'is-online' : 'is-offline';
         // display connection status
-        console.log('INFO: internet is ' + window.document.getElementById('get-network-status').className);
+        console.log('INFO: internet is ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className);
       }
       // detect browser is online
       window.addEventListener('online', checkStatus);
