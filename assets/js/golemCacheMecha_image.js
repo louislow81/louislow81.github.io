@@ -1,6 +1,7 @@
 /**
  * @file: golem_cache_mecha.js
- * @description: all purpose persistent local caching mechanism
+ * @description: (module) persistent caching for images (jp*,gif,png,webp,tiff)
+ * @version: 1.0.0
  * @license: MIT
  * @author: Loouis Low <loouis@gmail.com>
  * @copyright: Loouis Low (https://github.com/loouislow81/golem-sdk)
@@ -56,7 +57,7 @@ var GolemCacheMecha = {
 
   'use strict';
 
-  /*
+  /**
    * ////////////////////////////////
    * ////////// HELPERS
    * ////////////////////////////////
@@ -234,7 +235,7 @@ var GolemCacheMecha = {
     return (isPersistent ? window.PERSISTENT : window.TEMPORARY);
   };
 
-  /*
+  /**
    * ////////////////////////////////
    * ////////// DOM HELPERS
    * ////////////////////////////////
@@ -323,7 +324,7 @@ var GolemCacheMecha = {
     }
   };
 
-  /*
+  /**
    * ////////////////////////////////
    * ////////// PRIVATE
    * ////////////////////////////////
@@ -646,6 +647,8 @@ var GolemCacheMecha = {
     GolemCacheMecha.jQueryLite = (typeof window.angular !== 'undefined' && window.angular.element) ? true : false; /* is AngularJS jQueryLite available */
 
     GolemCacheMecha.attributes.init_callback = success_callback;
+
+    GolemCacheMecha.overridables.log('You like to look under the hood? Why not help us build the engine? https://github.com/loouislow81/golem-sdk', LOG_LEVEL_INFO);
 
     GolemCacheMecha.overridables.log('GolemCacheMecha (image) initialising', LOG_LEVEL_INFO);
 

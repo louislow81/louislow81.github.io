@@ -1,8 +1,17 @@
-/*
+/**
+ * @file: golemCacheMecha_trigger.js
+ * @description: listener and event trigger for Golem CachMecha
+ * @version: 1.0.0
+ * @license: MIT
+ * @author: Loouis Low <loouis@gmail.com>
+ * @copyright: Loouis Low (https://github.com/loouislow81/golem-sdk)
+ */
+
+/**
  * event trigger and simulator
  */
 
-// inject DOM decorator
+// DOM decorator
 function create(htmlStr) {
   var frag = document.createDocumentFragment(),
     temp = document.createElement('div');
@@ -48,7 +57,7 @@ var enableGolemSimulation = function () {
 
 };
 
-/*
+/**
  * check requests to remote server
  */
 
@@ -84,7 +93,7 @@ var enableNetworkRequestMonitor = function () {
 
 };
 
-/*
+/**
  * init
  */
 

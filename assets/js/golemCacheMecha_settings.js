@@ -1,5 +1,14 @@
-/*
- * Golem CacheMecha Settings
+/**
+ * @file: golemCacheMecha_settings.js
+ * @description: your configuration for Golem CacheMecha engine
+ * @version: 1.0.0
+ * @license: MIT
+ * @author: Loouis Low <loouis@gmail.com>
+ * @copyright: Loouis Low (https://github.com/loouislow81/golem-sdk)
+ */
+
+/**
+ * Settings
  */
 
 var enableGolemCacheMecha = function () {
@@ -18,26 +27,26 @@ var enableGolemCacheMecha = function () {
   // HTTP headers for the download requests -- e.g: headers: { 'Accept': 'application/jpg' }
   GolemCacheMecha.options.headers = {};
   // indicates whether or not cross-site Access-Control requests should be made using credentials
-  GolemCacheMecha.options.withCredentials =  false;
+  GolemCacheMecha.options.withCredentials = false;
   // enable if URIs are already encoded (skips call to sanitizeURI)
   GolemCacheMecha.options.skipURIencoding = false;
   // if specified, use one of the Android File plugin's app directories for storage
   GolemCacheMecha.options.androidFilesystemRoot = null;
   // timeout delay in ms for xhr request
   GolemCacheMecha.options.timeout = 0;
-  // activate engine
+  // activate the engine (default)
   GolemCacheMecha.init();
 };
 
-/*
- * asynchronous stashing manager,
+/**
+ * Assets Stashing Manager
  *
  * items that are stored into persistent storage
- * for supported text-based assets (js, css, xml, yaml, json)
+ * for supported text-based assets (html, js, css, xml, yaml, json)
  * and binary-based assets (ttf, eot)
  *
  * `inject: true` is asset injected into HTML document with <script> tag and
- * start execute it immediately.
+ * start execute it immediately asynchronously.
  *
  * `inject: false` is asset not injected into HTML document but store-only,
  * until being called by <link> tag and then grab from persistent storage.
@@ -46,28 +55,28 @@ var enableGolemCacheMecha = function () {
 var enableGolemImports = function () {
 
   golemCacheMecha.add({
-      // jquery
+      // google-fonts
       url: 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600',
       key: 'item-google-fonts',
-      // expire: 6,
-      inject: false
+      expire: 12,
+      inject: false // store-only
     }, {
       // font-awesome
       url: 'https://use.fontawesome.com/releases/v5.1.1/css/all.css',
       key: 'item-fontawesome',
-      // expire: 6,
-      inject: false
+      expire: 12,
+      inject: false // store-only
     }, {
       // app css
       url: 'assets/css/ui.min.css',
       key: 'item-main-css',
-      // expire: 6,
-      inject: false
+      expire: 12,
+      inject: false // store-only
     }, {
       // app js
       url: 'assets/js/app.min.js',
       key: 'item-main-js',
-      // expire: 6
+      expire: 12,
       inject: true
     })
     // error handler
@@ -79,7 +88,7 @@ var enableGolemImports = function () {
 
 };
 
-/*
+/**
  * init
  */
 

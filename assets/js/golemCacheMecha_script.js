@@ -1,6 +1,7 @@
 /**
  * @file: golemCacheMecha_script.js
- * @description: (module) persistent caching for scripts (js,css,xml,yaml,json)
+ * @description: (module) persistent caching for scripts (js,css,xml,yaml,json) and binary (ttf, eot)
+ * @version: 1.0.0
  * @license: MIT
  * @author: Loouis Low <loouis@gmail.com>
  * @copyright: Loouis Low (https://github.com/loouislow81/golem-sdk)
@@ -15,12 +16,12 @@ function asynchronous_adapter() {
 
   'use strict';
 
-  // init 3rd-party library (RSVP)
+  // load 3rd-party library (RSVP)
   asynchronous_adapter();
 
   var head = document.head || document.getElementsByTagName('head')[0];
   var storagePrefix = 'golemCacheMecha-';
-  var defaultExpiration = 5000;
+  var defaultExpiration = 5000; // default: in 5 hours
   var addStash = [];
 
   var createNewStash = function (key, storeObj) {
@@ -35,7 +36,6 @@ function asynchronous_adapter() {
 
         for (item in localStorage) {
           if (item.indexOf(storagePrefix) === 0) {
-
             tempScripts.push(JSON.parse(localStorage[item]));
           }
         }
@@ -46,7 +46,6 @@ function asynchronous_adapter() {
           });
 
           golemCacheMecha.remove(tempScripts[0].key);
-
           return createNewStash(key, storeObj);
 
         }
@@ -239,6 +238,7 @@ function asynchronous_adapter() {
       var promise = fetch.apply(null, arguments).then(performActions);
 
       promise.thenRequire = thenRequire;
+      console.log('INFO: You like to look under the hood? Why not help us build the engine? https://github.com/loouislow81/golem-sdk')
       console.log('INFO: GolemCacheMecha (script,binary) initializing');
       console.log('INFO: Store assets to folder: /' + storagePrefix);
       return promise;
@@ -269,7 +269,6 @@ function asynchronous_adapter() {
           this.remove(key);
         }
       }
-
       return this;
     },
 
