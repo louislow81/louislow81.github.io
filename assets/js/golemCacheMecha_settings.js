@@ -58,26 +58,26 @@ var enableGolemImports = function () {
       // google-fonts
       url: 'https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600',
       key: 'item-google-fonts',
-      expire: 12,
+      // expire: 12,
       inject: false // store-only
     }, {
       // font-awesome
       url: 'https://use.fontawesome.com/releases/v5.1.1/css/all.css',
       key: 'item-fontawesome',
-      expire: 12,
+      // expire: 12,
       inject: false // store-only
     }, {
       // app css
       url: 'assets/css/ui.min.css',
       key: 'item-main-css',
-      expire: 12,
+      // expire: 12,
       inject: false // store-only
     }, {
       // app js
       url: 'assets/js/app.min.js',
       key: 'item-main-js',
-      expire: 12,
-      inject: true
+      // expire: 12,
+      // inject: true
     })
     // error handler
     .then(function () {
