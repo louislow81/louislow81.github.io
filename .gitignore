@@ -7,9 +7,6 @@ dat.json
 changelog.md
 
 node_modules/*
-helpers/grunt-tasks/node_modules/*
-helpers/serve/node_modules/*
-mods/iconfontier/node_modules/*
 
 package-lock.json
 
@@ -17,6 +14,3 @@ package-lock.json
 
 *.DS_STORE
 *.swp
-
-dist/*
-backup/*
