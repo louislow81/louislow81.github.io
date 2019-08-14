@@ -1,6 +1,6 @@
 # My Personal Website
 
-<p align="center">
+<p align="left">
   <img src="Screenshot_1.png" height="200">
   <img src="Screenshot_2.png" height="200">
   <img src="Screenshot_3.png" height="200">
