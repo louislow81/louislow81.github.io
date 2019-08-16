@@ -6,11 +6,10 @@ dat.json
 
 changelog.md
 
-node_modules/*
+/node_modules
 
 package-lock.json
 
-.idea
+/.idea
 
-*.DS_STORE
 *.swp
