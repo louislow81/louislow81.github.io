@@ -848,6 +848,7 @@ a.totop-link {
 ****************************************/
 
 .about {
+  background: url("../images/about.png") no-repeat 100% 0 scroll;
   background-size: contain;
 }
 
