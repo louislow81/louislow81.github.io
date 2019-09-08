@@ -4,8 +4,8 @@
   "description": "My Personal Website",
   "main": "index.js",
   "scripts": {
-    "dev-up": "sudo npm i -g minify && sudo apt install -y parallel webp && npm i",
-    "build": "npm run min-index && npm run min-all && npm run merge-all",
+    "dev-up": "sudo npm i -g minify purgecss && sudo apt install -y parallel webp && npm i",
+    "build": "npm run min-index && npm run min-all && npm run merge-all && npm run purgecss",
     "clean": "rm -rfv ./node_modules && rm -rfv ./package-lock.json && find . -type f -name '*.webp' -exec rm -fv {} \\;",
     "min-all": "npm run min-index && npm run min-js && npm run min-css",
     "merge-all": "npm run merge-js && npm run merge-css",
@@ -14,7 +14,8 @@
     "min-css": "minify ./assets/css/normalize.css > ./assets/css/normalize.min.css && minify ./assets/css/portfolio.css > ./assets/css/portfolio.min.css && minify ./assets/css/carousel.css > ./assets/css/carousel.min.css && minify ./assets/css/scroll.css > ./assets/css/scroll.min.css && minify ./assets/css/style.css > ./assets/css/style.min.css && minify ./assets/css/responsive.css > ./assets/css/responsive.min.css",
     "merge-js": "cat ./assets/js/drift.min.js ./assets/js/application.min.js ./assets/js/jquery.min.js ./assets/js/head.min.js ./assets/js/imagesloaded.min.js ./assets/js/masonry.min.js ./assets/js/class_helper.min.js ./assets/js/carousel.min.js ./assets/js/jquery.easypiechart.min.js ./assets/js/text.rotator.min.js ./assets/js/global.fx.min.js ./assets/js/settings.min.js > ./assets/js/app.min.js",
     "merge-css": "cat ./assets/css/normalize.min.css ./assets/css/portfolio.min.css ./assets/css/carousel.min.css ./assets/css/scroll.min.css ./assets/css/style.min.css ./assets/css/responsive.min.css > ./assets/css/ui.min.css",
-    "min-image": "find ./assets/images/ -name '*.png' | parallel -eta cwebp -q 99 {} -o {.}.webp && find ./assets/images/ -name '*.jpg' | parallel -eta cwebp -q 99 {} -o {.}.webp"
+    "min-image": "find ./assets/images/ -name '*.png' | parallel -eta cwebp -q 99 {} -o {.}.webp && find ./assets/images/ -name '*.jpg' | parallel -eta cwebp -q 99 {} -o {.}.webp",
+    "purgecss": "purgecss --css ./assets/css/ui.min.css --content index.html -o ./assets/css/purged && purgecss --css ./assets/fonts/font-awesome/css/all.css --content index.html -o ./assets/fonts/font-awesome/css/purged"
   },
   "repository": {
     "type": "git",
