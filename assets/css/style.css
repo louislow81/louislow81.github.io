@@ -340,8 +340,8 @@ h5 {
 }
 
 .playstore-panel-first {
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -1826,7 +1826,7 @@ object {
 }
 
 .badge-dock-up {
-  padding: 375px 0 70px 0;
+  padding: 0 0 20px 0;
 }
 
 .badge-dock-up-alt {
