@@ -36,9 +36,6 @@ readers do not read off random characters that represent icons */
 .fa-bars:before {
   content: "\f0c9"; }
 
-.fa-bitbucket:before {
-  content: "\f171"; }
-
 .fa-circle:before {
   content: "\f111"; }
 
