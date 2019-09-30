@@ -11,7 +11,7 @@
  * Settings
  */
 
-var enableGolemCacheMecha = function () {
+const enableGolemCacheMecha = function () {
   // debug log in console
   GolemCacheMecha.options.debug = true;
   // name of the cache folder
@@ -52,7 +52,7 @@ var enableGolemCacheMecha = function () {
  * until being called by <link> tag and then grab from persistent storage.
  */
 
-var enableGolemImports = function () {
+const enableGolemImports = function () {
 
   golemCacheMecha.add({
       // google-fonts
@@ -89,8 +89,23 @@ var enableGolemImports = function () {
 };
 
 /**
+ *
+ */
+
+const enableGolemPrefetcher = function () {
+  // preload page for valid links
+  window.addEventListener('load', (data) => {
+    quicklink();
+    console.log(data)
+  });
+}
+
+/**
  * init
  */
 
 enableGolemCacheMecha();
 enableGolemImports();
+enableGolemPrefetcher();
+
+
