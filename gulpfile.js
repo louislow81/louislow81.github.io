@@ -100,7 +100,9 @@ gulp.task('scripts', function() {
 
 // ...for proprietary library
 gulp.task('proprietary', function() {
-  return gulp.src(utilJsPath + '/krunch+compiler.min.js')
+  return gulp.src([
+      utilJsPath + '/krunch+compiler.min.js'
+    ])
     .pipe(gulp.dest(scriptsJsPath))
 })
 
