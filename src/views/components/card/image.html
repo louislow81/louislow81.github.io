@@ -1,0 +1,101 @@
+<card-image>
+
+  <y class="flex flex-wrap justify-space items-center">
+
+    <y each="{ pet in projects}">
+
+      <y class="max-w-lg m-4 rounded-lg shadow-lg overflow-hidden">
+
+        <y class="relative">
+
+          <img class="rounded-lg"
+               src="{ pet.image }"
+               alt="{ pet.title}">
+
+          <y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-100">
+
+            <y class="p-10">
+              <y class="flex flex-col justify-around items-start">
+
+                <y class="text-xl font-semibold depth-loose pb-2">
+                  { pet.title }
+                </y>
+
+                <y class="text-md depth-snug pb-3">
+                  { pet.desc }
+                </y>
+
+                <y class="text-xs hover:text-orange-600 depth-loose">
+                  { pet.tech}
+                </y>
+
+              </y>
+            </y>
+
+          </y>
+
+        </y>
+
+      </y>
+
+    </y>
+
+  </y>
+
+
+  <script>
+    export default {
+      projects: [
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/1axy0moq43inm.jpg',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/33984506_10213716012629459_3388552042027941888_o.jpg',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/13394199_10207780811573142_7583526877850607867_n.jpg',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/elixir_promo.jpg',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/13434857_10207780303800448_4283975277848207045_n.jpg',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/kraft_promo.png',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/13394199_10207780811573142_7583526877850634267_n.png',
+          tech: 'Gulp, NodeJS'
+        },
+        {
+          title: 'krugurt',
+          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
+          image: 'assets/image/621265_3960791293095_256692586_o.jpg',
+          tech: 'Gulp, NodeJS'
+        },
+      ]
+    }
+  </script>
+
+</card-image>
