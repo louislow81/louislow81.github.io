@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+
+    <title>
+      Loouis Low
+    </title>
+
+
+    <!-- krunch: compiler -->
+    <script src="assets/js/krunch+compiler.min.js"></script>
+
+
+    <!-- fonts -->
+    <!--<script src="https://kit.fontawesome.com/04e017c909.js"-->
+    <!--        crossorigin="anonymous"></script>-->
+    <!-- // fonts -->
+
+
+    <!-- !! default -->
+    <script>
+      document.getElementsByTagName("html")[0].className += " js";
+    </script>
+
+    <!-- if javascript not enabled then, use the fallback to load css -->
+    <script>
+      if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
+        document.write('<link rel="stylesheet" rel="preload" as="style" media="all" href="assets/css/style.css">');
+      } else {
+        document.write('<link rel="stylesheet" rel="preload" as="style" media="all" href="assets/css/style-fallback.css">');
+      }
+    </script>
+
+    <noscript>
+      <link rel="stylesheet"
+            href="assets/css/style-fallback.css">
+    </noscript>
+    <!--// !! default -->
+
+  </head>
+
+  <body class="h-screen">
+
+    <!-- layout -->
+    <y class="flex">
+
+      <!-- nav (fixed) -->
+      <y class="fixed">
+
+        <menu-bar></menu-bar>
+
+      </y>
+
+      <!-- main content -->
+      <y class="ml-40 h-screen w-screen">
+
+        <hero-one></hero-one>
+        <!--<hero-two></hero-two>-->
+
+      </y>
+
+    </y>
+    <!--// layout -->
+
+
+    <!-- !! default -->
+    <script src="assets/js/scripts.min.js"></script>
+
+
+    <!-- krunch: components to compile -->
+    <script data-src="components/menu-bar.html"
+            type="krunch"></script>
+    <script data-src="components/hero-one.html"
+            type="krunch"></script>
+    <script data-src="components/hero-two.html"
+            type="krunch"></script>
+    <script data-src="components/my-avatar.html"
+            type="krunch"></script>
+    <script data-src="components/small-footer.html"
+            type="krunch"></script>
+
+
+    <!-- krunch: mount components -->
+    <script>
+      (async function main() {
+        await krunch.compile() // init compiler
+
+        krunch.mount('my-avatar, menu-bar, hero-one, hero-two, small-footer')
+
+      }())
+    </script>
+    <!-- // !! default -->
+
+  </body>
+
+</html>

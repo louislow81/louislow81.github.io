@@ -1,34 +1,36 @@
 {
   "name": "loouislow81.github.io",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "My Personal Website",
   "main": "index.js",
   "scripts": {
-    "dev-up": "sudo npm i -g minify purgecss && sudo apt install -y parallel webp && npm i",
-    "build": "npm run min-index && npm run min-all && npm run merge-all && npm run purgecss",
-    "clean": "rm -rfv ./node_modules && rm -rfv ./package-lock.json && find . -type f -name '*.webp' -exec rm -fv {} \\;",
-    "min-all": "npm run min-index && npm run min-js && npm run min-css",
-    "merge-all": "npm run merge-js && npm run merge-css",
-    "min-index": "minify index_uglify.html > index.html",
-    "min-js": "minify ./assets/js/golemCacheMecha_script.js > ./assets/js/golemCacheMecha_script.min.js && minify ./assets/js/golemCacheMecha_image.js > ./assets/js/golemCacheMecha_image.min.js && minify ./assets/js/golemCacheMecha_trigger.js > ./assets/js/golemCacheMecha_trigger.min.js && minify ./assets/js/golemCacheMecha_settings.js > ./assets/js/golemCacheMecha_settings.min.js && minify ./assets/js/drift.js > ./assets/js/drift.min.js && minify ./assets/js/application.js > ./assets/js/application.min.js && minify ./assets/js/jquery.js > ./assets/js/jquery.min.js && minify ./assets/js/head.js > ./assets/js/head.min.js && minify ./assets/js/imagesloaded.js > ./assets/js/imagesloaded.min.js && minify ./assets/js/masonry.js > ./assets/js/masonry.min.js && minify ./assets/js/class_helper.js > ./assets/js/class_helper.min.js && minify ./assets/js/carousel.js > ./assets/js/carousel.min.js && minify ./assets/js/jquery.easypiechart.js > ./assets/js/jquery.easypiechart.min.js && minify ./assets/js/text.rotator.js > ./assets/js/text.rotator.min.js && minify ./assets/js/global.fx.js > ./assets/js/global.fx.min.js && minify ./assets/js/settings.js > ./assets/js/settings.min.js",
-    "min-css": "minify ./assets/css/normalize.css > ./assets/css/normalize.min.css && minify ./assets/css/portfolio.css > ./assets/css/portfolio.min.css && minify ./assets/css/carousel.css > ./assets/css/carousel.min.css && minify ./assets/css/scroll.css > ./assets/css/scroll.min.css && minify ./assets/css/style.css > ./assets/css/style.min.css && minify ./assets/css/responsive.css > ./assets/css/responsive.min.css",
-    "merge-js": "cat ./assets/js/drift.min.js ./assets/js/application.min.js ./assets/js/jquery.min.js ./assets/js/head.min.js ./assets/js/imagesloaded.min.js ./assets/js/masonry.min.js ./assets/js/class_helper.min.js ./assets/js/carousel.min.js ./assets/js/jquery.easypiechart.min.js ./assets/js/text.rotator.min.js ./assets/js/global.fx.min.js ./assets/js/settings.min.js > ./assets/js/app.min.js",
-    "merge-css": "cat ./assets/css/normalize.min.css ./assets/css/portfolio.min.css ./assets/css/carousel.min.css ./assets/css/scroll.min.css ./assets/css/style.min.css ./assets/css/responsive.min.css > ./assets/css/ui.min.css",
-    "min-image": "find ./assets/images/ -name '*.png' | parallel -eta cwebp -q 99 {} -o {.}.webp && find ./assets/images/ -name '*.jpg' | parallel -eta cwebp -q 99 {} -o {.}.webp",
-    "purgecss": "purgecss --css ./assets/css/ui.min.css --content index.html -o ./assets/css/purged && purgecss --css ./assets/fonts/font-awesome/css/all.css --content index.html -o ./assets/fonts/font-awesome/css/purged"
+    "gulp": "gulp",
+    "watch": "gulp watch",
+    "build-all": "npm run build-sass && npm run build-css && npm run build-scripts && npm run min-image && npm run build-html",
+    "build-sass": "npm run gulp sass",
+    "build-css": "npm run gulp css",
+    "build-scripts": "npm run gulp scripts",
+    "build-html": "npm run gulp html",
+    "min-image": "npm run gulp image"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/loouislow81/loouislow81.github.io.git"
-  },
-  "author": "Loouis Low <loouislow@gmail.com>",
+  "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/loouislow81/loouislow81.github.io/issues"
+  "devDependencies": {
+    "autoprefixer": "^9.4.3",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.1.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "postcss-calc": "^7.0.1",
+    "postcss-css-variables": "git+https://github.com/CodyHouse/postcss-css-variables"
   },
-  "homepage": "https://github.com/loouislow81/loouislow81.github.io#readme",
-  "dependencies": {
-    "minify": "^4.1.1",
-    "purgecss": "^1.4.0"
-  }
+  "dependencies": {}
 }
