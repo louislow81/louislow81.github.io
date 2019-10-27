@@ -1,0 +1,78 @@
+<menu-bar>
+
+  <y class="w-40 h-screen bg-charcoal-800">
+    <y class="text-center">
+
+      <!-- avatar -->
+      <y class="py-4">
+
+        <my-avatar></my-avatar>
+
+      </y>
+
+      <!-- menus -->
+      <y each="{ data in menus }">
+
+        <a href="{ data.url }"
+           title="{ data.title }"
+           aria-lable="{ data.title }">
+
+          <y class="px-6 py-2 text-md uppercase text-left text-gray-700 hover:text-blue-600 hover:bg-charcoal-700 w-full menu-item">
+            { data.title }
+          </y>
+
+        </a>
+
+      </y>
+
+      <!--footer-->
+      <small-footer></small-footer>
+
+    </y>
+  </y>
+
+
+  <style>
+    .menu-item {
+      font-family: Oswald, sans-serif;
+    }
+  </style>
+
+
+  <script>
+    export default {
+      menus: [
+        {
+          title: 'Home',
+          url: '#0'
+        },
+        {
+          title: 'About',
+          url: '#0'
+        },
+        {
+          title: 'Skills',
+          url: '#0'
+        },
+        {
+          title: 'Experience',
+          url: '#0'
+        },
+        {
+          title: 'Education',
+          url: '#0'
+        },
+        {
+          title: 'Pet Project',
+          url: '#0'
+        },
+        {
+          title: 'Contact',
+          url: '#0'
+        }
+      ]
+    }
+  </script>
+
+</menu-bar>
+
