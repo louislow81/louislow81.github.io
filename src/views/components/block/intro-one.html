@@ -3,8 +3,8 @@
   <y class="z-0 relative h-screen bg-charcoal-700"
      id="intro">
 
-    <img class="w-full opacity-50"
-         src="http://via.placeholder.com/1920x1080"
+    <img class="w-full opacity-75"
+         src="assets/image/slide00.jpg"
          alt="">
 
     <y class="absolute top-0 left-0 w-full">
@@ -39,6 +39,7 @@
 
           <y class="text-sm text-charcoal-800">
             <span class="px-5 py-2 text-charcoal-800 bg-white rounded">
+              <i class=""></i>
               Work Remotely
             </span>
           </y>
@@ -60,7 +61,8 @@
       font-family: 'Titillium Web', sans-serif;
     }
 
-    .hero-1:before {
+    /*mesh masking effect*/
+    #intro:before {
       content: '';
       position: absolute;
       top: 0;
@@ -71,7 +73,7 @@
       z-index: -2;
     }
 
-    .hero-1:after {
+    #intro:after {
       content: '';
       position: absolute;
       top: 0;
