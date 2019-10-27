@@ -1,4 +1,4 @@
-<menu-bar><y class="w-40 h-screen bg-charcoal-800"><y class="text-center"><y class="py-4"><my-avatar></my-avatar></y><y each="{ data in menus }"><a href="{ data.url }" title="{ data.title }" aria-lable="{ data.title }"><y class="px-6 py-2 text-md uppercase text-left text-gray-700 hover:text-blue-600 hover:bg-charcoal-700 w-full menu-item">{ data.title }</y></a></y><small-footer></small-footer></y></y><style>.menu-item {
+<menu-bar><y class="w-40 h-screen bg-charcoal-800"><y class="static"><y class="py-4"><my-avatar></my-avatar></y><y each="{ data in menus }"><a href="{ data.url }" title="{ data.title }" aria-lable="{ data.title }"><y class="px-6 py-2 text-md uppercase text-left text-gray-700 hover:text-blue-600 hover:bg-charcoal-700 w-full menu-item">{ data.title }</y></a></y><y class="absolute left-0 bottom-0"><small-footer></small-footer></y></y></y><style>.menu-item {
       font-family: Oswald, sans-serif;
     }</style><script>export default {
       menus: [
