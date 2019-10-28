@@ -1,4 +1,4 @@
-<card-image><y class="flex flex-wrap justify-space items-center"><y each="{ pet in projects}"><y class="max-w-lg m-4 rounded-lg shadow-lg overflow-hidden cursor-pointer"><y class="relative"><img class="rounded-lg" src="{ pet.image }" alt="{ pet.title}"><y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-100"><y class="p-10"><y class="flex flex-col justify-around items-start"><y class="text-xl font-semibold depth-loose pb-2">{ pet.title }</y><y class="text-md depth-snug pb-3">{ pet.desc }</y><y class="{ pet.urlVisibility } text-md depth-loose pb-2"><a class="hover:text-orange-700" href="{ pet.url }" title="{ pet.urlText }" aria-label="{ pet.urlText }" target="_blank" rel="noopener">Visit <strong>{ pet.urlText }</strong></a></y><y class="text-xs hover:text-orange-600 depth-loose">{ pet.tech}</y></y></y></y></y></y></y></y><script>export default {
+<card-image><y class="flex flex-wrap justify-space items-center"><y each="{ pet in projects}"><y class="max-w-lg m-4 rounded-lg shadow-lg overflow-hidden cursor-pointer"><y class="relative"><img class="rounded-lg" src="{ pet.image }" alt="{ pet.title}"><y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-100"><y class="absolute right-0 bottom-0"><y class="p-4"><i class="text-3xl hover:text-white shadow-lg { pet.icon }"></i></y></y><y class="p-10"><y class="flex flex-col justify-around items-start"><y class="text-xl font-semibold depth-loose pb-2">{ pet.title }</y><y class="text-md depth-snug pb-3">{ pet.desc }</y><y class="{ pet.urlVisibility } text-md depth-loose pb-2"><a class="hover:text-orange-700" href="{ pet.url }" title="{ pet.urlText }" aria-label="{ pet.urlText }" target="_blank" rel="noopener">Visit <strong>{ pet.urlText }</strong></a></y><y class="text-xs hover:text-orange-600 depth-loose">{ pet.tech}</y></y></y></y></y></y></y></y><script>export default {
       projects: [
         {
           title: 'noozy (desktop)',
@@ -24,6 +24,7 @@
           urlText: 'Google Play',
           url: 'https://play.google.com/store/apps/details?id=com.dogsbark.noozy',
           urlVisibility: 'block',
+          icon: 'fab fa-google-play',
           image: 'assets/image/promo/promo_noozy_classic_android.jpg',
           tech: 'C++, Android'
         },
@@ -57,9 +58,10 @@
         {
           title: 'EIZO-rewire™ PRO Series',
           desc: 'A professional audio modeling processor allows you to reproduce surround sound and high quality content on movies, music or games.',
-          urlText: '',
-          url: '',
-          urlVisibility: 'hidden',
+          urlText: 'Google Play',
+          url: 'https://play.google.com/store/apps/details?id=com.noozxoidelabs.eizo.rewirepro',
+          urlVisibility: 'block',
+          icon: 'fab fa-google-play',
           image: 'assets/image/promo/promo_noozxoidelabs_eizorewire_pro_android.png',
           tech: 'Gulp, NodeJS'
         },
