@@ -1,0 +1,63 @@
+<social-icon-link>
+
+  <span class="pr-6"
+        each="{ profile in social }">
+
+    <a href="{ profile.url }"
+       title="{ profile.title }"
+       arial-label="{ profile.title }"
+       target="_blank"
+       rel="noopener">
+
+      <i class="{ profile.icon } text-3xl hover:{ profile.color }"
+         title="{ profile.title }"></i>
+
+    </a>
+
+  </span>
+
+
+  <script>
+    export default {
+      social: [
+        {
+          title: 'Docker',
+          icon: 'fab fa-docker',
+          color: 'text-blue-400',
+          url: 'https://hub.docker.com/r/loouislow81'
+        },
+        {
+          title: 'Github',
+          icon: 'fab fa-github',
+          color: 'text-gray-400',
+          url: 'https://github.com/loouislow81'
+        },
+        {
+          title: 'NPM',
+          icon: 'fab fa-npm',
+          color: 'text-red-700',
+          url: 'https://www.npmjs.com/~loouislow'
+        },
+        {
+          title: 'SoundCloud',
+          icon: 'fab fa-soundcloud',
+          color: 'text-orange-600',
+          url: 'https://soundcloud.com/overload-project'
+        },
+        {
+          title: 'Facebook',
+          icon: 'fab fa-facebook',
+          color: 'text-blue-800',
+          url: 'https://www.facebook.com/loouislow'
+        },
+        {
+          title: 'LinkedIn',
+          icon: 'fab fa-linkedin',
+          color: 'text-blue-500',
+          url: 'https://www.linkedin.com/in/loouis-low/'
+        },
+      ]
+    }
+  </script>
+
+</social-icon-link>

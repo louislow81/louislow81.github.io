@@ -116,6 +116,8 @@
             type="krunch"></script>
     <script data-src="components/social/twitter.html"
             type="krunch"></script>
+    <script data-src="components/social/icon-link.html"
+            type="krunch"></script>
     <script data-src="components/button/large.html"
             type="krunch"></script>
     <script data-src="components/button/ultra.html"
@@ -131,7 +133,7 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        krunch.mount('image-avatar, menu-bar, intro-one, about-me, pet-project, small-footer, text-heading, text-paragraph, social-twitter, button-large, button-ultra, card-image-text, card-image')
+        krunch.mount('image-avatar, menu-bar, intro-one, about-me, pet-project, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-image-text, card-image')
 
       }())
     </script>
