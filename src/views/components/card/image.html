@@ -4,7 +4,7 @@
 
     <y each="{ pet in projects}">
 
-      <y class="max-w-lg m-4 rounded-lg shadow-lg overflow-hidden">
+      <y class="max-w-lg m-4 rounded-lg shadow-lg overflow-hidden cursor-pointer">
 
         <y class="relative">
 
@@ -23,6 +23,20 @@
 
                 <y class="text-md depth-snug pb-3">
                   { pet.desc }
+                </y>
+
+                <y class="{ pet.urlVisibility } text-md depth-loose pb-2">
+                  <a class="hover:text-orange-700"
+                     href="{ pet.url }"
+                     title="{ pet.urlText }"
+                     aria-label="{ pet.urlText }"
+                     target="_blank"
+                     rel="noopener">
+                    Visit
+                    <strong>
+                      { pet.urlText }
+                    </strong>
+                  </a>
                 </y>
 
                 <y class="text-xs hover:text-orange-600 depth-loose">
@@ -47,52 +61,94 @@
     export default {
       projects: [
         {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/1axy0moq43inm.jpg',
+          title: 'noozy (desktop)',
+          desc: 'A music library/player/transport for Linux and Windows platforms. Built-in flagship EIZO-rewire™ AE Series (aka `Acoustic Engine`) digital sound processor. Delivers 32Bit-Float premium sound. Courtesy of Noozxoide Laboratories.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_noozy_desktop.jpg',
+          tech: 'C++, QT'
+        },
+        {
+          title: 'ARCH GRID Series',
+          desc: 'A high speed network relay transducer that accelerates data transmissions, support clustering to expand bandwidth capacity.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_evaclabs_arch_grid.jpg',
+          tech: 'C, C++, Embedded'
+        },
+        {
+          title: 'noozy classic',
+          desc: 'A high-end audiophile grade 24Bit audio processing music transport for Android.',
+          urlText: 'Google Play',
+          url: 'https://play.google.com/store/apps/details?id=com.dogsbark.noozy',
+          urlVisibility: 'block',
+          image: 'assets/image/promo/promo_noozy_classic_android.jpg',
+          tech: 'C++, Android'
+        },
+        {
+          title: 'elixir',
+          desc: 'Download music and video in a playlist on the web page you visited. An extension app for Chrome CRX and Opera NEX platforms.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_elixir.jpg',
+          tech: 'BackboneJS, Opera, Chrome'
+        },
+        {
+          title: 'NKMP (noozy + kantaris)',
+          desc: 'A high-end media player/transport supports NVidoa CUDA 2D and 3D passive rendering. Option to running on GPU instead of CPU. Up to 12-channels upmxing audio.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_nkmp_desktop.jpg',
+          tech: 'C++, QT'
+        },
+        {
+          title: 'kraft',
+          desc: 'A high-fidelity modular UI crafting tool, GPU accelerated, infinite zoom, infinite FX and generates production-ready HTML+CSS.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_kraft.png',
+          tech: 'C++, ElectronJS'
+        },
+        {
+          title: 'EIZO-rewire™ PRO Series',
+          desc: 'A professional audio modeling processor allows you to reproduce surround sound and high quality content on movies, music or games.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_noozxoidelabs_eizorewire_pro_android.png',
           tech: 'Gulp, NodeJS'
         },
         {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/33984506_10213716012629459_3388552042027941888_o.jpg',
-          tech: 'Gulp, NodeJS'
+          title: 'EIZO-NNXT™ Series DAC',
+          desc: 'A programmable DAC allows developers to add it into their AMP design, built-in flagship Noozxoide Labs digital premium sound processors, a 16Bit and 24Bit-float audio processing, the interfaces are mainly TOS-Link.',
+          urlText: '',
+          url: '',
+          urlVisibility: 'hidden',
+          image: 'assets/image/promo/promo_noozxoidelabs_eizonnxt.jpg',
+          tech: 'C, C++, DAC, Embedded'
         },
         {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/13394199_10207780811573142_7583526877850607867_n.jpg',
-          tech: 'Gulp, NodeJS'
+          title: 'Twisted Mind EP (2 tracks)',
+          desc: 'The tracks trying to reflex my imagination with no purpose, just a random frequencies in my mind, turns out, it had already a complete music.',
+          urlText: 'SoundCloud.com',
+          url: 'https://soundcloud.com/overload-project/sets/twisted-mind',
+          urlVisibility: 'block',
+          image: 'assets/image/promo/promo_overloadproject_twisted_mind.jpg',
+          tech: 'Propellerheads Reason, Steinberg Cubase, Waves, (Progressive House)'
         },
         {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/elixir_promo.jpg',
-          tech: 'Gulp, NodeJS'
-        },
-        {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/13434857_10207780303800448_4283975277848207045_n.jpg',
-          tech: 'Gulp, NodeJS'
-        },
-        {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/kraft_promo.png',
-          tech: 'Gulp, NodeJS'
-        },
-        {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/13394199_10207780811573142_7583526877850634267_n.png',
-          tech: 'Gulp, NodeJS'
-        },
-        {
-          title: 'krugurt',
-          desc: 'Ultra lightweight view library to craft web components in HTML-level without messing with CSS styling',
-          image: 'assets/image/621265_3960791293095_256692586_o.jpg',
-          tech: 'Gulp, NodeJS'
+          title: 'Dream Travel EP (3 tracks)',
+          desc: 'I remember back in year 2006, I was watching TV Channel broadcasting "Alice The Wonderland", that was a very old video.',
+          urlText: 'SoundCloud.com',
+          url: 'https://soundcloud.com/overload-project/sets/dream-travel',
+          urlVisibility: 'block',
+          image: 'assets/image/promo/promo_overloadproject_dream_travel.jpg',
+          tech: 'Propellerheads Reason, Steinberg Cubase, Waves (Progressive House)'
         },
       ]
     }
