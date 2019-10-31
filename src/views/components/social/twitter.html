@@ -1,10 +1,14 @@
 <social-twitter>
 
-  <y class="shadow text-white font-sans">
+  <y class="twitter-feed text-white font-sans shadow">
+
     <a class="twitter-timeline"
        href="{ props.url }"
-       data-height="{ props.height }"
-       data-theme="{ props.theme }">
+       data-chrome="noheader nofooter noborders"
+       data-tweet-limit="1"
+       data-height="auto"
+       dnt="true"
+       rel="noopener">
 
       <y>
         Loading Twitter posts...
@@ -24,6 +28,7 @@
       </y>
 
     </a>
+
   </y>
 
 </social-twitter>
