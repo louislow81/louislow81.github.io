@@ -1,0 +1,93 @@
+<card-nine-element><y class="{ work.register } relative max-w-3xl m-4 bg-white rounded-lg shadow-lg overflow-hidden" each="{ work in experiences }"><y class="flex justify-center items-center"><y class="w-1/3 p-6"><y class="text-lg font-semibold depth-loose">{ work.company }</y></y><y class="w-1/3 p-6"><y class="flex flex-col justify-center items-stretch text-xs text-white text-center uppercase"><y class="p-1 mb-1 bg-gray-800 rounded">{ work.status1 }</y><y class="p-1 mb-1 bg-gray-700 rounded">{ work.status2 }</y><y class="p-1 mb-2 bg-gray-600 rounded">{ work.location }</y><y class="text-sm font-sans font-normal text-charcoal-100">{ work.date }</y></y></y><y class="w-3/4 p-6"><y class="text-sm depth-snug">{ work.desc }</y></y></y><y class="{ work.occupyVisibility } absolute left-0 top-0"><y class="px-2 py-1 { work.occupyBgColor } border-2 border-white rounded-lg"><y class="text-sm text-white font-oswald font-semibold uppercase">{ work.occupy }</y></y></y><y class="absolute left-0 bottom-0"><y class="px-2 py-1 bg-charcoal-500 border-2 border-white rounded-lg"><y class="text-sm text-white font-thin">{ work.position }</y></y></y><y class="absolute right-0 top-0"><y class="px-2 py-1 bg-charcoal-500 border-2 border-white rounded-lg"><y class="text-sm text-white font-thin"><span class="text-xs font-oswald">Project </span>{ work.project }</y></y></y></y><style>.font-oswald {
+      font-family: Oswald, sans-serif;
+    }</style><script>export default {
+      experiences: [
+        {
+          company: 'dogsbark',
+          occupy: 'Occupied',
+          occupyBgColor: 'bg-blue-700',
+          occupyVisibility: 'block',
+          position: 'Architect',
+          status1: 'Leisure',
+          status2: 'Remote',
+          location: 'Canada',
+          date: '2004 - 2019',
+          desc: 'Embedded Design, Firmware Design, Prototyping and Automation. Machine Learning and Sound Effect middleware engneering.',
+          project: '604'
+        },
+        {
+          register: 'opacity-25',
+          company: 'Web Bytes',
+          occupy: 'Probabtion',
+          occupyBgColor: 'bg-red-600',
+          occupyVisibility: 'block',
+          position: 'Front End',
+          status1: 'Full Time',
+          status2: 'In House',
+          location: 'Malaysia',
+          date: '2019 - ...',
+          desc: '...',
+          project: '0'
+        },
+        {
+          company: 'Goody',
+          occupy: 'test',
+          occupyVisibility: 'hidden',
+          position: 'Front End',
+          status1: 'Full Time',
+          status2: 'In House',
+          location: 'Malaysia',
+          date: '2016 - 2019',
+          desc: 'Craft UI Material Design & Design System from scratch. Pure CSS FX without JS. Create custom frontend devtools and custom boilerplates with added added subtle automation with CLI.',
+          project: '014'
+        },
+        {
+          company: 'Internet Mastermind',
+          occupy: '',
+          occupyVisibility: 'hidden',
+          position: 'Front End',
+          status1: 'Full Time',
+          status2: 'In House',
+          location: 'Malaysia',
+          date: '2014 - 2015',
+          desc: 'Implement UI and UX for marketing applications with Bootstrap UI framework. Frontend and Backend UI prototyping. Custom landing page web design for marketer.',
+          project: '003'
+        },
+        {
+          company: 'Jprint Studio',
+          occupy: '',
+          occupyVisibility: 'hidden',
+          position: 'Front End',
+          status1: 'Full Time',
+          status2: 'In House',
+          location: 'Malaysia',
+          date: '2012 - 2013',
+          desc: 'Implement web applications for project management and e-commmerce. Plan and manage web business and development.',
+          project: '004'
+        },
+        {
+          company: 'Info Kinetics',
+          occupy: '',
+          occupyVisibility: 'hidden',
+          position: 'System Admin',
+          status1: 'Full Time',
+          status2: 'In House',
+          location: 'Malaysia',
+          date: '2010 - 2012',
+          desc: 'Backup Strategy, Recovery Disaster Planning and developments. Virtualization deployment with MS Virtual PC. System infrastructure planning, design, data modeling and security deployments.',
+          project: '003'
+        },
+        {
+          company: 'Altera',
+          occupy: '',
+          occupyVisibility: 'hidden',
+          position: 'Digital Signal DSP',
+          status1: 'Part Time',
+          status2: 'Remote',
+          location: 'Malaysia',
+          date: '2006 - 2010',
+          desc: 'Assisting in software development activities including implementing assigned tasks/modules and performing software quality assurance for engineering software solutions.',
+          project: '027'
+        }
+      ]
+    }</script></card-nine-element>

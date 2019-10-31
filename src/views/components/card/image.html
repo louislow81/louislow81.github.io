@@ -1,6 +1,6 @@
 <card-image>
 
-  <y class="flex flex-wrap justify-space items-center">
+  <y class="flex flex-wrap justify-start items-center">
 
     <y each="{ pet in projects}">
 
@@ -52,8 +52,8 @@
                      aria-label="{ pet.urlText }"
                      target="_blank"
                      rel="noopener">
-                    Visit
-                    <strong>
+                    { pet.PromoText }
+                    <strong class="pl-1">
                       { pet.urlText }
                     </strong>
                   </a>
@@ -82,10 +82,11 @@
       projects: [
         {
           title: 'noozy (desktop)',
-          desc: 'A music library/player/transport for Linux and Windows platforms. Built-in flagship EIZO-rewire™ AE Series (aka `Acoustic Engine`) digital sound processor. Delivers 32Bit-Float premium sound. Courtesy of Noozxoide Laboratories.',
-          urlText: '',
-          url: '',
-          urlVisibility: 'hidden',
+          desc: 'A music library/player for Linux platforms. Built-in flagship EIZO-rewire™ AE Series (aka `Acoustic Engine`) digital sound processor. Delivers 32Bit-Float premium sound. Courtesy of Noozxoide Laboratories.',
+          PromoText: 'Download',
+          urlText: 'Linux',
+          url: 'https://bit.ly/2ZtMOpL',
+          urlVisibility: 'block',
           icon1: 'fab fa-linux',
           icon1Padding: 'pr-6 pb-4',
           icon1Visibility: 'block',
@@ -98,6 +99,7 @@
         {
           title: 'ARCH GRID Series',
           desc: 'A high speed network relay transducer that accelerates data transmissions, support clustering to expand bandwidth capacity.',
+          PromoText: 'Download',
           urlText: '',
           url: '',
           urlVisibility: 'hidden',
@@ -113,6 +115,7 @@
         {
           title: 'noozy classic',
           desc: 'A high-end audiophile grade 24Bit audio processing music transport for Android.',
+          PromoText: 'Visit',
           urlText: 'Google Play',
           url: 'https://play.google.com/store/apps/details?id=com.dogsbark.noozy',
           urlVisibility: 'block',
@@ -128,9 +131,10 @@
         {
           title: 'elixir',
           desc: 'Download music and video in a playlist on the web page you visited. An extension app for Chrome CRX and Opera NEX platforms.',
-          urlText: '',
-          url: '',
-          urlVisibility: 'hidden',
+          PromoText: 'Visit',
+          urlText: 'Github.com',
+          url: 'https://github.com/loouislow81/elixir-extension/releases',
+          urlVisibility: 'block',
           icon1: 'fab fa-chrome',
           icon1Padding: 'pr-4 pb-4',
           icon1Visibility: 'block',
@@ -143,6 +147,7 @@
         {
           title: 'NKMP (noozy + kantaris)',
           desc: 'A high-end media player/transport supports NVidoa CUDA 2D and 3D passive rendering. Option to running on GPU instead of CPU. Up to 12-channels upmxing audio.',
+          PromoText: '',
           urlText: '',
           url: '',
           urlVisibility: 'hidden',
@@ -158,6 +163,7 @@
         {
           title: 'kraft',
           desc: 'A high-fidelity modular UI crafting tool, GPU accelerated, infinite zoom, infinite FX and generates production-ready HTML+CSS.',
+          PromoText: '',
           urlText: '',
           url: '',
           urlVisibility: 'hidden',
@@ -173,6 +179,7 @@
         {
           title: 'EIZO-rewire™ PRO Series',
           desc: 'A professional audio modeling processor allows you to reproduce surround sound and high quality content on movies, music or games.',
+          PromoText: 'Visit',
           urlText: 'Google Play',
           url: 'https://play.google.com/store/apps/details?id=com.noozxoidelabs.eizo.rewirepro',
           urlVisibility: 'block',
@@ -188,6 +195,7 @@
         {
           title: 'EIZO-NNXT™ Series DAC',
           desc: 'A programmable DAC allows developers to add it into their AMP design, built-in flagship Noozxoide Labs digital premium sound processors, a 16Bit and 24Bit-float audio processing, the interfaces are mainly TOS-Link.',
+          PromoText: 'Visit',
           urlText: '',
           url: '',
           urlVisibility: 'hidden',
@@ -203,6 +211,7 @@
         {
           title: 'Twisted Mind EP (2 tracks)',
           desc: 'The tracks trying to reflex my imagination with no purpose, just a random frequencies in my mind, turns out, it had already a complete music.',
+          PromoText: 'Visit',
           urlText: 'SoundCloud.com',
           url: 'https://soundcloud.com/overload-project/sets/twisted-mind',
           urlVisibility: 'block',
@@ -218,6 +227,7 @@
         {
           title: 'Dream Travel EP (3 tracks)',
           desc: 'I remember back in year 2006, I was watching TV Channel broadcasting "Alice The Wonderland", that was a very old video.',
+          PromoText: 'Visit',
           urlText: 'SoundCloud.com',
           url: 'https://soundcloud.com/overload-project/sets/dream-travel',
           urlVisibility: 'block',

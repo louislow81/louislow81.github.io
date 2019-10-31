@@ -27,7 +27,7 @@
           href="//mindmeister.com">
 
     <link rel="dns-prefetch"
-          href="//fontawesome.com">
+          href="//kit.fontawesome.com">
 
     <link rel="dns-prefetch"
           href="//drift.com">
@@ -41,9 +41,20 @@
 
 
     <!-- fonts -->
-    <script src="https://kit.fontawesome.com/04e017c909.js"
+    <script async src="https://kit.fontawesome.com/04e017c909.js"
             crossorigin="anonymous"></script>
     <!-- // fonts -->
+
+
+    <!-- twitter -->
+    <script async src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"></script>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
 
 
     <!-- !! default -->
@@ -66,9 +77,10 @@
     </noscript>
     <!--// !! default -->
 
+
   </head>
 
-  <body class="h-screen">
+  <body class="h-screen antialiased">
 
     <!-- layout -->
     <y class="flex">
@@ -83,9 +95,25 @@
       <!-- main content -->
       <y class="ml-40 h-screen w-screen">
 
-        <intro-one class="z-0"></intro-one>
-        <about-me class="z-10"></about-me>
-        <pet-project class="z-20"></pet-project>
+        <intro-one
+          class="z-0">
+        </intro-one>
+
+        <about-me
+          class="z-10">
+        </about-me>
+
+        <my-skills
+          class="z-20">
+        </my-skills>
+
+        <my-experience
+          class="z-30">
+        </my-experience>
+
+        <pet-project
+          class="z-40">
+        </pet-project>
 
       </y>
 
@@ -94,7 +122,7 @@
 
 
     <!-- !! default -->
-    <script src="assets/js/scripts.min.js"></script>
+    <script async src="assets/js/scripts.min.js"></script>
 
 
     <!-- krunch: components to compile -->
@@ -103,6 +131,10 @@
     <script data-src="components/block/intro-one.html"
             type="krunch"></script>
     <script data-src="components/block/about-me.html"
+            type="krunch"></script>
+    <script data-src="components/block/my-experience.html"
+            type="krunch"></script>
+    <script data-src="components/block/my-skills.html"
             type="krunch"></script>
     <script data-src="components/block/pet-project.html"
             type="krunch"></script>
@@ -126,6 +158,10 @@
             type="krunch"></script>
     <script data-src="components/card/image.html"
             type="krunch"></script>
+    <script data-src="components/card/text-score.html"
+            type="krunch"></script>
+    <script data-src="components/card/nine-element.html"
+            type="krunch"></script>
     <script data-src="components/icon/platform.html"
             type="krunch"></script>
 
@@ -135,16 +171,12 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        krunch.mount('image-avatar, menu-bar, intro-one, about-me, pet-project, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, icon-platform')
+        krunch.mount('image-avatar, menu-bar, intro-one, about-me, my-skills, my-experience, pet-project, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, icon-platform')
 
       }())
     </script>
     <!-- // !! default -->
 
-
-    <!-- twitter -->
-    <script charset="utf-8"
-            async src="https://platform.twitter.com/widgets.js"></script>
 
   </body>
 
