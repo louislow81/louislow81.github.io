@@ -58,7 +58,9 @@ gulp.task('html', function() {
   return gulp.src(htmlFilesPath)
     .pipe(htmlmin({
       collapseWhitespace: true,
-      removeComments: true
+      removeComments: true,
+      jsmin: true, // inline js
+      cssmin: true // inline css
     }))
     .pipe(gulp.dest(htmlViewsPath))
 })
@@ -113,15 +115,22 @@ gulp.task('proprietary', function() {
 gulp.task('image', function() {
   return gulp.src('src/assets/image/**/*')
     .pipe(imagemin([
-      pngquant({ quality: [0.6, 0.6] }), // jpg
-      mozjpeg({ quality: 60 }), // png
+      pngquant({ quality: [1, 1] }), // png
+      mozjpeg({ quality: 100 }), // jpg
     ]))
     .pipe(gulp.dest(imagePath))
 })
 
 
 // watch those assets changes...
-gulp.task('watch', gulp.series(['browserSync', 'html', 'sass', 'scripts', 'image', 'proprietary'], function() {
+gulp.task('watch', gulp.series([
+  'browserSync', 
+  'html', 
+  'sass', 
+  'scripts', 
+  'image', 
+  'proprietary'
+  ], function() {
   gulp.watch('src/views/**/*.html', gulp.series(['html', reload]))
   gulp.watch('src/assets/scss/**/*.scss', gulp.series(['sass', reload]))
   gulp.watch('src/assets/js/**/*.js', gulp.series(['scripts']))

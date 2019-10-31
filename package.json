@@ -6,12 +6,12 @@
   "scripts": {
     "gulp": "gulp",
     "watch": "gulp watch",
-    "build-all": "npm run build-sass && npm run build-css && npm run build-scripts && npm run min-image && npm run build-html",
+    "build-all": "npm run build-sass && npm run build-scripts && npm run min-image && npm run move-proprietary && npm run build-html",
     "build-sass": "npm run gulp sass",
-    "build-css": "npm run gulp css",
     "build-scripts": "npm run gulp scripts",
     "build-html": "npm run gulp html",
-    "min-image": "npm run gulp image"
+    "min-image": "npm run gulp image",
+    "move-proprietary": "npm run gulp proprietary"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",
