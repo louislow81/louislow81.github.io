@@ -13,6 +13,8 @@ const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const htmlmin = require('gulp-htmlmin')
 const imagemin = require('gulp-imagemin')
+const pngquant = require('imagemin-pngquant')
+const mozjpeg = require('imagemin-mozjpeg')
 
 
 // html file paths
@@ -22,7 +24,7 @@ const htmlViewsPath = 'dist' // production-ready files
 // js file paths
 const utilJsPath = 'src/assets/js' // util.js path - you may need to update this if including the framework as external node module
 const componentsJsPath = 'src/assets/js/components/*.js'
-const scriptsJsPath = 'dist/assets/js'; // folder for final scripts.js/scripts.min.js files
+const scriptsJsPath = 'dist/assets/js' // folder for final scripts.js/scripts.min.js files
 
 // scss/css file paths
 const scssFilesPath = 'src/assets/scss/style.scss'
@@ -110,7 +112,10 @@ gulp.task('proprietary', function() {
 // ...for image
 gulp.task('image', function() {
   return gulp.src('src/assets/image/**/*')
-    .pipe(imagemin())
+    .pipe(imagemin([
+      pngquant({ quality: [0.6, 0.6] }), // jpg
+      mozjpeg({ quality: 60 }), // png
+    ]))
     .pipe(gulp.dest(imagePath))
 })
 
