@@ -188,7 +188,7 @@ gulp.task('watch',
     'scripts',
     'image',
     'proprietary',
-    'deploy'
+    // 'deploy'
 
   ], function() {
 
