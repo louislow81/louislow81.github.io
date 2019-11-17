@@ -1,6 +1,6 @@
 <menu-bar>
 
-  <y class="w-40 h-screen bg-charcoal-800">
+  <y class="xs:hidden sm:hidden md:block w-40 h-screen bg-charcoal-800">
     <y class="static">
 
       <!-- avatar -->
@@ -17,7 +17,7 @@
            title="{ data.title }"
            aria-lable="{ data.title }">
 
-          <y class="px-6 py-2 text-md uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full menu-item">
+          <y class="px-6 py-2 text-md font-oswald uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full">
             { data.title }
           </y>
 
@@ -36,8 +36,46 @@
   </y>
 
 
+  <!--mobile-->
+  <y class="hidden static h-10 w-screen bg-charcoal-800">
+
+    <y class="z-0 flex justify-between items-center">
+
+      <y class="px-4 py-2 text-md text-white font-oswald uppercase">
+        Loouis Low
+      </y>
+
+      <y class="static px-4 py-2 text-md text-white font-oswald uppercase">
+        <i class="fas fa-bars"></i>
+      </y>
+
+    </y>
+
+    <y class="py-4 bg-charcoal-600">
+
+      <y each="{ data in menus }">
+
+        <a class="hover:text-blue-600 hover:underline"
+           href="{ data.url }"
+           title="{ data.title }"
+           aria-label="{ data.title }">
+
+          <y class="px-6 py-2 text-md font-oswald uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full">
+            { data.title }
+          </y>
+
+        </a>
+
+      </y>
+
+    </y>
+
+
+  </y>
+
+
   <style>
-    .menu-item {
+    .font-oswald {
       font-family: Oswald, sans-serif;
     }
   </style>
