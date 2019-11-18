@@ -1,4 +1,4 @@
-<card-nine-element><y class="flex flex-wrap justify-start items-stretch"><y class="relative max-w-xs m-2 bg-white rounded-lg shadow" each="{ work in experiences }"><y class="hidden flex justify-center items-center"><y class="h-40 w-full bg-cover bg-center bg-no-repeat" style="background-image: url( { work.preview1 } )" title="{ work.previewTitle1 }"></y><y class="h-40 w-full bg-cover bg-center bg-no-repeat" style="background-image: url( { work.preview2 } )" title="{ work.previewTitle2 }"></y><y class="h-40 w-full bg-cover bg-center bg-no-repeat" style="background-image: url( { work.preview3 } )" title="{ work.previewTitle3 }"></y></y><y class="p-5"><y class="pb-1 flex justify-start items-center"><y class="text-lg font-semibold depth-loose">{ work.company }</y><y class="px-4 text-xs text-gray-700 font-sans depth-loose">{ work.date }</y></y><y class="pb-3 flex justify-start items-center"><y class="px-2 py-1 mr-1 text-xs text-white bg-charcoal-700 rounded">{ work.status1 }</y><y class="px-2 py-1 mr-1 text-xs text-white bg-charcoal-700 rounded">{ work.status2 }</y><y class="px-2 py-1 mr-1 text-xs text-white bg-charcoal-700 rounded">{ work.location }</y></y><y class="pb-8 text-sm depth-snug">{ work.desc }</y></y><y class="absolute right-0 bottom-0"><y class="{ work.occupyVisibility } p-2 text-sm font-oswald uppercase text-white { work.occupyBgColor } border-2 border-white rounded-lg">{ work.occupy }</y></y><y class="absolute left-0 bottom-0"><y class="{ work.occupyVisibility } p-2 text-sm font-oswald uppercase text-white bg-charcoal-600 border-2 border-white rounded-lg">Projet { work.project }</y></y></y></y><style>.font-oswald {
+<card-nine-element><y class="flex flex-wrap justify-start items-stretch"><y class="relative xs:max-w-lg sm:max-w-xl md:max-w-xs m-2 bg-white rounded-lg shadow" each="{ work in experiences }"><y class="hidden static flex justify-center items-center"><y class="z-10 hover:absolute top-0 left-0 hover:bg-charcoal-400 w-full h-full rounded"><y class="flex hover:flex-col justify-start items-center cursor-pointer"><y class="h-20 hover:h-40 w-full bg-cover bg-center bg-no-repeat shadow-lg" style="background-image: url( { work.preview1 } )" title="{ work.previewTitle1 }"></y><y class="h-20 hover:h-40 w-full bg-cover bg-center bg-no-repeat shadow-lg" style="background-image: url( { work.preview2 } )" title="{ work.previewTitle2 }"></y><y class="h-20 hover:h-40 w-full bg-cover bg-center bg-no-repeat shadow-lg" style="background-image: url( { work.preview3 } )" title="{ work.previewTitle3 }"></y></y></y></y><y class="p-5"><y class="pb-1 flex justify-start items-center"><y class="text-lg xs:truncate font-semibold depth-loose">{ work.company }</y><y class="px-4 text-xs text-gray-700 xs:truncate font-sans depth-loose">{ work.date }</y></y><y class="pb-3 flex justify-start items-center"><y class="px-2 py-1 mr-1 text-xs text-white xs:truncate bg-charcoal-600 rounded-lg">{ work.status1 }</y><y class="px-2 py-1 mr-1 text-xs text-white xs:truncate bg-charcoal-600 rounded-lg">{ work.status2 }</y><y class="px-2 py-1 mr-1 text-xs text-white xs:truncate bg-charcoal-600 rounded-lg">{ work.location }</y></y><y class="pb-8 text-sm depth-snug">{ work.desc }</y></y><y class="absolute right-0 bottom-0"><y class="{ work.occupyVisibility } p-2 text-sm font-oswald uppercase text-white { work.occupyBgColor } border-2 border-white rounded-lg">{ work.occupy }</y></y><y class="absolute left-0 bottom-0"><y class="p-2 text-sm font-oswald uppercase text-white bg-charcoal-600 border-2 border-white rounded-lg">Project { work.project }</y></y></y></y><style>.font-oswald {
       font-family: Oswald, sans-serif;
     }</style><script>export default {
       experiences: [
@@ -31,7 +31,7 @@
           company: 'Goody',
           occupy: 'Ended',
           occupyBgColor: 'bg-gray-600',
-          occupyVisibility: 'visible',
+          occupyVisibility: 'hidden',
           position: 'Front End',
           status1: 'Full Time',
           status2: 'In House',
@@ -50,7 +50,7 @@
           company: 'Internet Mastermind',
           occupy: 'Ended',
           occupyBgColor: 'bg-gray-600',
-          occupyVisibility: 'visible',
+          occupyVisibility: 'hidden',
           position: 'Front End',
           status1: 'Full Time',
           status2: 'In House',
@@ -69,7 +69,7 @@
           company: 'Jprint Studio',
           occupy: 'Ended',
           occupyBgColor: 'bg-gray-600',
-          occupyVisibility: 'visible',
+          occupyVisibility: 'hidden',
           position: 'Front End',
           status1: 'Full Time',
           status2: 'In House',
@@ -88,7 +88,7 @@
           company: 'Info Kinetics',
           occupy: 'Ended',
           occupyBgColor: 'bg-gray-600',
-          occupyVisibility: 'visible',
+          occupyVisibility: 'hidden',
           position: 'System Admin',
           status1: 'Full Time',
           status2: 'In House',
@@ -107,7 +107,7 @@
           company: 'Altera',
           occupy: 'Ended',
           occupyBgColor: 'bg-gray-600',
-          occupyVisibility: 'visible',
+          occupyVisibility: 'hidden',
           position: 'Digital Signal DSP',
           status1: 'Part Time',
           status2: 'Remote',
