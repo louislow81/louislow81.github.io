@@ -1,8 +1,24 @@
-<card-image><y class="flex flex-wrap justify-start items-center"><y each="{ pet in projects}"><y class="max-w-lg m-2 rounded-lg shadow-lg overflow-hidden cursor-pointer"><y class="relative"><img class="rounded-lg" src="{ pet.image }" alt="{ pet.title}"><y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-100"><y class="absolute right-0 bottom-0"><y class="flex justify-center items-center p-4"><icon-platform icon="{ pet.icon1 }" padding="{ pet.icon1Padding }" visibility="{ pet.icon1Visibility }"></icon-platform><icon-platform icon="{ pet.icon2 }" padding="{ pet.icon2Padding }" visibility="{ pet.icon2Visibility }"></icon-platform></y></y><y class="p-10"><y class="flex flex-col justify-around items-start"><y class="text-xl font-semibold depth-loose pb-2">{ pet.title }</y><y class="text-md depth-snug pb-3">{ pet.desc }</y><y class="{ pet.urlVisibility } text-md depth-loose pb-2"><a class="hover:text-orange-700" href="{ pet.url }" title="{ pet.urlText }" aria-label="{ pet.urlText }" target="_blank" rel="noopener">{ pet.PromoText } <strong class="pl-1">{ pet.urlText }</strong></a></y><y class="text-xs hover:text-orange-600 depth-loose">{ pet.tech}</y></y></y></y></y></y></y></y><script>export default {
+<card-image><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center"><y each="{ pet in projects}"><y class="xs:max-w-full sm:max-w-full md:max-w-md m-2 rounded-lg shadow-lg overflow-hidden cursor-pointer"><y class="relative"><img class="rounded-lg" src="{ pet.image }" alt="{ pet.title}"><y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-100"><y class="absolute right-0 bottom-0"><y class="flex justify-center items-center xs:p-0 md:p-4"><icon-platform icon="{ pet.icon1 }" padding="{ pet.icon1Padding }" visibility="{ pet.icon1Visibility }"></icon-platform><icon-platform icon="{ pet.icon2 }" padding="{ pet.icon2Padding }" visibility="{ pet.icon2Visibility }"></icon-platform></y></y><y class="xs:p-4 sm:p-10 md:p-8"><y class="flex flex-col justify-around items-start"><y class="xs:text-sm sm:text-xl md:text-lg font-semibold depth-loose pb-2">{ pet.title }</y><y class="xs:text-xs sm:text-lg md:text-sm depth-snug pb-3">{ pet.desc }</y><y class="{ pet.urlVisibility } xs:text-xs sm:text-lg md:text-sm depth-loose pb-2"><a class="hover:text-orange-700" href="{ pet.url }" title="{ pet.urlText }" aria-label="{ pet.urlText }" target="_blank" rel="noopener">{ pet.PromoText } <strong class="pl-1">{ pet.urlText }</strong></a></y><y class="xs:text-xs sm:text-md md:text-xs hover:text-orange-600 depth-loose">{ pet.tech}</y></y></y></y></y></y></y></y><script>export default {
       projects: [
         {
+          title: 'noozy 4 (wip)',
+          desc: 'An audiophile grade music player for Android. A 12 types of sound processors with advanced sound modeling options.',
+          PromoText: 'Download',
+          urlText: 'Linux',
+          url: 'https://bit.ly/2ZtMOpL',
+          urlVisibility: 'hidden',
+          icon1: '',
+          icon1Padding: 'pr-6 pb-4',
+          icon1Visibility: 'hidden',
+          icon2: 'fab fa-android',
+          icon2Padding: 'pr-4 pb-4',
+          icon2Visibility: 'block',
+          image: 'assets/image/promo/promo_noozy_4.png',
+          tech: 'C++, Java'
+        },
+        {
           title: 'noozy (desktop)',
-          desc: 'A music library/player for Linux platforms. Built-in flagship EIZO-rewire™ AE Series (aka `Acoustic Engine`) digital sound processor. Delivers 32Bit-Float premium sound. Courtesy of Noozxoide Laboratories.',
+          desc: 'An audiophile grade music player for Linux & Windows platforms. Delivers 32Bit-Float premium sound.',
           PromoText: 'Download',
           urlText: 'Linux',
           url: 'https://bit.ly/2ZtMOpL',
@@ -98,7 +114,7 @@
         },
         {
           title: 'EIZO-rewire™ PRO Series',
-          desc: 'A professional audio modeling processor allows you to reproduce surround sound and high quality content on movies, music or games.',
+          desc: 'A professional audio processor reproduces surround sound and high quality contents.',
           PromoText: 'Visit',
           urlText: 'Google Play',
           url: 'https://play.google.com/store/apps/details?id=com.noozxoidelabs.eizo.rewirepro',
@@ -110,11 +126,11 @@
           icon2Padding: '',
           icon2Visibility: 'hidden',
           image: 'assets/image/promo/promo_noozxoidelabs_eizorewire_pro_android.png',
-          tech: 'Gulp, NodeJS'
+          tech: 'C++, Java'
         },
         {
           title: 'EIZO-NNXT™ Series DAC',
-          desc: 'A programmable DAC allows developers to add it into their AMP design, built-in flagship Noozxoide Labs digital premium sound processors, a 16Bit and 24Bit-float audio processing, the interfaces are mainly TOS-Link.',
+          desc: 'A programmable DAC allows developers to add it into their AMP design, built-in flagship Noozxoide Labs digital premium sound processors, a 24Bit-float audio processing.',
           PromoText: 'Visit',
           urlText: '',
           url: '',
@@ -130,7 +146,7 @@
         },
         {
           title: 'Twisted Mind EP (2 tracks)',
-          desc: 'The tracks trying to reflex my imagination with no purpose, just a random frequencies in my mind, turns out, it had already a complete music.',
+          desc: 'The tracks trying to reflex my imagination with no purpose, just a random frequencies in my mind.',
           PromoText: 'Visit',
           urlText: 'SoundCloud.com',
           url: 'https://soundcloud.com/overload-project/sets/twisted-mind',
@@ -142,7 +158,7 @@
           icon2Padding: '',
           icon2Visibility: 'hidden',
           image: 'assets/image/promo/promo_overloadproject_twisted_mind.jpg',
-          tech: 'Propellerheads Reason, Steinberg Cubase, Waves, (Progressive House)'
+          tech: 'Propellerheads Reason, Steinberg Cubase, Waves'
         },
         {
           title: 'Dream Travel EP (3 tracks)',
@@ -156,7 +172,7 @@
           icon2: 'hidden',
           icon2Visibility: 'hidden',
           image: 'assets/image/promo/promo_overloadproject_dream_travel.jpg',
-          tech: 'Propellerheads Reason, Steinberg Cubase, Waves (Progressive House)'
+          tech: 'Propellerheads Reason, Steinberg Cubase, Waves'
         },
       ]
     }</script></card-image>
