@@ -110,17 +110,21 @@
             class="z-10">
           </about-me>
 
-          <my-experience
+          <experience
             class="z-20">
-          </my-experience>
+          </experience>
 
-          <my-skills
+          <skills
             class="z-30">
-          </my-skills>
+          </skills>
 
           <pet-project
             class="z-40">
           </pet-project>
+
+          <contact
+            class="z-40">
+          </contact>
 
         </y>
 
@@ -140,11 +144,13 @@
             type="krunch"></script>
     <script data-src="components/block/about-me.html"
             type="krunch"></script>
-    <script data-src="components/block/my-experience.html"
+    <script data-src="components/block/experience.html"
             type="krunch"></script>
-    <script data-src="components/block/my-skills.html"
+    <script data-src="components/block/skills.html"
             type="krunch"></script>
     <script data-src="components/block/pet-project.html"
+            type="krunch"></script>
+    <script data-src="components/block/contact.html"
             type="krunch"></script>
     <script data-src="components/image/avatar.html"
             type="krunch"></script>
@@ -179,7 +185,7 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        krunch.mount('image-avatar, menu-bar, intro-one, about-me, my-skills, my-experience, pet-project, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, icon-platform')
+        krunch.mount('image-avatar, menu-bar, intro-one, about-me, skills, experience, pet-project, contact, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, icon-platform')
 
       }())
     </script>
