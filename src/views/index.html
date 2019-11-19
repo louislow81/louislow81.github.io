@@ -76,44 +76,58 @@
 
   <body class="h-screen antialiased bg-charcoal-500">
 
-    <!-- layout -->
-    <y class="md:flex lg:flex xl:flex">
+    <!-- preloader -->
+    <y class="relative">
 
-      <!-- nav (fixed) -->
-      <y class="fixed">
+      <y class="h-screen flex justify-center items-center">
 
-        <menu-bar></menu-bar>
-
-      </y>
-
-      <!-- main content -->
-      <y class="md:ml-40 lg:ml-40 lg:ml-40 h-screen w-screen">
-
-        <intro-one
-          class="z-0">
-        </intro-one>
-
-        <about-me
-          class="z-10">
-        </about-me>
-
-        <my-experience
-          class="z-20">
-        </my-experience>
-
-        <my-skills
-          class="z-30">
-        </my-skills>
-
-        <pet-project
-          class="z-40">
-        </pet-project>
+        <y>
+          <img class="w-24 h-24 border-4 border-gray-400 rounded-full shadow-lg"
+               src="assets/image/misc/me.png"
+               title="Me">
+        </y>
 
       </y>
+
+      <!-- layout -->
+      <y class="absolute top-0 left-0 w-full md:flex lg:flex xl:flex">
+
+        <!-- nav (fixed) -->
+        <y class="z-50 fixed">
+
+          <menu-bar></menu-bar>
+
+        </y>
+
+        <!-- main content -->
+        <y class="md:ml-40 lg:ml-40 lg:ml-40 h-screen w-screen">
+
+          <intro-one
+            class="z-0">
+          </intro-one>
+
+          <about-me
+            class="z-10">
+          </about-me>
+
+          <my-experience
+            class="z-20">
+          </my-experience>
+
+          <my-skills
+            class="z-30">
+          </my-skills>
+
+          <pet-project
+            class="z-40">
+          </pet-project>
+
+        </y>
+
+      </y>
+      <!--// layout -->
 
     </y>
-    <!--// layout -->
-
 
     <!-- !! default -->
     <script src="assets/js/scripts.min.js"></script>

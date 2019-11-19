@@ -1,19 +1,21 @@
 <my-skills>
 
-  <y class="xs:hidden sm:hidden z-10 bg-charcoal-500"
+  <y class="bg-charcoal-500"
      id="skills">
 
-      <y class="p-10 h-full">
+      <y class="md:p-10 md:h-full">
 
         <y class="flex flex-col justify-start items-start">
 
-          <y class="flex-1 p-6">
+          <y class="flex-1">
 
-            <text-heading
-              title="Skills">
-            </text-heading>
+            <y class="xs:text-center sm:text-left md:text-left xs:pb-0">
+              <text-heading
+                title="Skills">
+              </text-heading>
+            </y>
 
-            <y class="flex flex-wrap justify-start items-stretch">
+            <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch">
               <y each="{ potential in skills }">
 
                 <card-text-score
@@ -27,13 +29,13 @@
 
           </y>
 
-          <y class="flex-1 p-6">
+          <y class="flex-1">
 
             <text-heading
               title="Knowledge">
             </text-heading>
 
-            <y class="flex flex-wrap justify-start items-stretch">
+            <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch">
               <y each="{ superpower in knowledge }">
 
                 <card-text-score
