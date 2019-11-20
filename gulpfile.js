@@ -136,6 +136,7 @@ gulp.task('sass',
 gulp.task('pre-scripts',
   function() {
     return gulp.src([
+        srcUtilJsPath + '/vendors/drift.js',
         srcUtilJsPath + '/util.js',
         srcComponentsJsPath
       ])
