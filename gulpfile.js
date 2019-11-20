@@ -132,8 +132,8 @@ gulp.task('sass',
 )
 
 
-// ...for js
-gulp.task('scripts',
+// ...for js (your custom scripts management)
+gulp.task('pre-scripts',
   function() {
     return gulp.src([
         srcUtilJsPath + '/util.js',
@@ -144,7 +144,7 @@ gulp.task('scripts',
       .pipe(browserSync.reload({
         stream: true
       }))
-      .pipe(rename('scripts.min.js'))
+      .pipe(rename('scripts.pre.js'))
       .pipe(uglify())
       .pipe(gulp.dest(distJsPath))
       .pipe(browserSync.reload({
@@ -154,13 +154,18 @@ gulp.task('scripts',
 )
 
 
-// ...for proprietary library
-gulp.task('proprietary',
+// ...for js (merge with compiler)
+gulp.task('scripts',
   function() {
     return gulp.src([
-        srcUtilJsPath + '/krunch+compiler.min.js'
+        srcUtilJsPath + '/krunch+compiler.min.js',
+        distJsPath + '/scripts.pre.js'
       ])
+      .pipe(concat('scripts.min.js'))
       .pipe(gulp.dest(distJsPath))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
   }
 )
 
@@ -185,10 +190,9 @@ gulp.task('watch',
     'browserSync',
     'html',
     'sass',
+    'pre-scripts',
     'scripts',
-    'image',
-    'proprietary',
-    // 'deploy'
+    'image'
 
   ], function() {
 
@@ -199,7 +203,7 @@ gulp.task('watch',
       gulp.series(['sass', reload]))
 
     gulp.watch(watchSrcScriptsPath,
-      gulp.series(['scripts']))
+      gulp.series(['pre-scripts','scripts', reload]))
 
     gulp.watch(watchSrcImagePath,
       gulp.series('image', reload))
