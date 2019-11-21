@@ -476,14 +476,12 @@ textarea {
   resize: vertical;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: inherit;
   opacity: 0.5;
 }
 
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   color: inherit;
   opacity: 0.5;
 }
@@ -618,7 +616,7 @@ video::after {
 */
 
 div {
-  // display: none !important;
+  display: none !important;
 }
 
 /**
@@ -708,6 +706,18 @@ y {
 }
 
 .bg-scroll {
+  background-attachment: scroll;
+}
+
+.hover\:bg-fixed:hover {
+  background-attachment: fixed;
+}
+
+.hover\:bg-local:hover {
+  background-attachment: local;
+}
+
+.hover\:bg-scroll:hover {
   background-attachment: scroll;
 }
 
@@ -8381,28 +8391,24 @@ y {
 
 .select-none {
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
 .select-text {
   -webkit-user-select: text;
-     -moz-user-select: text;
       -ms-user-select: text;
           user-select: text;
 }
 
 .select-all {
   -webkit-user-select: all;
-     -moz-user-select: all;
       -ms-user-select: all;
           user-select: all;
 }
 
 .select-auto {
   -webkit-user-select: auto;
-     -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
 }
@@ -8722,6 +8728,18 @@ y {
   }
 
   .xs\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .xs\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .xs\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .xs\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -16395,28 +16413,24 @@ y {
 
   .xs\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .xs\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .xs\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .xs\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -16737,6 +16751,18 @@ y {
   }
 
   .sm\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .sm\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .sm\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .sm\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -24410,28 +24436,24 @@ y {
 
   .sm\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .sm\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .sm\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .sm\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -24752,6 +24774,18 @@ y {
   }
 
   .md\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .md\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .md\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .md\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -32425,28 +32459,24 @@ y {
 
   .md\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .md\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .md\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .md\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -32767,6 +32797,18 @@ y {
   }
 
   .lg\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .lg\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .lg\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .lg\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -40440,28 +40482,24 @@ y {
 
   .lg\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .lg\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .lg\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .lg\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -40782,6 +40820,18 @@ y {
   }
 
   .xl\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .xl\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .xl\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .xl\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -48455,28 +48505,24 @@ y {
 
   .xl\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .xl\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .xl\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .xl\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -48797,6 +48843,18 @@ y {
   }
 
   .\32k\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .\32k\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .\32k\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .\32k\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -56470,28 +56528,24 @@ y {
 
   .\32k\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .\32k\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .\32k\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .\32k\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -56812,6 +56866,18 @@ y {
   }
 
   .\33k\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .\33k\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .\33k\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .\33k\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -64485,28 +64551,24 @@ y {
 
   .\33k\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .\33k\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .\33k\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .\33k\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -64827,6 +64889,18 @@ y {
   }
 
   .\34k\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .\34k\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .\34k\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .\34k\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -72500,28 +72574,24 @@ y {
 
   .\34k\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .\34k\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .\34k\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .\34k\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -72842,6 +72912,18 @@ y {
   }
 
   .\35k\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .\35k\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .\35k\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .\35k\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -80515,28 +80597,24 @@ y {
 
   .\35k\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .\35k\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .\35k\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .\35k\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
@@ -80857,6 +80935,18 @@ y {
   }
 
   .\36k\:bg-scroll {
+    background-attachment: scroll;
+  }
+
+  .\36k\:hover\:bg-fixed:hover {
+    background-attachment: fixed;
+  }
+
+  .\36k\:hover\:bg-local:hover {
+    background-attachment: local;
+  }
+
+  .\36k\:hover\:bg-scroll:hover {
     background-attachment: scroll;
   }
 
@@ -88530,28 +88620,24 @@ y {
 
   .\36k\:select-none {
     -webkit-user-select: none;
-       -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
   }
 
   .\36k\:select-text {
     -webkit-user-select: text;
-       -moz-user-select: text;
         -ms-user-select: text;
             user-select: text;
   }
 
   .\36k\:select-all {
     -webkit-user-select: all;
-       -moz-user-select: all;
         -ms-user-select: all;
             user-select: all;
   }
 
   .\36k\:select-auto {
     -webkit-user-select: auto;
-       -moz-user-select: auto;
         -ms-user-select: auto;
             user-select: auto;
   }
