@@ -1,3 +1,31 @@
-<contact><y class="py-6 h-screen bg-charcoal-500" id="contact"><y class="md:px-10 h-full flex flex-col justify-center items-center"><y class="md:hidden xs:mt-8 xs:mb-8 border-4 border-gray-400 rounded-full shadow-lg"><img class="w-24 h-24" src="assets/image/misc/me.png" title="Me"></y><y class="md:hidden pb-2 xs:text-xl sm:text-2xl md:text-4xl text-white font-semibold">Hey,</y><y class="md:hidden pb-6 xs:text-xl sm:text-2xl md:text-2xl text-white">I am almost everywhere...</y><y class="pb-6 xs:text-xl sm:text-2xl md:text-3xl text-white">loouis@gmail.com</y><y class="pb-6 xs:text-xl sm:text-2xl md:text-3xl text-white">+6016 4910 454 <i class="text-green-500 text-md cursor-pointer fab fa-whatsapp" title="I am on WhatsApp"></i></y><y class="pb-10 text-white"><social-icon-link class="font-normal"></social-icon-link></y></y></y><style>:host {
-      font-family: Poppins, Sans-Serif;
+<contact><y class="z-10 relative h-screen bg-charcoal-300" id="contact"><img class="h-full w-full object-cover object-left-top overflow-hidden opacity-75" src="assets/image/slide/slide_01.jpg" alt="Me"><y class="absolute top-0 left-0 w-full flex justify-start items-center"><y class="xs:p-10 sm:p-10 md:p-32 flex flex-col justify-start items-center"><y class="xs:text-2xl sm:text-4xl md:text-5xl text-white font-extrabold hero-intro"><y class="md:hidden xs:pb-8"><img class="w-24 h-24" src="assets/image/misc/me.png" title="Me"></y><y class="xs:pb-4 md:pb-4 depth-tight">loouis@gmail.com</y><y class="xs:pb-4 depth-tight">+6016 4910454 <i class="text-green-500 text-md cursor-pointer fab fa-whatsapp" title="I am on WhatsApp"></i></y><social-icon-link class="font-normal"></social-icon-link></y></y></y></y><style>.hero-intro {
+      font-family: Poppins, sans-serif;
+    }
+
+    .hero-intro-2 {
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    /*mesh masking effect*/
+    #intro:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(42, 42, 46, 0.4);
+      z-index: -2;
+    }
+
+    #intro:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(assets/image/misc/pattern.png) repeat center center;
+      z-index: -1;
+      opacity: 0.2;
     }</style></contact>
