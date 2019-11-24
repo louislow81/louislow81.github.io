@@ -113,6 +113,8 @@
 
           <pet-project></pet-project>
 
+          <!--<my-blog></my-blog>-->
+
           <contact></contact>
 
         </y>
@@ -140,6 +142,8 @@
             type="krunch"></script>
     <script data-src="components/block/pet-project.html"
             type="krunch"></script>
+    <script data-src="components/block/blog.html"
+            type="krunch"></script>
     <script data-src="components/block/contact.html"
             type="krunch"></script>
     <script data-src="components/image/avatar.html"
@@ -164,6 +168,8 @@
             type="krunch"></script>
     <script data-src="components/card/text-score.html"
             type="krunch"></script>
+    <script data-src="components/card/image-text.html"
+            type="krunch"></script>
     <script data-src="components/card/nine-element.html"
             type="krunch"></script>
     <script data-src="components/icon/platform.html"
@@ -175,7 +181,7 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        krunch.mount('image-avatar, menu-bar, intro-one, about-me, skills, experience, pet-project, contact, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, icon-platform')
+        krunch.mount('image-avatar, menu-bar, intro-one, about-me, skills, experience, my-blog, pet-project, contact, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, card-image-text, icon-platform')
 
       }())
     </script>
