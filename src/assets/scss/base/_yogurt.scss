@@ -593,22 +593,7 @@ video {
 embed,
 img,
 video {
-  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1) blur(0);
-  mix-blend-mode: default
-}
-
-embed::before,
-img::before,
-video::before {
-  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1.01) blur(0);
-  mix-blend-mode: luminosity
-}
-
-embed::after,
-img::after,
-video::after {
-  -webkit-filter: saturate(1.36) contrast(1.2) brightness(1.01) blur(0);
-  mix-blend-mode: overlay
+  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1.02) blur(0);
 }
 
 /**
