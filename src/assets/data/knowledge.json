@@ -1,0 +1,97 @@
+[
+  {
+    "title": "PCB/Schema Design",
+    "desc": "Electronic",
+    "score": "80%"
+  },
+  {
+    "title": "Firmware Design",
+    "desc": "Electronic",
+    "score": "100%"
+  },
+  {
+    "title": "Embedded Design",
+    "desc": "Electronic",
+    "score": "100%"
+  },
+  {
+    "title": "Prototype Design",
+    "desc": "Electronic",
+    "score": "100%"
+  },
+  {
+    "title": "Steinberg Cubase",
+    "desc": "Sequencing",
+    "score": "70%"
+  },
+  {
+    "title": "Propellerh. Reason",
+    "desc": "Instrumental",
+    "score": "80%"
+  },
+  {
+    "title": "Docker",
+    "desc": "Workship",
+    "score": "70%"
+  },
+  {
+    "title": "Debian",
+    "desc": "Workship",
+    "score": "90%"
+  },
+  {
+    "title": "C/C++",
+    "desc": "Workship",
+    "score": "90%"
+  },
+  {
+    "title": "NodeJS",
+    "desc": "General",
+    "score": "50%"
+  },
+  {
+    "title": "Python",
+    "desc": "General",
+    "score": "60%"
+  },
+  {
+    "title": "Bash",
+    "desc": "General",
+    "score": "90%"
+  },
+  {
+    "title": "Bootstrap",
+    "desc": "General",
+    "score": "90%"
+  },
+  {
+    "title": "Sass",
+    "desc": "General",
+    "score": "80%"
+  },
+  {
+    "title": "Pug",
+    "desc": "General",
+    "score": "60%"
+  },
+  {
+    "title": "ElectronJS",
+    "desc": "General",
+    "score": "60%"
+  },
+  {
+    "title": "NoSQL",
+    "desc": "General",
+    "score": "20%"
+  },
+  {
+    "title": "Adobe PS",
+    "desc": "General",
+    "score": "90%"
+  },
+  {
+    "title": "Adobe AI",
+    "desc": "General",
+    "score": "40%"
+  }
+]
