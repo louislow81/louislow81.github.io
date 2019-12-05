@@ -45,36 +45,28 @@
 
   <script>
     export default {
-      menus: [
-        {
-          title: 'Home',
-          url: '#home'
-        },
-        {
-          title: 'About',
-          url: '#about'
-        },
-        {
-          title: 'Experience',
-          url: '#experience'
-        },
-        {
-          title: 'Skills',
-          url: '#skills'
-        },
-        {
-          title: 'Pet Project',
-          url: '#pet-projects'
-        },
-        {
-          title: 'Blog',
-          url: '#blog',
-        },
-        {
-          title: 'Contact',
-          url: '#contact'
-        }
-      ]
+      onMounted() {
+
+        const self = this
+        self.menus = []
+
+        const url = './assets/data/menu.json'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data => {
+                delete self.error
+                self.menus = data
+                self.update()
+              })
+              .catch(error => {
+                self.error = error
+                self.upate()
+              })
+          })
+
+      }
     }
   </script>
 
