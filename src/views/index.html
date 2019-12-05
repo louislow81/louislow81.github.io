@@ -114,9 +114,9 @@
         <!-- main content -->
         <y class="md:ml-40 lg:ml-40 lg:ml-40 h-screen w-screen">
 
-          <intro-one></intro-one>
+          <home></home>
 
-          <about-me></about-me>
+          <about></about>
 
           <experience></experience>
 
@@ -124,7 +124,7 @@
 
           <pet-project></pet-project>
 
-          <!--<my-blog></my-blog>-->
+          <blog></blog>
 
           <contact></contact>
 
@@ -143,9 +143,9 @@
     <!-- krunch: components to compile -->
     <script data-src="components/global/menu-bar.html"
             type="krunch"></script>
-    <script data-src="components/block/intro-one.html"
+    <script data-src="components/block/home.html"
             type="krunch"></script>
-    <script data-src="components/block/about-me.html"
+    <script data-src="components/block/about.html"
             type="krunch"></script>
     <script data-src="components/block/experience.html"
             type="krunch"></script>
@@ -192,12 +192,15 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        krunch.mount('image-avatar, menu-bar, intro-one, about-me, skills, experience, my-blog, pet-project, contact, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, card-image-text, icon-platform')
+        krunch.mount('image-avatar, menu-bar, home, about, skills, experience, blog, pet-project, contact, small-footer, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, card-text, card-image, card-text-score, card-nine-element, card-image-text, icon-platform')
 
       }())
     </script>
     <!-- // !! default -->
 
+    <script>
+
+    </script>
 
   </body>
 
