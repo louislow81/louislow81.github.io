@@ -42,6 +42,10 @@ const distProdRecursivePath = 'dist/**/*'
 // ftp
 const ftpDestPath = '/public_html/www' // set yours
 
+// data
+const srcJsonDataPath = 'src/assets/data/*.json'
+const distJsonDataPath = 'dist/assets/data/'
+
 // watch
 const watchSrcHtmlPath = 'src/views/**/*.html'
 const watchSrcScssPath = 'src/assets/scss/**/*.scss'
@@ -184,6 +188,13 @@ gulp.task('image',
 )
 
 
+// ...move json data
+gulp.task('move-data', function() {
+  return gulp.src(srcJsonDataPath)
+    .pipe(gulp.dest(distJsonDataPath))
+})
+
+
 // watch assets changes...
 gulp.task('watch',
   gulp.series([
@@ -193,6 +204,7 @@ gulp.task('watch',
     'scripts',
     'sass',
     'html',
+    'move-data',
     'serve'
 
   ], function() {
