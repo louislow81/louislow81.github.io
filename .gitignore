@@ -7,11 +7,10 @@ dat.json
 changelog.md
 
 /node_modules
+/dist
+/.idea
 
 package-lock.json
 
-/.idea
-
 *.swp
-
 .c9
