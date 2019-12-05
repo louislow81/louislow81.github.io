@@ -51,6 +51,7 @@ const watchSrcHtmlPath = 'src/views/**/*.html'
 const watchSrcScssPath = 'src/assets/scss/**/*.scss'
 const watchSrcScriptsPath = 'src/assets/js/**/*.js'
 const watchSrcImagePath = 'src/assets/image/**/*'
+const watchSrcJsonDataPath = 'src/assets/data/**/*.json'
 
 
 // reload web browser
@@ -220,6 +221,9 @@ gulp.task('watch',
 
     gulp.watch(watchSrcImagePath,
       gulp.series('image', reload))
+
+    gulp.watch(watchSrcJsonDataPath,
+      gulp.series('move-data', reload))
 
   })
 
