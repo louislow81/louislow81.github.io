@@ -85,7 +85,7 @@ gulp.task('deploy',
 
 
 // serve http
-gulp.task('browserSync',
+gulp.task('serve',
   gulp.series(function(done) {
     browserSync.init({
       server: {
@@ -193,7 +193,7 @@ gulp.task('watch',
     'scripts',
     'sass',
     'html',
-    'browserSync'
+    'serve'
 
   ], function() {
 
