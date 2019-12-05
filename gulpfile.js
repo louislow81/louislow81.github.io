@@ -188,12 +188,12 @@ gulp.task('image',
 gulp.task('watch',
   gulp.series([
 
-    'browserSync',
-    'html',
-    'sass',
+    'image',
     'pre-scripts',
     'scripts',
-    'image'
+    'sass',
+    'html',
+    'browserSync'
 
   ], function() {
 
