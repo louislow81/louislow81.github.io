@@ -1,16 +1,14 @@
 # My Personal Website
 
 <p align="left">
-  <img src="Screenshot_01.png" width="420">
-  <img src="Screenshot_02.png" width="420">
-  <img src="Screenshot_03.png" width="420">
-  <img src="Screenshot_04.png" width="420">
-  <img src="Screenshot_05.png" width="420">
-  <img src="Screenshot_06.png" width="420">
-  <img src="Screenshot_07.png" width="420">
-  <img src="Screenshot_08.png" width="420">
-  <img src="Screenshot_09.png" width="420">
-  <img src="Screenshot_10.png" width="420">
+  <img src="screenshot_01.png" width="420">
+  <img src="screenshot_02.png" width="420">
+  <img src="screenshot_03.png" width="420">
+  <img src="screenshot_04.png" width="420">
+  <img src="screenshot_05.png" width="420">
+  <img src="screenshot_06.png" width="420">
+  <img src="screenshot_07.png" width="420">
+  <img src="screenshot_08.png" width="420">
 </p>
 
 ## https://loouislow81.github.io
@@ -18,8 +16,9 @@
 - About
 - Experience
 - Skills
-- Education (wip)
+- Education
 - Pet Projects
+- Blog (WIP)
 - Contact
 
 Thanks for viewing.

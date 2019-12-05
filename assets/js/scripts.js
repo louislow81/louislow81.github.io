@@ -297,6 +297,42 @@ Math.easeInOutQuad = function(t, b, c, d) {
   }
 }());
 
+
+/*
+  Import and Load JS Once
+*/
+Util.loadJsOnce = function() {
+  var scriptArray = []; // array of urls (closure)
+  // function to defer loading of script
+  return function(url, callback) {
+    // the array doesn't have such url
+    if (scriptArray.indexOf(url) === -1) {
+      var script = document.createElement('script');
+      script.src = url;
+      var head = document.getElementsByTagName('head')[0],
+        done = false;
+      script.onload = script.onreadystatechange = function() {
+        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+          done = true;
+          if (typeof callback === 'function') {
+            callback();
+          }
+          script.onload = script.onreadystatechange = null;
+          head.removeChild(script);
+          scriptArray.push(url);
+        }
+      };
+      head.appendChild(script);
+    }
+  };
+}();
+
+// loop helper for Util.loadJsOnce
+function importjs(urls){
+  for (var i = 0; i < urls.length; i++) {
+    Util.loadJsOnce(urls[i]);
+  }
+}
 window.twttr = (function(d, s, id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
