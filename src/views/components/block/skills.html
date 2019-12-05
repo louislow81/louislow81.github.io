@@ -18,11 +18,11 @@
             <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch">
               <y each="{ potential in skills }">
 
-                <card-text-score
+                <card-skills
                   title="{ potential.title }"
                   desc="{ potential.desc }"
                   score="{ potential.score }">
-                </card-text-score>
+                </card-skills>
 
               </y>
             </y>
@@ -40,10 +40,10 @@
             <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch">
               <y each="{ superpower in knowledge }">
 
-                <card-text-score
+                <card-skills
                   title="{ superpower.title }"
                   desc="{ superpower.desc }">
-                </card-text-score>
+                </card-skills>
 
               </y>
             </y>
