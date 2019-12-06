@@ -1,43 +1,26 @@
 <card-latest-posts>
 
-  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8">
-    <y class="flex flex-wrap justify-start items-center">
+  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 shadow-lg">
+    <y class="flex flex-wrap justify-start items-start">
       <y each="{ data in posts }">
 
-        <y class="relative">
-          <y class="max-w-xs m-2 rounded-lg shadow-lg overflow-hidden cursor-pointer">
+        <y class="relative max-w-md m-2 bg-white rounded-lg overflow-hidden">
 
-            <img class="h-full w-full object-cover object-center overflow-hidden rounded-lg opacity-25"
-                 src="{ data.image }"
-                 alt="{ data.title }">
+          <img class="h-64 w-full object-cover object-center overflow-hidden"
+               src="{ data.image }">
 
-            <y class="absolute top-0 left-0 p-10 flex flex-col justify-center items-center">
-              <y class="pb-4 text-2xl font-semibold text-white depth-snug">
-                { data.title }
-              </y>
+          <y class="p-4">
+            <y class="text-sm depth-snug pb-3">
+              { data.content }
             </y>
-
-            <y class="absolute bottom-0 left-0 px-6 py-4">
-              <y class="text-xs text-white">
-                { data.date }
-              </y>
-            </y>
-
-            <y class="absolute bottom-0 right-0 mr-20 py-4">
-              <y class="text-xs text-white">
-                Twisted Noise
-              </y>
-            </y>
-
-            <y class="absolute bottom-0 right-0 mr-4 mb-2">
-              <y class="bg-white rounded-full">
-                <img class="h-12 w-12 object-cover object-center rounded-full overflow-hidden"
-                     src="assets/image/misc/twisted_noise_logo.png"
-                     alt="Twisted Noise">
-              </y>
-            </y>
-
           </y>
+
+          <y class="absolute bottom-0 right-0 mx-4 my-2">
+            <y class="text-xs opacity-75">
+              { data.date }
+            </y>
+          </y>
+
         </y>
 
       </y>
