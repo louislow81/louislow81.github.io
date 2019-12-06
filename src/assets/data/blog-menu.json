@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Home",
+    "url": "index.html"
+  },
+  {
+    "title": "Latest",
+    "url": "#latest"
+  },
+  {
+    "title": "tag1",
+    "url": "#tag1"
+  },
+  {
+    "title": "tag2",
+    "url": "#tag2"
+  },
+  {
+    "title": "tag3",
+    "url": "#tag3"
+  },
+  {
+    "title": "tag4",
+    "url": "#tag4"
+  }
+]
