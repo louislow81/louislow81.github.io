@@ -1,4 +1,4 @@
-<menu-bar>
+<blog-menu>
 
   <y class="xs:hidden sm:hidden md:block w-40 h-screen bg-charcoal-500">
     <y class="static">
@@ -50,7 +50,7 @@
         const self = this
         self.menus = []
 
-        const url = './assets/data/menu.json'
+        const url = './assets/data/blog-menu.json'
 
         fetch(url)
           .then(res => {
@@ -70,5 +70,5 @@
     }
   </script>
 
-</menu-bar>
+</blog-menu>
 
