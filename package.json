@@ -11,7 +11,7 @@
     "build-scripts": "npm run gulp pre-scripts && npm run gulp scripts",
     "build-html": "npm run gulp html",
     "min-image": "npm run gulp image",
-    "move-data": "npm run gulp move-data"
+    "move-data": "npm run gulp data"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",

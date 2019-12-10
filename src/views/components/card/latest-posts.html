@@ -4,28 +4,46 @@
     <y class="flex flex-wrap justify-start items-start">
       <y each="{ data in posts }">
 
-        <y class="relative max-w-md m-2 bg-white rounded-lg overflow-hidden">
+        <a class="cursor-pointer"
+           href="{ data.url }"
+           title="Soure: Facebook"
+           aria-label="Source: Facebook">
+          <y class="relative max-w-md m-2 bg-white rounded-lg overflow-hidden">
 
-          <y class="p-4">
-            <y class="text-sm depth-snug pb-3">
-              { data.content }
+            <y class="absolute top-0 left-0 px-2 py-1 bg-charcoal-500 border-2 border-white rounded-lg">
+              <y class="text-xs text-white font-semibold">
+                { data.date }
+              </y>
             </y>
-          </y>
 
-          <y class="absolute bottom-0 right-0 mx-4 my-2">
-            <y class="text-xs opacity-75">
-              { data.date }
+            <y class="absolute top-0 right-0 px-1">
+              <i class="fab fa-facebook text-md"></i>
             </y>
+
+            <y class="p-4 mt-6">
+              <y class="text-sm depth-snug">
+                { data.content }
+              </y>
+            </y>
+
+            <img class="h-64 w-full bg-gray-100 object-cover object-center overflow-hidden"
+                 src="{ data.image }"
+                 alt="{ data.content }">
+
           </y>
-
-          <img class="h-64 w-full object-cover object-center overflow-hidden"
-               src="{ data.image }">
-
-        </y>
+        </a>
 
       </y>
     </y>
   </y>
+
+
+  <style>
+    /* color enhance */
+    img {
+      -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
+    }
+  </style>
 
 
   <script>
