@@ -1,32 +1,68 @@
 [
   {
-  "image": "assets/image/misc/no_physical_project_1.jpg",
-  "content": "",
-  "date": ""
+    "url": "",
+    "image": "assets/image/post/7549b32a60b42b81538b2167c63f2504.jpg",
+    "content": "The latest firmware enables SONAR.ai to self-labeling raw data. A set of NN (neural-network) that helps with this cool feature, saving me plenty of time for data labeling manually. It's a new breakthrough in my lab.",
+    "date": "20 Dec 2018"
   },
   {
-    "image": "assets/image/misc/no_physical_project_1.jpg",
-    "content": "",
-    "date": ""
+    "url": "",
+    "image": "assets/image/post/068b674bc5bb79365f6e0204577d282a.jpg",
+    "content": "Illustrating promo for `sonar.ai`. This is a 3-module asset tracking embedded system (marker, tracer, base), the prototype creates a 3-dimensional space with several short length radio wave transmitter as `Marker`. The `Tracer` collecting nearby signal of the `Marker` and predicting an accurate object location by using #MachineLearning. Object can be trace in x, y and z space when the object moving around within the `Marker` radius.",
+    "date": "24 Jul 2018"
   },
   {
-    "image": "assets/image/misc/no_physical_project_1.jpg",
-    "content": "",
-    "date": ""
+    "url": "",
+    "image": "assets/image/post/579136edea907960dda3eadfe1383743.jpg",
+    "content": "`frienbox` a mobile photoblogging social network released in 2006. The project shutted down after 2 years of operation due to funding.",
+    "date": "9 Nov 2016"
   },
   {
-    "image": "assets/image/misc/no_physical_project_1.jpg",
-    "content": "",
-    "date": ""
+    "url": "",
+    "image": "assets/image/post/616a755fae19a2dd25819e24f96e5acb.jpg",
+    "content": "Trying to learn making music back in the year 2006.",
+    "date": "9 Nov 2016"
   },
   {
-    "image": "assets/image/misc/no_physical_project_1.jpg",
-    "content": "",
-    "date": ""
+    "url": "",
+    "image": "assets/image/post/f2f307d8cebb8ddd4ab4968d42f85254.jpg",
+    "content": "EVAC ARCH new firmware themed up with a tactical dark color. If you stumbled across on this post and wondering what the heck is this thing... I'll just make it short. `ARCH` is a hardware network appliance that you called `RELAY`, clustering and load-balancing design are industrial-ready. Pssst... I invented it.",
+    "date": "17 Dec 2015"
   },
   {
-    "image": "assets/image/misc/no_physical_project_1.jpg",
-    "content": "",
-    "date": ""
+    "url": "",
+    "image": "assets/image/post/58c02692d200b15cf831458c5a95edec.jpg",
+    "content": "I am working on the different `noozy` audiophile grade music transport. She has loaded with the flagship 32-bit `Acoustic Engine` sound enhancement courtesy of Noozxoide Laboratories and purely written in C++ and Qt. Support Last.fm music scrobling.",
+    "date": "17 Nov 2015"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/97ec4c33200ce5302071e703bb913205.jpg",
+    "content": "My new EP (extended-play) album `Overload Project`, the `Twisted Mind` is out now at SoundCloud. This is a progressive trance genre which is one of my favorite electro mixing with my own frequencies.",
+    "date": "22 Oct 2014"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/6c4c8425b22a7a60d5bf889a547b4fa6.jpg",
+    "content": "Turn any conventional hard disk become insanely fast as SSD. The secret lies within this advanced hybrid storage technology, courtesy by the dogsbark. I developing few additions for desktop and workstation, PERC controller compatible computer, such as server and storage server. There will be several version engineered for different manufacturers such as EMC, DELL, HP, IBM, ORACLE, etc. Support multiple SSD cache module load-balancing scheme.",
+    "date": "25 Aug 2014"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/85e76e96af044df9e28c40e15d755206.jpg",
+    "content": "Introducing the new `EVAC T-ENG` (`T-ENG` - `Turbo Energy`). 20 times blazing fast internet speed, ciphered tunnel network by using our flagship relay-looping technologies. Once a client connection has established, it directs the request to a relay-server. Boosting bandwidth by sending the transmission from on relay-server to another, the transmission bounced back to a pool filled with client-relay, each time the connection established, the IPA changed randomly.",
+    "date": "30 Jul 2014"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/e5904d8aae7db3b98fcfc52a63ec7275.jpg",
+    "content": "The REAKTOR, an online music streaming service and scrobbling for audiophilers. Soon it's going to hit the Chrome Store world-wide. The download is free, but required monthly subscription.",
+    "date": "22 Jun 2014"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/b4b5c31c7a51d1bc61a0ef441b515563.jpg",
+    "content": "ExoCache Extended (EE) app for Android. This app the idea is to accelerate the execution speed of an app. By clearing out the unused system memory, giving more room for launching app faster. Create new EE app shortcut on launcher screen.",
+    "date": "1 Jun 2014"
   }
 ]

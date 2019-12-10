@@ -184,7 +184,7 @@ gulp.task('image', () => {
 
 
 // ...move json data
-gulp.task('move-data', () => {
+gulp.task('data', () => {
   return gulp.src(srcJsonDataPath)
     .pipe(gulp.dest(distJsonDataPath))
 })
@@ -198,9 +198,8 @@ gulp.task('watch',
     'pre-scripts',
     'scripts',
     'sass',
-    'purge-css',
     'html',
-    'move-data',
+    'data',
     'serve'
 
   ], () => {
@@ -209,7 +208,7 @@ gulp.task('watch',
       gulp.series(['html', reload]))
 
     gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', 'purge-css', reload]))
+      gulp.series(['sass', reload]))
 
     gulp.watch(watchSrcScriptsPath,
       gulp.series(['pre-scripts','scripts', reload]))
@@ -218,7 +217,7 @@ gulp.task('watch',
       gulp.series('image', reload))
 
     gulp.watch(watchSrcJsonDataPath,
-      gulp.series('move-data', reload))
+      gulp.series('data', reload))
 
   })
 
