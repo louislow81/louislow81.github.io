@@ -62,8 +62,7 @@ function reload(done) {
 
 
 // ...for ftp
-gulp.task('deploy',
-  function() {
+gulp.task('deploy', () => {
 
     const conn = ftp.create({
       host: 'localhost',
@@ -91,7 +90,7 @@ gulp.task('deploy',
 
 // serve http
 gulp.task('serve',
-  gulp.series(function(done) {
+  gulp.series((done) => {
     browserSync.init({
       server: {
         baseDir: distProdPath
@@ -104,8 +103,7 @@ gulp.task('serve',
 
 
 // ...for html
-gulp.task('html',
-  function() {
+gulp.task('html', () => {
     return gulp.src(srcHtmlPath)
       .pipe(htmlmin({
         collapseWhitespace: true,
@@ -119,8 +117,7 @@ gulp.task('html',
 
 
 // ...for scss
-gulp.task('sass',
-  function() {
+gulp.task('sass', () => {
     return gulp.src(srcScssPath)
       .pipe(sassGlob())
       .pipe(sass({ outputStyle: 'compressed' })
@@ -138,8 +135,7 @@ gulp.task('sass',
 
 
 // ...for js (your custom scripts management)
-gulp.task('pre-scripts',
-  function() {
+gulp.task('pre-scripts', () => {
     return gulp.src([
         srcUtilJsPath + '/vendors/drift.js',
         srcUtilJsPath + '/util.js',
@@ -161,8 +157,7 @@ gulp.task('pre-scripts',
 
 
 // ...for js (merge with compiler)
-gulp.task('scripts',
-  function() {
+gulp.task('scripts', () => {
     return gulp.src([
         srcUtilJsPath + '/krunch+compiler.min.js',
         distJsPath + '/scripts.pre.js'
@@ -177,8 +172,7 @@ gulp.task('scripts',
 
 
 // ...for image
-gulp.task('image',
-  function() {
+gulp.task('image', () => {
     return gulp.src(srcImageRecursivePath)
       .pipe(imagemin([
         pngquant({ quality: [1, 1] }), // png
@@ -190,7 +184,7 @@ gulp.task('image',
 
 
 // ...move json data
-gulp.task('move-data', function() {
+gulp.task('move-data', () => {
   return gulp.src(srcJsonDataPath)
     .pipe(gulp.dest(distJsonDataPath))
 })
@@ -204,17 +198,18 @@ gulp.task('watch',
     'pre-scripts',
     'scripts',
     'sass',
+    'purge-css',
     'html',
     'move-data',
     'serve'
 
-  ], function() {
+  ], () => {
 
     gulp.watch(watchSrcHtmlPath,
       gulp.series(['html', reload]))
 
     gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', reload]))
+      gulp.series(['sass', 'purge-css', reload]))
 
     gulp.watch(watchSrcScriptsPath,
       gulp.series(['pre-scripts','scripts', reload]))
