@@ -7,6 +7,12 @@
   },
   {
     "url": "",
+    "image": "assets/image/post/4a79f3f37ef49d2fc33c3c2a06da4fa0.jpg",
+    "content": "Spending my long holiday to enhanced one of my debugging tools. Introducing the `EMBRYO 6`. Crafted by me. I did some upgrade on this version 6 to let EMBRYO recognizes the vulnerability, bugs and glitches even more deeper. ",
+    "date": "30 Nov 2015"
+  },
+  {
+    "url": "",
     "image": "assets/image/post/58c02692d200b15cf831458c5a95edec.jpg",
     "content": "I am working on the different `noozy` audiophile grade music transport. She has loaded with the flagship 32-bit `Acoustic Engine` sound enhancement courtesy of Noozxoide Laboratories and purely written in C++ and Qt. Support Last.fm music scrobling.",
     "date": "17 Nov 2015"

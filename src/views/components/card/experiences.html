@@ -1,14 +1,8 @@
 <card-experiences>
 
   <y class="flex flex-wrap justify-start items-stretch">
-    <y class="relative xs:max-w-lg sm:max-w-xl md:max-w-xs m-2 bg-white rounded-lg shadow">
-
-      <y class="px-2 pb-4 text-md text-red-400"
-         if="{ error }">
-        Data is missing.
-      </y>
-
-      <y each="{ work in experiences }">
+    <y class="relative xs:max-w-lg sm:max-w-xl md:max-w-xs m-2 bg-white rounded-lg shadow"
+       each="{ work in experiences }">
 
       <y class="xs:block sm:block md:block static flex justify-center items-center">
         <y class="z-10 hover:absolute top-0 left-0 hover:bg-charcoal-400 w-full h-full overflow-hidden">
@@ -104,7 +98,8 @@
         const self = this
         self.experiences = []
 
-        const url = './assets/data/experiences.json'
+        const base = './assets/data'
+        const url = base + '/experiences.json'
 
         fetch(url)
           .then(res => {
