@@ -4,23 +4,27 @@
     "url": "index.html"
   },
   {
-    "title": "Latest",
-    "url": "#latest"
+    "title": "2018",
+    "url": "#2018"
   },
   {
-    "title": "tag1",
-    "url": "#tag1"
+    "title": "2016",
+    "url": "#2016"
   },
   {
-    "title": "tag2",
-    "url": "#tag2"
+    "title": "2015",
+    "url": "#2015"
   },
   {
-    "title": "tag3",
-    "url": "#tag3"
+    "title": "2014",
+    "url": "#2014"
   },
   {
-    "title": "tag4",
-    "url": "#tag4"
+    "title": "2013",
+    "url": "#2013"
+  },
+  {
+    "title": "2012",
+    "url": "#2012"
   }
 ]
