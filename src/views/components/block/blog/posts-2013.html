@@ -1,6 +1,12 @@
 <blog-posts-2013>
 
-  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8">
+  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 mb-8">
+
+    <y class="px-2 text-md text-red-400"
+       if="{ error }">
+      Data is missing.
+    </y>
+
     <y class="flex flex-wrap justify-start items-start">
       <y each="{ data in posts }">
 
@@ -30,7 +36,8 @@
         const self = this
         self.posts = []
 
-        const url = './assets/data/blog-posts-2013.json'
+        const base = './assets/data'
+        const url = base + '/posts/2013.json'
 
         fetch(url)
           .then(res => {

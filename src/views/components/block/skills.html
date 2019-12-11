@@ -15,6 +15,12 @@
           </y>
 
           <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch">
+
+            <y class="px-2 pb-4 text-md text-red-400"
+              if="{ error }">
+              Data is missing.
+            </y>
+
             <y each="{ potential in skills }">
 
               <card-skills
@@ -37,6 +43,12 @@
           </y>
 
           <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch">
+
+            <y class="px-2 pb-4 text-md text-red-400"
+              if="{ error }">
+              Data is missing.
+            </y>
+
             <y each="{ superpower in knowledge }">
 
               <card-skills
@@ -70,8 +82,9 @@
         self.skills = []
         self.knowledge = []
 
-        const urlSkills = './assets/data/skills.json'
-        const urlKnowledge = './assets/data/knowledge.json'
+        const base = './assets/data'
+        const urlSkills = base + '/skills.json'
+        const urlKnowledge = base + '/knowledge.json'
 
         fetch(urlSkills)
           .then(res => {

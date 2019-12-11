@@ -1,6 +1,12 @@
 <card-github-projects>
 
   <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-center">
+
+    <y class="px-2 pb-4 text-md text-red-400"
+      if="{ error }">
+      Data is missing.
+    </y>
+
     <y each="{ pet in projects }">
 
       <a href="{ pet.url }"
@@ -46,7 +52,8 @@
         const self = this
         self.projects = []
 
-        const url = './assets/data/github-projects.json'
+        const base = './assets/data'
+        const url = base + '/github-projects.json'
 
         fetch(url)
           .then(res => {

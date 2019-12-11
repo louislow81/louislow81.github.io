@@ -11,13 +11,14 @@
       </y>
 
       <!-- menus -->
-      <y each="{ data in menus }">
+      <y class="flex flex-wrap justify-center items-center"
+         each="{ data in menus }">
 
         <a href="{ data.url }"
            title="{ data.title }"
            aria-lable="{ data.title }">
 
-          <y class="px-6 py-2 text-md font-oswald uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full">
+          <y class="px-10 py-2 text-md font-oswald uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full">
             { data.title }
           </y>
 
