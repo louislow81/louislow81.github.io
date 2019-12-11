@@ -1,0 +1,52 @@
+<blog-posts-2015>
+
+  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8">
+    <y class="flex flex-wrap justify-start items-start">
+      <y each="{ data in posts }">
+
+        <card-blog-posts
+          image="{ data.image }"
+          content="{ data.content }"
+          date="{ data.date }"
+        ></card-blog-posts>
+
+      </y>
+    </y>
+  </y>
+
+
+  <style>
+    /* color enhance */
+    img {
+      -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
+    }
+  </style>
+
+
+  <script>
+    export default {
+      onMounted() {
+
+        const self = this
+        self.posts = []
+
+        const url = './assets/data/blog-posts-2015.json'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data => {
+                delete self.error
+                self.posts = data
+                self.update()
+              })
+              .catch(error => {
+                self.error = error
+                self.update()
+              })
+          })
+      }
+    }
+  </script>
+
+</blog-posts-2015>
