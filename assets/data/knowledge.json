@@ -20,6 +20,11 @@
     "score": "100%"
   },
   {
+    "title": "Linux",
+    "desc": "Debian Distro",
+    "score": "90%"
+  },
+  {
     "title": "Steinberg Cubase",
     "desc": "Sequencing",
     "score": "70%"
@@ -35,7 +40,7 @@
     "score": "70%"
   },
   {
-    "title": "Linux Debian",
+    "title": "Debian",
     "desc": "Workship",
     "score": "90%"
   },

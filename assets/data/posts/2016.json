@@ -1,0 +1,32 @@
+[
+  {
+    "url": "",
+    "image": "assets/image/post/579136edea907960dda3eadfe1383743.jpg",
+    "content": "Project `frienbox` a mobile photoblogging social network released in 2006. The project shutted down after 2 years of operation due to funding.",
+    "date": "9 Nov 2016"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/616a755fae19a2dd25819e24f96e5acb.jpg",
+    "content": "Trying to learn making music back in the year 2006.",
+    "date": "9 Nov 2016"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/a4bb75dc6f26e638dc10a970be3400f4.jpg",
+    "content": "Another attempt to redesign `noozy` player version 4.",
+    "date": "29 Oct 2016"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/22424060d76f0c07a8c5f81641e53e88.jpg",
+    "content": "`EVAC ARCH` is having a new real-time `Metric View` dashboard! And will be added in the next firmware updates. Tested yesterday night at 1 am, fully debugged and been rotating for hours. Also added new UI to managing the device power.",
+    "date": "22 Oct 2016"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/f152383906f91245acc547af3b82b2a5.jpg",
+    "content": "Project `Monolith XNA` built by the crews. A development tool that stuffed with tons of overwhelming features that every developer needs. Crews can collaborate and editing the code on the same page or run across different workspace or project. A killing debugger that supports all varieties of languages. Our heavily customized Git time-machine was satisfying. A terminal comes in real handy. Best coding standards and best code hygiene with all sorts of Lints supported. Create boiler template faster. Extremely fast coding and less typing by using abbreviation input. Greatly improved the development efficiency.",
+    "date": "2 Jul 2016"
+  }
+]

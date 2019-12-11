@@ -20,6 +20,10 @@
     "url": "#pet-projects"
   },
   {
+    "title": "Blog",
+    "url": "blog.html"
+  },
+  {
     "title": "Contact",
     "url": "#contact"
   }

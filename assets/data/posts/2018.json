@@ -1,0 +1,14 @@
+[
+  {
+    "url": "",
+    "image": "assets/image/post/7549b32a60b42b81538b2167c63f2504.jpg",
+    "content": "The latest firmware enables `sonar.ai` to self-labeling raw data. A set of neural-network that helps with this cool feature, saving me plenty of time for data labeling manually. It's a new breakthrough in my lab.",
+    "date": "20 Dec 2018"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/068b674bc5bb79365f6e0204577d282a.jpg",
+    "content": "Illustrating promo for `sonar.ai`. This is a 3-module asset tracking embedded system (marker, tracer, base), the prototype creates a 3-dimensional space with several short length radio wave transmitter as `Marker`. The `Tracer` collecting nearby signal of the `Marker` and predicting an accurate object location by using #MachineLearning. Object can be trace in x, y and z space when the object moving around within the `Marker` radius.",
+    "date": "24 Jul 2018"
+  }
+]

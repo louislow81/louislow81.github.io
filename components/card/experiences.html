@@ -6,7 +6,8 @@
         const self = this
         self.experiences = []
 
-        const url = './assets/data/experiences.json'
+        const base = './assets/data'
+        const url = base + '/experiences.json'
 
         fetch(url)
           .then(res => {
