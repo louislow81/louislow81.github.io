@@ -43,7 +43,7 @@ const distProdRecursivePath = 'dist/**/*'
 const ftpDestPath = '/public_html/www' // set yours
 
 // data
-const srcJsonDataPath = 'src/assets/data/*.json'
+const srcJsonDataPath = 'src/assets/data/**/*.json'
 const distJsonDataPath = 'dist/assets/data/'
 
 // watch
