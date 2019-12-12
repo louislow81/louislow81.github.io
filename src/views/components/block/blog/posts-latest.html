@@ -1,4 +1,4 @@
-<blog-posts-2018>
+<blog-posts-latest>
 
   <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8">
 
@@ -8,7 +8,8 @@
     </y>
 
     <y class="flex flex-wrap justify-start items-start">
-      <y each="{ data in posts }">
+      <y class="max-w-xs"
+         each="{ data in posts }">
 
         <card-blog-posts
           image="{ data.image }"
@@ -37,7 +38,7 @@
         self.posts = []
 
         const base = './assets/data'
-        const url = base + '/posts/2018.json'
+        const url = base + '/posts/latest.json'
 
         fetch(url)
           .then(res => {
@@ -56,4 +57,4 @@
     }
   </script>
 
-</blog-posts-2018>
+</blog-posts-latest>
