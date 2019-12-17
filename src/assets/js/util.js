@@ -231,6 +231,7 @@ if (typeof window.CustomEvent !== "function") {
   window.CustomEvent = CustomEvent;
 }
 
+
 /*
 	Animation curves
 */
@@ -306,3 +307,6 @@ function importjs(urls){
     Util.loadJsOnce(urls[i]);
   }
 }
+
+// enable service worker
+KrugurtServiceWorker.init();

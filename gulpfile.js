@@ -46,6 +46,9 @@ const ftpDestPath = '/public_html/www' // set yours
 const srcJsonDataPath = 'src/assets/data/**/*.json'
 const distJsonDataPath = 'dist/assets/data/'
 
+// service worker
+const srcServiceWorkerPath = 'src/assets/js/service_worker'
+
 // watch
 const watchSrcHtmlPath = 'src/views/**/*.html'
 const watchSrcScssPath = 'src/assets/scss/**/*.scss'
@@ -159,6 +162,7 @@ gulp.task('pre-scripts', () => {
 // ...for js (merge with compiler)
 gulp.task('scripts', () => {
     return gulp.src([
+        srcUtilJsPath + '/service_worker/krugurt+core.min.js',
         srcUtilJsPath + '/krunch+compiler.min.js',
         distJsPath + '/scripts.pre.js'
       ])
@@ -190,6 +194,16 @@ gulp.task('data', () => {
 })
 
 
+// ...move service worker
+gulp.task('service-worker', () => {
+  return gulp.src([
+      srcServiceWorkerPath + '/krugurt+init.min.js',
+      srcServiceWorkerPath + '/krugurt+sw.min.js'
+    ])
+    .pipe(gulp.dest(distProdPath))
+})
+
+
 // watch assets changes...
 gulp.task('watch',
   gulp.series([
@@ -200,6 +214,7 @@ gulp.task('watch',
     'sass',
     'html',
     'data',
+    'service-worker',
     'serve'
 
   ], () => {
