@@ -1,0 +1,20 @@
+[
+  {
+    "url": "",
+    "image": "assets/image/post/fbc8fb21206cd3c5e503e556b3a3e788.jpg",
+    "content": "Both `arch-primitive` (https://tinyurl.com/qlj5e4t) and `arch-primitive-ion` (https://tinyurl.com/tlsvob6) are available at Docker Hub. You should try something that is faster than caching proxy.",
+    "date": "30 Dec 2018"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/df2d818b3e97bc21d64b5c6fa9c723d0.jpg",
+    "content": "Working on the new `Noozxoide EIZO-NNXT Series` after leaving the workplace. This firmware takes digital audio signals with added special effects to makes the listening content realistic, immersive and stunning sound.",
+    "date": "24 Dec 2018"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/7549b32a60b42b81538b2167c63f2504.jpg",
+    "content": "The latest firmware enables `sonar.ai` to self-labeling raw data. A set of neural-network that helps with this cool feature, saving me plenty of time for data labeling manually. It's a new breakthrough in my lab.",
+    "date": "20 Dec 2018"
+  }
+]

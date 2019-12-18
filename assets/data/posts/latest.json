@@ -1,20 +1,20 @@
 [
   {
     "url": "",
-    "image": "assets/image/post/fbc8fb21206cd3c5e503e556b3a3e788.jpg",
-    "content": "Both `arch-primitive` (https://tinyurl.com/qlj5e4t) and `arch-primitive-ion` (https://tinyurl.com/tlsvob6) are available at Docker Hub. You should try something that is faster than caching proxy.",
-    "date": "30 Dec 2018"
+    "image": "assets/image/post/df8042dbb57ad9bdd15b213164a54a39.jpeg",
+    "content": "Project `Golem GUI AppStore` (https://tinyurl.com/udvgz37) has been pending for a year, it's time to continue to work on what is left. But I decided to revamp it with `Krugurt` toolkit.",
+    "date": "15 Dec 2019"
   },
   {
     "url": "",
-    "image": "assets/image/post/df2d818b3e97bc21d64b5c6fa9c723d0.jpg",
-    "content": "Working on the new `Noozxoide EIZO-NNXT Series` after leaving the workplace. This firmware takes digital audio signals with added special effects to makes the listening content realistic, immersive and stunning sound.",
-    "date": "24 Dec 2018"
+    "image": "assets/image/post/d5a20c9b95ecda1e582d4fc7dcf93a94.jpg",
+    "content": "Working on the new `noozy` version `4`, an audiophile grade music player for the latest Android. A 12 types of sound processors and advanced sound modeling options in the design.",
+    "date": "16 Nov 2019"
   },
   {
     "url": "",
-    "image": "assets/image/post/7549b32a60b42b81538b2167c63f2504.jpg",
-    "content": "The latest firmware enables `sonar.ai` to self-labeling raw data. A set of neural-network that helps with this cool feature, saving me plenty of time for data labeling manually. It's a new breakthrough in my lab.",
-    "date": "20 Dec 2018"
+    "image": "assets/image/post/da7dfc5ba005a354a2360077c9003367.jpg",
+    "content": "`kraft` prototype 3.x giving artist the superpower to produce UI components without knowing how to code, Kraft has it all, when you creating or organizing objects, it generates CSS code real-time, you just need to export it.",
+    "date": "15 Sep 2019"
   }
 ]
