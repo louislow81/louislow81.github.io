@@ -1,0 +1,49 @@
+<popup-image-preview><y class="z-10 modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"><y class="modal-overlay absolute w-full h-full bg-charcoal-100 opacity-75"></y><y class="z-50 modal-container bg-charcoal-600 w-11/12 md:max-w-md mx-auto rounded shadow-lg overflow-y-auto"><y class="z-50 modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm"><svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg> <span class="text-sm">(Esc)</span></y><y class="modal-content py-4 text-left px-6"><y class="flex justify-between items-center pb-3"><y class="modal-close cursor-pointer z-50"><svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path></svg></y></y><y><img class="hidden w-full h-64 object-cover object-center bg-charcoal-200 rounded overflow-hidden" src="{ props.image }" alt="News"><y class="w-full h-64 object-cover object-center bg-charcoal-200 rounded overflow-hidden"></y></y><y class="flex justify-end py-2"><button class="modal-close p-4 bg-orange-600 rounded-lg text-white hover:bg-orange-500">Close</button></y></y></y></y><style>.modal {
+      transition: opacity 0.25s ease
+    }
+    .modal-active {
+      overflow-x: hidden;
+      overflow-y: visible !important
+    }</style><script>export default {
+      onMounted() {
+
+        const openmodal = document.querySelectorAll('.modal-open')
+        for (let i = 0; i < openmodal.length; i++) {
+          openmodal[i].addEventListener('click', function(event) {
+            event.preventDefault()
+            toggleModal()
+          })
+        }
+
+        const overlay = document.querySelector('.modal-overlay')
+        overlay.addEventListener('click', toggleModal)
+
+        const closemodal = document.querySelectorAll('.modal-close')
+        for (let i = 0; i < closemodal.length; i++) {
+          closemodal[i].addEventListener('click', toggleModal)
+        }
+
+        document.onkeydown = function(evt) {
+          evt = evt || window.event
+          let isEscape = false
+          if ("key" in evt) {
+            isEscape = (evt.key === "Escape" || evt.key === "Esc")
+          }
+          else {
+            isEscape = (evt.keyCode === 27)
+          }
+          if (isEscape && document.body.classList.contains('modal-active')) {
+            toggleModal()
+          }
+        }
+
+        function toggleModal() {
+          const body = document.querySelector('body')
+          const modal = document.querySelector('.modal')
+          modal.classList.toggle('opacity-0')
+          modal.classList.toggle('pointer-events-none')
+          body.classList.toggle('modal-active')
+        }
+
+      }
+    }</script></popup-image-preview>

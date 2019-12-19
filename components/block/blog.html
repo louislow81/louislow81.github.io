@@ -1,4 +1,4 @@
-<blog><y class="py-6 bg-charcoal-500" id="blog"><y class="md:px-10 md-h-full"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Blog"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="flex flex-wrap justify-start items-start"><y each="{ data in posts }"><y class="xs:max-w-sm sm:max-w-xxs md:max-w-md"><card-blog-posts image="{ data.image }" image="{ data.image }" content="{ data.content }" date="{ data.date }"></card-blog-posts></y></y></y><button-ultra url="/blog.html" text="More" tooltip="Read more of my stories" option="_self"></button-ultra></y></y></y><style>:host {
+<blog><y class="py-6 bg-charcoal-500" id="blog"><y class="md:px-10 md-h-full"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Blog"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="flex flex-wrap justify-start items-start"><y each="{ data in posts }"><y class="xs:max-w-sm sm:max-w-xxs md:max-w-md"><card-blog-posts image="{ data.image }" content="{ data.content }" date="{ data.date }"></card-blog-posts></y></y></y><button-ultra url="/blog.html" text="More" tooltip="Read more of my stories" option="_self"></button-ultra></y></y></y><style>:host {
       font-family: Poppins, Sans-Serif;
     }
     /* color enhance */
@@ -26,5 +26,6 @@
                 self.update()
               })
           })
+
       }
     }</script></blog>
