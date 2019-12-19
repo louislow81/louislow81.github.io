@@ -32,7 +32,13 @@
   {
     "url": "",
     "image": "assets/image/post/f152383906f91245acc547af3b82b2a5.jpg",
-    "content": "Project `Monolith XNA`, a development tool with tons of features that every developer needs. Use it to collaborate and editing codes on the same page or run across different workspace or project. The debugger supports many of the languages. Heavily customized Git time-machine was satisfying. Terminal comes in real handy. The best coding standards and code hygiene with all sorts of Lints supported.",
+    "content": "New project `Monolith XNA`, a development tool with tons of features that every developer needs. Use it to collaborate and editing codes on the same page or run across different workspace or project. The debugger supports many of the languages. Heavily customized Git time-machine was satisfying. Terminal comes in real handy. The best coding standards and code hygiene with all sorts of Lints supported.",
+    "date": "2 Jul 2016"
+  },
+  {
+    "url": "",
+    "image": "assets/image/post/d1ec0e4f076adf85fb4c2ac9244a2a3b.jpeg",
+    "content": "Opensourced the project `Monolith Alpha` (https://tinyurl.com/wuewlba) an all-purpose cloud IDE packed with peer environment, linters, debuggers, compilers, terminal, git, offline-env, etc. Everyone can download and use it or host it your own.",
     "date": "2 Jul 2016"
   }
 ]
