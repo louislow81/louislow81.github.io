@@ -179,8 +179,8 @@ gulp.task('scripts', () => {
 gulp.task('image', () => {
     return gulp.src(srcImageRecursivePath)
       .pipe(imagemin([
-        pngquant({ quality: [1, 1] }), // png
-        mozjpeg({ quality: 100 }), // jpg
+        pngquant({ quality: [0.95, 0.95] }), // png
+        mozjpeg({ quality: 95 }), // jpg
       ]))
       .pipe(gulp.dest(distImagePath))
   }
