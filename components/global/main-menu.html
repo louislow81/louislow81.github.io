@@ -1,4 +1,4 @@
-<main-menu><y class="xs:hidden sm:hidden md:block w-40 h-screen bg-charcoal-500"><y class="static"><y class="py-4"><image-avatar></image-avatar></y><y each="{ data in menus }"><a href="{ data.url }" title="{ data.title }" aria-lable="{ data.title }"><y class="px-6 py-2 text-md font-oswald uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full">{ data.title }</y></a></y><y class="absolute left-0 bottom-0"><small-footer></small-footer></y></y></y><style>.font-oswald {
+<global-main-menu><y class="xs:hidden sm:hidden md:block w-40 h-screen bg-charcoal-500"><y class="static"><y class="py-4"><image-avatar></image-avatar></y><y each="{ data in menus }"><a href="{ data.url }" title="{ data.title }" aria-lable="{ data.title }"><y class="px-6 py-2 text-md font-oswald uppercase text-left text-gray-500 hover:text-blue-600 hover:bg-charcoal-700 w-full">{ data.title }</y></a></y><y class="absolute left-0 bottom-0"><global-small-footer></global-small-footer></y></y></y><style>.font-oswald {
       font-family: Oswald, sans-serif;
     }</style><script>export default {
       onMounted() {
@@ -23,4 +23,4 @@
           })
 
       }
-    }</script></main-menu>
+    }</script></global-main-menu>
