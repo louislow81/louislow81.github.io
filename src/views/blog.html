@@ -97,7 +97,7 @@
         <y>
           <img class="w-24 h-24 border-4 border-gray-400 rounded-full shadow-lg"
                src="assets/image/misc/me.png"
-               title="Me">
+               title="Loouis Low">
         </y>
       </y>
 
@@ -107,14 +107,14 @@
         <!-- nav (fixed) -->
         <y class="fixed">
 
-          <blog-menu></blog-menu>
+          <global-blog-menu></global-blog-menu>
 
         </y>
 
         <!-- main content -->
         <y class="md:ml-40 lg:ml-40 lg:ml-40 h-screen w-screen">
 
-          <posts></posts>
+          <block-posts></block-posts>
 
         </y>
 
@@ -129,53 +129,53 @@
 
 
     <!-- krunch: components to compile -->
-    <script data-src="components/global/blog-menu.html"
+    <script async data-src="components/global/blog-menu.html"
             type="krunch"></script>
-    <script data-src="components/image/avatar.html"
+    <script async data-src="components/image/avatar.html"
             type="krunch"></script>
-    <script data-src="components/global/small-footer.html"
+    <script async data-src="components/global/small-footer.html"
             type="krunch"></script>
-    <script data-src="components/block/posts.html"
+    <script async data-src="components/block/posts.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2019.html"
+    <script async data-src="components/block/blog/posts-2019.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2018.html"
+    <script async data-src="components/block/blog/posts-2018.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2017.html"
+    <script async data-src="components/block/blog/posts-2017.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2016.html"
+    <script async data-src="components/block/blog/posts-2016.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2015.html"
+    <script async data-src="components/block/blog/posts-2015.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2014.html"
+    <script async data-src="components/block/blog/posts-2014.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2013.html"
+    <script async data-src="components/block/blog/posts-2013.html"
             type="krunch"></script>
-    <script data-src="components/block/blog/posts-2012.html"
+    <script async data-src="components/block/blog/posts-2012.html"
             type="krunch"></script>
-    <script data-src="components/card/github-projects.html"
+    <script async data-src="components/card/github-projects.html"
             type="krunch"></script>
-    <script data-src="components/card/project-promos.html"
+    <script async data-src="components/card/project-promos.html"
             type="krunch"></script>
-    <script data-src="components/card/skills.html"
+    <script async data-src="components/card/skills.html"
             type="krunch"></script>
-    <script data-src="components/card/blog-posts.html"
+    <script async data-src="components/card/blog-posts.html"
             type="krunch"></script>
-    <script data-src="components/card/experiences.html"
+    <script async data-src="components/card/experiences.html"
             type="krunch"></script>
-    <script data-src="components/text/heading.html"
+    <script async data-src="components/text/heading.html"
             type="krunch"></script>
-    <script data-src="components/text/paragraph.html"
+    <script async data-src="components/text/paragraph.html"
             type="krunch"></script>
-    <script data-src="components/social/twitter.html"
+    <script async data-src="components/social/twitter.html"
             type="krunch"></script>
-    <script data-src="components/social/icon-link.html"
+    <script async data-src="components/social/icon-link.html"
             type="krunch"></script>
-    <script data-src="components/button/large.html"
+    <script async data-src="components/button/large.html"
             type="krunch"></script>
-    <script data-src="components/button/ultra.html"
+    <script async data-src="components/button/ultra.html"
             type="krunch"></script>
-    <script data-src="components/icon/platform.html"
+    <script async data-src="components/icon/platform.html"
             type="krunch"></script>
 
 
@@ -184,7 +184,9 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        krunch.mount('image-avatar, blog-menu, small-footer, posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform')
+        components = 'global-blog-menu, global-small-footer, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+
+        krunch.mount(components)
 
       }())
     </script>
