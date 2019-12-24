@@ -114,9 +114,15 @@
         <!-- main content -->
         <y class="md:ml-40 lg:ml-40 lg:ml-40 h-screen w-screen">
 
-          <block-posts></block-posts>
+          <y class="mb-10">
+
+            <block-posts></block-posts>
+
+          </y>
 
         </y>
+
+        <global-recent-active-projects></global-recent-active-projects>
 
       </y>
       <!--// layout -->
@@ -134,6 +140,8 @@
     <script async data-src="components/image/avatar.html"
             type="krunch"></script>
     <script async data-src="components/global/small-footer.html"
+            type="krunch"></script>
+    <script async data-src="components/global/recent-active-projects.html"
             type="krunch"></script>
     <script async data-src="components/block/posts.html"
             type="krunch"></script>
@@ -184,7 +192,7 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        components = 'global-blog-menu, global-small-footer, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        components = 'global-blog-menu, global-small-footer, global-recent-active-projects, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
 
         krunch.mount(components)
 
