@@ -49,6 +49,9 @@ const distJsonDataPath = 'dist/assets/data/'
 // service worker
 const srcServiceWorkerPath = 'src/assets/js/service_worker'
 
+// app manifest
+const srcAppManifestPath = 'src'
+
 // watch
 const watchSrcHtmlPath = 'src/views/**/*.html'
 const watchSrcScssPath = 'src/assets/scss/**/*.scss'
@@ -204,6 +207,15 @@ gulp.task('service-worker', () => {
 })
 
 
+// ...move app manifest
+gulp.task('app-manifest', () => {
+  return gulp.src([
+      srcAppManifestPath + '/app.webmanifest',
+    ])
+    .pipe(gulp.dest(distProdPath))
+})
+
+
 // watch assets changes...
 gulp.task('watch',
   gulp.series([
@@ -215,6 +227,7 @@ gulp.task('watch',
     'html',
     'data',
     'service-worker',
+    'app-manifest',
     'serve'
 
   ], () => {
