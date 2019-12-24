@@ -5,7 +5,7 @@
     Component Properties:
 
       ~ xsscreen, smscreen, mdscreen
-      ~ url, urloption, image, content, date
+      ~ url, urloption, image, imageheight, content, date
 
   -->
 
@@ -39,7 +39,7 @@
     </y>
 
     <y class="fix-width-full">
-      <img class="h-auto w-full bg-charcoal-400 object-contain object-center overflow-hidden"
+      <img class="h-{ props.imageheight } w-full bg-charcoal-400 object-cover object-center overflow-hidden"
            src="{ props.image }"
            alt="{ props.content }">
     </y>
