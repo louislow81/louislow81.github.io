@@ -1,0 +1,13 @@
+{
+  "name": "Loouis Low",
+  "short_name": "LoouisLow",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "My portfoliio website",
+  "icons": [{
+    "src": "assets/image/misc/me.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }]
+}
