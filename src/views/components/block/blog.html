@@ -18,18 +18,16 @@
           Data is missing.
         </y>
 
-        <y class="flex flex-wrap justify-start items-start">
+        <y class="flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-start">
           <y each="{ data in posts }">
 
-            <y class="xs:max-w-sm sm:max-w-xxs md:max-w-md">
-
-              <card-blog-posts
-                image="{ data.image }"
-                content="{ data.content }"
-                date="{ data.date }">
-              </card-blog-posts>
-
-            </y>
+            <card-blog-posts
+              url="{ data.url }"
+              urloption="{ data.urlOption }"
+              image="{ data.image }"
+              content="{ data.content }"
+              date="{ data.date }">
+            </card-blog-posts>
 
           </y>
         </y>
