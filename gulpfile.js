@@ -3,6 +3,7 @@ const sass = require('gulp-sass')
 const concatCss = require('gulp-concat-css')
 const uglifyCss = require('gulp-uglifycss')
 const sassGlob = require('gulp-sass-glob')
+const jsonmin = require('gulp-jsonmin')
 const browserSync = require('browser-sync').create()
 const postCss = require('gulp-postcss')
 const autoPrefixer = require('autoprefixer')
@@ -71,28 +72,27 @@ reload = (done) => {
 // ...for ftp
 gulp.task('deploy', () => {
 
-    const conn = ftp.create({
-      host: 'localhost',
-      port: 21,
-      user: 'anonymous',
-      password: 'anonymous',
-      parallel: 1,
-      maxConnections: 1,
-      secure: false
+  const conn = ftp.create({
+    host: 'localhost',
+    port: 21,
+    user: 'anonymous',
+    password: 'anonymous',
+    parallel: 1,
+    maxConnections: 1,
+    secure: false
+  })
+
+  const globs = [
+    distProdRecursivePath
+  ]
+
+  return gulp.src(globs, {
+      base: distProdPath + '/',
+      buffer: false
     })
-
-    const globs = [
-      distProdRecursivePath
-    ]
-
-    return gulp.src(globs, {
-        base: distProdPath + '/',
-        buffer: false
-      })
-      .pipe(conn.newer(ftpDestPath)) // only upload newer files
-      .pipe(conn.dest(ftpDestPath))
-  }
-)
+    .pipe(conn.newer(ftpDestPath)) // only upload newer files
+    .pipe(conn.dest(ftpDestPath))
+})
 
 
 // serve http
@@ -111,84 +111,88 @@ gulp.task('serve',
 
 // ...for html
 gulp.task('html', () => {
-    return gulp.src(srcHtmlPath)
-      .pipe(htmlmin({
-        collapseWhitespace: true,
-        removeComments: true,
-        jsmin: true, // inline js
-        cssmin: true // inline css
-      }))
-      .pipe(gulp.dest(distProdPath))
-  }
-)
+  return gulp.src(srcHtmlPath)
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true,
+      jsmin: true, // inline js
+      cssmin: true // inline css
+    }))
+    .pipe(gulp.dest(distProdPath))
+})
 
 
 // ...for scss
 gulp.task('sass', () => {
-    return gulp.src(srcScssPath)
-      .pipe(sassGlob())
-      .pipe(sass({ outputStyle: 'compressed' })
-        .on('error', sass.logError))
-      .pipe(postCss([autoPrefixer()]))
-      .pipe(gulp.dest(distCssPath))
-      .pipe(browserSync.reload({
-        stream: true
-      }))
-      .pipe(rename('style-fallback.css'))
-      .pipe(postCss([cssVariables(), calc()]))
-      .pipe(gulp.dest(distCssPath))
-  }
-)
+  return gulp.src(srcScssPath)
+    .pipe(sassGlob())
+    .pipe(sass({ outputStyle: 'compressed' })
+      .on('error', sass.logError))
+    .pipe(postCss([autoPrefixer()]))
+    .pipe(gulp.dest(distCssPath))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+    .pipe(rename('style-fallback.css'))
+    .pipe(postCss([cssVariables(), calc()]))
+    .pipe(gulp.dest(distCssPath))
+})
 
 
 // ...for js (your custom scripts management)
 gulp.task('pre-scripts', () => {
-    return gulp.src([
-        srcUtilJsPath + '/vendors/drift.js',
-        srcUtilJsPath + '/util.js',
-        srcComponentsJsPath
-      ])
-      .pipe(concat('scripts.js'))
-      .pipe(gulp.dest(distJsPath))
-      .pipe(browserSync.reload({
-        stream: true
-      }))
-      .pipe(rename('scripts.pre.js'))
-      .pipe(uglify())
-      .pipe(gulp.dest(distJsPath))
-      .pipe(browserSync.reload({
-        stream: true
-      }))
-  }
-)
+  return gulp.src([
+      srcUtilJsPath + '/vendors/drift.js',
+      srcUtilJsPath + '/util.js',
+      srcComponentsJsPath
+    ])
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest(distJsPath))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+    .pipe(rename('scripts.pre.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(distJsPath))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+})
 
 
 // ...for js (merge with compiler)
 gulp.task('scripts', () => {
-    return gulp.src([
-        srcUtilJsPath + '/service_worker/krugurt+core.min.js',
-        srcUtilJsPath + '/krunch+compiler.min.js',
-        distJsPath + '/scripts.pre.js'
-      ])
-      .pipe(concat('scripts.min.js'))
-      .pipe(gulp.dest(distJsPath))
-      .pipe(browserSync.reload({
-        stream: true
-      }))
-  }
-)
+  return gulp.src([
+      srcUtilJsPath + '/service_worker/krugurt+core.min.js',
+      srcUtilJsPath + '/krunch+compiler.min.js',
+      distJsPath + '/scripts.pre.js'
+    ])
+    .pipe(concat('scripts.min.js'))
+    .pipe(gulp.dest(distJsPath))
+    .pipe(browserSync.reload({
+      stream: true
+    }))
+})
 
 
 // ...for image
 gulp.task('image', () => {
-    return gulp.src(srcImageRecursivePath)
-      .pipe(imagemin([
-        pngquant({ quality: [1, 1] }), // png
-        mozjpeg({ quality: 100 }), // jpg
-      ]))
-      .pipe(gulp.dest(distImagePath))
-  }
-)
+  return gulp.src(srcImageRecursivePath)
+    .pipe(imagemin([
+      pngquant({ quality: [1, 1] }), // png
+      mozjpeg({ quality: 100 }), // jpg
+    ]))
+    .pipe(gulp.dest(distImagePath))
+})
+
+
+// ...for json
+gulp.task('json', () => {
+  return gulp.src(srcJsonDataPath)
+    .pip(jsonmin())
+    .pipe(gulp.dest(distJsonDataPath))
+})
+
 
 
 // ...move json data
@@ -221,14 +225,18 @@ gulp.task('app-manifest', () => {
 gulp.task('watch',
   gulp.series([
 
+    // minify files
     'image',
     'pre-scripts',
     'scripts',
     'sass',
     'html',
+    'json',
+    // move files
     'data',
     'service-worker',
     'app-manifest',
+    // host http
     'serve'
 
   ], () => {
@@ -240,13 +248,13 @@ gulp.task('watch',
       gulp.series(['sass', reload]))
 
     gulp.watch(watchSrcScriptsPath,
-      gulp.series(['pre-scripts','scripts', reload]))
+      gulp.series(['pre-scripts', 'scripts', reload]))
 
     gulp.watch(watchSrcImagePath,
       gulp.series('image', reload))
 
     gulp.watch(watchSrcJsonDataPath,
-      gulp.series('data', reload))
+      gulp.series('json', 'data', reload))
 
     gulp.watch(watchSrcPwaPath,
       gulp.series('app-manifest', reload))
