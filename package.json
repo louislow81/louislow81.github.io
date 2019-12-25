@@ -6,13 +6,14 @@
   "scripts": {
     "gulp": "gulp",
     "watch": "gulp watch",
-    "build-all": "npm run build-sass && npm run build-scripts && npm run min-image && npm run build-html && npm run move-data && npm run service-worker",
-    "build-sass": "npm run gulp sass",
-    "build-scripts": "npm run gulp pre-scripts && npm run gulp scripts",
-    "build-html": "npm run gulp html",
+    "build": "npm run min-sass && npm run min-scripts && npm run min-image && npm run min-html && npm run min-data && npm run service-worker && npm run app-manifest",
+    "min-sass": "npm run gulp sass",
+    "min-scripts": "npm run gulp pre-scripts && npm run gulp scripts",
+    "min-html": "npm run gulp html",
     "min-image": "npm run gulp image",
-    "move-data": "npm run gulp data",
-    "service-worker": "npm run gulp service-worker"
+    "min-data": "npm run gulp json",
+    "service-worker": "npm run gulp service-worker",
+    "app-manifest": "npm run gulp app-manifest"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",
