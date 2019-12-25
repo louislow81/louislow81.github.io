@@ -16,10 +16,17 @@
 - About
 - Experience
 - Skills
-- Education
 - Pet Projects
-- Blog (WIP)
+- Blog
 - Contact
+
+## featuring
+
+- PWA installable to all platforms
+- work offline
+- use JSON as payload
+- component based
+- build with [Krugurt](https://github.com/loouislow81/krugurt)
 
 Thanks for viewing.
 
