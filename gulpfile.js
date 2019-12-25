@@ -69,7 +69,7 @@ reload = (done) => {
 }
 
 
-// ...for ftp
+// ...deploy with ftp
 gulp.task('deploy', () => {
 
   const conn = ftp.create({
@@ -109,7 +109,7 @@ gulp.task('serve',
 )
 
 
-// ...for html
+// ...minify html
 gulp.task('html', () => {
   return gulp.src(srcHtmlPath)
     .pipe(htmlmin({
@@ -122,7 +122,7 @@ gulp.task('html', () => {
 })
 
 
-// ...for scss
+// ...minify/preprocess scss
 gulp.task('sass', () => {
   return gulp.src(srcScssPath)
     .pipe(sassGlob())
@@ -139,7 +139,7 @@ gulp.task('sass', () => {
 })
 
 
-// ...for js (your custom scripts management)
+// ...minify js (your custom scripts management)
 gulp.task('pre-scripts', () => {
   return gulp.src([
       srcUtilJsPath + '/vendors/drift.js',
@@ -160,7 +160,7 @@ gulp.task('pre-scripts', () => {
 })
 
 
-// ...for js (merge with compiler)
+// ...merge js (merge with compiler)
 gulp.task('scripts', () => {
   return gulp.src([
       srcUtilJsPath + '/service_worker/krugurt+core.min.js',
@@ -175,7 +175,7 @@ gulp.task('scripts', () => {
 })
 
 
-// ...for image
+// ...minify image
 gulp.task('image', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
@@ -186,7 +186,7 @@ gulp.task('image', () => {
 })
 
 
-// ...for json
+// ...minify json
 gulp.task('json', () => {
   return gulp.src(srcJsonDataPath)
     .pip(jsonmin())
@@ -221,7 +221,7 @@ gulp.task('app-manifest', () => {
 })
 
 
-// watch assets changes...
+// watch changes...
 gulp.task('watch',
   gulp.series([
 
@@ -241,17 +241,17 @@ gulp.task('watch',
 
   ], () => {
 
-    gulp.watch(watchSrcHtmlPath,
-      gulp.series(['html', reload]))
-
-    gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', reload]))
+    gulp.watch(watchSrcImagePath,
+      gulp.series('image', reload))
 
     gulp.watch(watchSrcScriptsPath,
       gulp.series(['pre-scripts', 'scripts', reload]))
 
-    gulp.watch(watchSrcImagePath,
-      gulp.series('image', reload))
+    gulp.watch(watchSrcScssPath,
+      gulp.series(['sass', reload]))
+
+    gulp.watch(watchSrcHtmlPath,
+      gulp.series(['html', reload]))
 
     gulp.watch(watchSrcJsonDataPath,
       gulp.series('json', 'data', reload))
