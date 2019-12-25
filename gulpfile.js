@@ -194,14 +194,6 @@ gulp.task('json', () => {
 })
 
 
-
-// ...move json data
-gulp.task('data', () => {
-  return gulp.src(srcJsonDataPath)
-    .pipe(gulp.dest(distJsonDataPath))
-})
-
-
 // ...move service worker
 gulp.task('service-worker', () => {
   return gulp.src([
@@ -233,7 +225,6 @@ gulp.task('watch',
     'html',
     'json',
     // move files
-    'data',
     'service-worker',
     'app-manifest',
     // host http
@@ -254,7 +245,7 @@ gulp.task('watch',
       gulp.series(['html', reload]))
 
     gulp.watch(watchSrcJsonDataPath,
-      gulp.series('json', 'data', reload))
+      gulp.series('json', reload))
 
     gulp.watch(watchSrcPwaPath,
       gulp.series('app-manifest', reload))
