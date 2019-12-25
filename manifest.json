@@ -5,10 +5,12 @@
   "display": "standalone",
   "background_color": "#161D22",
   "theme_color": "#161D22",
-  "description": "My portfoliio website",
-  "icons": [{
-    "src": "assets/image/misc/me.png",
-    "sizes": "144x144",
-    "type": "image/png"
-  }]
+  "description": "My portfolio website",
+  "icons": [
+    {
+      "src": "assets/image/misc/me.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
 }
