@@ -58,6 +58,7 @@ const watchSrcScssPath = 'src/assets/scss/**/*.scss'
 const watchSrcScriptsPath = 'src/assets/js/**/*.js'
 const watchSrcImagePath = 'src/assets/image/**/*'
 const watchSrcJsonDataPath = 'src/assets/data/**/*.json'
+const watchSrcPwaPath = 'src/manifest.json'
 
 
 // reload web browser
@@ -246,6 +247,9 @@ gulp.task('watch',
 
     gulp.watch(watchSrcJsonDataPath,
       gulp.series('data', reload))
+
+    gulp.watch(watchSrcPwaPath,
+      gulp.series('app-manifest', reload))
 
   })
 
