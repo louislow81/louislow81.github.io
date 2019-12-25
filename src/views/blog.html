@@ -13,27 +13,17 @@
       Loouis Low
     </title>
 
-    <!--prefetcher-->
-    <link rel="dns-prefetch"
-          href="//twitter.com">
+    <meta name="Description"
+          content="My portfolio blog page">
 
-    <link rel="dns-prefetch"
-          href="//twimg.com">
 
-    <link rel="dns-prefetch"
-          href="//facebook.com">
-
-    <link rel="dns-prefetch"
-          href="//mindmeister.com">
-
+    <!-- prefetcher -->
     <link rel="dns-prefetch"
           href="//kit.fontawesome.com">
 
     <link rel="dns-prefetch"
           href="//drift.com">
-
-    <link rel="dns-prefetch"
-          href="//soundcloud.com">
+    <!--// prefetcher -->
 
 
     <!-- favicon -->
@@ -51,12 +41,6 @@
       gtag('config', 'UA-109094106-2');
     </script>
     <!--// google analytics -->
-
-
-    <!-- twitter -->
-    <script async src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"></script>
-    <!--// twitter -->
 
 
     <!-- fonts -->
@@ -192,7 +176,7 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        components = 'global-blog-menu, global-small-footer, global-recent-active-projects, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        const components = 'global-blog-menu, global-small-footer, global-recent-active-projects, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
 
         krunch.mount(components)
 

@@ -210,7 +210,7 @@ gulp.task('service-worker', () => {
 // ...move app manifest
 gulp.task('app-manifest', () => {
   return gulp.src([
-      srcAppManifestPath + '/app.webmanifest',
+      srcAppManifestPath + '/manifest.json',
     ])
     .pipe(gulp.dest(distProdPath))
 })

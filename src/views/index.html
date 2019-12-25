@@ -13,9 +13,13 @@
       Loouis Low
     </title>
 
+    <meta name="Description"
+          content="My portfolio website">
+
+
     <!-- pwa -->
     <link rel="manifest"
-          href="app.webmanifest">
+          href="manifest.json">
     <!--// pwa -->
 
 
@@ -27,19 +31,10 @@
           href="//twimg.com">
 
     <link rel="dns-prefetch"
-          href="//facebook.com">
-
-    <link rel="dns-prefetch"
-          href="//mindmeister.com">
-
-    <link rel="dns-prefetch"
           href="//kit.fontawesome.com">
 
     <link rel="dns-prefetch"
           href="//drift.com">
-
-    <link rel="dns-prefetch"
-          href="//soundcloud.com">
     <!--// prefetcher -->
 
 
@@ -201,9 +196,17 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        components = 'global-main-menu, global-small-footer, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        const components = 'global-main-menu, global-small-footer, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
 
         krunch.mount(components)
+
+        // cache critical assets
+        const criticalAssets = [
+          'https://platform.twitter.com/widgets.js',
+          'https://kit.fontawesome.com/04e017c909.js'
+        ]
+
+        KrugurtServiceWorker.add(criticalAssets)
 
       }())
     </script>
