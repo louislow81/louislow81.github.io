@@ -189,7 +189,7 @@ gulp.task('image', () => {
 // ...minify json
 gulp.task('json', () => {
   return gulp.src(srcJsonDataPath)
-    .pip(jsonmin())
+    .pipe(jsonmin())
     .pipe(gulp.dest(distJsonDataPath))
 })
 
