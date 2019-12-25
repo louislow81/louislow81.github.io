@@ -61,7 +61,7 @@ const watchSrcJsonDataPath = 'src/assets/data/**/*.json'
 
 
 // reload web browser
-function reload(done) {
+reload = (done) => {
   browserSync.reload()
   done()
 }
