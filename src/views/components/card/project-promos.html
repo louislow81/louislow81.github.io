@@ -9,7 +9,7 @@
 
     <y each="{ data in projects }">
 
-      <y class="xs:max-w-full sm:max-w-full md:max-w-md m-2 rounded-lg shadow-lg overflow-hidden cursor-pointer">
+      <y class="xs:max-w-full sm:max-w-full md:max-w-md 2k:max-w-xl m-2 rounded-lg shadow-lg overflow-hidden cursor-pointer">
         <y class="relative">
 
           <img class="h-auto w-full object-contain object-center overflow-hidden rounded-lg"
@@ -38,15 +38,15 @@
             <y class="xs:p-4 sm:p-10 md:p-8">
               <y class="flex flex-col justify-around items-start">
 
-                <y class="xs:text-sm sm:text-xl md:text-lg font-semibold depth-loose pb-2">
+                <y class="xs:text-sm sm:text-xl md:text-lg 2k:text-2xl font-semibold depth-loose pb-2">
                   { data.title }
                 </y>
 
-                <y class="xs:text-xs sm:text-lg md:text-sm depth-snug pb-3">
+                <y class="xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-snug pb-3">
                   { data.desc }
                 </y>
 
-                <y class="{ data.urlVisibility } xs:text-xs sm:text-lg md:text-sm depth-loose pb-2">
+                <y class="{ data.urlVisibility } xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-loose pb-2">
                   <a class="hover:text-orange-700"
                      href="{ data.url }"
                      title="{ data.urlText }"
@@ -60,7 +60,7 @@
                   </a>
                 </y>
 
-                <y class="xs:text-xs sm:text-md md:text-xs hover:text-orange-600 depth-loose">
+                <y class="xs:text-xs sm:text-md md:text-xs 2k:text-lg hover:text-orange-600 depth-loose">
                   { data.tech}
                 </y>
 
