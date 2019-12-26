@@ -1,4 +1,4 @@
-<blog-posts-2013><y class="xs:px-4 xs:py-0 sm:px-8 md:px-0"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="flex flex-wrap justify-center items-center"><y each="{ data in posts }"><card-blog-posts url="{ data.url }" urloption="{ data.urlOption }" image="{ data.image }" imageheight="64" content="{ data.content }" date="{ data.date }" xsscreen="md" smscreen="full" mdscreen="md"></card-blog-posts></y></y></y><style>/* color enhance */
+<blog-posts-2013><y class="xs:px-4 xs:py-0 sm:px-8 md:px-0"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="flex flex-wrap justify-start items-center"><y each="{ data in posts }"><card-blog-posts url="{ data.url }" urloption="{ data.urlOption }" image="{ data.image }" imageheight="64" content="{ data.content }" date="{ data.date }" xsscreen="md" smscreen="full" mdscreen="md"></card-blog-posts></y></y></y><style>/* color enhance */
     img {
       -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
     }</style><script>export default {

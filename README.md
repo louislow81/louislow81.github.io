@@ -28,6 +28,10 @@
 - component based
 - build with [Krugurt](https://github.com/loouislow81/krugurt)
 
+## todo
+
+- support `2k` and `4k` screen sizes
+
 Thanks for viewing.
 
 Enjoy!
