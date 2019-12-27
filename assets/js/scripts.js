@@ -336,7 +336,7 @@ function importjs(urls){
 }
 
 // enable service worker
-KrugurtServiceWorker.init();
+serviceWorker.init();
 window.twttr = (function(d, s, id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
