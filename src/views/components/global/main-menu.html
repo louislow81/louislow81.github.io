@@ -1,6 +1,6 @@
 <global-main-menu>
 
-  <y class="xs:hidden sm:hidden md:block w-40 2k:w-64 h-screen bg-charcoal-500">
+  <y class="xs:hidden sm:hidden md:block w-40 2k:w-64 h-screen">
     <y class="static">
 
       <!-- avatar -->
@@ -11,7 +11,8 @@
       </y>
 
       <!-- menus -->
-      <y each="{ data in menus }">
+      <y class="px-4"
+         each="{ data in menus }">
 
         <a href="{ data.url }"
            title="{ data.title }"
