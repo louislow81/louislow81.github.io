@@ -161,8 +161,6 @@
             type="krunch"></script>
     <script async data-src="components/block/blog.html"
             type="krunch"></script>
-    <script async data-src="components/block/blog/posts-latest.html"
-            type="krunch"></script>
     <script async data-src="components/block/contact.html"
             type="krunch"></script>
     <script async data-src="components/card/github-projects.html"
@@ -205,7 +203,7 @@
           'https://platform.twitter.com/widgets.js',
           'https://kit.fontawesome.com/04e017c909.js'
         ]
-        krugurtServiceWorker.add(criticalAssets)
+        serviceWorker.add(criticalAssets)
 
       }())
     </script>

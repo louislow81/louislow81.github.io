@@ -309,4 +309,4 @@ function importjs(urls){
 }
 
 // enable service worker
-KrugurtServiceWorker.init();
+serviceWorker.init();
