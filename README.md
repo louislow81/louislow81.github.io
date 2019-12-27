@@ -26,11 +26,12 @@
 - work offline
 - use JSON as payload
 - component based
-- build with [Krugurt](https://github.com/loouislow81/krugurt)
+- build with [Krugurt](https://github.com/loouislow81/krugurt) ui toolkit.
 
 ## todo
 
-- support `2k` and `4k` screen sizes
+- support `2k` screen sizes (optimized)
+- support `4k` screen sizes (WIP)
 
 Thanks for viewing.
 
