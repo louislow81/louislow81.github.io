@@ -2,6 +2,13 @@
   {
     "url": "https://github.com/loouislow81/krugurt",
     "urlOption": "block",
+    "image": "assets/image/post/156407f003433f075471c7ff9672ce24.png",
+    "content": "Updating the playground and boilerplate for the upcoming new project `Krugurt`. Giving you an idea of how to craft UI with `Yogurt` and componentizing with `Krunch` ecosystem.",
+    "date": "28 Dec 2019"
+  },
+  {
+    "url": "https://github.com/loouislow81/krugurt",
+    "urlOption": "block",
     "image": "assets/image/post/9bf38f0e36844ed72f5726518780b4e8.png",
     "content": "Added offline `service worker` to project `Krugurt`. Make your website or web apps running without the internet connection. Isn't that beautiful?",
     "date": "18 Dec 2019"
