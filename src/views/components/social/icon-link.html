@@ -17,6 +17,8 @@
 
 
   <script>
+    debug('~/social/icon-link.~', '')
+
     export default {
       onMounted() {
 
@@ -32,6 +34,7 @@
                 delete self.error
                 self.social = data
                 self.update()
+                debug('~/social/icon-link.~', data)
               })
               .catch(error => {
                 self.error = error

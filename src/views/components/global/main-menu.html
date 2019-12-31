@@ -45,6 +45,8 @@
 
 
   <script>
+    debug('~/global/main-menu.~', '')
+
     export default {
       onMounted() {
 
@@ -60,6 +62,7 @@
                 delete self.error
                 self.menus = data
                 self.update()
+                debug('~/global/main-menu.~', data)
               })
               .catch(error => {
                 self.error = error
