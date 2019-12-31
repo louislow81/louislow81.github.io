@@ -9,7 +9,7 @@ function krunch() {};
   @disable with `console.log();`
 */
 var debug = function(msg, req){
-  console.log(msg, req);
+  console.log('krugurt:', msg, req);
   // console.log();
 };
 
@@ -32,7 +32,7 @@ serviceWorker.init();
 */
 krunch.addCache = function(req) {
   serviceWorker.add(req);
-  debug('krugurt: (SW) add cache', req);
+  debug('(SW) add cache', req);
 };
 
 
@@ -42,7 +42,7 @@ krunch.addCache = function(req) {
 */
 krunch.removeCache = function(req) {
   serviceWorker.remove(req);
-  debug('krugurt: (SW) remove cache', req);
+  debug('(SW) remove cache', req);
 };
 
 
@@ -54,7 +54,7 @@ krunch.removeCache = function(req) {
 */
 krunch.isCached = function() {
   serviceWorker.onCached(function() {
-    debug('krugurt: (SW) (CACHED)');
+    debug('(SW) (CACHED)');
   });
 };
 
@@ -67,7 +67,7 @@ krunch.isCached = function() {
 */
 krunch.isOnline = function() {
   serviceWorker.onOnline(function() {
-    debug('krugurt: (SW) (ONLINE)');
+    debug('(SW) (ONLINE)');
   });
 };
 
