@@ -46,7 +46,7 @@
 
 
   <script>
-    debug('~/card/github-projects.~', '')
+    log('~/card/github-projects.~', '')
 
     export default {
       onMounted() {
@@ -64,7 +64,7 @@
                 delete self.error
                 self.projects = data
                 self.update()
-                debug('~/card/github-projects.~', data)
+                log('~/card/github-projects.~', data)
               })
               .catch(error => {
                 self.error = error

@@ -155,6 +155,8 @@
             type="krunch"></script>
     <script async data-src="components/card/experiences.html"
             type="krunch"></script>
+    <script async data-src="components/card/total-posts.html"
+            type="krunch"></script>
     <script async data-src="components/text/heading.html"
             type="krunch"></script>
     <script async data-src="components/text/paragraph.html"
@@ -169,6 +171,10 @@
             type="krunch"></script>
     <script async data-src="components/icon/platform.html"
             type="krunch"></script>
+    <script async data-src="components/misc/divider-bar.html"
+            type="krunch"></script>
+    <script async data-src="components/misc/divider-text.html"
+            type="krunch"></script>
 
 
     <!-- krunch: environment -->
@@ -177,7 +183,7 @@
         await krunch.compile() // init compiler
 
         // mount components
-        const components = 'global-blog-menu, global-small-footer, global-recent-active-projects, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        const components = 'global-blog-menu, global-small-footer, global-recent-active-projects, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, card-total-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar, misc-divider-bar, misc-divider-text'
         krunch.mount(components)
 
       }())
