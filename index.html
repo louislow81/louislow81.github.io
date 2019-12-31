@@ -8,16 +8,21 @@
       }</script><noscript><link rel="stylesheet" href="assets/css/style-fallback.css"></noscript></head><body class="h-screen antialiased bg-charcoal-500"><y class="relative"><y class="h-screen flex justify-center items-center"><y><img class="w-24 h-24 2k:w-40 2k:h-40 border-4 border-gray-400 rounded-full shadow-lg" src="assets/image/misc/me.png" title="Loouis Low"></y></y><y class="absolute top-0 left-0 w-full md:flex lg:flex xl:flex"><y class="fixed"><global-main-menu></global-main-menu></y><y class="md:ml-40 lg:ml-40 2k:ml-64 h-screen w-screen"><block-home></block-home><block-about></block-about><block-experience></block-experience><block-skills></block-skills><block-pet-project></block-pet-project><block-blog></block-blog><block-contact></block-contact></y></y></y><script src="assets/js/scripts.min.js"></script><script async data-src="components/global/main-menu.html" type="krunch"></script><script async data-src="components/image/avatar.html" type="krunch"></script><script async data-src="components/global/small-footer.html" type="krunch"></script><script async data-src="components/block/home.html" type="krunch"></script><script async data-src="components/block/about.html" type="krunch"></script><script async data-src="components/block/experience.html" type="krunch"></script><script async data-src="components/block/skills.html" type="krunch"></script><script async data-src="components/block/pet-project.html" type="krunch"></script><script async data-src="components/block/blog.html" type="krunch"></script><script async data-src="components/block/contact.html" type="krunch"></script><script async data-src="components/card/github-projects.html" type="krunch"></script><script async data-src="components/card/project-promos.html" type="krunch"></script><script async data-src="components/card/skills.html" type="krunch"></script><script async data-src="components/card/experiences.html" type="krunch"></script><script async data-src="components/card/blog-posts.html" type="krunch"></script><script async data-src="components/text/heading.html" type="krunch"></script><script async data-src="components/text/paragraph.html" type="krunch"></script><script async data-src="components/social/twitter.html" type="krunch"></script><script async data-src="components/social/icon-link.html" type="krunch"></script><script async data-src="components/button/large.html" type="krunch"></script><script async data-src="components/button/ultra.html" type="krunch"></script><script async data-src="components/icon/platform.html" type="krunch"></script><script>(async function main() {
         await krunch.compile() // init compiler
 
-        // mount components
-        const components = 'global-main-menu, global-small-footer, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
-        krunch.mount(components)
 
-        // cache critical assets
-        const criticalAssets = [
+        // add 3rd-party critical assets
+        // into service worker
+        // (!!) all local assets added by default
+        const assets = [
           'https://platform.twitter.com/widgets.js',
           'https://kit.fontawesome.com/04e017c909.js',
           'https://loouislow81.github.io/old/assets/pdf/loouislow_resume_13_april_2019.pdf'
         ]
-        serviceWorker.add(criticalAssets)
+        krunch.addCache(assets)
+
+
+        // mount components
+        const components = 'global-main-menu, global-small-footer, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        krunch.mount(components)
+
 
       }())</script></body></html>
