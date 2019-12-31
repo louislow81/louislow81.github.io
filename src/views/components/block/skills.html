@@ -83,7 +83,7 @@
 
 
   <script>
-    debug('~/block/skills.~', '')
+    log('~/block/skills.~', '')
 
     export default {
       onMounted() {
@@ -103,7 +103,7 @@
                 delete self.error
                 self.skills = data
                 self.update()
-                debug('~/block/skills.~', data)
+                log('~/block/skills.~', data)
               })
               .catch(error => {
                 self.error = error
@@ -118,7 +118,7 @@
                 delete self.error
                 self.knowledge = data
                 self.update()
-                debug('~/block/skills.~ (knowledge)', data)
+                log('~/block/skills.~ (knowledge)', data)
               })
               .catch(error => {
                 self.error = error

@@ -1,10 +1,20 @@
 <blog-posts-2012>
 
-  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8">
+  <y class="relative xs:px-4 xs:py-0 sm:px-8 md:px-8">
 
     <y class="px-2 text-md text-red-400"
        if="{ error }">
       Data is missing.
+    </y>
+
+    <y class="absolute top-0 right-0 mt-2">
+
+      <card-total-posts
+        timeline="2012"
+        timelineid="twoTwelve"
+        bgcolor="bg-blue-700">
+      </card-total-posts>
+
     </y>
 
     <y class="flex flex-wrap justify-start items-start">
@@ -25,6 +35,10 @@
       </y>
     </y>
 
+    <misc-divider-text
+      text="End">
+    </misc-divider-text>
+
   </y>
 
 
@@ -37,6 +51,8 @@
 
 
   <script>
+    log('~/block/blog/post-2012.~', '')
+
     export default {
       onMounted() {
 
@@ -53,6 +69,8 @@
                 delete self.error
                 self.posts = data
                 self.update()
+                log('~/block/blog/post-2012.~', data)
+                totalPosts('twoTwelve', data)
               })
               .catch(error => {
                 self.error = error

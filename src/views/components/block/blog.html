@@ -68,7 +68,7 @@
 
 
   <script>
-    debug('~/block/blog.~', '')
+    log('~/block/blog.~', '')
 
     export default {
       onMounted() {
@@ -86,7 +86,7 @@
                 delete self.error
                 self.posts = data
                 self.update()
-                debug('~/block/blog.~', data)
+                log('~/block/blog.~', data)
               })
               .catch(error => {
                 self.error = error

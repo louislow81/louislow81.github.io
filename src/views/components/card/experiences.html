@@ -92,7 +92,7 @@
   </style>
 
   <script>
-    debug('~/card/experiences.~', '')
+    log('~/card/experiences.~', '')
 
     export default {
       onMounted() {
@@ -110,7 +110,7 @@
                 delete self.error
                 self.experiences = data
                 self.update()
-                debug('~/card/experiences.~', data)
+                log('~/card/experiences.~', data)
               })
           })
           .catch(error => {
