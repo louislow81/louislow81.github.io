@@ -31,11 +31,11 @@ function krunch() {};
 
 /*
   Developer options
-  @methodOf debug('','');
+  @methodOf log('','');
   @enable with `console.log(msg, req);`
   @disable with `console.log();`
 */
-var debug = function(msg, req){
+var log = function(msg, req){
   console.log('krugurt:', msg, req);
   // console.log();
 };
@@ -59,7 +59,7 @@ serviceWorker.init();
 */
 krunch.addCache = function(req) {
   serviceWorker.add(req);
-  debug('(SW) add cache', req);
+  log('(SW) add cache', req);
 };
 
 
@@ -69,7 +69,7 @@ krunch.addCache = function(req) {
 */
 krunch.removeCache = function(req) {
   serviceWorker.remove(req);
-  debug('(SW) remove cache', req);
+  log('(SW) remove cache', req);
 };
 
 
@@ -81,7 +81,7 @@ krunch.removeCache = function(req) {
 */
 krunch.isCached = function() {
   serviceWorker.onCached(function() {
-    debug('(SW) (CACHED)');
+    log('(SW) (CACHED)');
   });
 };
 
@@ -94,10 +94,16 @@ krunch.isCached = function() {
 */
 krunch.isOnline = function() {
   serviceWorker.onOnline(function() {
-    debug('(SW) (ONLINE)');
+    log('(SW) (ONLINE)');
   });
 };
 
+
+function totalPosts(id, data) {
+  var showTotalItems = document.getElementById(id);
+  var getTotalItems = Object.keys(data).length;
+  showTotalItems.innerHTML = showTotalItems.innerHTML + getTotalItems;
+};
 
 window.twttr = (function(d, s, id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];

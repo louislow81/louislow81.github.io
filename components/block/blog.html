@@ -4,7 +4,7 @@
     /* color enhance */
     img {
       -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
-    }</style><script>debug('~/block/blog.~', '')
+    }</style><script>log('~/block/blog.~', '')
 
     export default {
       onMounted() {
@@ -22,7 +22,7 @@
                 delete self.error
                 self.posts = data
                 self.update()
-                debug('~/block/blog.~', data)
+                log('~/block/blog.~', data)
               })
               .catch(error => {
                 self.error = error
