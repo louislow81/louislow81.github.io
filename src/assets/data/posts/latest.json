@@ -2,6 +2,13 @@
   {
     "url": "https://github.com/loouislow81/krugurt",
     "urlOption": "block",
+    "image": "assets/image/post/5e3299398f5fc32c25e79ca9e28497bc.png",
+    "content": "Huge updates for Project `Krugurt` utility module. Added (SW) service worker to add `3rd-party` assets store in-app persistent cache. Simply call *krunch.addCache()* the method with an array of URLs will do.",
+    "date": "31 Dec 2019",
+  },
+  {
+    "url": "https://github.com/loouislow81/krugurt",
+    "urlOption": "block",
     "image": "assets/image/post/156407f003433f075471c7ff9672ce24.png",
     "content": "Updating the playground and boilerplate for the upcoming new project `Krugurt`. Giving you an idea of how to craft UI with `Yogurt` and componentizing with `Krunch` ecosystem.",
     "date": "28 Dec 2019"
@@ -12,12 +19,5 @@
     "image": "assets/image/post/9bf38f0e36844ed72f5726518780b4e8.png",
     "content": "Added offline `service worker` to project `Krugurt`. Make your website or web apps running without the internet connection. Isn't that beautiful?",
     "date": "18 Dec 2019"
-  },
-  {
-    "url": "https://github.com/loouislow81/golem-gui-appstore",
-    "urlOption": "block",
-    "image": "assets/image/post/df8042dbb57ad9bdd15b213164a54a39.jpeg",
-    "content": "Project `Golem GUI AppStore` has been pending for a year, it's time to continue to work on what is left. But I decided to revamp it with `Krugurt` toolkit.",
-    "date": "15 Dec 2019"
   }
 ]
