@@ -4,7 +4,7 @@
     "urlOption": "block",
     "image": "assets/image/post/5e3299398f5fc32c25e79ca9e28497bc.png",
     "content": "Huge updates for Project `Krugurt` utility module. Added (SW) service worker to add `3rd-party` assets store in-app persistent cache. Simply call *krunch.addCache()* the method with an array of URLs will do.",
-    "date": "31 Dec 2019",
+    "date": "31 Dec 2019"
   },
   {
     "url": "https://github.com/loouislow81/krugurt",
