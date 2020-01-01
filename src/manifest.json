@@ -1,11 +1,12 @@
 {
   "name": "Loouis Low",
   "short_name": "LoouisLow",
+  "description": "My portfolio website",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#161D22",
   "theme_color": "#161D22",
-  "description": "My portfolio website",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "assets/image/misc/me.png",
