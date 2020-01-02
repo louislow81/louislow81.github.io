@@ -1,18 +1,23 @@
 <social-icon-link>
 
-  <span class="xs:pr-4 sm:pr-6 md:pr-6 2k:pr-10"
-        each="{ profile in social }">
+  <span class="xs:pr-4 sm:pr-6 md:pr-6 2k:pr-10">
+    <y class="flex justify-start items-start">
+      <span each="{ profile in social }">
 
-    <a href="{ profile.url }"
-       title="{ profile.title }"
-       target="_blank"
-       rel="noopener">
+        <a class="cursor-pointer"
+           href="{ profile.url }"
+           title="{ profile.title }"
+           target="_blank"
+           rel="noopener">
 
-      <i class="{ profile.icon } xs:text-2xl md:text-3xl 2k:text-5xl hover:{ profile.color }">
-      </i>
+          <img class="xs:mr-6 sm:mr-6 md:mr-6 2k:mr-6 xs:h-8 sm:h-8 md:h-8 2k:h-12 xs:w-8 sm:w-8 md:w-8 2k:w-12 object-contain object-center hover:opacity-50"
+               src="{ profile.icon }"
+               alt="{ profile.title }">
 
-    </a>
+        </a>
 
+      </span>
+    </y>
   </span>
 
 
