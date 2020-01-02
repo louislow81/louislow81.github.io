@@ -1,0 +1,32 @@
+[
+  {
+    "url": "#home",
+    "icon": "fas fa-home",
+    "title": "Home"
+  },
+  {
+    "url": "#about",
+    "icon": "far fa-meh-rolling-eyes",
+    "title": "About"
+  },
+  {
+    "url": "#experience",
+    "icon": "fas fa-dharmachakra",
+    "title": "Experience"
+  },
+  {
+    "url": "#skills",
+    "icon": "fas fa-trophy",
+    "title": "Skill"
+  },
+  {
+    "url": "#pet-projects",
+    "icon": "fab fa-github",
+    "title": "Project"
+  },
+  {
+    "url": "#contact",
+    "icon": "fas fa-phone",
+    "title": "Contact"
+  }
+]

@@ -187,6 +187,15 @@
 
         </y>
 
+        <!-- mobile (fixed) -->
+        <y class="z-10 mb-16 absolute bottom-0 left-0">
+          <y class="fixed">
+
+            <global-mobile-menu></global-mobile-menu>
+
+          </y>
+        </y>
+
       </y>
       <!--// layout -->
 
@@ -203,6 +212,8 @@
     <script async data-src="components/image/avatar.html"
             type="krunch"></script>
     <script async data-src="components/global/small-footer.html"
+            type="krunch"></script>
+    <script async data-src="components/global/mobile-menu.html"
             type="krunch"></script>
     <script async data-src="components/block/home.html"
             type="krunch"></script>
@@ -262,7 +273,7 @@
 
 
         // mount components
-        const components = 'global-main-menu, global-small-footer, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        const components = 'global-main-menu, global-small-footer, global-mobile-menu, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
         krunch.mount(components)
 
 
