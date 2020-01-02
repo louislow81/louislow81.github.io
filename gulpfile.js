@@ -165,7 +165,6 @@ gulp.task('scripts', () => {
   return gulp.src([
       srcUtilJsPath + '/service_worker/krugurt+core.min.js',
       srcUtilJsPath + '/krunch+compiler.min.js',
-      srcUtilJsPath + '/krunch+env.js',
       distJsPath + '/scripts.pre.js'
     ])
     .pipe(concat('scripts.min.js'))
