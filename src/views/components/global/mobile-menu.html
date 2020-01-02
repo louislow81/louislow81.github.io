@@ -6,12 +6,16 @@
       <y class="flex flex-row justify-around items-center">
         <y each="{ data in menu }">
 
-          <y class="-mt-1 p-4 text-gray-600 hover:text-gray-100 text-center">
+          <y class="-mt-1 mb-2 p-4 text-center hover:bg-blue-800 rounded">
+
             <a href="{ data.url }"
                title="{ data.title }"
                rel="noopenner">
-              <i class="{ data.icon } text-2xl"></i>
+              <img class="invert-color h-18 w-18 object-contain object-center opacity-50 hover:opacity-75"
+                   src="{ data.icon }"
+                   alt="{ data.title }">
             </a>
+
           </y>
 
         </y>
@@ -19,6 +23,13 @@
 
     </y>
   </y>
+
+
+  <style>
+    .invert-color {
+      filter: invert(1.0);
+    }
+  </style>
 
 
   <script>

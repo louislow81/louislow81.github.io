@@ -1,32 +1,32 @@
 [
   {
     "url": "#home",
-    "icon": "fas fa-home",
+    "icon": "assets/image/misc/mobile-menu/home.png",
     "title": "Home"
   },
   {
     "url": "#about",
-    "icon": "far fa-meh-rolling-eyes",
+    "icon": "assets/image/misc/mobile-menu/about.png",
     "title": "About"
   },
   {
     "url": "#experience",
-    "icon": "fas fa-dharmachakra",
+    "icon": "assets/image/misc/mobile-menu/experience.png",
     "title": "Experience"
   },
   {
     "url": "#pet-projects",
-    "icon": "fab fa-github",
+    "icon": "assets/image/misc/mobile-menu/projects.png",
     "title": "Project"
   },
   {
     "url": "#blog",
-    "icon": "fas fa-clone",
+    "icon": "assets/image/misc/mobile-menu/blog.png",
     "title": "Blog"
   },
   {
     "url": "#contact",
-    "icon": "fas fa-phone",
+    "icon": "assets/image/misc/mobile-menu/contact.png",
     "title": "Contact"
   }
 ]
