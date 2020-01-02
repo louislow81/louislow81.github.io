@@ -118,11 +118,7 @@
 
     <!-- if javascript not enabled then, use the fallback to load css -->
     <script>
-      if ('CSS' in window && CSS.supports('color', 'var(--color-var)')) {
-        document.write('<link rel="stylesheet" rel="preload" as="style" media="all" href="assets/css/style.css">');
-      } else {
-        document.write('<link rel="stylesheet" rel="preload" as="style" media="all" href="assets/css/style-fallback.css">');
-      }
+      if('CSS'in window&&CSS.supports('color','var(--color-var)')){document.write('<link rel="stylesheet" rel="preload" as="style" media="all" href="assets/css/style.css">')}else{document.write('<link rel="stylesheet" rel="preload" as="style" media="all" href="assets/css/style-fallback.css">')}
     </script>
 
     <noscript>
