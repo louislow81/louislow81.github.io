@@ -15,14 +15,14 @@
     "title": "Experience"
   },
   {
-    "url": "#skills",
-    "icon": "fas fa-trophy",
-    "title": "Skill"
-  },
-  {
     "url": "#pet-projects",
     "icon": "fab fa-github",
     "title": "Project"
+  },
+  {
+    "url": "#blog",
+    "icon": "fas fa-clone",
+    "title": "Blog"
   },
   {
     "url": "#contact",
