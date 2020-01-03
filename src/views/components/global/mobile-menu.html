@@ -1,7 +1,7 @@
 <global-mobile-menu>
 
   <y class="xs:block sm:hidden md:hidden lg:hidden 2k:hidden w-screen">
-    <y class="h-24 p-2 bg-charcoal-400 shadow-lg">
+    <y class="h-24 p-2 bg-charcoal-300 shadow-lg">
 
       <y class="flex flex-row justify-around items-center">
         <y each="{ data in menu }">
@@ -11,7 +11,7 @@
             <a href="{ data.url }"
                title="{ data.title }"
                rel="noopenner">
-              <img class="invert-color h-18 w-18 object-contain object-center opacity-50 hover:opacity-75"
+              <img class="invert-color h-18 w-18 object-contain object-center opacity-75 hover:opacity-75"
                    src="{ data.icon }"
                    alt="{ data.title }">
             </a>
