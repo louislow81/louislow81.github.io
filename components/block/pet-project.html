@@ -1,3 +1,12 @@
-<block-pet-project><y class="py-4 bg-charcoal-500" id="pet-projects"><y class="md:px-10 md:h-full"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Pet Projects" size="3xl 2k:text-4xl" padding="10"></text-heading></y><card-project-promos></card-project-promos><card-github-projects></card-github-projects><button-ultra url="https://github.com/loouislow81?tab=repositories" text="More" tooltip="Visit more at my Github profile" option="_blank"></button-ultra></y></y><style>:host {
+<block-pet-project><y class="py-4 bg-charcoal-500" id="pet-projects"><y class="md:px-10 md:h-full"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Pet Projects" size="3xl 2k:text-4xl" padding="10"></text-heading></y><card-project-promos></card-project-promos><card-github-projects></card-github-projects><y id="snickerPetProjectBtn"><button-ultra url="https://github.com/loouislow81?tab=repositories" text="More" tooltip="Visit more at my Github profile" option="_blank"></button-ultra></y></y></y><style>:host {
       font-family: Poppins, Sans-Serif;
-    }</style><script>log('~/block/pet-projects.~', '')</script></block-pet-project>
+    }</style><script>log('~/block/pet-projects.~', '')
+
+    export default {
+      onMounted() {
+
+        const message = 'Hang on, taking you to my Github profile...'
+        snicker.onClick('snickerPetProjectBtn', message, 5000)
+
+      }
+    }</script></block-pet-project>

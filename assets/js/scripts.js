@@ -99,10 +99,16 @@ krunch.isOnline = function() {
 };
 
 
-// inject DOM decorator
+function network() {};
+
+
+/*
+  Inject DOM Decorator
+  @param {htmlstring}
+*/
 function create(htmlStr) {
   var frag = document.createDocumentFragment(),
-    temp = document.createElement('div');
+    temp = document.createElement('y');
   temp.innerHTML = htmlStr;
   while (temp.firstChild) {
     frag.appendChild(temp.firstChild);
@@ -110,41 +116,76 @@ function create(htmlStr) {
   return frag;
 }
 
-var enableNetworkRequestMonitor = function() {
 
-  // create new element
-  var fragment = create('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:200;position:absolute;}.is-online{background:transparent;padding:0.3rem}.is-online:after{visibility:visible;content:"";}.is-offline{background:#607D8B;padding:0.3rem}.is-offline:after{visibility:visible;content:"No internet connection!";}</style>');
+network.probeConnection = function() {
 
-  // insert element
+  // message UI
+  var fragment = create('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:200;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.25rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>');
   document.body.insertBefore(fragment, document.body.childNodes[0]);
 
-  // check internet connection
-  try {
+  try { // check connection
     window.addEventListener('load', function() {
       function checkStatus() {
         // change color to either green or red
         window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className = navigator.onLine ? 'is-online' : 'is-offline';
-        // display connection status
-        console.log('INFO: internet is ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className);
+        // connection status
+        log('(internet) is ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className);
       }
-      // detect browser is online
+      // detect browser,
+      // ...is online
       window.addEventListener('online', checkStatus);
-      // detect browser is offline
+      // ...is offline
       window.addEventListener('offline', checkStatus);
     });
   }
-  // throw err
   catch (error) {
     window.console.log(error)
   }
 
 };
 
-/*
- * init
- */
 
-enableNetworkRequestMonitor();
+function snicker() {};
+
+/*
+  Snicker UI Decorator
+  @param {data}
+  @param {duration}
+*/
+function snickerUI(data, duration) {
+  var element = document.createElement("y");
+  var css ="position:fixed; bottom:12%; left:5%; right:5%; color:#fff; background-color:#25313a; padding:1em; font-size:0.8em; font-family:inherit; border-radius:3px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
+  element.setAttribute("style", css);
+  element.innerHTML = data;
+  setTimeout(function() {
+    element.parentNode.removeChild(element);
+  }, duration);
+  document.body.appendChild(element);
+};
+
+
+/*
+  (onclick) Popup Message Box Manipulation
+  @param {id}
+  @param {data}
+  @param {duration}
+*/
+snicker.onClick = function(id, data, duration) {
+  var evt = document.getElementById(id);
+  evt.onclick = function() {
+    snickerUI(data, duration);
+  };
+};
+
+
+/*
+  (onload) Popup Message Box Manipulation
+  @param {data}
+  @param {duration}
+*/
+snicker.onLoad = function(data, duration) {
+  snickerUI(data, duration);
+};
 
 function totalPosts(id, data) {
   var showTotalItems = document.getElementById(id);
