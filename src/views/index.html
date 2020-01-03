@@ -165,19 +165,19 @@
         <!-- main content -->
         <y class="md:ml-40 lg:ml-40 2k:ml-64 h-screen w-screen">
 
-          <block-home></block-home>
+          <!--<block-home></block-home>-->
 
-          <block-about></block-about>
+          <!--<block-about></block-about>-->
 
-          <block-experience></block-experience>
+          <!--<block-experience></block-experience>-->
 
-          <block-skills></block-skills>
+          <!--<block-skills></block-skills>-->
 
           <block-pet-project></block-pet-project>
 
           <block-blog></block-blog>
 
-          <block-contact></block-contact>
+          <!--<block-contact></block-contact>-->
 
         </y>
 
@@ -253,6 +253,7 @@
     <script>
       (async function main() {
         await krunch.compile() // init compiler
+        await network.probeConnection() // check connection
 
 
         // add 3rd-party critical assets
@@ -268,6 +269,10 @@
         // mount components
         const components = 'global-main-menu, global-small-footer, global-mobile-menu, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
         krunch.mount(components)
+
+
+        const yelling = 'Goody day! Are you come here to hire me?'
+        snicker.onLoad(yelling, 10000)
 
 
       }())
