@@ -42,12 +42,16 @@
 
         </y>
 
-        <button-ultra
-          url="/blog.html"
-          text="More"
-          tooltip="Read more of my stories"
-          option="_self">
-        </button-ultra>
+        <y id="snickerBlogBtn">
+
+          <button-ultra
+            url="/blog.html"
+            text="More"
+            tooltip="Read more of my stories"
+            option="_self">
+          </button-ultra>
+
+        </y>
 
       </y>
 
@@ -72,6 +76,9 @@
 
     export default {
       onMounted() {
+
+        const message = 'Hang on, taking you to my development stories...'
+        snicker.onClick('snickerBlogBtn', message, 5000)
 
         const self = this
         self.posts = []
