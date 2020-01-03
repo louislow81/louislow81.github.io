@@ -245,7 +245,6 @@
     <script>
       (async function main() {
         await krunch.compile() // init compiler
-        await network.probeConnection() // check connection
 
 
         // mount components
@@ -258,6 +257,8 @@
 
         const message = 'Hang on, taking you back to my home!'
         snicker.onClick('snickerBackToHomeBtn', message, 5000)
+
+        network.probeConnection() // check connection
 
 
       }())
