@@ -7,7 +7,7 @@ function snicker() {};
 */
 function snickerUI(data, duration) {
   var element = document.createElement("y");
-  var css ="position:fixed; bottom:12%; left:5%; right:5%; width:fit-content; color:#fff; background-color:#25313a; padding:1em; font-size:0.8em; font-family:inherit; border-radius:3px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
+  var css ="position:fixed; bottom:13%; left:2%; right:2%; width:fit-content; color:#fff; background-color:#25313a; padding:1em; font-size:0.8em; font-family:inherit; border-radius:3px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
   element.setAttribute("style", css);
   element.innerHTML = data;
   setTimeout(function() {
