@@ -42,6 +42,55 @@ var log = function(msg, req){
 
 
 /*
+  Connection Detector
+*/
+/*
+  DOM Decorate Injector for krunch.probeConnection()
+  @param {htmlstring}
+*/
+function injectDOM(htmlStr) {
+  var frag = document.createDocumentFragment(),
+    temp = document.createElement('y');
+  temp.innerHTML = htmlStr;
+  while (temp.firstChild) {
+    frag.appendChild(temp.firstChild);
+  }
+  return frag;
+};
+
+
+/*
+  Check Connection with display message
+  @param {null}
+*/
+krunch.probeConnection = function() {
+
+  var element = injectDOM('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:200;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.15rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>');
+  document.body.insertBefore(element, document.body.childNodes[0]);
+
+  try {
+    window.addEventListener('load', function() {
+      function checkStatus() {
+        // display status
+        window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962')
+          .className = navigator.onLine ? 'is-online' : 'is-offline';
+        log('(CONN) is ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className);
+      }
+      setInterval(function() {
+        // check connection
+        window.addEventListener('online', checkStatus);
+        window.addEventListener('offline', checkStatus);
+      }, 1000)
+    });
+  }
+  catch (error) {
+    log('(CONN)', error);
+  }
+
+};
+
+
+/*
   Enable service worker
 */
 /*
@@ -102,47 +151,6 @@ krunch.isOnline = function() {
 function network() {};
 
 
-/*
-  Inject DOM Decorator
-  @param {htmlstring}
-*/
-function create(htmlStr) {
-  var frag = document.createDocumentFragment(),
-    temp = document.createElement('y');
-  temp.innerHTML = htmlStr;
-  while (temp.firstChild) {
-    frag.appendChild(temp.firstChild);
-  }
-  return frag;
-}
-
-
-network.probeConnection = function() {
-
-  // message UI
-  var fragment = create('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:200;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.25rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>');
-  document.body.insertBefore(fragment, document.body.childNodes[0]);
-
-  try { // check connection
-    window.addEventListener('load', function() {
-      function checkStatus() {
-        // change color to either green or red
-        window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className = navigator.onLine ? 'is-online' : 'is-offline';
-        // connection status
-        log('(internet) is ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className);
-      }
-      // detect browser,
-      // ...is online
-      window.addEventListener('online', checkStatus);
-      // ...is offline
-      window.addEventListener('offline', checkStatus);
-    });
-  }
-  catch (error) {
-    window.console.log(error)
-  }
-
-};
 
 
 function snicker() {};
@@ -187,12 +195,20 @@ snicker.onLoad = function(data, duration) {
   snickerUI(data, duration);
 };
 
+/*
+  Get Total Posts from JSON data
+  @param {id}
+  @param {data}
+*/
 function totalPosts(id, data) {
   var showTotalItems = document.getElementById(id);
   var getTotalItems = Object.keys(data).length;
   showTotalItems.innerHTML = showTotalItems.innerHTML + getTotalItems;
 };
 
+/*
+  Twitter Post Updater with Timer
+*/
 window.twttr = (function(d, s, id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -207,6 +223,5 @@ twttr.ready(function(twttr) {
   twttr.widgets.load();
   setInterval(function() {
     twttr.widgets.load();
-    // console.log("update twitter timeline");
   }, 1000);
 });
