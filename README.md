@@ -33,6 +33,14 @@
 - support `2k` screen sizes (optimized)
 - support `4k` screen sizes (WIP)
 
+## terminal
+
+if you prefer nerd way, use the Terminal version,
+
+```bash
+$ npx loouislow-resume
+```
+
 Thanks for viewing.
 
 Enjoy!
