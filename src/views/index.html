@@ -265,15 +265,14 @@
         krunch.addCache(assets)
 
 
-        // mount components
         const components = 'global-main-menu, global-small-footer, global-mobile-menu, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
-        krunch.mount(components)
+        krunch.mount(components) // mount components
 
+        krunch.probeConnection() // check connection
 
         const yelling = 'Goody day! Are you come here to hire me?'
         snicker.onLoad(yelling, 20000)
 
-        network.probeConnection() // check connection
 
       }())
     </script>
