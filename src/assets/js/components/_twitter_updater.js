@@ -1,3 +1,6 @@
+/*
+  Twitter Post Updater with Timer
+*/
 window.twttr = (function(d, s, id) {
   var t, js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -12,6 +15,5 @@ twttr.ready(function(twttr) {
   twttr.widgets.load();
   setInterval(function() {
     twttr.widgets.load();
-    // console.log("update twitter timeline");
   }, 1000);
 });

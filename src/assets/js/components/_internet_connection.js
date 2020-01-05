@@ -2,18 +2,18 @@ function network() {};
 
 
 /*
-  Inject DOM Decorator
+  DOM Decorate Injector
   @param {htmlstring}
 */
 function create(htmlStr) {
   var frag = document.createDocumentFragment(),
-    temp = document.createElement('y');
+  temp = document.createElement('y');
   temp.innerHTML = htmlStr;
   while (temp.firstChild) {
     frag.appendChild(temp.firstChild);
   }
   return frag;
-}
+};
 
 
 network.probeConnection = function() {
