@@ -148,11 +148,6 @@ krunch.isOnline = function() {
 };
 
 
-function network() {};
-
-
-
-
 function snicker() {};
 
 /*
