@@ -7,7 +7,6 @@ const jsonmin = require('gulp-jsonmin')
 const browserSync = require('browser-sync').create()
 const postCss = require('gulp-postcss')
 const autoPrefixer = require('autoprefixer')
-const cssVariables = require('postcss-css-variables')
 const calc = require('postcss-calc')
 const concat = require('gulp-concat')
 const rename = require('gulp-rename')
@@ -17,7 +16,6 @@ const imagemin = require('gulp-imagemin')
 const pngquant = require('imagemin-pngquant')
 const mozjpeg = require('imagemin-mozjpeg')
 const gutil = require('gulp-util')
-const ftp = require('vinyl-ftp')
 
 
 // html
@@ -39,9 +37,6 @@ const distImagePath = 'dist/assets/image'
 // production
 const distProdPath = 'dist'
 const distProdRecursivePath = 'dist/**/*'
-
-// ftp
-const ftpDestPath = '/public_html/www' // set yours
 
 // data
 const srcJsonDataPath = 'src/assets/data/**/*.json'
@@ -67,32 +62,6 @@ reload = (done) => {
   browserSync.reload()
   done()
 }
-
-
-// ...deploy with ftp
-gulp.task('deploy', () => {
-
-  const conn = ftp.create({
-    host: 'localhost',
-    port: 21,
-    user: 'anonymous',
-    password: 'anonymous',
-    parallel: 1,
-    maxConnections: 1,
-    secure: false
-  })
-
-  const globs = [
-    distProdRecursivePath
-  ]
-
-  return gulp.src(globs, {
-      base: distProdPath + '/',
-      buffer: false
-    })
-    .pipe(conn.newer(ftpDestPath)) // only upload newer files
-    .pipe(conn.dest(ftpDestPath))
-})
 
 
 // serve http
@@ -134,7 +103,6 @@ gulp.task('sass', () => {
       stream: true
     }))
     .pipe(rename('style-fallback.css'))
-    .pipe(postCss([cssVariables(), calc()]))
     .pipe(gulp.dest(distCssPath))
 })
 
@@ -218,7 +186,7 @@ gulp.task('watch',
   gulp.series([
 
     // minify files
-    'image',
+    // 'image',
     'pre-scripts',
     'scripts',
     'sass',
