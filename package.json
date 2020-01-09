@@ -35,8 +35,7 @@
     "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.8",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0",
-    "postcss-calc": "^7.0.1"
+    "imagemin-pngquant": "^8.0.0"
   },
   "dependencies": {}
 }
