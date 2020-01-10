@@ -110,7 +110,7 @@ gulp.task('sass', () => {
 gulp.task('pre-scripts', () => {
   return gulp.src([
       srcUtilJsPath + '/vendors/drift.js',
-      srcUtilJsPath + '/util.js',
+      srcUtilJsPath + '/krunch+utility.js',
       srcComponentsJsPath
     ])
     .pipe(concat('scripts.js'))
