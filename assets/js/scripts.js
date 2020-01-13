@@ -36,8 +36,8 @@ function krunch() {};
   @disable with `console.log();`
 */
 var log = function(msg, req){
-  console.log('krugurt:', msg, req);
-  // console.log();
+  // console.log('krugurt:', msg, req);
+  console.log();
 };
 
 
