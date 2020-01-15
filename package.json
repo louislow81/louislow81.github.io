@@ -32,6 +32,7 @@
     "gulp-sass-glob": "^1.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
     "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.8",
     "imagemin-mozjpeg": "^8.0.0",
