@@ -1,21 +1,21 @@
 ! function() {
-  var t = window.driftt = window.drift = window.driftt || [];
+  const t = window.driftt = window.drift = window.driftt || [];
   if (!t.init) {
     if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
     t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
       t.factory = function(e) {
         return function() {
-          var n = Array.prototype.slice.call(arguments);
+          const n = Array.prototype.slice.call(arguments);
           return n.unshift(e), t.push(n), t;
         };
       }, t.methods.forEach(function(e) {
         t[e] = t.factory(e);
       }), t.load = function(t) {
-        var e = 3e5,
+        const e = 3e5,
           n = Math.ceil(new Date() / e) * e,
           o = document.createElement("script");
         o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-        var i = document.getElementsByTagName("script")[0];
+        const i = document.getElementsByTagName("script")[0];
         i.parentNode.insertBefore(o, i);
       };
   }
@@ -35,7 +35,7 @@ function krunch() {};
   @enable with `console.log(msg, req);`
   @disable with `console.log();`
 */
-var log = function(msg, req){
+const log = function(msg, req){
   // console.log('krugurt:', msg, req);
   console.log();
 };
@@ -49,7 +49,7 @@ var log = function(msg, req){
   @param {htmlstring}
 */
 function injectDOM(htmlStr) {
-  var frag = document.createDocumentFragment(),
+  const frag = document.createDocumentFragment(),
     temp = document.createElement('y');
   temp.innerHTML = htmlStr;
   while (temp.firstChild) {
@@ -65,7 +65,7 @@ function injectDOM(htmlStr) {
 */
 krunch.probeConnection = function() {
 
-  var element = injectDOM('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:999999;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.15rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>');
+  const element = injectDOM('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:999999;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.15rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>');
   document.body.insertBefore(element, document.body.childNodes[0]);
 
   try {
@@ -221,8 +221,8 @@ function snicker() {};
   @param {duration}
 */
 function snickerUI(data, duration) {
-  var element = document.createElement("y");
-  var css ="position:fixed; bottom:13%; left:3%; right:3%; width:fit-content; color:#fff; background-color:#25313a; padding:1em; font-size:0.8em; font-family:inherit; border-radius:3px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
+  const element = document.createElement("y");
+  const css ="position:fixed; bottom:13%; left:3%; right:3%; width:fit-content; color:#fff; background-color:#25313a; padding:1em; font-size:0.8em; font-family:inherit; border-radius:3px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
   element.setAttribute("style", css);
   element.innerHTML = data;
   setTimeout(function() {
@@ -239,7 +239,7 @@ function snickerUI(data, duration) {
   @param {duration}
 */
 snicker.onClick = function(id, data, duration) {
-  var evt = document.getElementById(id);
+  const evt = document.getElementById(id);
   evt.onclick = function() {
     snickerUI(data, duration);
   };
@@ -261,8 +261,8 @@ snicker.onLoad = function(data, duration) {
   @param {data}
 */
 function totalPosts(id, data) {
-  var showTotalItems = document.getElementById(id);
-  var getTotalItems = Object.keys(data).length;
+  const showTotalItems = document.getElementById(id);
+  const getTotalItems = Object.keys(data).length;
   showTotalItems.innerHTML = showTotalItems.innerHTML + getTotalItems;
 };
 
