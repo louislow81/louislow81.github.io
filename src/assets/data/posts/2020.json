@@ -1,4 +1,11 @@
-[
+[  
+  {
+    "url": "https://github.com/loouislow81/krugurt",
+    "urlOption": "block",
+    "image": "assets/image/posts/cf54331860aa5fc6941ce52a0791242c.png",
+    "content": "Give a performance test to project `Krugurt`. The 3 different performance tests for the `core`, `locale` and the `compiler`. The `compiler` speed is important, it mounting the HTML components and turns them into JavaScript Functions with Parameters and Callbacks before rendering them in virtual-DOM.",
+    "date": "15 Jan 2020"
+  },
   {
     "url": "https://github.com/loouislow81/krugurt",
     "urlOption": "block",
