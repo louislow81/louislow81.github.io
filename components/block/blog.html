@@ -16,13 +16,14 @@
         self.posts = []
 
         const base = './assets/data'
-        const url = base + '/posts/latest.json'
+        const url = base + '/posts/2020.json'
 
         fetch(url)
           .then(res => {
             res.json()
               .then(data => {
                 delete self.error
+                data.length = 3  // limit post
                 self.posts = data
                 self.update()
                 log('~/block/blog.~', data)
