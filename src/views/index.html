@@ -131,8 +131,7 @@
 
   </head>
 
-  <body class="h-screen antialiased bg-charcoal-500"
-        id="swapBodyColor">
+  <body class="h-screen antialiased bg-charcoal-500">
 
     <y class="relative">
 
@@ -277,7 +276,7 @@
         krunch.mount(components) // mount components
 
         krunch.probeConnection() // check connection
-        message.timezone() // show differ messages with time
+        greeting.withTime() // show differ messages with time
 
       }())
     </script>

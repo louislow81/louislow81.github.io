@@ -1,6 +1,6 @@
-function message() {};
+function greeting() {};
 
-message.timezone = function() {
+greeting.withTime = function() {
 
   const time = new Date().getHours();
   const msg = " Are you come here to hire me?";
