@@ -1,4 +1,4 @@
-<blog-posts-2015><y class="relative xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="absolute top-0 right-0 mt-2"><card-total-posts timeline="2015" timelineid="twoFithteen" bgcolor="bg-blue-700"></card-total-posts></y><y class="flex flex-wrap justify-start items-start"><y each="{ data in posts }"><card-blog-posts url="{ data.url }" urloption="{ data.urlOption }" image="{ data.image }" imageheight="64" content="{ data.content }" date="{ data.date }" xsscreen="md" smscreen="full" mdscreen="md"></card-blog-posts></y></y><misc-divider-bar opacity="25"></misc-divider-bar></y><style>/* color enhance */
+<blog-posts-2015><y class="relative xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="absolute top-0 right-0 mt-2"><card-total-posts timeline="2015" timelineid="twoFithteen" bgcolor="bg-blue-700"></card-total-posts></y><y class="flex flex-wrap justify-start items-start"><y each="{ data in posts }"><card-blog-posts url="{ data.url }" urloption="{ data.urlOption }" imagelow="{ data.imagelow }" imagehigh="{ data.imagehigh }" imageheight="64" content="{ data.content }" date="{ data.date }" xsscreen="md" smscreen="full" mdscreen="md"></card-blog-posts></y></y><misc-divider-bar opacity="25"></misc-divider-bar></y><style>/* color enhance */
     img {
       -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
     }</style><script>log('~/block/blog/post-2015.~', '')
@@ -21,6 +21,7 @@
                 self.update()
                 log('~/block/blog/post-2015.~', data)
                 totalPosts('twoFithteen', data)
+                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error

@@ -1,10 +1,13 @@
-<image-avatar><y class="px-6 py-4"><a href="{ path }" title="{ name }" aria-label="{ name }" rel="noopener"><img class="w-full rounded-full" src="{ image }" alt="{ name }"></a></y><script>log('~/image/avatar.~', '')
+<image-avatar><y class="px-6 py-4"><a href="{ path }" title="{ name }" aria-label="{ name }" rel="noopener"><img class="adaptive w-full rounded-full" src="{ imagelow }" data-src="{ imagehigh }" alt="{ name }"></a></y><script>log('~/image/avatar.~', '')
 
     export default {
       onMounted() {
+
         this.name = 'Loouis Low'
-        this.image = 'assets/image/misc/me.png'
-        this.path = 'index.html'
+        this.imagelow = 'assets/image/low/misc/me.png'
+        this.imagehigh = 'assets/image/high/misc/me.png'
+        this.path = '/'
         this.update()
+
       }
     }</script></image-avatar>
