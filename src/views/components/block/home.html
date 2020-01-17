@@ -3,8 +3,9 @@
   <y class="z-10 relative h-screen bg-charcoal-500"
      id="home">
 
-    <img class="h-full w-full object-cover object-left-top overflow-hidden"
-         src="assets/image/slide/slide_00.jpg"
+    <img class="adaptive h-full w-full object-cover object-left-top overflow-hidden"
+         src="assets/image/low/slide/slide_00.jpg"
+         data-src="assets/image/high/slide/slide_00.jpg"
          alt="Me">
 
     <y class="absolute top-0 left-0 w-full flex justify-start items-center">
@@ -13,8 +14,9 @@
         <y class="xs:text-2xl sm:text-4xl md:text-5xl 2k:text-6xl text-white font-extrabold hero-intro">
 
           <y class="md:hidden xs:pb-8">
-            <img class="w-24 h-24"
-                 src="assets/image/misc/me.png"
+            <img class="adaptive w-24 h-24"
+                 src="assets/image/low/misc/me.png"
+                 data-src="assets/image/high/misc/me.png"
                  title="Me">
           </y>
 
@@ -98,6 +100,14 @@
 
   <script>
     log('~/block/home.~', '')
+
+    export default {
+      onMounted() {
+
+        krunch.adaptiveImageLoader()
+
+      }
+    }
   </script>
 
 </block-home>

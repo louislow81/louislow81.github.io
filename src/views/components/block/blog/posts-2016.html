@@ -23,7 +23,8 @@
         <card-blog-posts
           url="{ data.url }"
           urloption="{ data.urlOption }"
-          image="{ data.image }"
+          imagelow="{ data.imagelow }"
+          imagehigh="{ data.imagehigh }"
           imageheight="64"
           content="{ data.content }"
           date="{ data.date }"
@@ -71,6 +72,7 @@
                 self.update()
                 log('~/block/blog/post-2016.~', data)
                 totalPosts('twoSixteen', data)
+                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error

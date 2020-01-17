@@ -12,9 +12,10 @@
       <y class="xs:max-w-full sm:max-w-full md:max-w-md 2k:max-w-xl m-2 rounded-lg shadow-lg overflow-hidden cursor-pointer">
         <y class="relative">
 
-          <img class="h-auto w-full object-contain object-center overflow-hidden rounded-lg"
-               src="{ data.image }"
-               alt="{ data.title}">
+          <img class="adaptive h-auto w-full object-contain object-center overflow-hidden rounded-lg"
+               src="{ data.imagelow }"
+               data-src="{ data.imagehigh }"
+               alt="{ data.title}" />
 
           <y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-600 fx-fade-in-out">
             <y class="absolute right-0 bottom-0">
@@ -104,12 +105,15 @@
                 self.projects = data
                 self.update()
                 log('~/card/project-promos.~', data)
+                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error
                 self.update()
               })
+
           })
+
       }
     }
   </script>

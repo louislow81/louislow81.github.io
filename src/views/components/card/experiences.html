@@ -8,19 +8,25 @@
         <y class="z-10 hover:absolute top-0 left-0 hover:bg-charcoal-400 w-full h-full overflow-hidden">
           <y class="flex hover:flex-col justify-start items-center cursor-pointer">
 
-            <y class="h-24 2k:h-32 hover:h-40 w-full bg-cover bg-left-top bg-no-repeat shadow-lg fx-fade-in"
-               style="background-image: url( { work.preview1 } )"
-               title="{ work.previewTitle1 }">
+            <y>
+              <img class="adaptive h-24 2k:h-32 hover:h-48 w-full object-cover object-top fx-fade-in"
+                   src="{ work.preview1low }"
+                   data-src="{ work.preview1high }"
+                   alt="{ work.previewTitle1 }">
             </y>
 
-            <y class="h-24 2k:h-32 hover:h-40 w-full bg-cover bg-left-top bg-no-repeat shadow-lg fx-fade-in"
-               style="background-image: url( { work.preview2 } )"
-               title="{ work.previewTitle2 }">
+            <y>
+              <img class="adaptive h-24 2k:h-32 hover:h-48 w-full object-cover object-top fx-fade-in"
+                   src="{ work.preview2low }"
+                   data-src="{ work.preview2high }"
+                   alt="{ work.previewTitle2 }">
             </y>
 
-            <y class="h-24 2k:h-32 hover:h-40 w-full bg-cover bg-left-top bg-no-repeat shadow-lg fx-fade-in"
-               style="background-image: url( { work.preview3 } )"
-               title="{ work.previewTitle3 }">
+            <y>
+              <img class="adaptive h-24 2k:h-32 hover:h-48 w-full object-cover object-top fx-fade-in"
+                   src="{ work.preview3low }"
+                   data-src="{ work.preview3high }"
+                   alt="{ work.previewTitle3 }">
             </y>
 
           </y>
@@ -107,6 +113,7 @@
                 self.experiences = data
                 self.update()
                 log('~/card/experiences.~', data)
+                krunch.adaptiveImageLoader()
               })
           })
           .catch(error => {
