@@ -46,7 +46,7 @@ const distJsonDataPath = 'dist/assets/data/'
 const srcServiceWorkerPath = 'src/assets/js/service_worker'
 
 // app manifest
-const srcAppManifestPath = 'src'
+const srcAppManifestPath = 'src/assets/pwa'
 
 // watch
 const watchSrcHtmlPath = 'src/views/**/*.html'
