@@ -11,8 +11,9 @@
             <a href="{ data.url }"
                title="{ data.title }"
                rel="noopener">
-              <img class="invert-color h-8 w-8 object-contain object-center opacity-75 hover:opacity-75"
-                   src="{ data.icon }"
+              <img class="adaptive invert-color h-8 w-8 object-contain object-center opacity-75 hover:opacity-75"
+                   src="{ data.iconlow }"
+                   data-src="{ data.iconhigh }"
                    alt="{ data.title }">
             </a>
 
@@ -51,6 +52,7 @@
                 delete self.error
                 self.menu = data
                 self.update()
+                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error

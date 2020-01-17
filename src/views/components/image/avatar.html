@@ -7,8 +7,9 @@
        aria-label="{ name }"
        rel="noopener">
 
-      <img class="w-full rounded-full"
-           src="{ image }"
+      <img class="adaptive w-full rounded-full"
+           src="{ imagelow }"
+           data-src="{ imagehigh }"
            alt="{ name }">
 
     </a>
@@ -21,10 +22,13 @@
 
     export default {
       onMounted() {
+
         this.name = 'Loouis Low'
-        this.image = 'assets/image/misc/me.png'
-        this.path = 'index.html'
+        this.imagelow = 'assets/image/low/misc/me.png'
+        this.imagehigh = 'assets/image/high/misc/me.png'
+        this.path = '/'
         this.update()
+
       }
     }
   </script>

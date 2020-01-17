@@ -19,9 +19,11 @@
           </y>
 
           <y class="xs:px-6 sm:px-10 xs:w-screen sm:w-screen md:w-auto md:px-10">
+
             <social-twitter
               url="https://twitter.com/loouislow?ref_src=twsrc%5Etfw">
             </social-twitter>
+
           </y>
 
         </y>
@@ -75,8 +77,9 @@
 
             <y class="2k:text-3xl flex justify-start items-center">
               <y class="mr-2">
-                <img class="h-6 w-6"
-                   src="assets/image/misc/email.png"
+                <img class="adaptive h-6 w-6"
+                   src="assets/image/low/misc/email.png"
+                   data-src="assets/image/high/misc/email.png"
                    alt="Email me">
               </y>
               <a class="hover:underline"
@@ -88,16 +91,18 @@
 
             <y class="pb-5 2k:text-3xl flex justify-start items-center">
               <y class="mr-2">
-                <img class="h-6 w-6"
-                   src="assets/image/misc/phone.png"
+                <img class="adaptive h-6 w-6"
+                   src="assets/image/low/misc/phone.png"
+                   data-src="assets/image/high/misc/phone.png"
                    alt="Call me">
               </y>
               <y>
                 +6016 4910454
               </y>
               <y class="ml-1">
-                <img class="h-8 w-8 cursor-pointer"
-                   src="assets/image/misc/social/whatsapp.png"
+                <img class="adaptive h-8 w-8 cursor-pointer"
+                   src="assets/image/low/misc/social/whatsapp.png"
+                   data-src="assets/image/high/misc/social/whatsapp.png"
                    alt="WhatsApp"
                    title="I am on WhatsApp">
               </y>
@@ -122,6 +127,14 @@
 
   <script>
     log('~/block/about.~', '')
+
+    export default {
+      onMounted() {
+
+        krunch.adaptiveImageLoader()
+
+      }
+    }
   </script>
 
 </block-about>

@@ -20,8 +20,9 @@
 
     <y class="absolute top-0 right-0 p-1 cursor-pointer"
        title="Source: Facebook">
-      <img class="invert-icon h-4 w-4"
-           src="assets/image/misc/social/facebook.png"
+      <img class="adaptive invert-icon h-4 w-4"
+           src="assets/image/low/misc/social/facebook.png"
+           data-src="assets/image/high/misc/social/facebook.png"
            alt="Facebook">
     </y>
 
@@ -32,8 +33,9 @@
     </y>
 
     <y class="fix-width-full">
-      <img class="h-{ props.imageheight } w-full bg-gray-400 object-cover object-center overflow-hidden"
-           src="{ props.image }"
+      <img class="adaptive h-{ props.imageheight } w-full bg-gray-400 object-cover object-center overflow-hidden"
+           src="{ props.imagelow }"
+           data-src="{ props.imagehigh }"
            alt="{ props.content }">
     </y>
 

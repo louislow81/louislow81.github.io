@@ -12,8 +12,9 @@
              target="_self"
              rel="noopener">
 
-            <img class="w-24 h-24"
-                 src="assets/image/misc/me.png"
+            <img class="adaptive w-24 h-24"
+                 src="assets/image/low/misc/me.png"
+                 data-src="assets/image/high/misc/me.png"
                  title="Me">
 
           </a>
@@ -86,6 +87,14 @@
 
   <script>
     log('~/block/posts.~', '')
+
+    export default {
+      onMounted() {
+
+        krunch.adaptiveImageLoader()
+
+      }
+    }
   </script>
 
 </block-posts>

@@ -2,105 +2,120 @@
   {
     "url": "https://hub.docker.com/r/loouislow81/arch-primitive",
     "urlOption": "block",
-    "image": "assets/image/post/fbc8fb21206cd3c5e503e556b3a3e788.jpg",
+    "imagelow": "assets/image/low/post/fbc8fb21206cd3c5e503e556b3a3e788.jpg",
+    "imagehigh": "assets/image/high/post/fbc8fb21206cd3c5e503e556b3a3e788.jpg",
     "content": "Both `arch-primitive` and `arch-primitive-ion` are available at Docker Hub. You should try something that is faster than caching proxy.",
     "date": "30 Dec 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/df2d818b3e97bc21d64b5c6fa9c723d0.jpg",
+    "imagelow": "assets/image/low/post/df2d818b3e97bc21d64b5c6fa9c723d0.jpg",
+    "imagehigh": "assets/image/high/post/df2d818b3e97bc21d64b5c6fa9c723d0.jpg",
     "content": "Working on the new `Noozxoide EIZO-NNXT Series` after leaving the workplace. This firmware takes digital audio signals with added special effects to makes the listening content realistic, immersive and stunning sound.",
     "date": "24 Dec 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/7549b32a60b42b81538b2167c63f2504.jpg",
+    "imagelow": "assets/image/low/post/7549b32a60b42b81538b2167c63f2504.jpg",
+    "imagehigh": "assets/image/high/post/7549b32a60b42b81538b2167c63f2504.jpg",
     "content": "The latest firmware enables `sonar.ai` to self-labeling raw data. A set of neural-network that helps with this cool feature, saving me plenty of time for data labeling manually. It's a new breakthrough in my lab.",
     "date": "20 Dec 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/319743edcd12cce4e0faba58e1d8c509.jpg",
+    "imagelow": "assets/image/low/post/319743edcd12cce4e0faba58e1d8c509.jpg",
+    "imagehigh": "assets/image/high/post/319743edcd12cce4e0faba58e1d8c509.jpg",
     "content": "Bringing `EIZO-NNXT` and `EIZO-recharge` back to life on Linux Platform. The prototype is a work in progress, tons of flagship sound processors are coming, such as `NuVocal`, `LogicSurround ES`, `Psychoacoustic Bass UltraLinear II`, `Crystalyzer II`, `MatrixCircle`, etc.",
     "date": "15 Dec 2018"
   },
   {
     "url": "https://github.com/loouislow81/golem-cli",
     "urlOption": "block",
-    "image": "assets/image/post/0d693259c80b8d8b373b97c366bdba5f.jpg",
+    "imagelow": "assets/image/low/post/0d693259c80b8d8b373b97c366bdba5f.jpg",
+    "imagehigh": "assets/image/high/post/0d693259c80b8d8b373b97c366bdba5f.jpg",
     "content": "Rewritten code for project `GOLEM CLI` has become easy to maintain and looks super duper clean. Newly designed 28 APIs and ready for the final implementation on the next release version.",
     "date": "24 Nov 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/068b674bc5bb79365f6e0204577d282a.jpg",
+    "imagelow": "assets/image/low/post/068b674bc5bb79365f6e0204577d282a.jpg",
+    "imagehigh": "assets/image/high/post/068b674bc5bb79365f6e0204577d282a.jpg",
     "content": "New prototype tracking system creates a 3-dimensional space with several short radio wave as `Marker`. The `Tracer` collecting nearby signal of the `Marker` and predicting an accurate object location by using Machine Learning. Object can be trace in x, y and z space.",
     "date": "6 Oct 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/3ff87fa84702b12b1285a20192fc9049.jpg",
+    "imagelow": "assets/image/low/post/3ff87fa84702b12b1285a20192fc9049.jpg",
+    "imagehigh": "assets/image/high/post/3ff87fa84702b12b1285a20192fc9049.jpg",
     "content": "Bring my invention to Starbucks, it doing so well with the decent public wifi internet speed. This is the biggest final version relay I ever made. I mean, not the couple previous prototypes, which bigger than this one in the pictures. Meet ~ `ARCH GRID Series G340-QDN`.",
     "date": "24 Sep 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/bc82b63f48bf1769bf25a7db3309d742.jpg",
+    "imagelow": "assets/image/low/post/bc82b63f48bf1769bf25a7db3309d742.jpg",
+    "imagehigh": "assets/image/high/post/bc82b63f48bf1769bf25a7db3309d742.jpg",
     "content": "Give ARCH GRID Series (G340-QDN) another serious overhauled UI design. Uses very subtle Holo design, less border being used, more spacious.",
     "date": "24 Sep 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/0b5f132fcef4d81829fb2e4bc90c261d.jpg",
+    "imagelow": "assets/image/low/post/0b5f132fcef4d81829fb2e4bc90c261d.jpg",
+    "imagehigh": "assets/image/high/post/0b5f132fcef4d81829fb2e4bc90c261d.jpg",
     "content": "Assembled all parts for a handcrafted project ARCH, GRID series (model G340-QDN, 340Mbps, 16-core VPU, 4GB RAM, GigabitLAN, Web Interface) that make for a customer is finished. All premium parts. It looks gorgeous, sexy and beauty. All hardware, firmware, and systems are good. It ready for real field test at customer site.",
     "date": "22 Sep 2018"
   },
   {
     "url": "https://github.com/loouislow81/golem-cli",
     "urlOption": "block",
-    "image": "assets/image/post/2263715de7785a6f0b3aa7fdd049bd11.jpg",
+    "imagelow": "assets/image/low/post/2263715de7785a6f0b3aa7fdd049bd11.jpg",
+    "imagehigh": "assets/image/high/post/2263715de7785a6f0b3aa7fdd049bd11.jpg",
     "content": "A completely overhauled `golem-cli` version 0.6.2, now can view installed total app size and a little `GOLEM` logo branding touch up.",
     "date": "18 Sep 2018"
   },
   {
     "url": "https://github.com/loouislow81/golem-gui-appstore",
     "urlOption": "block",
-    "image": "assets/image/post/9868d269327daea6ed9e19f898f3dfd1.jpg",
+    "imagelow": "assets/image/low/post/9868d269327daea6ed9e19f898f3dfd1.jpg",
+    "imagehigh": "assets/image/high/post/9868d269327daea6ed9e19f898f3dfd1.jpg",
     "content": "Crafting a frontend web UI for project GOLEM. A native apps store user interface for Linux Desktop. Instead doing it with the CLI in Terminal.",
     "date": "9 Sep 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/d413280d60fa62e498d87f70fef5e3de.jpg",
+    "imagelow": "assets/image/low/post/d413280d60fa62e498d87f70fef5e3de.jpg",
+    "imagehigh": "assets/image/high/post/d413280d60fa62e498d87f70fef5e3de.jpg",
     "content": "Working on the cable drafting before I am getting into nicely touched up looking-cool cable management.The black and cyan-green colors are giving the futuristic look. It's too squeezy inside.",
     "date": "4 Aug 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/6bdc8671a9e6e6227513627de247d6ed.jpg",
+    "imagelow": "assets/image/low/post/6bdc8671a9e6e6227513627de247d6ed.jpg",
+    "imagehigh": "assets/image/high/post/6bdc8671a9e6e6227513627de247d6ed.jpg",
     "content": "Product mockup design with Photoshop and FreeCAD for Project `ARCH GRID` series.",
     "date": "4 Aug 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/44151b555d6db75cfb8becf97ff9e07b.jpg",
+    "imagelow": "assets/image/low/post/44151b555d6db75cfb8becf97ff9e07b.jpg",
+    "imagehigh": "assets/image/high/post/44151b555d6db75cfb8becf97ff9e07b.jpg",
     "content": "Another new long-bar version of `oodoo` laptop cooling stand. It has 24 cm long, 16 rolls and nicely fit for 14 inches laptop.",
     "date": "4 Jun 2018"
   },
   {
     "url": "",
     "urlOption": "hidden",
-    "image": "assets/image/post/699a351469bcda78f6a4788203ab54aa.jpg",
+    "imagelow": "assets/image/low/post/699a351469bcda78f6a4788203ab54aa.jpg",
+    "imagehigh": "assets/image/high/post/699a351469bcda78f6a4788203ab54aa.jpg",
     "content": "My homemade creative laptop stand that has 2 spiral-rolling suspensions in the concept design. Very long-lasting, very robust, the design is minimalist and simple to be recreated with any similar nilon type material.",
     "date": "4 Jun 2018"
   }

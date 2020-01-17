@@ -221,15 +221,15 @@ krunch.adaptiveImageLoader = function() {
 
   Array.from(images).map(imageElement => {
 
-    const adaptive = new Image() // start loading image
-    adaptive.src = imageElement.dataset.src
+    const adaptive = new Image(); // start loading image
+    adaptive.src = imageElement.dataset.src;
 
     // once image is loaded replace the src of the HTML element
     adaptive.onload = function() {
       imageElement.classList.remove('adaptive')
       if ('IMG' === imageElement.nodeName) imageElement.src = adaptive.src
       else imageElement.style.backgroundImage = `url(${adaptive.src})`
-    }
+    };
 
   })
 };

@@ -12,7 +12,8 @@
     "icon2": "fab fa-android",
     "icon2Padding": "pr-4 pb-4",
     "icon2Visibility": "block",
-    "image": "assets/image/promo/promo_noozy_4.png",
+    "imagelow": "assets/image/low/promo/promo_noozy_4.png",
+    "imagehigh": "assets/image/high/promo/promo_noozy_4.png",
     "tech": "C++, Java"
   },
   {
@@ -28,7 +29,8 @@
     "icon2": "fab fa-windows",
     "icon2Padding": "pr-4 pb-4",
     "icon2Visibility": "block",
-    "image": "assets/image/promo/promo_noozy_desktop.jpg",
+    "imagelow": "assets/image/low/promo/promo_noozy_desktop.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozy_desktop.jpg",
     "tech": "C++, QT"
   },
   {
@@ -44,7 +46,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_evaclabs_arch_grid.jpg",
+    "imagelow": "assets/image/low/promo/promo_evaclabs_arch_grid.jpg",
+    "imagehigh": "assets/image/high/promo/promo_evaclabs_arch_grid.jpg",
     "tech": "C, C++, Embedded"
   },
   {
@@ -60,7 +63,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_noozy_classic_android.jpg",
+    "imagelow": "assets/image/low/promo/promo_noozy_classic_android.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozy_classic_android.jpg",
     "tech": "C++, Android"
   },
   {
@@ -76,7 +80,8 @@
     "icon2": "fab fa-opera",
     "icon2Padding": "pr-4 pb-4",
     "icon2Visibility": "block",
-    "image": "assets/image/promo/promo_elixir.jpg",
+    "imagelow": "assets/image/low/promo/promo_elixir.jpg",
+    "imagehigh": "assets/image/high/promo/promo_elixir.jpg",
     "tech": "BackboneJS, Opera, Chrome"
   },
   {
@@ -92,7 +97,8 @@
     "icon2": "fab fa-windows",
     "icon2Padding": "pr-4 pb-4",
     "icon2Visibility": "block",
-    "image": "assets/image/promo/promo_nkmp_desktop.jpg",
+    "imagelow": "assets/image/low/promo/promo_nkmp_desktop.jpg",
+    "imagehigh": "assets/image/high/promo/promo_nkmp_desktop.jpg",
     "tech": "C++, QT"
   },
   {
@@ -108,7 +114,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/screenshot/screenshot_kraft.jpeg",
+    "imagelow": "assets/image/low/screenshot/screenshot_kraft.jpeg",
+    "imagehigh": "assets/image/high/screenshot/screenshot_kraft.jpeg",
     "tech": "C++, ElectronJS"
   },
   {
@@ -124,7 +131,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_noozxoidelabs_eizorewire_pro_android.png",
+    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizorewire_pro_android.png",
+    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizorewire_pro_android.png",
     "tech": "C++, Java"
   },
   {
@@ -140,7 +148,8 @@
     "icon2": "fab fa-windows",
     "icon2Padding": "pr-4 pb-4",
     "icon2Visibility": "block",
-    "image": "assets/image/promo/promo_noozxoide_workbench.jpg",
+    "imagelow": "assets/image/low/promo/promo_noozxoide_workbench.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozxoide_workbench.jpg",
     "tech": "C++, Delphi"
   },
   {
@@ -156,7 +165,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_noozxoidelabs_eizorewire_n_android.jpg",
+    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizorewire_n_android.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizorewire_n_android.jpg",
     "tech": "C++, Java"
   },
   {
@@ -172,7 +182,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_noozxoidelabs_eizonnxt.jpg",
+    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizonnxt.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizonnxt.jpg",
     "tech": "C, C++, DAC, Embedded"
   },
   {
@@ -188,7 +199,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_noozxoide_studioone.jpg",
+    "imagelow": "assets/image/low/promo/promo_noozxoide_studioone.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozxoide_studioone.jpg",
     "tech": "C++, QT"
   },
   {
@@ -204,7 +216,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_overloadproject_twisted_mind.jpg",
+    "imagelow": "assets/image/low/promo/promo_overloadproject_twisted_mind.jpg",
+    "imagehigh": "assets/image/high/promo/promo_overloadproject_twisted_mind.jpg",
     "tech": "Propellerheads Reason, Steinberg Cubase, Waves"
   },
   {
@@ -218,7 +231,8 @@
     "icon1Visibility": "hidden",
     "icon2": "hidden",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_overloadproject_dream_travel.jpg",
+    "imagelow": "assets/image/low/promo/promo_overloadproject_dream_travel.jpg",
+    "imagehigh": "assets/image/high/promo/promo_overloadproject_dream_travel.jpg",
     "tech": "Propellerheads Reason, Steinberg Cubase, Waves"
   },
   {
@@ -234,7 +248,8 @@
     "icon2": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "image": "assets/image/promo/promo_exodus_060.jpeg",
+    "imagelow": "assets/image/low/promo/promo_exodus_060.jpeg",
+    "imagehigh": "assets/image/high/promo/promo_exodus_060.jpeg",
     "tech": "C++, QT"
   }
 ]
