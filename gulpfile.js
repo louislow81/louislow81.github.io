@@ -31,7 +31,8 @@ const distCssPath = 'dist/assets/css'
 
 // image
 const srcImageRecursivePath = 'src/assets/image/**/*'
-const distImagePath = 'dist/assets/image'
+const distHqImagePath = 'dist/assets/image/high'
+const distLqImagePath = 'dist/assets/image/low'
 
 // production
 const distProdPath = 'dist'
@@ -142,14 +143,25 @@ gulp.task('scripts', () => {
 })
 
 
-// ...minify image
-gulp.task('image', () => {
+// ...minify image (high quality)
+gulp.task('image-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [1, 1] }), // png
-      mozjpeg({ quality: 100 }), // jpg
+      pngquant({ quality: [1, 1] }), // set png quality
+      mozjpeg({ quality: 100 }), // set jpg quality
     ]))
-    .pipe(gulp.dest(distImagePath))
+    .pipe(gulp.dest(distHqImagePath))
+})
+
+
+// ...minify image (low quality)
+gulp.task('image-low-quality', () => {
+  return gulp.src(srcImageRecursivePath)
+    .pipe(imagemin([
+      pngquant({ quality: [0.5, 0.5] }), // set png quality
+      mozjpeg({ quality: 50 }), // set jpg quality
+    ]))
+    .pipe(gulp.dest(distLqImagePath))
 })
 
 
@@ -185,7 +197,8 @@ gulp.task('watch',
   gulp.series([
 
     // minify files
-    // 'image',
+    //'image-high-quality',
+    //'image-low-quality',
     'pre-scripts',
     'scripts',
     'sass',
@@ -200,7 +213,10 @@ gulp.task('watch',
   ], () => {
 
     gulp.watch(watchSrcImagePath,
-      gulp.series('image', reload))
+      gulp.series('image-high-quality', reload))
+
+    gulp.watch(watchSrcImagePath,
+      gulp.series('image-low-quality', reload))
 
     gulp.watch(watchSrcScriptsPath,
       gulp.series(['pre-scripts', 'scripts', reload]))
