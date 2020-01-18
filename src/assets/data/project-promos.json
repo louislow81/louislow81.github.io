@@ -125,7 +125,7 @@
     "urlText": "Google Play",
     "url": "https://play.google.com/store/apps/details?id=com.noozxoidelabs.eizo.rewirepro",
     "urlVisibility": "block",
-    "icon1": "fab fa-google-play",
+    "icon1": "fab fa-android",
     "icon1Padding": "pr-4 pb-4",
     "icon1Visibility": "block",
     "icon2": "",
