@@ -201,10 +201,10 @@
           </y>
         </y>
 
-        <!-- cookies consent -->
+        <!-- cookies (fixed) -->
         <y class="z-20 fixed top-0 left-0">
 
-          <card-message-button></card-message-button>
+          <card-cookies-consent></card-cookies-consent>
 
         </y>
 
@@ -253,7 +253,7 @@
             type="krunch"></script>
     <script async data-src="components/card/terminal.html"
             type="krunch"></script>
-    <script async data-src="components/card/message-button.html"
+    <script async data-src="components/card/cookies-consent.html"
             type="krunch"></script>
     <script async data-src="components/text/heading.html"
             type="krunch"></script>
@@ -288,7 +288,7 @@
         krunch.addCache(assets)
 
 
-        const components = 'global-main-menu, global-small-footer, global-mobile-menu, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, card-terminal, card-message-button, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        const components = 'global-main-menu, global-small-footer, global-mobile-menu, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, card-terminal, card-cookies-consent, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
         krunch.mount(components) // mount components
 
         krunch.adaptiveImageLoader() // lazyloader
