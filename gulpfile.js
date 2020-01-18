@@ -147,8 +147,8 @@ gulp.task('scripts', () => {
 gulp.task('image-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [1, 1] }), // set png quality
-      mozjpeg({ quality: 100 }), // set jpg quality
+      pngquant({ quality: [1, 1] }),
+      mozjpeg({ quality: 100 }),
     ]))
     .pipe(gulp.dest(distHqImagePath))
 })
@@ -158,8 +158,8 @@ gulp.task('image-high-quality', () => {
 gulp.task('image-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [0.5, 0.5] }), // set png quality
-      mozjpeg({ quality: 50 }), // set jpg quality
+      pngquant({ quality: [0.1, 0.5] }),
+      mozjpeg({ quality: 50 }),
     ]))
     .pipe(gulp.dest(distLqImagePath))
 })
