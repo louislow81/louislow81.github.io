@@ -1,4 +1,5 @@
-! function() {
+function driftMessenger() {
+
   const t = window.driftt = window.drift = window.driftt || [];
   if (!t.init) {
     if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
@@ -19,11 +20,11 @@
         i.parentNode.insertBefore(o, i);
       };
   }
-}();
 
-drift.SNIPPET_VERSION = '0.3.1';
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('9ad3433dnnis');
 
-drift.load('9ad3433dnnis');
+};
 
 // Utility function
 function krunch() {};
@@ -283,6 +284,22 @@ krunch.networkSpeed = function() {
   log('(DataSaver Mode) ' + navigator.connection.saveData, '');
 };
 
+/*
+  Google Analytics Tracker
+  @param {null}
+*/
+function googleAnalytics() {
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments)
+  };
+
+  gtag('js', new Date());
+  gtag('config', 'UA-109094106-2');
+};
+
 function greeting() {};
 
 greeting.withTime = function() {
@@ -431,20 +448,23 @@ function totalPosts(id, data) {
 
 /*
   Twitter Post Updater with Timer
+  @param {null}
 */
-window.twttr = (function(d, s, id) {
-  var t, js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-  return window.twttr || (t = { _e: [], ready: function(f) { t._e.push(f) } });
-}(document, "script", "twitter-wjs"));
+function twitter() {
+  window.twttr = (function(d, s, id) {
+    var t, js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+    return window.twttr || (t = { _e: [], ready: function(f) { t._e.push(f) } });
+  }(document, "script", "twitter-wjs"));
 
-twttr.ready(function(twttr) {
-  twttr.widgets.load();
-  setInterval(function() {
+  twttr.ready(function(twttr) {
     twttr.widgets.load();
-  }, 1000);
-});
+    setInterval(function() {
+      twttr.widgets.load();
+    }, 1000);
+  });
+};

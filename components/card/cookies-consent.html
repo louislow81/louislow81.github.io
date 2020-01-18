@@ -1,31 +1,64 @@
-<card-cookies-consent><y class="m-4 p-6 bg-gray-600 rounded shadow-lg" id="cookiesConsent"><y class="relative max-w-md"><y class="pb-2 pr-6 text-md text-white depth-snug">I serve cookies on this content to analyze traffic, remember your preferences, and optimize your experience.</y><y class="text-xs text-white"><span class="pr-1">Data: </span>Google Analytics, Cache Storage</y><y class="absolute bottom-0 right-0"><button class="p-2 text-white text-xl font-semibold uppercase hover:underline cursor-pointer" id="acceptCookies">OK</button></y></y></y><script>export default {
+<card-cookies-consent><y class="m-4 p-6 bg-gray-600 rounded shadow-lg" id="cookiesConsent"><y class="relative max-w-md"><y class="pb-2 pr-6 text-md text-white depth-snug">I serve cookies and third-party services on this content to analyze traffic, remember your preferences, and optimize your experience.</y><y class="pr-6 text-xs text-white"><span class="pr-0">Data: </span><span each="{ data in dataCollectors }"><a class="px-1 hover:text-gray-600 hover:bg-white underline hover:no-underline depth-snug rounded-full" href="{ data.url }" title="{ data.url }" target="_blank" rel="noopener">{ data.title }</a></span></y><y class="absolute bottom-0 right-0"><button class="px-2 text-white text-2xl font-semibold uppercase hover:underline cursor-pointer" id="acceptCookies">OK</button></y></y></y><script>export default {
+
+      dataCollectors: [
+        {
+          url: 'https://analytics.google.com',
+          title: 'Google Analytics'
+        },
+        {
+          url: 'https://drift.com',
+          title: 'Drift'
+        },
+        {
+          url: 'https://twitter.com',
+          title: 'Twitter'
+        }
+      ],
+
       onMounted() {
 
         try {
 
-          const cookiesKey = window.localStorage.getItem('LoouisLow')
+          const id = 'cookiesConsent'
+          const buttonId = 'acceptCookies'
+          const elementId = 'lockByCookiesConsent'
+          const key = 'LoouisLowCookieConsent'
+          const matchKey = 'isAccepted'
+          const cookiesKey = window.localStorage.getItem(key)
 
-          if ("isAccepted" === cookiesKey) {
-            // hide box
-            document.getElementById("cookiesConsent")
-              .style.display = "none"
+          const components = 'global-main-menu, global-mobile-menu, global-blog-menu, global-mobile-blog-menu, block-posts, block-home, block-about, block-experience, block-skills, block-pet-project, block-blog, block-contact'
+
+          if (matchKey === cookiesKey) {
+            // hide consent
+            document.getElementById(id)
+              .style.display = 'none'
+
+            // always mount components
+            krunch.mount(components, true)
           }
           else {
-            // show box
-            document.getElementById("cookiesConsent")
-              .style.display = "block";
-            // `OK` button clicked
-            document.getElementById("acceptCookies")
-              .addEventListener("click", () => {
-                // add key
-                window.localStorage.setItem('LoouisLow', 'isAccepted')
-                // hide box
-                document.getElementById("cookiesConsent")
-                  .style.display = "none"
+            // show consent
+            document.getElementById(id)
+              .style.display = 'block'
 
+            // unmount components
+            krunch.unmount(components, true)
+
+            // `OK` button clicked
+            document.getElementById(buttonId)
+              .addEventListener('click', () => {
+
+                // add key
+                window.localStorage.setItem(key, matchKey)
+
+                // hide box
+                document.getElementById(id)
+                  .style.display = 'none'
+
+                // mount components at once
+                krunch.mount(components, true)
               })
           }
-
         }
         catch (error) {
           log(error, '')
