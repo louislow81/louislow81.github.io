@@ -97,7 +97,7 @@
 
 
     <!-- !! default -->
-    <link href="assets/css/style.css"
+    <link defer href="assets/css/style.css"
           rel="stylesheet"
           rel="preload"
           as="style"
@@ -252,9 +252,7 @@
         const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
 
-
         krunch.probeConnection() // check connection
-        krunch.adaptiveImageLoader() // lazyloader
 
 
         const message = 'Hang on, taking you back to my home!'
