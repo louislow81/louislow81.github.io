@@ -1,4 +1,5 @@
-! function() {
+function driftMessenger() {
+
   const t = window.driftt = window.drift = window.driftt || [];
   if (!t.init) {
     if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
@@ -19,8 +20,8 @@
         i.parentNode.insertBefore(o, i);
       };
   }
-}();
 
-drift.SNIPPET_VERSION = '0.3.1';
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('9ad3433dnnis');
 
-drift.load('9ad3433dnnis');
+};
