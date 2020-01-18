@@ -1,0 +1,35 @@
+<card-message-button><y class="m-4 p-6 bg-gray-600 rounded shadow-lg" id="cookiesConsent"><y class="relative max-w-md"><y class="pb-2 pr-6 text-md text-white depth-snug">{ props.message }</y><y class="text-xs text-white"><span class="pr-2">Data: </span>{ props.source }</y><y class="absolute bottom-0 right-0"><button class="p-2 text-white text-xl font-semibold uppercase hover:underline cursor-pointer" id="acceptCookies">{ props.button }</button></y></y></y><script>export default {
+      onMounted() {
+
+        try {
+
+          const cookiesKey = window.localStorage.getItem('LoouisLow')
+
+          if ("isAccepted" === cookiesKey) {
+            // hide box
+            document.getElementById("cookiesConsent")
+              .style.display = "none"
+          }
+          else {
+            // show box
+            document.getElementById("cookiesConsent")
+              .style.display = "block";
+            // `OK` button clicked
+            document.getElementById("acceptCookies")
+              .addEventListener("click", function() {
+                // add key
+                window.localStorage.setItem('LoouisLow', 'isAccepted')
+                // hide box
+                document.getElementById("cookiesConsent")
+                  .style.display = "none"
+
+              })
+          }
+
+        }
+        catch (error) {
+          log(error, '')
+        }
+
+      }
+    }</script></card-message-button>
