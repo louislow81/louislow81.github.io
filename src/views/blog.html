@@ -93,12 +93,6 @@
 
     <!-- google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109094106-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-109094106-2');
-    </script>
     <!--// google analytics -->
 
 
@@ -253,15 +247,15 @@
         await krunch.compile() // init compiler
 
 
-        const components = 'global-blog-menu, global-small-footer, global-mobile-blog-menu, global-recent-active-projects, block-posts, card-github-projects, card-project-promos, card-skills, card-experiences, blog-post-2020, blog-post-2019, blog-post-2018, blog-post-2017, blog-post-2016, blog-post-2015, blog-post-2014, blog-post-2013, blog-post-2012, card-blog-posts, card-total-posts, card-cookies-consent, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar, misc-divider-bar, misc-divider-text'
+        // `card-cookies-consent` is a controller mount
+        // components only after accepting the cookies consent.
+        const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
 
 
         krunch.probeConnection() // check connection
         krunch.adaptiveImageLoader() // lazyloader
 
-        const tour = 'Alright, welcome to my blackhole!'
-        snicker.onLoad(tour, 5000)
 
         const message = 'Hang on, taking you back to my home!'
         snicker.onClick('snickerBackToHomeBtn', message, 5000)

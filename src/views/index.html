@@ -108,9 +108,6 @@
 
     <!-- google analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109094106-2"></script>
-    <script>
-      window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','UA-109094106-2');
-    </script>
     <!--// google analytics -->
 
 
@@ -164,7 +161,8 @@
       </y>
 
       <!-- layout -->
-      <y class="absolute top-0 left-0 w-full md:flex lg:flex xl:flex">
+      <y class="absolute top-0 left-0 w-full md:flex lg:flex xl:flex"
+         id="lockByCookiesConsent">
 
         <!-- nav (fixed) -->
         <y class="fixed">
@@ -288,12 +286,13 @@
         krunch.addCache(assets)
 
 
-        const components = 'global-main-menu, global-small-footer, global-mobile-menu, block-home, block-about, block-skills, block-experience, block-pet-project, blog-posts-latest, block-blog, block-contact, card-github-projects, card-project-promos, card-skills, card-experiences, card-blog-posts, card-terminal, card-cookies-consent, text-heading, text-paragraph, social-twitter, social-icon-link, button-large, button-ultra, icon-platform, image-avatar'
+        // `card-cookies-consent` is a controller mount
+        // components only after accepting the cookies consent.
+        const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
 
         krunch.adaptiveImageLoader() // lazyloader
         krunch.probeConnection() // check connection
-        greeting.withTime() // show differ messages with time
 
 
       }())
