@@ -102,7 +102,6 @@ gulp.task('sass', () => {
     .pipe(browserSync.reload({
       stream: true
     }))
-    .pipe(rename('style-fallback.css'))
     .pipe(gulp.dest(distCssPath))
 })
 
