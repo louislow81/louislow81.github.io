@@ -1,3 +1,17 @@
-<global-small-footer><y class="px-6 py-6"><y class="text-xs 2k:text-sm text-gray-600 uppercase">&copy; Loouis Low</y></y><style>:host {
+<global-small-footer><y class="px-6 py-4"><y class="text-xs 2k:text-sm text-gray-600 uppercase">&copy; Loouis Low</y><y><a class="dmca-badge" href="{ dmcaurl }" title="{ dmcatitle }" rel="noopener"><img class="adaptive opacity-25" src="{ dmcaimagelow }" data-src="{ dmcaimagehigh }" alt="{ dmcatitle }"></a></y></y><style>:host {
       font-family: Oswald, Serif;
-    }</style><script>log('~/global/small-footer.~', '')</script></global-small-footer>
+    }</style><script>log('~/global/small-footer.~', '')
+
+    export default {
+      onMounted() {
+
+        this.dmcaurl = 'www.dmca.com/Protection/Status.aspx?ID=8420ebc4-6520-4953-b2ac-e2d0e7b07ac0'
+        this.dmcatitle = 'DMCA.com Protection Status'
+        this.dmcaimagelow= 'assets/image/low/misc/dmca_badge.png'
+        this.dmcaimagehigh = 'assets/image/high/misc/dmca_badge.png'
+        this.update()
+
+        krunch.adaptiveImageLoader()
+
+      }
+    }</script></global-small-footer>
