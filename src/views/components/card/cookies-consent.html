@@ -2,9 +2,9 @@
 
   <!--
 
-    `Cookies Consent` is a `Master Controller` for 3rd-Party services
-    that collecting data from user, the services are executed after
-    accepting the `Cookies Consent`.
+    Master controller for 3rd-Party services that collecting
+    data from user, the services are executed after accepting
+    the `Cookies Consent`.
 
     services,
 
@@ -77,10 +77,10 @@
 
         try {
 
-          const elementId = 'lockByCookiesConsent'
           const consentId = 'cookiesConsent'
           const buttonId = 'acceptCookies'
-          const consentKey = 'LoouisLowCookieConsent'
+          const elementId = 'lockByCookiesConsent'
+          const key = 'LoouisLow.Cookie.Consent'
           const matchKey = 'isAccepted'
           const cookiesKey = window.localStorage.getItem(key)
 
@@ -107,7 +107,7 @@
               .addEventListener('click', () => {
 
                 // add key
-                window.localStorage.setItem(consentKey, matchKey)
+                window.localStorage.setItem(key, matchKey)
 
                 // hide consent
                 document.getElementById(consentId)
