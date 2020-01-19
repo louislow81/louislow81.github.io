@@ -1,4 +1,4 @@
-const pageReadingMeter = {
+const reader = {
 
   "defaults": {
     "color": "rgba(49, 130, 206, 1)",
@@ -20,6 +20,7 @@ const pageReadingMeter = {
     let progressJSelem;
 
     if (!configs.nobar) {
+
       //create element
       progressJSelem = document.createElement("y");
       //use css instead of js style
@@ -40,6 +41,7 @@ const pageReadingMeter = {
       configs.height ? progressJSelem.style.height = configs.height : progressJSelem.style.height = reader.defaults.height;
       //color
       configs.color ? progressJSelem.style.backgroundColor = configs.color : progressJSelem.style.backgroundColor = reader.defaults.color;
+
     }
 
     let attachElem = reader.defaults.attach;
@@ -52,16 +54,19 @@ const pageReadingMeter = {
 
     //scroll event
     document.addEventListener('scroll', function(e) {
+
       const maxHeight = document.body.scrollHeight;
       const sizeHeight = window.innerHeight;
       const scrolls = window.scrollY;
       const percentage = (scrolls / (maxHeight - sizeHeight)) * 100;
+
       if (!configs.nobar) {
         progressJSelem.style.width = percentage.toFixed(roundto) + "%";
       }
       if (attachElem) {
         attachElem.innerHTML = percentage.toFixed(roundto);
       }
+
     });
 
   }
