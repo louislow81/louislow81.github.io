@@ -22,11 +22,7 @@
         I serve cookies and third-party services on this content to analyze traffic, remember your preferences, and optimize your experience.
       </y>
 
-      <y class="pr-6 text-xs text-white">
-
-        <span class="pr-0">
-          Data:
-        </span>
+      <y class="pr-3 text-xs text-white">
 
         <span each="{ data in dataCollectors }">
 
@@ -70,10 +66,15 @@
         {
           url: 'https://twitter.com',
           title: 'Twitter'
+        },
+        {
+          url: 'https://dmca.com',
+          title: 'DMCA'
         }
       ],
 
       onMounted() {
+        krunch.adaptiveImageLoader()
 
         try {
 
