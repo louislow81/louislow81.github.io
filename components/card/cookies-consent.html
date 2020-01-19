@@ -19,10 +19,10 @@
 
         try {
 
-          const id = 'cookiesConsent'
+          const consentId = 'cookiesConsent'
           const buttonId = 'acceptCookies'
           const elementId = 'lockByCookiesConsent'
-          const key = 'LoouisLowCookieConsent'
+          const key = 'LoouisLow.Cookie.Consent'
           const matchKey = 'isAccepted'
           const cookiesKey = window.localStorage.getItem(key)
 
@@ -30,7 +30,7 @@
 
           if (matchKey === cookiesKey) {
             // hide consent
-            document.getElementById(id)
+            document.getElementById(consentId)
               .style.display = 'none'
 
             // always mount components
@@ -38,7 +38,7 @@
           }
           else {
             // show consent
-            document.getElementById(id)
+            document.getElementById(consentId)
               .style.display = 'block'
 
             // unmount components
@@ -51,8 +51,8 @@
                 // add key
                 window.localStorage.setItem(key, matchKey)
 
-                // hide box
-                document.getElementById(id)
+                // hide consent
+                document.getElementById(consentId)
                   .style.display = 'none'
 
                 // mount components at once

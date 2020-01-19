@@ -37,8 +37,8 @@ function krunch() {};
   @disable with `console.log();`
 */
 const log = function(msg, req) {
-  // console.log('krugurt:', msg, req);
-  console.log();
+  console.log('krugurt:', msg, req);
+  // console.log();
 };
 
 
@@ -346,8 +346,11 @@ const reader = {
     "nobar": false // use only values
   },
   "start": function(configs = {}) {
+
     let progressJSelem;
+
     if (!configs.nobar) {
+
       //create element
       progressJSelem = document.createElement("y");
       //use css instead of js style
@@ -368,25 +371,32 @@ const reader = {
       configs.height ? progressJSelem.style.height = configs.height : progressJSelem.style.height = reader.defaults.height;
       //color
       configs.color ? progressJSelem.style.backgroundColor = configs.color : progressJSelem.style.backgroundColor = reader.defaults.color;
+
     }
+
     let attachElem = reader.defaults.attach;
     let roundto = reader.defaults.round;
+
     //round to
     configs.round ? roundto = configs.round : roundto = 2;
     //attach
     configs.attach ? attachElem = document.querySelector(configs.attach) : false;
+
     //scroll event
     document.addEventListener('scroll', function(e) {
+
       const maxHeight = document.body.scrollHeight;
       const sizeHeight = window.innerHeight;
       const scrolls = window.scrollY;
       const percentage = (scrolls / (maxHeight - sizeHeight)) * 100;
+
       if (!configs.nobar) {
         progressJSelem.style.width = percentage.toFixed(roundto) + "%";
       }
       if (attachElem) {
         attachElem.innerHTML = percentage.toFixed(roundto);
       }
+
     });
 
   }
