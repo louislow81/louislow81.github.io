@@ -23,9 +23,9 @@
               { pet.title }
 
               <y class="absolute right-0 bottom-0">
-                <!--<i class="text-3xl 2k:text-4xl { pet.icon }"></i>-->
-                <img class="invert mb-2 h-8 w-auto object-contain object-center overflow-hidden"
+                <img class="adaptive invert mb-2 h-8 w-auto object-contain object-center overflow-hidden"
                      src="assets/image/low/misc/social/github.png"
+                     data-src="assets/image/high/misc/social/github.png"
                      alt="Github">
               </y>
 
@@ -75,6 +75,7 @@
                 self.projects = data
                 self.update()
                 log('~/card/github-projects.~', data)
+                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error
