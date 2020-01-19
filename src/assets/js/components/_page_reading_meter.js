@@ -1,4 +1,4 @@
-const reader = {
+const pageReadingMeter = {
 
   "defaults": {
     "color": "rgba(49, 130, 206, 1)",
@@ -16,7 +16,9 @@ const reader = {
     "nobar": false // use only values
   },
   "start": function(configs = {}) {
+
     let progressJSelem;
+
     if (!configs.nobar) {
       //create element
       progressJSelem = document.createElement("y");
@@ -39,12 +41,15 @@ const reader = {
       //color
       configs.color ? progressJSelem.style.backgroundColor = configs.color : progressJSelem.style.backgroundColor = reader.defaults.color;
     }
+
     let attachElem = reader.defaults.attach;
     let roundto = reader.defaults.round;
+
     //round to
     configs.round ? roundto = configs.round : roundto = 2;
     //attach
     configs.attach ? attachElem = document.querySelector(configs.attach) : false;
+
     //scroll event
     document.addEventListener('scroll', function(e) {
       const maxHeight = document.body.scrollHeight;

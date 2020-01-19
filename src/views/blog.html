@@ -167,7 +167,7 @@
         </y>
 
         <!-- cookies (fixed) -->
-        <y class="z-20 fixed top-0 left-0">
+        <y class="z-10 fixed top-0 left-0">
 
           <card-cookies-consent></card-cookies-consent>
 
@@ -246,27 +246,23 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-
-        // `card-cookies-consent` is a controller mount
+        // `card-cookies-consent` is a master controller mount
         // components only after accepting the cookies consent.
         const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
 
         krunch.probeConnection() // check connection
 
-
         const message = 'Hang on, taking you back to my home!'
         snicker.onClick('snickerBackToHomeBtn', message, 5000)
-
 
       }())
 
       // TODO: shouldn't stays outside the env
       // ~/assets/js/component/_page_reading_progress_bar.js
       document.addEventListener("DOMContentLoaded", function(event) {
-        reader.start();
+        pageReadingMeter.start();
       });
-
     </script>
     <!--// !! default -->
 
