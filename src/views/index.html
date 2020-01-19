@@ -200,7 +200,7 @@
         </y>
 
         <!-- cookies (fixed) -->
-        <y class="z-20 fixed top-0 left-0">
+        <y class="z-10 fixed top-0 left-0">
 
           <card-cookies-consent></card-cookies-consent>
 
@@ -274,10 +274,8 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-
         // add 3rd-party critical assets
         // into service worker
-        // (!!) all local assets added by default
         const assets = [
           'https://kit.fontawesome.com/42aa954157.js',
           'https://platform.twitter.com/widgets.js',
@@ -285,14 +283,12 @@
         ]
         krunch.addCache(assets)
 
-
         // `card-cookies-consent` is a controller mount
         // components only after accepting the cookies consent.
         const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
 
         krunch.probeConnection() // check connection
-
 
       }())
     </script>
