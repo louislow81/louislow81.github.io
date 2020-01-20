@@ -270,10 +270,9 @@
       (async function main() {
         await krunch.compile() // init compiler
 
-        // add 3rd-party critical assets
-        // into service worker
+        // add critical assets
+        // into Cache Storage
         const assets = [
-          'https://platform.twitter.com/widgets.js',
           'https://loouislow81.github.io/old/assets/pdf/loouislow_resume_10_jan_2020.pdf'
         ]
         krunch.addCache(assets)
