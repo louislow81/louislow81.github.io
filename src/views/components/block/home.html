@@ -3,9 +3,6 @@
   <y class="z-10 relative h-screen bg-charcoal-400"
      id="home">
 
-    <y class="h-4 w-4"
-         id="torrent"></y>
-
     <img class="adaptive h-full w-full object-cover object-left-top overflow-hidden"
          src="assets/image/low/slide/slide_00.jpg"
          data-src="assets/image/high/slide/slide_00.jpg"
@@ -81,10 +78,6 @@
 
     export default {
       onMounted() {
-
-        const torrentId = '#torrent'
-        const magnetURI = 'magnet:?xt=urn:btih:75ebc63109ee499bec51638c45d7724fe50dacc9&dn=email.png&tr=udp%3A%2F%2Fexplodie.org%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.empire-js.us%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com'
-        krunch.torrent(torrentId, magnetURI)
 
         krunch.adaptiveImageLoader()
         greeting.withTime()
