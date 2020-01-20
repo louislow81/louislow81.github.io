@@ -216,7 +216,7 @@
     "url": "",
     "urlVisibility": "hidden",
     "icon1low": "assets/image/low/misc/platforms/linux.png",
-    "icon1high": "assets/image/low/misc/platforms/linux.png",
+    "icon1high": "assets/image/high/misc/platforms/linux.png",
     "icon1Padding": "pr-4 pb-4",
     "icon1Visibility": "block",
     "icon2low": "",
