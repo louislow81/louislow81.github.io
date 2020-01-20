@@ -11,7 +11,6 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  scroll-behavior: smooth; /* 3 */
 }
 
 /* Sections
@@ -359,6 +358,7 @@ template {
  * 1. prevent padding and border from affecting element width
  * https://goo.gl/pytbk7
  * 2. change the default font family in all browsers (opinionated)
+ * 3. enable smooth scrolling
  */
 
 html {
@@ -366,6 +366,8 @@ html {
   /* 1 */
   font-family: sans-serif;
   /* 2 */
+  scroll-behavior: smooth
+  /* 3 */
 }
 
 *,
@@ -594,15 +596,22 @@ video {
 embed,
 img,
 video {
-  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1.02) blur(0);
+  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1) blur(0);
+  mix-blend-mode: default
 }
 
-/**
-* muted by yogurt default, replaced with default <y> tag.
-*/
+embed::before,
+img::before,
+video::before {
+  -webkit-filter: saturate(1.36) contrast(1.15) brightness(1.01) blur(0);
+  mix-blend-mode: luminosity
+}
 
-div {
-/*  display: none !important;*/
+embed::after,
+img::after,
+video::after {
+  -webkit-filter: saturate(1.36) contrast(1.2) brightness(1.01) blur(0);
+  mix-blend-mode: overlay
 }
 
 /**
@@ -610,7 +619,7 @@ div {
 */
 
 y {
-  display: block;
+  display: block
 }
 
 .container {
@@ -6464,6 +6473,26 @@ y {
 }
 
 .opacity-100 {
+  opacity: 1;
+}
+
+.hover\:opacity-0:hover {
+  opacity: 0;
+}
+
+.hover\:opacity-25:hover {
+  opacity: 0.25;
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
+}
+
+.hover\:opacity-100:hover {
   opacity: 1;
 }
 
@@ -14926,6 +14955,26 @@ y {
   }
 
   .xs\:opacity-100 {
+    opacity: 1;
+  }
+
+  .xs\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .xs\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .xs\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .xs\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .xs\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -23392,6 +23441,26 @@ y {
     opacity: 1;
   }
 
+  .sm\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .sm\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .sm\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .sm\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .sm\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .sm\:outline-none {
     outline: 0;
   }
@@ -31852,6 +31921,26 @@ y {
   }
 
   .md\:opacity-100 {
+    opacity: 1;
+  }
+
+  .md\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .md\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .md\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .md\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .md\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -40318,6 +40407,26 @@ y {
     opacity: 1;
   }
 
+  .lg\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .lg\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .lg\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .lg\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .lg\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .lg\:outline-none {
     outline: 0;
   }
@@ -48778,6 +48887,26 @@ y {
   }
 
   .xl\:opacity-100 {
+    opacity: 1;
+  }
+
+  .xl\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .xl\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .xl\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .xl\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .xl\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -57244,6 +57373,26 @@ y {
     opacity: 1;
   }
 
+  .\32k\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .\32k\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .\32k\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .\32k\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .\32k\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .\32k\:outline-none {
     outline: 0;
   }
@@ -65704,6 +65853,26 @@ y {
   }
 
   .\33k\:opacity-100 {
+    opacity: 1;
+  }
+
+  .\33k\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .\33k\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .\33k\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .\33k\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .\33k\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
@@ -74170,6 +74339,26 @@ y {
     opacity: 1;
   }
 
+  .\34k\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .\34k\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .\34k\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .\34k\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .\34k\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .\34k\:outline-none {
     outline: 0;
   }
@@ -82633,6 +82822,26 @@ y {
     opacity: 1;
   }
 
+  .\35k\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .\35k\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .\35k\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .\35k\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .\35k\:hover\:opacity-100:hover {
+    opacity: 1;
+  }
+
   .\35k\:outline-none {
     outline: 0;
   }
@@ -91093,6 +91302,26 @@ y {
   }
 
   .\36k\:opacity-100 {
+    opacity: 1;
+  }
+
+  .\36k\:hover\:opacity-0:hover {
+    opacity: 0;
+  }
+
+  .\36k\:hover\:opacity-25:hover {
+    opacity: 0.25;
+  }
+
+  .\36k\:hover\:opacity-50:hover {
+    opacity: 0.5;
+  }
+
+  .\36k\:hover\:opacity-75:hover {
+    opacity: 0.75;
+  }
+
+  .\36k\:hover\:opacity-100:hover {
     opacity: 1;
   }
 
