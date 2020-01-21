@@ -1,3 +1,6 @@
+function progressbar() {};
+
+
 const reader = {
 
   "defaults": {
@@ -70,5 +73,15 @@ const reader = {
     });
 
   }
-}
+};
 
+
+/*
+  Init page reading progress bar
+  @param {null}
+*/
+progressbar.pageRead = function() {
+  document.addEventListener("DOMContentLoaded", function(event) {
+    reader.start();
+  });
+};

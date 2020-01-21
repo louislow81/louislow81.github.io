@@ -249,7 +249,9 @@
     <!-- krunch: environment -->
     <script>
       (async function main() {
+
         krunch.probeConnection() // check connection
+
         await krunch.compile() // init compiler
 
         // `card-cookies-consent` is a master controller mount
@@ -260,13 +262,9 @@
         const message = 'Hang on, taking you back to my home!'
         snicker.onClick('snickerBackToHomeBtn', message, 5000)
 
-      }())
 
-      // TODO: shouldn't stays outside the env
-      // ~/assets/js/component/_page_reading_progress_bar.js
-      document.addEventListener("DOMContentLoaded", function(event) {
-        reader.start();
-      });
+
+      }())
     </script>
     <!--// !! default -->
 
