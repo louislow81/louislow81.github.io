@@ -1,0 +1,32 @@
+<social-twitter><y class="text-white font-sans bg-blue-500 rounded-lg"><a class="twitter-timeline" href="{ props.url }" data-chrome="noheader nofooter noborders" data-tweet-limit="1" data-height="auto" data-theme="light"><y class="p-10 flex flex-col justify-center items-center"><y><img class="adaptive invert h-24 w-auto object-contain object-center overflow-hidden" src="assets/image/low/misc/social/twitter.png" data-src="assets/image/high/misc/social/twitter.png" alt="Twitter"></y><y class="py-2">Fetching data...</y></y></a></y><style>.invert {
+      filter: invert(1.0) !important;
+    }</style><script>log('~/social/twitter.~', '')
+
+    export default {
+      onMounted() {
+
+        /*
+          Twitter Post Updater with Timer
+          @param {null}
+        */
+        // function twitter() {
+          window.twttr = (function(d, s, id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0]
+            if (d.getElementById(id)) return
+            js = d.createElement(s)
+            js.id = id
+            js.src = "https://platform.twitter.com/widgets.js"
+            fjs.parentNode.insertBefore(js, fjs)
+            return window.twttr || (t = { _e: [], ready: function(f) { t._e.push(f) } })
+          }(document, "script", "twitter-wjs"))
+
+          twttr.ready(function(twttr) {
+            twttr.widgets.load()
+            setInterval(function() {
+              twttr.widgets.load()
+            }, 500)
+          })
+        // }
+
+      }
+    }</script></social-twitter>
