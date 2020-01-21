@@ -251,6 +251,7 @@
       (async function main() {
 
         krunch.probeConnection() // check connection
+        progressbar.pageRead() // show reading progress
 
         await krunch.compile() // init compiler
 
