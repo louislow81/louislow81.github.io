@@ -9,8 +9,8 @@ function krunch() {};
   @disable with `console.log();`
 */
 const log = function(msg, req) {
-  console.log('krugurt:', msg, req);
-  // console.log();
+  // console.log('krugurt:', msg, req);
+  console.log();
 };
 
 
