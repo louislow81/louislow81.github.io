@@ -249,14 +249,13 @@
     <!-- krunch: environment -->
     <script>
       (async function main() {
+        krunch.probeConnection() // check connection
         await krunch.compile() // init compiler
 
         // `card-cookies-consent` is a master controller mount
         // components only after accepting the cookies consent.
         const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
-
-        krunch.probeConnection() // check connection
 
         const message = 'Hang on, taking you back to my home!'
         snicker.onClick('snickerBackToHomeBtn', message, 5000)
