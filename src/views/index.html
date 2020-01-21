@@ -268,6 +268,7 @@
     <!-- krunch: environment -->
     <script>
       (async function main() {
+        krunch.probeConnection() // check connection
         await krunch.compile() // init compiler
 
         // add critical assets
@@ -277,12 +278,10 @@
         ]
         krunch.addCache(assets)
 
-        // `card-cookies-consent` is a controller mount
+        // `card-cookies-consent` is a master controller mount
         // components only after accepting the cookies consent.
         const components = 'card-cookies-consent'
         krunch.mount(components) // mount components
-
-        krunch.probeConnection() // check connection
 
       }())
     </script>
