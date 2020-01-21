@@ -1,0 +1,32 @@
+<blog-posts-2017><y class="relative xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="absolute top-0 right-0 mt-2"><card-total-posts timeline="2017" timelineid="twoSeventeen" bgcolor="bg-blue-700"></card-total-posts></y><y class="flex flex-wrap justify-start items-start"><y each="{ data in posts }"><card-blog-posts url="{ data.url }" urloption="{ data.urloption }" imagelow="{ data.imagelow }" imagehigh="{ data.imagehigh }" imageheight="64" content="{ data.content }" date="{ data.date }" xsscreen="md" smscreen="full" mdscreen="md"></card-blog-posts></y></y><misc-divider-bar opacity="25"></misc-divider-bar></y><style>/* color enhance */
+    img {
+      -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
+    }</style><script>log('~/block/blog/post-2017.~', '')
+
+    export default {
+      onMounted() {
+
+        const self = this
+        self.posts = []
+
+        const base = './assets/data'
+        const url = base + '/posts/2017.json'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data => {
+                delete self.error
+                self.posts = data
+                self.update()
+                log('~/block/blog/post-2017.~', data)
+                totalPosts('twoSeventeen', data)
+                krunch.adaptiveImageLoader()
+              })
+              .catch(error => {
+                self.error = error
+                self.update()
+              })
+          })
+      }
+    }</script></blog-posts-2017>
