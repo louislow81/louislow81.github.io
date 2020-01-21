@@ -37,8 +37,8 @@ function krunch() {};
   @disable with `console.log();`
 */
 const log = function(msg, req) {
-  //console.log('krugurt:', msg, req);
-  console.log();
+  console.log('krugurt:', msg, req);
+  // console.log();
 };
 
 
@@ -68,24 +68,24 @@ function injectDOM(htmlStr) {
 */
 krunch.probeConnection = function() {
 
-  const element = injectDOM('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:999999;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.15rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>');
+  const element = injectDOM('<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:999999;position:fixed;box-shadow: 0 0 3px #192127;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#42505a;padding:0.2rem}.is-offline:after{visibility:visible;content:"No connection!"}</style>');
   document.body.insertBefore(element, document.body.childNodes[0]);
 
   try {
-    window.addEventListener('load', function() {
+    window.addEventListener('DOMContentLoaded', function() {
 
       function checkStatus() {
         // display status
         window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962')
           .className = navigator.onLine ? 'is-online' : 'is-offline';
-        log('(CONN) is ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className);
+        log('(CONN) ' + window.document.getElementById('ba194bb5a0b6e42d520d17a3b75f5962').className, '');
       }
 
       setInterval(function() {
         // check connection
         window.addEventListener('online', checkStatus);
         window.addEventListener('offline', checkStatus);
-      }, 1000)
+      }, 500)
 
     });
   }
@@ -346,6 +346,9 @@ greeting.withTime = function() {
 
 };
 
+function progressbar() {};
+
+
 const reader = {
 
   "defaults": {
@@ -418,8 +421,18 @@ const reader = {
     });
 
   }
-}
+};
 
+
+/*
+  Init page reading progress bar
+  @param {null}
+*/
+progressbar.pageRead = function() {
+  document.addEventListener("DOMContentLoaded", function(event) {
+    reader.start();
+  });
+};
 
 function snicker() {};
 
