@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Home",
+    "url": "#home"
+  },
+  {
+    "title": "About",
+    "url": "#about"
+  },
+  {
+    "title": "Experience",
+    "url": "#experience"
+  },
+  {
+    "title": "Skills",
+    "url": "#skills"
+  },
+  {
+    "title": "Pet Project",
+    "url": "#pet-projects"
+  },
+  {
+    "title": "Blog",
+    "url": "/blog.html"
+  },
+  {
+    "title": "Contact",
+    "url": "#contact"
+  }
+]

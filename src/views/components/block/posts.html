@@ -1,0 +1,108 @@
+<block-posts>
+
+  <y class="pt-4 pb-8 bg-charcoal-400">
+    <y class="md:px-4 md:h-full">
+
+      <y class="flex xs:flex-col md:flex-wrap xs:justify-center sm:justify-center md:justify-start xs:items-center md:items-start xs:pb-0">
+
+        <y class="md:hidden mt-4">
+
+          <a href="/"
+             title="Loouis Low"
+             target="_self"
+             rel="noopener">
+
+            <img class="adaptive w-24 h-24"
+                 src="assets/image/low/misc/me.png"
+                 data-src="assets/image/high/misc/me.png"
+                 title="Me">
+
+          </a>
+
+        </y>
+
+        <text-heading
+          title="Micro Blog"
+          size="xl 2k:text-4xl"
+          padding="10">
+        </text-heading>
+
+        <y class="px-10 -mt-4 -mb-6">
+
+          <text-paragraph
+            class="text-white 2k:text-xl"
+            text="A short story of my thought to share with you, think of something I can inspiring you.">
+          </text-paragraph>
+
+        </y>
+
+      </y>
+
+      <blog-posts-2020
+        id="2020">
+      </blog-posts-2020>
+
+      <blog-posts-2019
+        id="2019">
+      </blog-posts-2019>
+
+      <blog-posts-2018
+        id="2018">
+      </blog-posts-2018>
+
+      <blog-posts-2017
+        id="2017">
+      </blog-posts-2017>
+
+      <blog-posts-2016
+        id="2016">
+      </blog-posts-2016>
+
+      <blog-posts-2015
+        id="2015">
+      </blog-posts-2015>
+
+      <blog-posts-2014
+        id="2014">
+      </blog-posts-2014>
+
+      <blog-posts-2013
+        id="2013">
+      </blog-posts-2013>
+
+      <blog-posts-2012
+        id="2012">
+      </blog-posts-2012>
+
+    </y>
+  </y>
+
+
+  <style>
+    :host {
+      font-family: Poppins, Sans-Serif;
+    }
+  </style>
+
+
+  <script>
+    log('~/block/posts.~', '')
+
+    export default {
+      onMounted() {
+
+        krunch.adaptiveImageLoader()
+
+        const tour = 'Alright, welcome to my blackhole!'
+        snicker.onLoad(tour, 5000)
+
+        // Services restricted by
+        // Cookies Consent Controller
+        googleAnalytics()
+        driftMessenger()
+
+      }
+    }
+  </script>
+
+</block-posts>
