@@ -1,0 +1,16 @@
+@mixin fade-in-out($delay) {
+  -webkit-transition: all #{$delay} ease-in-out;
+  -moz-transition: all #{$delay} ease-in-out;
+  -o-transition: all #{$delay} ease-in-out;
+  transition: all #{$delay} ease-in-out;
+}
+
+.fx-fade-in-out {
+  opacity: 0;
+  @include fade-in-out(0.2s);
+
+  &:hover {
+    opacity: 1;
+    @include fade-in-out(0.2s);
+  }
+}

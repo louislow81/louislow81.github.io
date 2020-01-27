@@ -1,0 +1,76 @@
+<global-blog-menu>
+
+  <y class="xs:hidden sm:hidden md:block w-40 2k:w-64 h-screen">
+    <y class="static">
+
+      <y class="py-4">
+
+        <image-avatar></image-avatar>
+
+      </y>
+
+      <y class="px-4 flex flex-wrap justify-center items-center"
+         each="{ data in menus }">
+
+        <a href="{ data.url }"
+           title="{ data.title }"
+           aria-label="{ data.title }"
+           rel="noopener">
+
+          <y class="px-10 2k:px-10 py-2 text-md 2k:text-2xl font-oswald uppercase text-left text-gray-500 hover:text-charcoal-500 hover:bg-gray-500 w-full rounded">
+            { data.title }
+          </y>
+
+        </a>
+
+      </y>
+
+      <y class="absolute left-0 bottom-0">
+
+        <global-small-footer></global-small-footer>
+
+      </y>
+
+    </y>
+  </y>
+
+
+  <style>
+    .font-oswald {
+      font-family: Oswald, sans-serif;
+    }
+  </style>
+
+
+  <script>
+    log('~/global/blog-menu.~', '')
+
+    export default {
+      onMounted() {
+
+        const self = this
+        self.menus = []
+
+        const url = './assets/data/blog-menu.json'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data => {
+                delete self.error
+                self.menus = data
+                self.update()
+                log('~/global/blog-menu.~', data)
+              })
+              .catch(error => {
+                self.error = error
+                self.upate()
+              })
+          })
+
+      }
+    }
+  </script>
+
+</global-blog-menu>
+

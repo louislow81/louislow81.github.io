@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://github.com/loouislow81/krugurt",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/cf54331860aa5fc6941ce52a0791242c.png",
+    "imagehigh": "assets/image/high/post/cf54331860aa5fc6941ce52a0791242c.png",
+    "content": "Give a performance test to project `Krugurt`. The `compiler` speed is important, it mounting the HTML components and turns them into JavaScript Functions with Parameters and Callbacks before rendering them in virtual-DOM.",
+    "date": "15 Jan 2020"
+  },
+  {
+    "url": "https://github.com/loouislow81/krugurt",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/28e76e9e46f2421a57ad41a2621ecd53.png",
+    "imagehigh": "assets/image/high/post/28e76e9e46f2421a57ad41a2621ecd53.png",
+    "content": "(WIP) New localization module for Project `Krugurt`, initial features are detecting the user language, load the translations, and cache the translations. Support plurals, context, interpolation and format.",
+    "date": "10 Jan 2020"
+  },
+  {
+    "url": "https://www.npmjs.com/package/loouislow-resume",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/63a958ab4b2ab0430f3a47b0b3b9bd31.png",
+    "imagehigh": "assets/image/high/post/63a958ab4b2ab0430f3a47b0b3b9bd31.png",
+    "content": "If you prefer not a graphical way, I've made a Terminal-based resume that simply type the command `$ npx loouislow-resume` in your operating system Terminal either Linux or Mac.",
+    "date": "06 Jan 2020"
+  },
+  {
+    "url": "https://github.com/loouislow81/yogurt-playground",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/7438489a3ae47fe8b075c82a4445b0ff.png",
+    "imagehigh": "assets/image/high/post/7438489a3ae47fe8b075c82a4445b0ff.png",
+    "content": "(WIP) New testing and playground tool for Yogurt UI toolkit has released. Platform binary will be releases on the next day for Linux, Mac and Windows. You can even export the test code for production use.",
+    "date": "05 Jan 2020"
+  }
+]
