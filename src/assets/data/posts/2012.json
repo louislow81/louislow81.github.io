@@ -70,5 +70,21 @@
     "imagehigh": "assets/image/high/post/8be51e7226077c2e631f93689bc1eeb1.jpg",
     "content": "`noozy` media library, an ultimate media player for Android ICS is going to hit the PlayStore soon. Envy with its sleek and fluid-alike navigation and ported advanced audio technologies from `Noozxoide Labs`. Delivers the realistic virtual surround sound and premium deeper bass you never ask for more.",
     "date": "17 May 2012"
+  },
+  {
+    "url": "",
+    "urloption": "hidden",
+    "imagelow": "assets/image/low/post/26bbbc2c6865c761a254a69314cb49dc.jpg",
+    "imagehigh": "assets/image/high/post/26bbbc2c6865c761a254a69314cb49dc.jpg",
+    "content": "Project `frienbox` officially released in Japan targeting as microblogging platfrom and loved by student and celebrities. `frienbox (GET)` technology allows friends invitation by scanning profile QR barcode. Immediately qquired by NHK Corp. in Japan.",
+    "date": "18 Apr 2012"
+  },
+  {
+    "url": "",
+    "urloption": "hidden",
+    "imagelow": "assets/image/low/post/ca173758e11a1d05b8a26c5dc2bf9303.jpg",
+    "imagehigh": "assets/image/high/post/ca173758e11a1d05b8a26c5dc2bf9303.jpg",
+    "content": "Project `ExoCore` maintainance utility for Windows. Equipped with CPU/MEM management, disk defrag, snapshot recovery, CPU speed mode, registry and services tuning.",
+    "date": "5 Mar 2012"
   }
 ]
