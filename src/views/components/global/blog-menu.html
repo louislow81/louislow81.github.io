@@ -12,18 +12,16 @@
       <y class="px-2 flex flex-wrap justify-center items-center">
         <y each="{ data in menus }">
 
-          <y class="px-4 2k:px-8 py-2 text-md 2k:text-2xl font-oswald uppercase text-center text-gray-500 hover:text-charcoal-500 hover:bg-gray-500 w-full rounded">
+          <a href="{ data.url }"
+             title="{ data.title }"
+             aria-label="{ data.title }"
+             rel="noopener">
 
-            <a href="{ data.url }"
-               title="{ data.title }"
-               aria-label="{ data.title }"
-               rel="noopener">
-
+            <y class="px-4 2k:px-8 py-2 text-md 2k:text-2xl font-oswald uppercase text-center text-gray-500 hover:text-charcoal-500 hover:bg-gray-500 w-full rounded">
               { data.title }
+            </y>
 
-            </a>
-
-          </y>
+          </a>
 
         </y>
       </y>
