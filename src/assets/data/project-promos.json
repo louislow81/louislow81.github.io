@@ -262,24 +262,5 @@
     "imagelow": "assets/image/low/promo/promo_overloadproject_dream_travel.jpg",
     "imagehigh": "assets/image/high/promo/promo_overloadproject_dream_travel.jpg",
     "tech": "Propellerheads Reason, Steinberg Cubase, Waves"
-  },
-  {
-    "title": "EXODUS 060",
-    "desc": "An emulation software attempts to allow PS2 code to be executed on your x86 computer.",
-    "PromoText": "Visit",
-    "urlText": "",
-    "url": "",
-    "urlVisibility": "hidden",
-    "icon1low": "assets/image/low/misc/platforms/linux.png",
-    "icon1high": "assets/image/high/misc/platforms/linux.png",
-    "icon1Padding": "pr-4 pb-4",
-    "icon1Visibility": "block",
-    "icon2low": "",
-    "icon2high": "",
-    "icon2Padding": "",
-    "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_exodus_060.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_exodus_060.jpeg",
-    "tech": "C++, QT"
   }
 ]
