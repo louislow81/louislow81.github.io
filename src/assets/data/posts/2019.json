@@ -69,7 +69,23 @@
     "imagelow": "assets/image/low/post/c90a822134c3e60bbbf95ff6d36ebe72.jpeg",
     "imagehigh": "assets/image/high/post/c90a822134c3e60bbbf95ff6d36ebe72.jpeg",
     "content": "Kraft.UI newly revamped and packed with the latest vector-to-css preprocessor, GPU accelerated graphic, flexbox standards and managing css selectors just like layer manager in Adobe Photoshop.",
-    "date": "09 Jul 2019"
+    "date": "9 Jul 2019"
+  },
+  {
+    "url": "",
+    "urloption": "hidden",
+    "imagelow": "assets/image/low/post/e68e60c84915fba311ff32b99ea17a2b.jpeg",
+    "imagehigh": "assets/image/high/post/e68e60c84915fba311ff32b99ea17a2b.jpeg",
+    "content": "Working on the new prototype middle-class DAW ~ `Noozxoide Resync v4` with QtGui. This is the ugly splash and modules loader. Ugly at first and then I'll design a new skin for it, that will look much pretty the same theme like `Noozxoide Rebirth`",
+    "date": "8 Jun 2019"
+  },
+  {
+    "url": "",
+    "urloption": "hidden",
+    "imagelow": "assets/image/low/post/ae412ed3024b679f730c3502b9509ab1.jpeg",
+    "imagehigh": "assets/image/high/post/ae412ed3024b679f730c3502b9509ab1.jpeg",
+    "content": "Working on a greenhouse thermal sensor single neural network `perceptron` tries to make the best prediction of how much the volume of calcium needs to be pumped into the feeder system.",
+    "date": "9 Mar 2019"
   },
   {
     "url": "",

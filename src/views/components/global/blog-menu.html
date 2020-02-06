@@ -3,13 +3,16 @@
   <y class="xs:hidden sm:hidden md:block w-40 2k:w-64 h-screen">
     <y class="static">
 
-      <y class="py-4">
+      <y class="py-4 flex justify-center items-center">
 
-        <image-avatar></image-avatar>
+        <image-avatar
+          width="w-auto"
+          height="h-16">
+        </image-avatar>
 
       </y>
 
-      <y class="px-2 flex flex-wrap justify-center items-center">
+      <y class="px-10 flex flex-wrap justify-center items-center">
         <y each="{ data in menus }">
 
           <a href="{ data.url }"

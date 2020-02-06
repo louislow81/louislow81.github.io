@@ -1,4 +1,4 @@
-<blog-posts-2012>
+<blog-posts-2011>
 
   <y class="relative xs:px-4 xs:py-0 sm:px-8 md:px-8">
 
@@ -10,8 +10,8 @@
     <y class="absolute top-0 right-0 mt-2">
 
       <card-total-posts
-        timeline="2012"
-        timelineid="twoTwelve"
+        timeline="2011"
+        timelineid="twentyEleven"
         bgcolor="bg-blue-700">
       </card-total-posts>
 
@@ -36,9 +36,9 @@
       </y>
     </y>
 
-    <misc-divider-bar
-      opacity="25">
-    </misc-divider-bar>
+    <misc-divider-text
+      text="-----">
+    </misc-divider-text>
 
   </y>
 
@@ -46,13 +46,13 @@
   <style>
     /* color enhance */
     img {
-      -webkit-filter: saturate(1.36) contrast(1) brightness(1) blur(0) !important
+      -webkit-filter: saturate(1.36) contrast(1) brightness(1.05) blur(0) !important
     }
   </style>
 
 
   <script>
-    log('~/block/blog/post-2012.~', '')
+    log('~/block/blog/post-2011.~', '')
 
     export default {
       onMounted() {
@@ -61,7 +61,7 @@
         self.posts = []
 
         const base = './assets/data'
-        const url = base + '/posts/2012.json'
+        const url = base + '/posts/2011.json'
 
         fetch(url)
           .then(res => {
@@ -70,8 +70,8 @@
                 delete self.error
                 self.posts = data
                 self.update()
-                log('~/block/blog/post-2012.~', data)
-                totalPosts('twoTwelve', data)
+                log('~/block/blog/post-2011.~', data)
+                totalPosts('twentyEleven', data)
                 krunch.adaptiveImageLoader()
               })
               .catch(error => {
@@ -79,8 +79,9 @@
                 self.update()
               })
           })
+
       }
     }
   </script>
 
-</blog-posts-2012>
+</blog-posts-2011>
