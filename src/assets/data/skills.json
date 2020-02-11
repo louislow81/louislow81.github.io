@@ -1,27 +1,22 @@
 [
   {
     "title": "Embedded Development",
-    "desc": "FPGA, Prototyping",
-    "score": "85%"
+    "desc": "FPGA, Prototyping"
   },
   {
     "title": "Web Development",
-    "desc": "Front-End, UI Design, RESTful-API",
-    "score": "35%"
+    "desc": "Front-End, UI Design, RESTful-API"
   },
   {
     "title": "Machine Learning",
-    "desc": "Radio Frequency, Digital Signal Processing",
-    "score": "60%"
+    "desc": "Radio Frequency, Digital Signal Processing"
   },
   {
     "title": "Software Development",
-    "desc": "Essential for Engineering",
-    "score": "96%"
+    "desc": "Essential for Engineering"
   },
   {
     "title": "UI Design",
-    "desc": "Embedded, Mobile, Desktop",
-    "score": "96%"
+    "desc": "Embedded, Mobile, Desktop"
   }
 ]

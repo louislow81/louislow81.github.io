@@ -1,102 +1,82 @@
 [
   {
     "title": "PCB/Schema Design",
-    "desc": "Electronic",
-    "score": "80%"
+    "desc": "Electronic"
   },
   {
     "title": "Firmware Design",
-    "desc": "Electronic",
-    "score": "100%"
+    "desc": "Electronic"
   },
   {
     "title": "Embedded Design",
-    "desc": "Electronic",
-    "score": "100%"
+    "desc": "Electronic"
   },
   {
     "title": "Prototype Design",
-    "desc": "Electronic",
-    "score": "100%"
+    "desc": "Electronic"
   },
   {
     "title": "Linux",
-    "desc": "Debian Distro",
-    "score": "90%"
+    "desc": "Debian, Arch"
   },
   {
     "title": "Steinberg Cubase",
-    "desc": "Sequencing",
-    "score": "70%"
+    "desc": "Sequencing"
   },
   {
     "title": "Propellerh. Reason",
-    "desc": "Instrumental",
-    "score": "80%"
+    "desc": "Instrumental"
   },
   {
     "title": "Docker",
-    "desc": "Workship",
-    "score": "70%"
+    "desc": "Workship"
   },
   {
     "title": "Git",
-    "desc": "Workship",
-    "score": "70%"
+    "desc": "Workship"
   },
   {
     "title": "C/C++",
-    "desc": "Workship",
-    "score": "90%"
+    "desc": "Workship"
   },
   {
     "title": "NodeJS",
-    "desc": "General",
-    "score": "50%"
+    "desc": "General"
   },
   {
     "title": "Python",
-    "desc": "General",
-    "score": "60%"
+    "desc": "General"
   },
   {
     "title": "Bash",
-    "desc": "General",
-    "score": "90%"
+    "desc": "General"
   },
   {
     "title": "Bootstrap",
-    "desc": "General",
-    "score": "90%"
+    "desc": "General"
   },
   {
     "title": "Sass",
-    "desc": "General",
-    "score": "80%"
+    "desc": "General"
   },
   {
     "title": "Pug",
-    "desc": "General",
-    "score": "60%"
+    "desc": "General"
   },
   {
     "title": "ElectronJS",
-    "desc": "General",
-    "score": "60%"
+    "desc": "General"
   },
   {
     "title": "NoSQL",
-    "desc": "General",
-    "score": "20%"
+    "desc": "General"
   },
   {
     "title": "Adobe PS",
-    "desc": "General",
-    "score": "90%"
+    "desc": "General"
   },
   {
     "title": "Adobe AI",
-    "desc": "General",
-    "score": "40%"
+    "desc": "General"
   }
 ]
