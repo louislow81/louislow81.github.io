@@ -28,7 +28,7 @@
     "desc": "Instrumental"
   },
   {
-    "title": "Docker",
+    "title": "LXD, Docker",
     "desc": "Workship"
   },
   {
@@ -36,11 +36,11 @@
     "desc": "Workship"
   },
   {
-    "title": "C/C++",
+    "title": "C, C++, Vala",
     "desc": "Workship"
   },
   {
-    "title": "NodeJS",
+    "title": "JS, NodeJS",
     "desc": "General"
   },
   {
@@ -52,15 +52,15 @@
     "desc": "General"
   },
   {
-    "title": "Bootstrap",
+    "title": "HTML, Pug",
     "desc": "General"
   },
   {
-    "title": "Sass",
+    "title": "CSS, Sass",
     "desc": "General"
   },
   {
-    "title": "Pug",
+    "title": "Yogurt, Bootstrap",
     "desc": "General"
   },
   {
