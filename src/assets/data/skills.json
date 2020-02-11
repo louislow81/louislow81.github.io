@@ -1,17 +1,17 @@
 [
   {
     "title": "Embedded Development",
-    "desc": "Linux, Prototyping",
+    "desc": "FPGA, Prototyping",
     "score": "85%"
   },
   {
     "title": "Web Development",
-    "desc": "Front-End, Modular UI",
+    "desc": "Front-End, UI Design, RESTful-API",
     "score": "35%"
   },
   {
     "title": "Machine Learning",
-    "desc": "Signal Processing",
+    "desc": "Radio Frequency, Digital Signal Processing",
     "score": "60%"
   },
   {
@@ -20,13 +20,8 @@
     "score": "96%"
   },
   {
-    "title": "Leadership",
-    "desc": "Plan, Task, Decision, Kanban, Automate",
-    "score": "30%"
-  },
-  {
-    "title": "Design",
-    "desc": "UI Design, Component Design, Material Design",
+    "title": "UI Design",
+    "desc": "Embedded, Mobile, Desktop",
     "score": "96%"
   }
 ]
