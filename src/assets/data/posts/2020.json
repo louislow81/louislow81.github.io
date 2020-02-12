@@ -1,5 +1,13 @@
 [
   {
+    "url": "https://github.com/loouislow81/krugurt-textcolor-neural-network",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/d2c9e0372bfa34d6b33b41a04dce2f0b.png",
+    "imagehigh": "assets/image/high/post/d2c9e0372bfa34d6b33b41a04dce2f0b.png",
+    "content": "Proof of concept to change text color contrast against background image average color with machine learning on web browser with `kurgurt.js` without using SCSS/SASS HSL. Just 4kb of architecture-free neural network that running Sigmoid activation function.",
+    "date": "13 Feb 2020"
+  },
+  {
     "url": "https://github.com/loouislow81/krugurt",
     "urloption": "block",
     "imagelow": "assets/image/low/post/cf54331860aa5fc6941ce52a0791242c.png",
