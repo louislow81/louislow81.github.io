@@ -393,3 +393,37 @@ popup.image = (function() {
   });
 
 })();
+
+
+/*
+  Should Call `popup.image()` On Touch Device
+  @param {element_id}
+*/
+popup.imageNotTouchDevice = function(id) {
+  try {
+    document.createEvent("TouchEvent")
+    const img = document.querySelectorAll(id)
+    popup.image(img)
+    return true
+  }
+  catch (error) {
+    return false
+  }
+};
+
+
+/*
+  Never Call `popup.image()` On Touch Device
+  @param {element_id}
+*/
+popup.imageTouchDevice = function(id) {
+  try {
+    document.createEvent("TouchEvent")
+    return true
+  }
+  catch (error) {
+    const img = document.querySelectorAll(id)
+    popup.image(img)
+    return false
+  }
+};
