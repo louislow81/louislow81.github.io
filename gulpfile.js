@@ -157,8 +157,8 @@ gulp.task('image-high-quality', () => {
 gulp.task('image-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [0.5, 0.5] }),
-      mozjpeg({ quality: 50 }),
+      pngquant({ quality: [0.4, 0.4] }),
+      mozjpeg({ quality: 40 }),
     ]))
     .pipe(gulp.dest(distLqImagePath))
 })

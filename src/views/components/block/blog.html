@@ -32,6 +32,7 @@
               imagelow="{ data.imagelow }"
               imagehigh="{ data.imagehigh }"
               imageheight="auto"
+              popimageid="pop-image-latest"
               content="{ data.content }"
               date="{ data.date }"
               xsscreen="md"
@@ -103,6 +104,12 @@
                 self.update()
               })
           })
+
+      },
+      onUpdated() {
+
+        const img = document.querySelectorAll('.pop-image-latest')
+        popup.image(img)
 
       }
     }

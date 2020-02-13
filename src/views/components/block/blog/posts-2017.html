@@ -26,6 +26,7 @@
           imagelow="{ data.imagelow }"
           imagehigh="{ data.imagehigh }"
           imageheight="64"
+          popimageid="pop-image-2017"
           content="{ data.content }"
           date="{ data.date }"
           xsscreen="md"
@@ -79,6 +80,13 @@
                 self.update()
               })
           })
+
+      },
+      onUpdated() {
+
+        const img = document.querySelectorAll('.pop-image-2017')
+        popup.image(img)
+
       }
     }
   </script>
