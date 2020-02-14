@@ -107,7 +107,6 @@
                 self.projects = data
                 self.update()
                 log('~/card/project-promos.~', data)
-                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error
@@ -115,6 +114,12 @@
               })
 
           })
+
+      },
+      onUpdated() {
+
+        // lazyload low-res, hi-res image
+        krunch.adaptiveImageLoader()
 
       }
     }

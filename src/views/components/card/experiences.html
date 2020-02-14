@@ -113,7 +113,6 @@
                 self.experiences = data
                 self.update()
                 log('~/card/experiences.~', data)
-                krunch.adaptiveImageLoader()
               })
           })
           .catch(error => {
@@ -126,6 +125,9 @@
 
         // see `assets/js/components/_image_popper.js`
         popup.imageTouchDevice('.pop-image-experiences')
+
+        // lazyload low-res, hi-res image
+        krunch.adaptiveImageLoader()
 
       }
     }

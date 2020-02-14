@@ -97,7 +97,6 @@
                 self.posts = data
                 self.update()
                 log('~/block/blog.~', data)
-                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error
@@ -110,6 +109,9 @@
 
         // see `assets/js/components/_image_popper.js`
         popup.imageTouchDevice('.pop-image-latest')
+
+        // lazyload low-res, hi-res image
+        krunch.adaptiveImageLoader()
 
       }
     }

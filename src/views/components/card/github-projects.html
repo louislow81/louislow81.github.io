@@ -75,13 +75,19 @@
                 self.projects = data
                 self.update()
                 log('~/card/github-projects.~', data)
-                krunch.adaptiveImageLoader()
               })
               .catch(error => {
                 self.error = error
                 self.update()
               })
           })
+
+      },
+      onUpdated() {
+
+        // lazyload low-res, hi-res image
+        krunch.adaptiveImageLoader()
+
       }
     }
   </script>
