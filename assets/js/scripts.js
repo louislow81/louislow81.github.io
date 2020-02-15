@@ -541,15 +541,16 @@ popup.image = (function() {
      *  Caption Container
      */
     var captionContainerProperties = {
-      fontFamily: 'Georgia, Times, "Times New Roman", serif',
+      fontFamily: 'Poppins, Sans-Serif',
       position: "fixed",
       bottom: "0px",
       left: "0px",
-      padding: "20px",
+      padding: "25px",
       color: "#fff",
       wordSpacing: "0.2px",
       webkitFontSmoothing: "antialiased",
-      textShadow: "-1px 0px 1px rgba(0,0,0,0.4)"
+      textShadow: "-1px 0px 1px rgba(0,0,0,0.4)",
+      backgroundColor: "rgba(0,0,0,0.9)"
     };
     var captionContainer = document.createElement("figcaption");
     applyProperties(captionContainer, captionContainerProperties);
@@ -562,10 +563,12 @@ popup.image = (function() {
         margin: "0px",
         padding: "0px",
         fontWeight: "normal",
-        fontSize: "20px",
-        letterSpacing: "0.5px",
-        lineHeight: "35px",
-        textAlign: "left"
+        fontSize: "14px",
+        letterSpacing: "0.1px",
+        maxWidth: "500px",
+        textAlign: "left",
+        background: "none",
+        marginTop: "5px"
       };
       var captionTitle = document.createElement("h1");
       applyProperties(captionTitle, captionTitleProperties);
@@ -578,7 +581,7 @@ popup.image = (function() {
         margin: "0px",
         padding: "0px",
         fontWeight: "normal",
-        fontSize: "16px",
+        fontSize: "14px",
         letterSpacing: "0.1px",
         maxWidth: "500px",
         textAlign: "left",
