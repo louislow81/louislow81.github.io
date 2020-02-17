@@ -28,7 +28,20 @@
 
     <y class="p-4 mt-6">
       <y class="text-sm 2k:text-lg depth-snug">
-        { props.content }
+
+        <input type="checkbox"
+               id="{ props.inputid }">
+
+        <span>
+          { props.content }
+        </span>
+
+        <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
+               for="{ props.labelid }"
+               role="button">
+          show more
+        </label>
+
       </y>
     </y>
 
@@ -51,6 +64,30 @@
     .invert-icon {
       filter: invert(1.0) !important;
     }
+    /* for truncate `show more` button */
+    span {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    input {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    input:focus~label {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    input:checked+span {
+      -webkit-line-clamp: unset;
+    }
+
+    input:checked~label {
+      display: none;
+    }
+    /* for truncate `show more` button */
   </style>
 
 

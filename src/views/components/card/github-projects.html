@@ -32,7 +32,20 @@
             </y>
 
             <y class="text-sm 2k:text-xl depth-snug pb-2">
+
+            <input type="checkbox"
+                   id="{ pet.id }">
+
+            <span>
               { pet.desc }
+            </span>
+
+            <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
+                   for="{ pet.id }"
+                   role="button">
+              show more
+            </label>
+
             </y>
 
             <y class="text-xs 2k:text-lg text-gray-700 hover:text-orange-600 depth-loose">
@@ -52,6 +65,30 @@
     .invert {
       filter: invert(1.0);
     }
+    /* for truncate `show more` button */
+    span {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    input {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    input:focus~label {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    input:checked+span {
+      -webkit-line-clamp: unset;
+    }
+
+    input:checked~label {
+      display: none;
+    }
+    /* for truncate `show more` button */
   </style>
 
 

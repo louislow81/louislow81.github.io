@@ -54,7 +54,20 @@
         </y>
 
         <y class="pb-3 text-sm 2k:text-lg depth-snug">
-          { work.desc }
+
+          <input type="checkbox"
+                 id="{ work.id }">
+
+          <span>
+            { work.desc }
+          </span>
+
+          <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
+                 for="{ work.id }"
+                 role="button">
+            show more
+          </label>
+
         </y>
 
         <y class="pb-8 flex justify-start items-center">
@@ -91,6 +104,30 @@
     .font-oswald {
       font-family: Oswald, sans-serif;
     }
+    /* for truncate `show more` button */
+    span {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    input {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    input:focus~label {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    input:checked+span {
+      -webkit-line-clamp: unset;
+    }
+
+    input:checked~label {
+      display: none;
+    }
+    /* for truncate `show more` button */
   </style>
 
   <script>
