@@ -1,6 +1,30 @@
-<card-github-projects><y class="mt-10 xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-center"><y class="px-2 pb-4 text-md text-red-400" if="{ error }">Data is missing.</y><y each="{ pet in projects }"><a href="{ pet.url }" title="{ pet.title }" aria-label="{ pet.title }" target="_blank" rel="noopener"><y class="xs:max-w-md sm:max-w-full md:max-w-xs 2k:max-w-md m-2 hover:text-white bg-white hover:bg-charcoal-600 rounded shadow overflow-hidden fx-fade-in"><y class="p-5"><y class="relative text-lg 2k:text-2xl font-semibold depth-loose pb-1">{ pet.title }<y class="absolute right-0 bottom-0"><img class="adaptive invert mb-2 h-8 w-auto object-contain object-center overflow-hidden" src="assets/image/low/misc/social/github.png" data-src="assets/image/high/misc/social/github.png" alt="Github"></y></y><y class="text-sm 2k:text-xl depth-snug pb-2">{ pet.desc }</y><y class="text-xs 2k:text-lg text-gray-700 hover:text-orange-600 depth-loose">{ pet.tech }</y></y></y></a></y></y><style>.invert {
+<card-github-projects><y class="mt-10 xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-center"><y class="px-2 pb-4 text-md text-red-400" if="{ error }">Data is missing.</y><y each="{ pet in projects }"><a href="{ pet.url }" title="{ pet.title }" aria-label="{ pet.title }" target="_blank" rel="noopener"><y class="xs:max-w-md sm:max-w-full md:max-w-xs 2k:max-w-md m-2 hover:text-white bg-white hover:bg-charcoal-600 rounded shadow overflow-hidden fx-fade-in"><y class="p-5"><y class="relative text-lg 2k:text-2xl font-semibold depth-loose pb-1">{ pet.title }<y class="absolute right-0 bottom-0"><img class="adaptive invert mb-2 h-8 w-auto object-contain object-center overflow-hidden" src="assets/image/low/misc/social/github.png" data-src="assets/image/high/misc/social/github.png" alt="Github"></y></y><y class="text-sm 2k:text-xl depth-snug pb-2"><input type="checkbox" id="{ pet.id }"> <span>{ pet.desc } </span><label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer" for="{ pet.id }" role="button">show more</label></y><y class="text-xs 2k:text-lg text-gray-700 hover:text-orange-600 depth-loose">{ pet.tech }</y></y></y></a></y></y><style>.invert {
       filter: invert(1.0);
-    }</style><script>log('~/card/github-projects.~', '')
+    }
+    /* for truncate `show more` button */
+    span {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    input {
+      opacity: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    input:focus~label {
+      outline: -webkit-focus-ring-color auto 5px;
+    }
+
+    input:checked+span {
+      -webkit-line-clamp: unset;
+    }
+
+    input:checked~label {
+      display: none;
+    }
+    /* for truncate `show more` button */</style><script>log('~/card/github-projects.~', '')
 
     export default {
       onMounted() {
