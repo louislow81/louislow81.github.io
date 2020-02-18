@@ -29,19 +29,11 @@
     <y class="p-4 mt-6">
       <y class="text-sm 2k:text-lg depth-snug">
 
-        <input class="masked-input"
-               type="checkbox"
-               id="{ props.inputid }">
-
-        <span class="content">
-          { props.content }
-        </span>
-
-        <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
-               for="{ props.labelid }"
-               role="button">
-          show more
-        </label>
+        <misc-show-more
+          inputid="{ props.inputid }"
+          content="{ props.content }"
+          labelid="{ props.labelid }">
+        </misc-show-more>
 
       </y>
     </y>

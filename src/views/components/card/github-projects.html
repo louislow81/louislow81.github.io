@@ -33,19 +33,11 @@
 
             <y class="text-sm 2k:text-xl depth-snug pb-2">
 
-            <input class="masked-input"
-                   type="checkbox"
-                   id="{ pet.id }">
-
-            <span class="content">
-              { pet.desc }
-            </span>
-
-            <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 hover:text-orange-600 cursor-pointer"
-                   for="{ pet.id }"
-                   role="button">
-              show more
-            </label>
+              <misc-show-more
+                inputid="{ pet.id }"
+                content="{ pet.desc }"
+                labelid="{ pet.id }">
+              </misc-show-more>
 
             </y>
 

@@ -55,19 +55,11 @@
 
         <y class="pb-3 text-sm 2k:text-lg depth-snug">
 
-          <input class="masked-input"
-                 type="checkbox"
-                 id="{ work.id }">
-
-          <span class="content">
-            { work.desc }
-          </span>
-
-          <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
-                 for="{ work.id }"
-                 role="button">
-            show more
-          </label>
+          <misc-show-more
+            inputid="{ work.id }"
+            content="{ work.desc }"
+            labelid="{ work.id }">
+          </misc-show-more>
 
         </y>
 
