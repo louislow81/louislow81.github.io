@@ -17,17 +17,14 @@
             res.json()
               .then(data => {
                 delete self.error
-                try { // item limit to x for touch device
-                  document.createEvent('TouchEvent')
+                if (isMobile.any()) { // item x limit for mobile device
                   data.length = 3
                   self.projects = data
                   self.update()
-                  return true
                 }
-                catch (error) { // no item limit
+                else {
                   self.projects = data
                   self.update()
-                  return false
                 }
                 log('~/card/project-promos.~', data)
               })
