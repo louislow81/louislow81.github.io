@@ -1,0 +1,24 @@
+span.content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+input.masked-input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+input.masked-input:focus~label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+input.masked-input:checked+span {
+  -webkit-line-clamp: unset;
+}
+
+input.masked-input:checked~label {
+  display: none;
+}
