@@ -53,29 +53,13 @@
           { work.position }
         </y>
 
-        <y class="pb-3 text-sm 2k:text-lg depth-snug">
+        <y class="pb-10 text-sm 2k:text-lg depth-snug">
 
           <misc-show-more
             inputid="{ work.id }"
             content="{ work.desc }"
             labelid="{ work.id }">
           </misc-show-more>
-
-        </y>
-
-        <y class="pb-8 flex justify-start items-center">
-
-          <y class="px-2 py-0 mr-2 text-xs 2k:text-md lowercase xs:truncate bg-gray-300 rounded-full">
-            { work.status1 }
-          </y>
-
-          <y class="px-2 py-0 mr-2 text-xs 2k:text-md lowercase xs:truncate bg-gray-300 rounded-full">
-            { work.status2 }
-          </y>
-
-          <y class="px-2 py-0 mr-2 text-xs 2k:text-md lowercase xs:truncate bg-gray-300 rounded-full">
-            { work.location }
-          </y>
 
         </y>
 
@@ -87,6 +71,24 @@
           Project { work.project }
         </y>
 
+      </y>
+
+      <y class="absolute right-0 bottom-0">
+        <y class="pb-2 pr-2 flex justify-start items-center">
+
+        <y class="px-2 py-0 mr-1 text-xs 2k:text-md lowercase xs:truncate bg-gray-200 rounded-full">
+          { work.status1 }
+        </y>
+
+        <y class="px-2 py-0 mr-1 text-xs 2k:text-md lowercase xs:truncate bg-gray-200 rounded-full">
+          { work.status2 }
+        </y>
+
+        <y class="px-2 py-0 text-xs 2k:text-md lowercase xs:truncate bg-gray-200 rounded-full">
+          { work.location }
+        </y>
+
+        </y>
       </y>
 
     </y>
