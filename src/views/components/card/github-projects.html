@@ -10,8 +10,8 @@
     <y each="{ pet in projects }">
 
       <a href="{ pet.url }"
-         title="{ pet.title }"
-         aria-label="{ pet.title }"
+         title="Project: { pet.title }"
+         aria-label="Project: { pet.title }"
          target="_blank"
          rel="noopener">
 
@@ -41,7 +41,7 @@
               { pet.desc }
             </span>
 
-            <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
+            <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 hover:text-orange-600 cursor-pointer"
                    for="{ pet.id }"
                    role="button">
               show more
@@ -49,7 +49,7 @@
 
             </y>
 
-            <y class="text-xs 2k:text-lg text-gray-700 hover:text-orange-600 depth-loose">
+            <y class="text-xs 2k:text-lg text-gray-700 depth-loose">
               { pet.tech }
             </y>
 
