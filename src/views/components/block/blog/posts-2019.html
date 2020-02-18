@@ -78,8 +78,8 @@
                 delete self.error
                 self.posts = data
                 self.update()
-                log('~/block/blog/post-2019.~', data)
                 totalPosts('twoNineteen', data)
+                log('~/block/blog/post-2019.~', data)
               })
               .catch(error => {
                 self.error = error
