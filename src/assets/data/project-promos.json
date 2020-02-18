@@ -1,5 +1,6 @@
 [
   {
+    "id": "d9424aa6c89e",
     "title": "noozy 4 (wip)",
     "desc": "An audiophile grade music player for Android. A 12 types of sound processors with advanced sound modeling options.",
     "PromoText": "Download",
@@ -19,6 +20,7 @@
     "tech": "C++, Java"
   },
   {
+    "id": "cbfc9ed88aaf",
     "title": "noozy (desktop)",
     "desc": "An audiophile grade music player for Linux & Windows platforms. Delivers 32Bit-Float premium sound.",
     "PromoText": "Download",
@@ -38,6 +40,7 @@
     "tech": "C++, QT"
   },
   {
+    "id": "308ffd7ac941",
     "title": "ARCH GRID Series",
     "desc": "A high speed network relay transducer that accelerates data transmissions, support clustering to expand bandwidth capacity.",
     "PromoText": "Download",
@@ -57,6 +60,7 @@
     "tech": "C, C++, Embedded"
   },
   {
+    "id": "ff378c642275",
     "title": "noozy classic",
     "desc": "A high-end audiophile grade 24Bit audio processing music transport for Android.",
     "PromoText": "Visit",
@@ -76,6 +80,7 @@
     "tech": "C++, Android"
   },
   {
+    "id": "f8dbd12329fc",
     "title": "elixir",
     "desc": "Download music and video in a playlist on the web page you visited. An extension app for Chrome CRX and Opera NEX platforms.",
     "PromoText": "Visit",
@@ -95,6 +100,7 @@
     "tech": "BackboneJS, Opera, Chrome"
   },
   {
+    "id": "192ee67a08c0",
     "title": "NKMP (noozy + kantaris)",
     "desc": "A high-end media player/transport supports NVidia CUDA 2D and 3D passive rendering. Option to running on GPU instead of CPU. Up to 12-channels upmxing audio.",
     "PromoText": "",
@@ -114,6 +120,7 @@
     "tech": "C++, QT"
   },
   {
+    "id": "747d2fb42d05",
     "title": "kraft",
     "desc": "A high-fidelity modular UI crafting tool, GPU accelerated, infinite zoom, infinite FX and generates production-ready HTML+CSS.",
     "PromoText": "",
@@ -133,6 +140,7 @@
     "tech": "C++, ElectronJS"
   },
   {
+    "id": "8eddb3bfa587",
     "title": "EIZO-rewire™ PRO Series",
     "desc": "A professional audio processor reproduces surround sound and high quality contents.",
     "PromoText": "Visit",
@@ -152,6 +160,7 @@
     "tech": "C++, Java"
   },
   {
+    "id": "966a1e9a9700",
     "title": "Noozxoide Workbench",
     "desc": "A professional real-time software-based instruments for testing and evaluating audio systems.",
     "PromoText": "",
@@ -171,6 +180,7 @@
     "tech": "C++, Delphi"
   },
   {
+    "id": "1079256b2b21",
     "title": "EIZO-rewire™ N Series",
     "desc": "A professional audio processor reproduces elemental sound and high quality contents.",
     "PromoText": "Visit",
@@ -190,6 +200,7 @@
     "tech": "C++, Java"
   },
   {
+    "id": "6d2a783ab770",
     "title": "EIZO-NNXT™ Series DAC",
     "desc": "A programmable DAC allows developers to add it into their AMP design, built-in flagship Noozxoide Labs digital premium sound processors, a 24Bit-float audio processing.",
     "PromoText": "Visit",
@@ -209,6 +220,7 @@
     "tech": "C, C++, DAC, Embedded"
   },
   {
+    "id": "c81a098f17c7",
     "title": "StudioOne",
     "desc": "A professional digital audio workstation for musician to mixing, sequencing and routing.",
     "PromoText": "Visit",
@@ -228,6 +240,7 @@
     "tech": "C++, QT"
   },
   {
+    "id": "57ab99d435aa",
     "title": "Twisted Mind EP (2 tracks)",
     "desc": "The tracks trying to reflex my imagination with no purpose, just a random frequencies in my mind.",
     "PromoText": "Visit",
@@ -247,6 +260,7 @@
     "tech": "Propellerheads Reason, Steinberg Cubase, Waves"
   },
   {
+    "id": "72bac98cc908",
     "title": "Dream Travel EP (3 tracks)",
     "desc": "I remember back in year 2006, I was watching TV Channel broadcasting `Alice The Wonderland`, that was a very old video.",
     "PromoText": "Visit",

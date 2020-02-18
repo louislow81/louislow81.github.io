@@ -46,7 +46,21 @@
                 </y>
 
                 <y class="xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-snug pb-3">
-                  { data.desc }
+
+                  <input class="masked-input"
+                         type="checkbox"
+                         id="{ data.id }">
+
+                  <span class="content">
+                    { data.desc }
+                  </span>
+
+                  <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 hover:text-orange-600 cursor-pointer"
+                         for="{ data.id }"
+                         role="button">
+                    show more
+                  </label>
+
                 </y>
 
                 <y class="{ data.urlVisibility } xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-loose pb-2">
