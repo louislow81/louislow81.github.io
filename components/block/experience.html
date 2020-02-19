@@ -1,3 +1,12 @@
-<block-experience><y class="py-6" id="experience"><y class="md:px-10 md:h-full"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Experience" size="3xl 2k:text-4xl" padding="10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-center sm:justify-center md:justify-start xs:items-center sm:items-start md:items-start"><card-experiences></card-experiences></y></y></y><style>:host {
+<block-experience><y class="py-6" id="experience"><y class="md:px-10 md:h-full"><y class="js-scroll-reveal xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Experience" size="3xl 2k:text-4xl" padding="10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-center sm:justify-center md:justify-start xs:items-center sm:items-start md:items-start"><card-experiences></card-experiences></y></y></y><style>:host {
       font-family: Poppins, Sans-Serif;
-    }</style><script>log('~/block/experience.~', '')</script></block-experience>
+    }</style><script>log('~/block/experience.~', '')
+
+    export default {
+      onUpdated() {
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
+
+      }
+    }</script></block-experience>
