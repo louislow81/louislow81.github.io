@@ -1,4 +1,4 @@
-<block-skills><y class="py-6" id="skills"><y class="md:px-10 md:h-full"><y class="flex flex-col justify-start items-start"><y class="flex-1"><y class="js-scroll-reveal xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Skills" size="3xl 2k:text-4xl" padding="10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch"><y class="px-2 pb-4 text-md text-red-400" if="{ error }">Data is missing.</y><y each="{ potential in skills }"><card-skills title="{ potential.title }" desc="{ potential.desc }" score="{ potential.score }"></card-skills></y></y></y><y class="flex-1"><y class="js-scroll-reveal xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Knowledge" size="3xl 2k:text-4xl" padding="10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch"><y class="px-2 pb-4 text-md text-red-400" if="{ error }">Data is missing.</y><y each="{ superpower in knowledge }"><card-skills title="{ superpower.title }" desc="{ superpower.desc }"></card-skills></y></y></y></y></y></y><style>:host {
+<block-skills><y class="py-6" id="skills"><y class="md:px-10 md:h-full"><y class="flex flex-col justify-start items-start"><y class="flex-1"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Skills" size="3xl 2k:text-4xl" padding="10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch"><y class="px-2 pb-4 text-md text-red-400" if="{ error }">Data is missing.</y><y each="{ potential in skills }"><card-skills title="{ potential.title }" desc="{ potential.desc }" score="{ potential.score }"></card-skills></y></y></y><y class="flex-1"><y class="js-scroll-reveal xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading title="Knowledge" size="3xl 2k:text-4xl" padding="10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch"><y class="px-2 pb-4 text-md text-red-400" if="{ error }">Data is missing.</y><y each="{ superpower in knowledge }"><card-skills title="{ superpower.title }" desc="{ superpower.desc }"></card-skills></y></y></y></y></y></y><style>:host {
       font-family: Poppins, Sans-Serif;
     }</style><script>log('~/block/skills.~', '')
 
@@ -42,12 +42,6 @@
                 self.update()
               })
           })
-
-      },
-      onUpdated() {
-
-        // see `assets/js/components/_scroll_reveal.js`
-        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }</script></block-skills>
