@@ -25,7 +25,7 @@
 
   -->
 
-  <y class="relative xs:max-w-{ props.xsscreen } sm:max-w-{ props.smscreen } md:max-w-{ props.mdscreen } 2k:max-w-md m-2 bg-white rounded-lg shadow-lg overflow-hidden">
+  <y class="js-scroll-reveal relative xs:max-w-{ props.xsscreen } sm:max-w-{ props.smscreen } md:max-w-{ props.mdscreen } 2k:max-w-md m-2 bg-white rounded-lg shadow-lg overflow-hidden">
 
     <y class="absolute top-0 left-0 px-2 py-1 bg-charcoal-500 border-2 border-white rounded-lg">
       <y class="text-xs 2k:text-md text-white font-semibold">
@@ -87,6 +87,15 @@
 
   <script>
     log('~/card/blog-posts.~', '')
+
+    export default {
+      onMounted() {
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
+
+      }
+    }
   </script>
 
 </card-blog-posts>

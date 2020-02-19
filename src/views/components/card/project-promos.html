@@ -5,7 +5,7 @@
     Data is missing.
   </y>
 
-  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center">
+  <y class="js-scroll-reveal xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center">
 
     <y each="{ data in projects }">
 
@@ -133,6 +133,9 @@
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }

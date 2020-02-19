@@ -5,7 +5,7 @@
 
     <y class="md:px-10 md:h-full">
 
-      <y class="xs:text-center sm:text-left md:text-left xs:pb-0">
+      <y class="js-scroll-reveal xs:text-center sm:text-left md:text-left xs:pb-0">
 
         <text-heading
           title="Pet Projects"
@@ -50,6 +50,12 @@
 
         const message = 'Hang on, taking you to my Github profile...'
         snicker.onClick('snickerPetProjectBtn', message, 5000)
+
+      },
+      onUpdated() {
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }

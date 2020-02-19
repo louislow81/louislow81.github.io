@@ -1,6 +1,6 @@
 <card-experiences>
 
-  <y class="flex flex-wrap justify-start items-stretch">
+  <y class="js-scroll-reveal flex flex-wrap justify-start items-stretch">
     <y class="flex-auto relative xs:max-w-lg sm:max-w-xl md:max-w-xs 2k:max-w-md m-2 bg-white rounded-lg shadow"
        each="{ work in experiences }">
 
@@ -143,6 +143,9 @@
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }

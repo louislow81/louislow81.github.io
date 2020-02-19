@@ -1,6 +1,6 @@
 <block-contact>
 
-  <y class="z-10 relative h-screen"
+  <y class="js-scroll-reveal z-10 relative h-screen"
      id="contact">
 
     <img class="adaptive h-full w-full object-cover object-left-top overflow-hidden"
@@ -69,6 +69,12 @@
       onMounted() {
 
         krunch.adaptiveImageLoader()
+
+      },
+      onUpdated() {
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }

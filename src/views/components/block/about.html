@@ -1,6 +1,6 @@
 <block-about>
 
-  <y class="md:h-screen"
+  <y class="js-scroll-reveal md:h-screen"
      id="about">
 
     <y class="xs:p-0 md:p-10">
@@ -132,6 +132,9 @@
       onMounted() {
 
         krunch.adaptiveImageLoader()
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }

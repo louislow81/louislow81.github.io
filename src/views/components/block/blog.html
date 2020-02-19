@@ -5,7 +5,7 @@
 
     <y class="md:px-10 md-h-full">
 
-      <y class="xs:text-center sm:text-left md:text-left xs:pb-0">
+      <y class="js-scroll-reveal xs:text-center sm:text-left md:text-left xs:pb-0">
 
         <text-heading
           title="Blog"
@@ -122,6 +122,9 @@
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }

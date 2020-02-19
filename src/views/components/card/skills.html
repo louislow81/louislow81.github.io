@@ -1,6 +1,6 @@
 <card-skills>
 
-  <y class="relative m-2 md:w-40 2k:w-64">
+  <y class="js-scroll-reveal relative m-2 md:w-40 2k:w-64">
     <y class="p-5 bg-white rounded-lg shadow">
 
       <y class="text-lg 2k:text-2xl font-semibold depth-tight pb-2">
@@ -18,6 +18,15 @@
 
   <script>
     log('~/card/skills.~', '')
+
+    export default {
+      onMounted() {
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
+
+      }
+    }
   </script>
 
 </card-skills>

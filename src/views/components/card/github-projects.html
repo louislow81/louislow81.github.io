@@ -1,6 +1,6 @@
 <card-github-projects>
 
-  <y class="mt-10 xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-center">
+  <y class="js-scroll-reveal mt-10 xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-center">
 
     <y class="px-2 pb-4 text-md text-red-400"
       if="{ error }">
@@ -100,6 +100,9 @@
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
+
+        // see `assets/js/components/_scroll_reveal.js`
+        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }
