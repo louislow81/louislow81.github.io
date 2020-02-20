@@ -9,16 +9,18 @@ input.masked-input {
   opacity: 0;
   position: absolute;
   pointer-events: none;
+
+  &:focus~label {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  &:checked+span {
+    -webkit-line-clamp: unset;
+  }
+
+  &:checked~label {
+    display: none;
+  }
+
 }
 
-input.masked-input:focus~label {
-  outline: -webkit-focus-ring-color auto 5px;
-}
-
-input.masked-input:checked+span {
-  -webkit-line-clamp: unset;
-}
-
-input.masked-input:checked~label {
-  display: none;
-}
