@@ -40,6 +40,7 @@
             res.json()
               .then(data => {
                 delete self.error
+                data.splice(3,1) // remove `soundcloud` from array
                 self.social = data
                 self.update()
                 log('~/social/icon-link.~', data)
