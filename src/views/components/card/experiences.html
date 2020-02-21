@@ -5,29 +5,29 @@
        each="{ work in experiences }">
 
       <y class="xs:block sm:block md:block static flex justify-center items-center">
-        <y class="z-10 hover:absolute top-0 left-0 hover:bg-charcoal-400 w-full h-full overflow-hidden">
+        <y class="z-10 hover:absolute top-0 left-0 hover:bg-charcoal-100 w-full h-full overflow-hidden">
           <y class="flex hover:flex-col justify-start items-center cursor-pointer">
 
-            <y>
-              <img class="adaptive pop-image-experiences h-24 2k:h-32 hover:h-48 w-full object-cover object-center"
-                   src="{ work.preview1low }"
-                   data-src="{ work.preview1high }"
-                   alt="{ work.previewTitle1 }">
-            </y>
+              <image-preview-small
+                previewpopup="pop-image-experiences"
+                previewlow="{ work.preview1low }"
+                previewhigh="{ work.preview1high }"
+                previewtitle="{ work.previewTitle1 }">
+              </image-preview-small>
 
-            <y>
-              <img class="adaptive pop-image-experiences h-24 2k:h-32 hover:h-48 w-full object-cover object-center"
-                   src="{ work.preview2low }"
-                   data-src="{ work.preview2high }"
-                   alt="{ work.previewTitle2 }">
-            </y>
+              <image-preview-small
+                previewpopup="pop-image-experiences"
+                previewlow="{ work.preview2low }"
+                previewhigh="{ work.preview2high }"
+                previewtitle="{ work.previewTitle2 }">
+              </image-preview-small>
 
-            <y>
-              <img class="adaptive pop-image-experiences h-24 2k:h-32 hover:h-48 w-full object-cover object-center"
-                   src="{ work.preview3low }"
-                   data-src="{ work.preview3high }"
-                   alt="{ work.previewTitle3 }">
-            </y>
+              <image-preview-small
+                previewpopup="pop-image-experiences"
+                previewlow="{ work.preview3low }"
+                previewhigh="{ work.preview3high }"
+                previewtitle="{ work.previewTitle3 }">
+              </image-preview-small>
 
           </y>
         </y>
@@ -76,17 +76,17 @@
       <y class="absolute right-0 bottom-0">
         <y class="pb-2 pr-2 flex justify-start items-center">
 
-        <y class="px-2 py-0 mr-1 text-xs 2k:text-md lowercase xs:truncate bg-gray-200 rounded-full">
-          { work.status1 }
-        </y>
+          <text-status
+            status="{ work.status1 }">
+          </text-status>
 
-        <y class="px-2 py-0 mr-1 text-xs 2k:text-md lowercase xs:truncate bg-gray-200 rounded-full">
-          { work.status2 }
-        </y>
+          <text-status
+            status="{ work.status2 }">
+          </text-status>
 
-        <y class="px-2 py-0 text-xs 2k:text-md lowercase xs:truncate bg-gray-200 rounded-full">
-          { work.location }
-        </y>
+          <text-status
+            status="{ work.location }">
+          </text-status>
 
         </y>
       </y>
