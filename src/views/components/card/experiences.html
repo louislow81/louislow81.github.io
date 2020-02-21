@@ -1,43 +1,41 @@
 <card-experiences>
 
   <y class="js-scroll-reveal flex flex-wrap justify-start items-stretch">
-    <y class="flex-auto relative xs:max-w-lg sm:max-w-xl md:max-w-xs 2k:max-w-md m-2 bg-white rounded-lg shadow"
+    <y class="flex-auto relative xs:max-w-lg sm:max-w-xl md:max-w-xs 2k:max-w-md m-2 bg-white rounded-lg"
        each="{ work in experiences }">
 
-      <y class="xs:block sm:block md:block static flex justify-center items-center">
-        <y class="z-10 hover:absolute top-0 left-0 hover:bg-charcoal-100 w-full h-full overflow-hidden">
-          <y class="flex hover:flex-col justify-start items-center cursor-pointer">
+      <y class="p-1 static flex justify-center items-center">
+          <y class="flex justify-center items-center cursor-pointer">
 
-              <image-preview-small
-                previewpopup="pop-image-experiences"
-                previewlow="{ work.preview1low }"
-                previewhigh="{ work.preview1high }"
-                previewtitle="{ work.previewTitle1 }">
-              </image-preview-small>
+            <image-preview-small
+              previewpopup="pop-image-experiences"
+              previewlow="{ work.preview1low }"
+              previewhigh="{ work.preview1high }"
+              previewtitle="{ work.previewTitle1 }">
+            </image-preview-small>
 
-              <image-preview-small
-                previewpopup="pop-image-experiences"
-                previewlow="{ work.preview2low }"
-                previewhigh="{ work.preview2high }"
-                previewtitle="{ work.previewTitle2 }">
-              </image-preview-small>
+            <image-preview-small
+              previewpopup="pop-image-experiences"
+              previewlow="{ work.preview2low }"
+              previewhigh="{ work.preview2high }"
+              previewtitle="{ work.previewTitle2 }">
+            </image-preview-small>
 
-              <image-preview-small
-                previewpopup="pop-image-experiences"
-                previewlow="{ work.preview3low }"
-                previewhigh="{ work.preview3high }"
-                previewtitle="{ work.previewTitle3 }">
-              </image-preview-small>
+            <image-preview-small
+              previewpopup="pop-image-experiences"
+              previewlow="{ work.preview3low }"
+              previewhigh="{ work.preview3high }"
+              previewtitle="{ work.previewTitle3 }">
+            </image-preview-small>
 
           </y>
-        </y>
       </y>
 
-      <y class="p-5">
+      <y class="-mt-4 p-5">
 
         <y class="pb-1 flex justify-between items-center">
 
-          <y class="text-lg 2k:text-2xl xs:truncate font-semibold depth-loose"
+          <y class="pr-2 text-lg 2k:text-2xl xs:truncate font-semibold depth-loose"
              title="{ work.company }">
             { work.company }
           </y>
