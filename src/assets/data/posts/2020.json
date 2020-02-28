@@ -1,5 +1,14 @@
 [
   {
+    "id": "70b408b066e3",
+    "url": "https://github.com/loouislow81/krugurt",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/c60435c7effa04a2e85832cb5beacc03.png",
+    "imagehigh": "assets/image/high/post/c60435c7effa04a2e85832cb5beacc03.png",
+    "content": "I always want to create a view library that I love to use and have a minimal learning curve to kickstart a project quickly. In `Krunch.js` no new syntax to learn, very few template directives, very fewer proprietaries stuff, no magic or smart reactive properties or hooks, `explicit` behaviors over `implicit` assumptions. Easy to create a web component API, every HTML is a Javascript function with added callbacks and methods, and so on.",
+    "date": "29 Feb 2020"
+  },
+  {
     "id": "3b1677c9198c",
     "url": "https://github.com/loouislow81/krugurt-textcolor-neural-network",
     "urloption": "block",
