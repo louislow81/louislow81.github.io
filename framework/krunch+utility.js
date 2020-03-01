@@ -237,7 +237,7 @@ krunch.adaptiveImageLoader = function() {
   let maxMBps = 1;
   let maxRtt = 600;
 
-  if (downLink < maxMBps || roundTripTime > maxRtt || networkType === '2g' || networkType === 'slow-2g') {
+  if (downLink < maxMBps || roundTripTime > maxRtt || networkType === '2g' || networkType === 'slow-2g' || networkType === '3g' || networkType === 'slow-3g') {
     log("(CONN) slow, load low-res image", "")
   }
   else {
