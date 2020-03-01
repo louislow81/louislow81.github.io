@@ -9,8 +9,8 @@ function krunch() {}
   @disable with `console.log();`
 */
 const log = function(msg, req) {
-  // console.log("krugurt:", msg, req);
-  console.log();
+  console.log("krugurt:", msg, req);
+  // console.log();
 };
 
 
@@ -221,19 +221,28 @@ krunch.langTrigger = function(lang) {
          data-src="assets/image/high/image.jpg">
 */
 krunch.adaptiveImageLoader = function() {
+  const maxMbps = 1;
+  const networkType = navigator.connection.effectiveType;
+  const downLink = navigator.connection.downlink;
   const images = document.getElementsByClassName("adaptive");
 
-  Array.from(images).map(imageElement => {
-    const adaptive = new Image(); // start loading image
-    adaptive.src = imageElement.dataset.src;
+  if (downLink < maxMbps || networkType === '2g') { // slow connection
+    log("(CONN) slow connection, load low-res images", "")
+  }
+  else { // fast connection
+    Array.from(images).map(imageElement => {
+      const adaptive = new Image(); // start loading image
+      adaptive.src = imageElement.dataset.src;
 
-    // once image is loaded replace the src of the HTML element
-    adaptive.onload = function() {
-      imageElement.classList.remove("adaptive");
-      if ("IMG" === imageElement.nodeName) imageElement.src = adaptive.src;
-      else imageElement.style.backgroundImage = `url(${adaptive.src})`;
-    };
-  });
+      // once image is loaded replace the src of the HTML element
+      adaptive.onload = function() {
+        imageElement.classList.remove("adaptive");
+        if ("IMG" === imageElement.nodeName) imageElement.src = adaptive.src;
+        else imageElement.style.backgroundImage = `url(${adaptive.src})`;
+      };
+    });
+    log("(CONN) fast connection, load hi-res images", "")
+  }
 };
 
 
