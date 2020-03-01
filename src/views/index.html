@@ -138,7 +138,9 @@
         <y class="absolute top-0 left-0">
           <y class="max-w-md">
             <y class="m-4 p-10 text-md text-charcoal-100 bg-white rounded-lg shadow-lg">
-              &#9785; You need to enable <strong>Javascript</strong> on your web browser to view this content.
+              &#9785; You need to enable
+              <strong>Javascript</strong>
+              on your web browser to view this content.
             </y>
           </y>
         </y>
@@ -207,9 +209,6 @@
 
 
     <!-- !! default -->
-    <script src="assets/js/scripts.min.js"></script>
-
-
     <!-- krunch: components to compile -->
     <script async data-src="components/global/main-menu.html"
             type="krunch"></script>
@@ -271,28 +270,8 @@
             type="krunch"></script>
 
 
-    <!-- krunch: environment -->
-    <script>
-      (async function main() {
-
-        krunch.probeConnection() // check connection
-
-        await krunch.compile() // init compiler
-
-        // add critical assets
-        // into Cache Storage
-        const assets = [
-          'https://loouislow81.github.io/old/assets/pdf/loouislow_resume_10_jan_2020.pdf'
-        ]
-        krunch.addCache(assets)
-
-        // `card-cookies-consent` is a master controller mount
-        // components only after accepting the cookies consent.
-        const components = 'card-cookies-consent'
-        krunch.mount(components) // mount components
-
-      }())
-    </script>
+    <!-- krunch environment: routing, mounting, utilities -->
+    <script src="assets/js/app.js"></script>
     <!--// !! default -->
 
   </body>

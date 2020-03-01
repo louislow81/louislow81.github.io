@@ -16,7 +16,7 @@ const serve = require('browser-sync').create()
 const uglifyCss = require('gulp-uglifycss')
 const uglify = require('gulp-uglify-es').default
 
-const krugurtLibPath = 'libs'
+const krugurtFrameworkPath = 'framework'
 
 const distJsPath = 'dist/assets/js'
 
@@ -58,7 +58,8 @@ gulp.task('html', () => {
 
 
 // ...minify/preprocess scss
-const srcScssPath = 'src/assets/scss/style.scss'
+const srcScssPath = 'src/assets/scss/base.scss'
+const srcFontsPath = 'src/assets/scss/fonts'
 const distCssPath = 'dist/assets/css'
 gulp.task('sass', () => {
   return gulp.src(srcScssPath)
@@ -72,14 +73,28 @@ gulp.task('sass', () => {
     }))
     .pipe(gulp.dest(distCssPath))
 })
+// ...bundle with Yogurt
+gulp.task('css', () => {
+  return gulp.src([
+      srcFontsPath + '/fonts.css',
+      krugurtFrameworkPath + '/yogurt.min.css',
+      distCssPath + '/base.css'
+    ])
+    .pipe(concat('style.css'))
+    .pipe(gulp.dest(distCssPath))
+    .pipe(serve.reload({
+      stream: true
+    }))
+})
 
 
-// ...minify js (your custom scripts management)
+// ...bundle your custom js
+const srcAppJsPath = 'src/views'
 const srcComponentsJsPath = 'src/assets/js/components/*.js'
 gulp.task('pre-scripts', () => {
   return gulp.src([
-      krugurtLibPath + '/krunch+utility.js',
-      srcComponentsJsPath
+      srcComponentsJsPath,
+      srcAppJsPath + '/app.js' // default bundle
     ])
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest(distJsPath))
@@ -93,18 +108,26 @@ gulp.task('pre-scripts', () => {
       stream: true
     }))
 })
-// ...merge js (merge with compiler)
+// ...bundle krunch files (disable only the `OPTIONAL`)
 gulp.task('scripts', () => {
   return gulp.src([
-      krugurtLibPath + '/krugurt+cache.min.js',
-      krugurtLibPath + '/krunch+compiler.min.js',
-      krugurtLibPath + '/krunch+router.min.js',
-      // krugurtLibPath + '/krunch+locale.min.js',
-      // krugurtLibPath + '/krunch+torrent.min.js',
-      // krugurtLibPath + '/krunch+cerebrium.min.js',
+      // CORE: persistent cache service worker
+      krugurtFrameworkPath + '/krugurt+cache.min.js',
+      // CORE: html view compiler
+      krugurtFrameworkPath + '/krunch+compiler.min.js',
+      // OPTIONAL: isomorphic router
+      krugurtFrameworkPath + '/krunch+router.min.js',
+      // OPTIONAL: localization
+      krugurtFrameworkPath + '/krunch+locale.min.js',
+      // OPTIONAL: streaming file with torrent network
+      krugurtFrameworkPath + '/krunch+torrent.min.js',
+      // OPTIONAL: sigmoid neural network
+      krugurtFrameworkPath + '/krunch+cerebrium.min.js',
+      // CORE: build-in utilities api
+      krugurtFrameworkPath + '/krunch+utility.js',
       distJsPath + '/scripts.pre.js'
     ])
-    .pipe(concat('scripts.min.js'))
+    .pipe(concat('app.js'))
     .pipe(gulp.dest(distJsPath))
     .pipe(serve.reload({
       stream: true
@@ -119,8 +142,8 @@ const distHqImagePath = 'dist/assets/image/high'
 gulp.task('image-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [0.4, 0.4] }), // set png quality
-      mozjpeg({ quality: 40 }), // set jpg quality
+      pngquant({ quality: [0.5, 0.5] }), // set png quality
+      mozjpeg({ quality: 50 }), // set jpg quality
     ]))
     .pipe(gulp.dest(distLqImagePath))
 })
@@ -159,8 +182,8 @@ gulp.task('locale', () => {
 const srcAppManifestPath = 'src/assets/pwa'
 gulp.task('service-worker', () => {
   return gulp.src([
-      krugurtLibPath + '/krugurt+init.min.js',
-      krugurtLibPath + '/krugurt+sw.min.js'
+      krugurtFrameworkPath + '/krugurt+init.min.js',
+      krugurtFrameworkPath + '/krugurt+sw.min.js'
     ])
     .pipe(gulp.dest(distProdPath))
 })
@@ -176,6 +199,7 @@ gulp.task('app-manifest', () => {
 
 
 // ...watch
+const watchSrcAppPath = 'src/views/**/*.js'
 const watchSrcHtmlPath = 'src/views/**/*.html'
 const watchSrcScssPath = 'src/assets/scss/**/*.scss'
 const watchSrcScriptsPath = 'src/assets/js/**/*.js'
@@ -186,18 +210,17 @@ const watchSrcPwaPath = 'src/manifest.json'
 gulp.task('watch', gulp.series([
 
     // minify files
-    //'image-high-quality',
-    //'image-low-quality',
     'pre-scripts',
     'scripts',
     'sass',
+    'css',
     'html',
     'data',
     // move files
     'service-worker',
     'locale',
     'app-manifest',
-    // host http
+    // http
     'serve'
 
   ], () => {
@@ -211,8 +234,11 @@ gulp.task('watch', gulp.series([
     gulp.watch(watchSrcScriptsPath,
       gulp.series(['pre-scripts', 'scripts', reload]))
 
+    gulp.watch(watchSrcAppPath,
+      gulp.series(['pre-scripts', 'scripts', reload]))
+
     gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', reload]))
+      gulp.series(['sass', 'css', reload]))
 
     gulp.watch(watchSrcHtmlPath,
       gulp.series(['html', reload]))

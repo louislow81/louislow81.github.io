@@ -120,7 +120,9 @@
         <y class="absolute top-0 left-0">
           <y class="max-w-md">
             <y class="m-4 p-10 text-md text-charcoal-100 bg-white rounded-lg shadow-lg">
-              &#9785; You need to enable <strong>Javascript</strong> on your web browser to view this content.
+              &#9785; You need to enable
+              <strong>Javascript</strong>
+              on your web browser to view this content.
             </y>
           </y>
         </y>
@@ -183,8 +185,6 @@
 
 
     <!-- !! default -->
-    <script src="assets/js/scripts.min.js"></script>
-
     <!-- krunch: components to compile -->
     <script async data-src="components/global/blog-menu.html"
             type="krunch"></script>
@@ -254,25 +254,8 @@
             type="krunch"></script>
 
 
-    <!-- krunch: environment -->
-    <script>
-      (async function main() {
-
-        krunch.probeConnection() // check connection
-        progressbar.pageRead() // show reading progress
-
-        await krunch.compile() // init compiler
-
-        // `card-cookies-consent` is a master controller mount
-        // components only after accepting the cookies consent.
-        const components = 'card-cookies-consent'
-        krunch.mount(components) // mount components
-
-        const message = 'Hang on, taking you back to my home!'
-        snicker.onClick('snickerBackToHomeBtn', message, 5000)
-
-      }())
-    </script>
+    <!-- krunch environment: routing, mounting, utilities -->
+    <script src="assets/js/app.js"></script>
     <!--// !! default -->
 
   </body>
