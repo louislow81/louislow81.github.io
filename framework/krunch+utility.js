@@ -219,17 +219,29 @@ krunch.langTrigger = function(lang) {
     <img class="adaptive"
          src="assets/image/low/image.jpg"
          data-src="assets/image/high/image.jpg">
+
+  GPRS (50 KB/s 500ms RTT)
+  Regular 2G (250 KB/s 300ms RTT)
+  Good 2G (450 KB/s 150ms RTT)
+  Regular 3G (750 KB/s 100ms RTT)
+  Good 3G (1 MB/s 40ms RTT)
+  Regular 4G (4 MB/s 20ms RTT)
+  DSL (2 MB/s 5ms RTT)
+  WiFi (30 MB/s 2ms RTT)
 */
 krunch.adaptiveImageLoader = function() {
-  const maxMbps = 1;
   const networkType = navigator.connection.effectiveType;
   const downLink = navigator.connection.downlink;
-  const images = document.getElementsByClassName("adaptive");
+  const roundTripTime = navigator.connection.rtt;
 
-  if (downLink < maxMbps || networkType === '2g') { // slow connection
-    log("(CONN) slow connection, load low-res images", "")
+  let maxMBps = 1;
+  let maxRtt = 600;
+
+  if (downLink < maxMBps || roundTripTime > maxRtt || networkType === '2g' || networkType === 'slow-2g') {
+    log("(CONN) slow, load low-res image", "")
   }
-  else { // fast connection
+  else {
+    const images = document.getElementsByClassName("adaptive");
     Array.from(images).map(imageElement => {
       const adaptive = new Image(); // start loading image
       adaptive.src = imageElement.dataset.src;
@@ -241,7 +253,7 @@ krunch.adaptiveImageLoader = function() {
         else imageElement.style.backgroundImage = `url(${adaptive.src})`;
       };
     });
-    log("(CONN) fast connection, load hi-res images", "")
+    log("(CONN) fast, load hi-res image", "")
   }
 };
 
