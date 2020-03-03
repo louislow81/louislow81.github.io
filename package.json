@@ -35,10 +35,9 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.8",
+    "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0"
   },
-  "dependencies": {
-    "gulp-webp": "^4.0.1"
-  }
+  "dependencies": {}
 }
