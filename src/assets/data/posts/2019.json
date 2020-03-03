@@ -3,8 +3,8 @@
     "id": "b4d6017364c7",
     "url": "https://github.com/loouislow81/krugurt",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/5e3299398f5fc32c25e79ca9e28497bc.png",
-    "imagehigh": "assets/image/high/post/5e3299398f5fc32c25e79ca9e28497bc.png",
+    "imagelow": "assets/image/low/post/5e3299398f5fc32c25e79ca9e28497bc.jpeg",
+    "imagehigh": "assets/image/high/post/5e3299398f5fc32c25e79ca9e28497bc.jpeg",
     "content": "Huge updates for Project `Krugurt` utility module. Added (SW) service worker to add `3rd-party` assets store in-app persistent cache. Simply call krunch.addCache() method with an array of URLs will do.",
     "date": "31 Dec 2019"
   },
@@ -12,8 +12,8 @@
     "id": "06f4d7fd94fc",
     "url": "https://github.com/loouislow81/krugurt",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/156407f003433f075471c7ff9672ce24.png",
-    "imagehigh": "assets/image/high/post/156407f003433f075471c7ff9672ce24.png",
+    "imagelow": "assets/image/low/post/156407f003433f075471c7ff9672ce24.jpeg",
+    "imagehigh": "assets/image/high/post/156407f003433f075471c7ff9672ce24.jpeg",
     "content": "Updating the playground and boilerplate for the upcoming new project `Krugurt`. Giving you an idea of how to craft UI with `Yogurt` and componentizing with `Krunch` ecosystem.",
     "date": "28 Dec 2019"
   },
@@ -21,8 +21,8 @@
     "id": "fab13f848343",
     "url": "https://github.com/loouislow81/krugurt",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/9bf38f0e36844ed72f5726518780b4e8.png",
-    "imagehigh": "assets/image/high/post/9bf38f0e36844ed72f5726518780b4e8.png",
+    "imagelow": "assets/image/low/post/9bf38f0e36844ed72f5726518780b4e8.jpeg",
+    "imagehigh": "assets/image/high/post/9bf38f0e36844ed72f5726518780b4e8.jpeg",
     "content": "Added offline `service worker` to project `Krugurt`. Make your website or web apps running without the internet connection. Isn't that beautiful?",
     "date": "18 Dec 2019"
   },
@@ -39,8 +39,8 @@
     "id": "7651c7aa0718",
     "url": "",
     "urloption": "hidden",
-    "imagelow": "assets/image/low/post/d5a20c9b95ecda1e582d4fc7dcf93a94.jpg",
-    "imagehigh": "assets/image/high/post/d5a20c9b95ecda1e582d4fc7dcf93a94.jpg",
+    "imagelow": "assets/image/low/post/d5a20c9b95ecda1e582d4fc7dcf93a94.jpeg",
+    "imagehigh": "assets/image/high/post/d5a20c9b95ecda1e582d4fc7dcf93a94.jpeg",
     "content": "Working on the new `noozy` version `4`, an audiophile grade music player for the latest Android. A 12 types of sound processors and advanced sound modeling options in the design.",
     "date": "16 Nov 2019"
   },
@@ -48,8 +48,8 @@
     "id": "8f7f4b8e3bbf",
     "url": "",
     "urloption": "hidden",
-    "imagelow": "assets/image/low/post/da7dfc5ba005a354a2360077c9003367.jpg",
-    "imagehigh": "assets/image/high/post/da7dfc5ba005a354a2360077c9003367.jpg",
+    "imagelow": "assets/image/low/post/da7dfc5ba005a354a2360077c9003367.jpeg",
+    "imagehigh": "assets/image/high/post/da7dfc5ba005a354a2360077c9003367.jpeg",
     "content": "`kraft` prototype 3.x giving artist the superpower to produce UI components without knowing how to code, Kraft has it all, when you creating or organizing objects, it generates CSS code real-time, you just need to export it.",
     "date": "15 Sep 2019"
   },
@@ -57,8 +57,8 @@
     "id": "40415a050d95",
     "url": "https://github.com/loouislow81/playmemories.proto2",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/09f8ba9f7da0d3c22b31d4d5d31f2050.jpg",
-    "imagehigh": "assets/image/high/post/09f8ba9f7da0d3c22b31d4d5d31f2050.jpg",
+    "imagelow": "assets/image/low/post/09f8ba9f7da0d3c22b31d4d5d31f2050.jpeg",
+    "imagehigh": "assets/image/high/post/09f8ba9f7da0d3c22b31d4d5d31f2050.jpeg",
     "content": "Made another version of `Playmemories` for desktop (Linux). It can manipulates the Sony Cybershot LensStyle Camera device remotely and Auto-Focusing with a mouse-click on the shoot area. Video recording and zoom control. The binary version available!",
     "date": "29 Aug 2019"
   },
@@ -66,8 +66,8 @@
     "id": "881fb7e9486f",
     "url": "https://github.com/loouislow81/equilibrium",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/f2b3e2a7f538ea219d4dc007abf66fac.jpg",
-    "imagehigh": "assets/image/high/post/f2b3e2a7f538ea219d4dc007abf66fac.jpg",
+    "imagelow": "assets/image/low/post/f2b3e2a7f538ea219d4dc007abf66fac.jpeg",
+    "imagehigh": "assets/image/high/post/f2b3e2a7f538ea219d4dc007abf66fac.jpeg",
     "content": "`Equilibrium`, a lightweight backup utility for Linux Terminal. Now with a brand new CLI for easy editing setttings and adding exclusion for files or folders that you don't want.",
     "date": "18 Aug 2019"
   },
@@ -102,8 +102,8 @@
     "id": "39b83f8d057c",
     "url": "",
     "urloption": "hidden",
-    "imagelow": "assets/image/low/post/40ac10a6d49a9601e2d894f8ecbeb0c1.jpg",
-    "imagehigh": "assets/image/high/post/40ac10a6d49a9601e2d894f8ecbeb0c1.jpg",
+    "imagelow": "assets/image/low/post/40ac10a6d49a9601e2d894f8ecbeb0c1.jpeg",
+    "imagehigh": "assets/image/high/post/40ac10a6d49a9601e2d894f8ecbeb0c1.jpeg",
     "content": "`Yogurt, CandyBar` prototype and the example. This tool crafts beautiful GPU Accelerated UI without user to learn CSS and write CSS code.",
     "date": "5 Mar 2019"
   },
@@ -111,8 +111,8 @@
     "id": "a165a287be50",
     "url": "https://github.com/loouislow81/golem-cli",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/f3424c2dc7b10acef66d489edec8b62e.jpg",
-    "imagehigh": "assets/image/high/post/f3424c2dc7b10acef66d489edec8b62e.jpg",
+    "imagelow": "assets/image/low/post/f3424c2dc7b10acef66d489edec8b62e.jpeg",
+    "imagehigh": "assets/image/high/post/f3424c2dc7b10acef66d489edec8b62e.jpeg",
     "content": "New `golem` updates for both CLI (v2.0.21) and SDK (v2.0.47). You can now upgrading all the installed apps with a single command in Terminal.",
     "date": "13 Jan 2019"
   }

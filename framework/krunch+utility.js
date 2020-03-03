@@ -40,7 +40,7 @@ function injectDOM(htmlStr) {
 */
 krunch.probeConnection = function() {
   const element = injectDOM(
-    '<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:999999;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#F44336;padding:0.15rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>'
+    '<y class="w-screen" id="ba194bb5a0b6e42d520d17a3b75f5962"></y><style>#ba194bb5a0b6e42d520d17a3b75f5962{color:#fff;font-size:0.8em;text-align:center;width:100%;top:0;left:0;z-index:999999;position:fixed;}.is-online{background:transparent;padding:0}.is-online:after{visibility:visible;content:"";}.is-offline{background:#607d8b;padding:0.15rem}.is-offline:after{visibility:visible;content:"No connection!";}</style>'
   );
   document.body.insertBefore(element, document.body.childNodes[0]);
 
@@ -213,47 +213,134 @@ krunch.langTrigger = function(lang) {
 
 
 /*
+  Check WebP is supported
+  @param {null}
+*/
+const isWebP = (function() {
+  "use strict";
+  const index = new Promise(function(resolve) {
+    const image = new Image();
+    image.onerror = function() {
+      return resolve(false);
+    };
+    image.onload = function() {
+      return resolve(image.width === 1);
+    };
+    image.src =
+      "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=";
+  }).catch(function() {
+    return false;
+  });
+
+  return index;
+})();
+
+
+/*
+  Image replacer for `krunch.adaptiveImageLoader()` and
+  `krunch.adaptiveWebpLoader()`
+  @param {className}
+*/
+function imageReplacer(className) {
+  const images = document.getElementsByClassName(className);
+  Array.from(images).map(imageElement => {
+
+    const adaptive = new Image(); // start loading image
+    adaptive.src = imageElement.dataset.src;
+
+    // once image is loaded replace the src of the HTML element
+    adaptive.onload = function() {
+      imageElement.classList.remove(className);
+      if ("IMG" === imageElement.nodeName) imageElement.src = adaptive.src;
+      // support background image
+      else imageElement.style.backgroundImage = `url(${adaptive.src})`;
+    };
+  });
+}
+
+
+/*
   Adaptive Image Loader
   @param {null}
   @usage,
     <img class="adaptive"
-         src="assets/image/low/image.jpg"
-         data-src="assets/image/high/image.jpg">
-
-  GPRS (50 KB/s 500ms RTT)
-  Regular 2G (250 KB/s 300ms RTT)
-  Good 2G (450 KB/s 150ms RTT)
-  Regular 3G (750 KB/s 100ms RTT)
-  Good 3G (1 MB/s 40ms RTT)
-  Regular 4G (4 MB/s 20ms RTT)
-  DSL (2 MB/s 5ms RTT)
-  WiFi (30 MB/s 2ms RTT)
+         src="assets/image/low/image.jpeg"
+         data-src="assets/image/high/image.jpeg">
+  @reference,
+    GPRS (50 KB/s 500ms RTT)
+    Regular 2G (250 KB/s 300ms RTT)
+    Good 2G (450 KB/s 150ms RTT)
+    Regular 3G (750 KB/s 100ms RTT)
+    Good 3G (1 MB/s 40ms RTT)
+    Regular 4G (4 MB/s 20ms RTT)
+    DSL (2 MB/s 5ms RTT)
+    WiFi (30 MB/s 2ms RTT)
 */
-krunch.adaptiveImageLoader = function() {
-  const networkType = navigator.connection.effectiveType;
-  const downLink = navigator.connection.downlink;
-  const roundTripTime = navigator.connection.rtt;
+const networkType = navigator.connection.effectiveType;
+const downLink = navigator.connection.downlink;
+const roundTripTime = navigator.connection.rtt;
 
-  let maxMBps = 1;
-  let maxRtt = 600;
+let maxMBps = 1;
+let maxRtt = 600;
+
+krunch.adaptiveImageLoader = function() {
+  const triggerClassName = "adaptive";
 
   if (downLink < maxMBps || roundTripTime > maxRtt) {
-    log("(CONN) slow, load low-res image", "")
+    log("(CONN) slow, low-res image", "");
+    // no nothing, use default src=""
   }
   else {
-    const images = document.getElementsByClassName("adaptive");
-    Array.from(images).map(imageElement => {
-      const adaptive = new Image(); // start loading image
-      adaptive.src = imageElement.dataset.src;
+    log("(CONN) fast, hi-res image", "");
+    imageReplacer(triggerClassName);
+  }
+};
 
-      // once image is loaded replace the src of the HTML element
-      adaptive.onload = function() {
-        imageElement.classList.remove("adaptive");
-        if ("IMG" === imageElement.nodeName) imageElement.src = adaptive.src;
-        else imageElement.style.backgroundImage = `url(${adaptive.src})`;
-      };
+
+/*
+  Adaptive Image Loader for WebP
+  (with fallback to non-webp format)
+  @param {null}
+  @usage,
+    <img class="adaptiveWebp"
+         src="assets/image/low/image.jpeg"
+         data-src="assets/image/high/image.webp">
+    <img class="adaptiveWebp"
+         src="assets/image/low/image.webp"
+         data-src="assets/image/high/image.webp">
+*/
+krunch.adaptiveWebpLoader = function() {
+  const triggerClassName = "adaptiveWebp";
+
+  if (downLink < maxMBps || roundTripTime > maxRtt) {
+    log("(CONN) slow, low-res image", "");
+
+    isWebP.then(supported => {
+      if (supported) {
+        log("(BROWSER) has-WebP", "");
+        imageReplacer(triggerClassName);
+      }
+      else {
+        log("(BROWSER) no-WebP", "");
+        // no nothing, use default src=""
+      }
     });
-    log("(CONN) fast, load hi-res image", "")
+
+  }
+  else {
+    log("(CONN) fast, hi-res image", "");
+
+    isWebP.then(supported => {
+      if (supported) {
+        log("(BROWSER) has-WebP", "");
+        imageReplacer(triggerClassName);
+      }
+      else {
+        log("(BROWSER) no-WebP", "");
+        // no nothing, use default src=""
+      }
+    });
+
   }
 };
 

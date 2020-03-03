@@ -15,6 +15,7 @@ const sassGlob = require('gulp-sass-glob')
 const serve = require('browser-sync').create()
 const uglifyCss = require('gulp-uglifycss')
 const uglify = require('gulp-uglify-es').default
+const webp = require('gulp-webp')
 
 const krugurtFrameworkPath = 'framework'
 
@@ -138,7 +139,7 @@ gulp.task('scripts', () => {
 const srcImageRecursivePath = 'src/assets/image/**/*'
 const distLqImagePath = 'dist/assets/image/low'
 const distHqImagePath = 'dist/assets/image/high'
-// ...minify image (low quality)
+// ...non-WebP format
 gulp.task('image-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
@@ -147,15 +148,25 @@ gulp.task('image-low-quality', () => {
     ]))
     .pipe(gulp.dest(distLqImagePath))
 })
-// ...minify image (high quality)
 gulp.task('image-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [1, 1] }), // set png quality
-      mozjpeg({ quality: 100 }), // set jpg quality
+      pngquant({ quality: [0.8, 0.8] }), // set png quality
+      mozjpeg({ quality: 80 }), // set jpg quality
     ]))
     .pipe(gulp.dest(distHqImagePath))
 })
+// ...WebP format
+gulp.task('webp-low-quality', () => {
+  return gulp.src(srcImageRecursivePath)
+    .pipe(webp({ quality: 50 })) // set webp quality
+    .pipe(gulp.dest(distLqImagePath))
+});
+gulp.task('webp-high-quality', () => {
+  return gulp.src(srcImageRecursivePath)
+    .pipe(webp({ quality: 80 })) // set webp quality
+    .pipe(gulp.dest(distHqImagePath))
+});
 
 
 // ...minify data
@@ -226,10 +237,10 @@ gulp.task('watch', gulp.series([
   ], () => {
 
     gulp.watch(watchSrcImagePath,
-      gulp.series('image-high-quality', reload))
+      gulp.series('image-high-quality', 'webp-high-quality', reload))
 
     gulp.watch(watchSrcImagePath,
-      gulp.series('image-low-quality', reload))
+      gulp.series('image-low-quality', 'webp-low-quality', reload))
 
     gulp.watch(watchSrcScriptsPath,
       gulp.series(['pre-scripts', 'scripts', reload]))
