@@ -152,7 +152,7 @@ gulp.task('image-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
       pngquant({ quality: [0.8, 0.8] }), // set png quality
-      mozjpeg({ quality: 80 }), // set jpg quality
+      mozjpeg({ quality: 90 }), // set jpg quality
     ]))
     .pipe(gulp.dest(distHqImagePath))
 })
@@ -164,7 +164,7 @@ gulp.task('webp-low-quality', () => {
 });
 gulp.task('webp-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
-    .pipe(webp({ quality: 80 })) // set webp quality
+    .pipe(webp({ quality: 90 })) // set webp quality
     .pipe(gulp.dest(distHqImagePath))
 });
 
