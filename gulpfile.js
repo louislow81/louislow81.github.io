@@ -143,28 +143,28 @@ const distHqImagePath = 'dist/assets/image/high'
 gulp.task('image-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [0.5, 0.5] }), // set png quality
-      mozjpeg({ quality: 50 }), // set jpg quality
+      pngquant({ quality: [0.6, 0.6] }), // set png quality
+      mozjpeg({ quality: 60 }), // set jpg quality
     ]))
     .pipe(gulp.dest(distLqImagePath))
 })
 gulp.task('image-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [0.8, 0.8] }), // set png quality
-      mozjpeg({ quality: 90 }), // set jpg quality
+      pngquant({ quality: [1, 1] }), // set png quality
+      mozjpeg({ quality: 100 }), // set jpg quality
     ]))
     .pipe(gulp.dest(distHqImagePath))
 })
 // ...WebP format
 gulp.task('webp-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
-    .pipe(webp({ quality: 50 })) // set webp quality
+    .pipe(webp({ quality: 60 })) // set webp quality
     .pipe(gulp.dest(distLqImagePath))
 });
 gulp.task('webp-high-quality', () => {
   return gulp.src(srcImageRecursivePath)
-    .pipe(webp({ quality: 90 })) // set webp quality
+    .pipe(webp({ quality: 100 })) // set webp quality
     .pipe(gulp.dest(distHqImagePath))
 });
 
