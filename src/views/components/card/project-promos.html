@@ -103,11 +103,16 @@
               .then(data => {
                 delete self.error
                 if (isMobile.any()) { // item x limit for mobile device
+                  data.splice(4,1) // remove `elixir` from array
+                  data.splice(-2,2) // remove `overloadproject` from array
                   data.length = 3
                   self.projects = data
                   self.update()
                 }
                 else {
+                  data.splice(4,1) // remove `elixir` from array
+                  data.splice(8,1) // remove `eizo-rewire-n` from array
+                  data.splice(-2,2) // remove `overloadproject` from array
                   self.projects = data
                   self.update()
                 }
