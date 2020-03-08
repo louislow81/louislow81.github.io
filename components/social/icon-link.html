@@ -16,7 +16,7 @@
               .then(data => {
                 delete self.error
                 data.splice(3,1) // remove `soundcloud` from array
-                data.splice(-2,1) // remove `soundcloud` from array
+                data.splice(-2,1) // remove `facebook` from array
                 self.social = data
                 self.update()
                 log('~/social/icon-link.~', data)
