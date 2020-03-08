@@ -24,6 +24,12 @@
     "url": "https://soundcloud.com/overload-project"
   },
   {
+    "title": "Dribbble",
+    "iconlow": "assets/image/low/misc/social/dribbble.png",
+    "iconhigh": "assets/image/high/misc/social/dribbble.png",
+    "url": "https://www.dribbble.com/loouislow"
+  },
+  {
     "title": "Facebook",
     "iconlow": "assets/image/low/misc/social/facebook.png",
     "iconhigh": "assets/image/high/misc/social/facebook.png",
