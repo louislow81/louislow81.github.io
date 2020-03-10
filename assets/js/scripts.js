@@ -640,7 +640,7 @@ progressbar.pageRead = function() {
   var defaults = {
     delay: 0,
     distance: '0',
-    duration: 600,
+    duration: 300,
     easing: 'cubic-bezier(0.5, 0, 0, 1)',
     interval: 0,
     opacity: 0,
