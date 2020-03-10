@@ -1,5 +1,14 @@
 [
   {
+    "id": "70648bac288233bb01f374bbee850c02",
+    "url": "https://github.com/loouislow81/krugurt",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/70648bac288233bb01f374bbee850c02.jpeg",
+    "imagehigh": "assets/image/high/post/70648bac288233bb01f374bbee850c02.jpeg",
+    "content": "Finished up a dirty draft to create an `Adaptive Image Loader` for WebP image format. The func checks the minimum threshold of the DownLink speed and the Round-Trip Time then load different quality of WebP or non-WebP images or both WebPs.",
+    "date": "04 Mar 2020"
+  },
+  {
     "id": "70b408b066e3",
     "url": "https://github.com/loouislow81/krugurt",
     "urloption": "block",
