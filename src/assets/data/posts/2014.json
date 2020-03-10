@@ -10,8 +10,8 @@
   },
   {
     "id": "6e33ddbc5b5f",
-    "url": "",
-    "urloption": "hidden",
+    "url": "https://soundcloud.com/overload-project",
+    "urloption": "block",
     "imagelow": "assets/image/low/post/704ac0cf703eb81c2cd5f8bd264dca63.jpeg",
     "imagehigh": "assets/image/high/post/704ac0cf703eb81c2cd5f8bd264dca63.jpeg",
     "content": "The technologies or tools that I used for creating music ~ `Propellerheads Reason`, `Steinberg Cubase AI`, `Loopmasters` and `Soundcloud`.",
@@ -19,11 +19,20 @@
   },
   {
     "id": "f2e274cd7b40",
-    "url": "",
-    "urloption": "hidden",
+    "url": "https://soundcloud.com/overload-project",
+    "urloption": "block",
     "imagelow": "assets/image/low/post/97ec4c33200ce5302071e703bb913205.jpeg",
     "imagehigh": "assets/image/high/post/97ec4c33200ce5302071e703bb913205.jpeg",
     "content": "My another new EP (extended-play) for `Overload Project` album, the `Twisted Mind` is out now at SoundCloud. This is a progressive trance genre which is one of my favorite electro mixing with my own frequencies.",
+    "date": "22 Oct 2014"
+  },
+  {
+    "id": "f2e274cd7b40",
+    "url": "https://soundcloud.com/overload-project",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/03b37afeb9e091ba2be77f74fb13b3c8.jpeg",
+    "imagehigh": "assets/image/high/post/03b37afeb9e091ba2be77f74fb13b3c8.jpeg",
+    "content": "Hey! My new EP extended-play for album `Overload Project`, the `Twisted Mind` is out now at SoundCloud. This is a progressive trance genre which is one of my favorite electro mixing with my own frequencies. Please check that out and very appreciated.",
     "date": "22 Oct 2014"
   },
   {
