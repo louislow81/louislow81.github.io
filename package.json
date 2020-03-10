@@ -15,7 +15,8 @@
     "locale": "npm run gulp locale",
     "service-worker": "npm run gulp service-worker",
     "app-manifest": "npm run gulp app-manifest",
-    "serve": "npm run gulp serve"
+    "serve": "npm run gulp serve",
+    "post-id": "openssl rand -hex 12"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",
