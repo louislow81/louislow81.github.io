@@ -1,5 +1,14 @@
 [
   {
+    "id": "073f838849433439e2296f7f",
+    "title": "{FX}.css",
+    "desc": "A complete set of CSS animation (FX, aka Special Effect`) utility for web UI.",
+    "image": "http://via.placeholder.com/640x320",
+    "icon": "fab fa-github",
+    "url": "https://github.com/loouislow81/fx.css",
+    "tech": "Sass, Gulp, NodeJS"
+  },
+  {
     "id": "907ae9f07a62",
     "title": "krugurt",
     "desc": "A lightweight front-end toolkit to craft elegant and beautiful functional html-based MVP project. Comes with PWA and archirecture-free Sigmoid Neural Network out of the box.",
