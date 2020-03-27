@@ -1,11 +1,20 @@
 [
   {
-    "id": "073f838849433439e2296f7f",
-    "title": "{FX}.css",
-    "desc": "A complete set of CSS animation (FX, aka Special Effect`) utility for web UI.",
+    "id": "4bb4f840e1f5ad673aa78183",
+    "title": "yogurt CSS",
+    "desc": "A colossal low-level utility CSS framework for crafting beautiful and elegant user interface at an atomic level without writing a single line of CSS.",
     "image": "http://via.placeholder.com/640x320",
     "icon": "fab fa-github",
-    "url": "https://github.com/loouislow81/fx.css",
+    "url": "https://github.com/yogurt-foundation/yogurt-css",
+    "tech": "Sass, Gulp, NodeJS"
+  },
+  {
+    "id": "073f838849433439e2296f7f",
+    "title": "yogurt {FX}.css",
+    "desc": "A library where you can play with a collection of pre-made CSS animations and filters.",
+    "image": "http://via.placeholder.com/640x320",
+    "icon": "fab fa-github",
+    "url": "https://github.com/yogurt-foundation/yogurt-fx",
     "tech": "Sass, Gulp, NodeJS"
   },
   {
