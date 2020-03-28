@@ -1,5 +1,14 @@
 [
   {
+    "id": "b89bde1bcbcccc81eaa26eee24b3fef7",
+    "url": "https://github.com/yogurt-foundation",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/b89bde1bcbcccc81eaa26eee24b3fef7.jpg",
+    "imagehigh": "assets/image/high/post/b89bde1bcbcccc81eaa26eee24b3fef7.jpg",
+    "content": "Project `Yogurt CSS` low-level utility framework and `Yogurt FX` pre-made CSS animation and filter (for image and video) has moved to a new home at Github.",
+    "date": "28 Mar 2020"
+  },
+  {
     "id": "70648bac288233bb01f374bbee850c02",
     "url": "https://github.com/loouislow81/krugurt",
     "urloption": "block",
