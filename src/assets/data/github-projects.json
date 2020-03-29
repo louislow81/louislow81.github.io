@@ -10,11 +10,11 @@
   },
   {
     "id": "073f838849433439e2296f7f",
-    "title": "yogurt {FX}.css",
-    "desc": "A library where you can play with a collection of pre-made CSS animations and filters.",
+    "title": "{FX}.gradient",
+    "desc": "A library where you can play with a collection of pre-made CSS gradients.",
     "image": "http://via.placeholder.com/640x320",
     "icon": "fab fa-github",
-    "url": "https://github.com/yogurt-foundation/yogurt-fx",
+    "url": "https://github.com/yogurt-foundation/fx-gradient",
     "tech": "Sass, Gulp, NodeJS"
   },
   {
