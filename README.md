@@ -22,14 +22,14 @@
 > [project source code](https://github.com/loouislow81/loouislow81.github.io/tree/2.x.x)
 
 <p align="left">
-  <img src="screenshot_01.png" width="420">
-  <img src="screenshot_02.png" width="420">
-  <img src="screenshot_03.png" width="420">
-  <img src="screenshot_04.png" width="420">
-  <img src="screenshot_05.png" width="420">
-  <img src="screenshot_06.png" width="420">
-  <img src="screenshot_07.png" width="420">
-  <img src="screenshot_08.png" width="420">
+  <img src="assets/screenshots/screenshot_01.png" width="420">
+  <img src="assets/screenshots/screenshot_02.png" width="420">
+  <img src="assets/screenshots/screenshot_03.png" width="420">
+  <img src="assets/screenshots/screenshot_04.png" width="420">
+  <img src="assets/screenshots/screenshot_05.png" width="420">
+  <img src="assets/screenshots/screenshot_06.png" width="420">
+  <img src="assets/screenshots/screenshot_07.png" width="420">
+  <img src="assets/screenshots/screenshot_08.png" width="420">
 </p>
 
 ## contents
@@ -48,7 +48,7 @@
 - image adaptive loader for different connection speed.
 - use raw JSON as payload.
 - crafted in pure html-based web component.
-- all that above was built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt.css](https://github.com/yogurt-foundation)ui toolkits.
+- all that above was built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt.css](https://github.com/yogurt-foundation) ui toolkits.
 
 ## responsive screens support
 
