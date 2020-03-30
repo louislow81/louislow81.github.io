@@ -1,6 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7466fa18-16da-413d-8a39-c6dbc17d6a77/deploy-status)](https://app.netlify.com/sites/loouislow-portfolio-44af06/deploys)
 
-# My Personal Website
+# My Personal Portfolio Website
+
+> [https://loouislow81.github.io](https://loouislow81.github.io)
 
 <p align="left">
   <img src="https://badgen.net/github/release/loouislow81/loouislow81.github.io">
@@ -30,7 +32,7 @@
   <img src="screenshot_08.png" width="420">
 </p>
 
-## https://loouislow81.github.io
+## contents
 
 - About
 - Experience
@@ -41,20 +43,22 @@
 
 ## featuring
 
-- PWA installable to all platforms
-- work offline
-- use JSON as payload
-- component based
-- build with [Krugurt](https://github.com/loouislow81/krugurt) ui toolkit.
+- PWA app for all platforms.
+- 100% work offline.
+- image adaptive loader for different connection speed.
+- use raw JSON as payload.
+- crafted in pure html-based web component.
+- all that above was built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt.css](https://github.com/yogurt-foundation)ui toolkits.
 
-## todo
+## responsive screens support
 
-- support `2k` screen sizes (optimized)
-- support `4k` screen sizes (WIP)
+- `320` 320px screen (primitive)
+- `2k` 1920px screen (new)
+- `4k` 3840px screen (new)
 
 ## terminal
 
-if you prefer nerd way, use the Terminal version,
+if you prefer a nerdy way, use the Terminal version,
 
 ```bash
 $ npx loouislow-resume
