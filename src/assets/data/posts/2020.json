@@ -1,11 +1,38 @@
 [
   {
-    "id": "b89bde1bcbcccc81eaa26eee24b3fef7",
-    "url": "https://github.com/yogurt-foundation",
+    "id": "416af003bda2ae25dc69681e",
+    "url": "https://github.com/yogurt-foundation/fx-gradient",
     "urloption": "block",
-    "imagelow": "assets/image/low/post/b89bde1bcbcccc81eaa26eee24b3fef7.jpg",
-    "imagehigh": "assets/image/high/post/b89bde1bcbcccc81eaa26eee24b3fef7.jpg",
-    "content": "Project `Yogurt CSS` low-level utility framework and `Yogurt FX` pre-made CSS animation and filter (for image and video) has moved to a new home at Github.",
+    "imagelow": "assets/image/low/post/0fea6be87966fee8cb6b71364ba62bb6.png",
+    "imagehigh": "assets/image/high/post/0fea6be87966fee8cb6b71364ba62bb6.png",
+    "content": "Added new page to `FX-Gradient Previewer` page, visually explaning how gradient overlaying with background image look like.",
+    "date": "1 Apr 2020"
+  },
+  {
+    "id": "be0daa26d62b2e9195e7f758",
+    "url": "https://github.com/yogurt-foundation/yogurt-css",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/23ab85d99c3743f0a7a2e7d3a909ba1a.jpg",
+    "imagehigh": "assets/image/high/post/23ab85d99c3743f0a7a2e7d3a909ba1a.jpg",
+    "content": "Officially and announcing `Yogurt CSS` v1.0.2 stable release. Prototype has ended, finally!",
+    "date": "1 Apr 2020"
+  },
+  {
+    "id": "35a2e2c0556341f7676e5807",
+    "url": "https://github.com/yogurt-foundation/fx-filter",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/74afaab741bbb51b41abd6670e7db6db.png",
+    "imagehigh": "assets/image/high/post/74afaab741bbb51b41abd6670e7db6db.png",
+    "content": "Spending two hours making an `FX-Gradient` web page with Krugurt.js and Yogurt.css",
+    "date": "29 Mar 2020"
+  },
+  {
+    "id": "a0a07b2c79b2aae131c0f3de",
+    "url": "https://github.com/yogurt-foundation/fx-gradient",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/a46cf9dc5d85486ca6062d03f35737ff.png",
+    "imagehigh": "assets/image/high/post/a46cf9dc5d85486ca6062d03f35737ff.png",
+    "content": "Spending two hours making an `FX-Gradient` web page with Krugurt.js and Yogurt.css",
     "date": "28 Mar 2020"
   },
   {
