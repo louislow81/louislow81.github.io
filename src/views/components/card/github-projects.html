@@ -15,7 +15,7 @@
          target="_blank"
          rel="noopener">
 
-        <y class="xs:max-w-md sm:max-w-full md:max-w-xs 2k:max-w-md m-2 hover:text-white bg-white hover:bg-charcoal-600 rounded shadow overflow-hidden transition duration-200 ease-in-out">
+        <y class="group xs:max-w-md sm:max-w-full md:max-w-xs 2k:max-w-md m-2 hover:text-white bg-white hover:bg-charcoal-600 rounded shadow overflow-hidden transition duration-100 ease">
           <y class="p-5">
 
             <y class="relative text-lg 2k:text-2xl font-semibold depth-loose pb-1">
@@ -23,7 +23,7 @@
               { pet.title }
 
               <y class="absolute right-0 bottom-0">
-                <img class="adaptive invert mb-2 h-8 w-auto object-contain object-center overflow-hidden"
+                <img class="adaptive invert group-hover:invert mb-2 h-8 w-auto object-contain object-center overflow-hidden"
                      src="assets/image/low/misc/social/github.png"
                      data-src="assets/image/high/misc/social/github.png"
                      alt="Github">
@@ -41,7 +41,7 @@
 
             </y>
 
-            <y class="text-xs 2k:text-lg text-gray-700 depth-loose">
+            <y class="text-xs 2k:text-lg text-gray-700 group-hover:text-white depth-loose">
               { pet.tech }
             </y>
 
@@ -55,8 +55,11 @@
 
 
   <style>
-    .invert {
+    .invert{
       filter: invert(1.0);
+    }
+    .group:hover img.group-hover\:invert {
+      filter: invert(0);
     }
   </style>
 
