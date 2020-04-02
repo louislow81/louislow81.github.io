@@ -1,11 +1,11 @@
 <card-experiences>
 
   <y class="js-scroll-reveal flex flex-wrap justify-start items-stretch">
-    <y class="flex-auto relative xs:max-w-lg sm:max-w-xl md:max-w-xs 2k:max-w-md m-2 bg-white rounded-lg"
+    <y class="flex-auto relative xs:max-w-lg sm:max-w-xl md:max-w-xs 2k:max-w-lg m-2 bg-white rounded-lg"
        each="{ work in experiences }">
 
       <y class="p-1 static flex justify-center items-center">
-        <y class="flex justify-center items-center cursor-pointer">
+        <y class="2k:mr-4 2k:mt-2 2k:-mb-4 flex justify-center items-center cursor-pointer">
 
           <image-preview-small
             previewpopup="pop-image-experiences"
@@ -31,27 +31,27 @@
         </y>
       </y>
 
-      <y class="-mt-4 p-5">
+      <y class="-mt-4 p-5 2k:p-8">
 
         <y class="pb-1 flex justify-between items-center">
 
-          <y class="pr-2 text-lg 2k:text-2xl xs:truncate font-semibold depth-loose"
+          <y class="pr-2 text-lg 2k:text-3xl xs:truncate font-semibold depth-loose"
              title="{ work.company }">
             { work.company }
           </y>
 
-          <y class="text-sm 2k:text-lg text-gray-700 xs:truncate font-sans depth-loose"
+          <y class="text-sm 2k:text-2xl text-gray-700 xs:truncate font-sans depth-loose"
              title="{ work.date }">
             { work.date }
           </y>
 
         </y>
 
-        <y class="-mt-2 pb-2 text-sm 2k:text-md text-gray-600 font-oswald">
+        <y class="-mt-2 pb-2 text-sm 2k:text-2xl text-gray-600 font-oswald">
           { work.position }
         </y>
 
-        <y class="pb-10 text-sm 2k:text-lg depth-snug">
+        <y class="pb-10 text-sm 2k:text-xl depth-snug">
 
           <misc-show-more
             inputid="{ work.id }"
@@ -65,14 +65,14 @@
 
       <y class="absolute left-0 bottom-0">
 
-        <y class="p-2 text-sm 2k:text-md font-oswald uppercase text-white bg-charcoal-100 border-2 border-white rounded-lg">
+        <y class="p-2 2k:px-3 text-sm 2k:text-xl font-oswald uppercase text-white bg-charcoal-100 border-2 border-white rounded-lg">
           Project { work.project }
         </y>
 
       </y>
 
       <y class="absolute right-0 bottom-0">
-        <y class="pb-2 pr-2 flex justify-start items-center">
+        <y class="pb-2 2k:pb-3 pr-2 flex justify-start items-center">
 
           <text-status
             status="{ work.status1 }">
