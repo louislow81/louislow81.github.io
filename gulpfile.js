@@ -119,11 +119,11 @@ gulp.task('scripts', () => {
       // OPTIONAL: isomorphic router
       krugurtFrameworkPath + '/krunch+router.min.js',
       // OPTIONAL: localization
-      krugurtFrameworkPath + '/krunch+locale.min.js',
+      // krugurtFrameworkPath + '/krunch+locale.min.js',
       // OPTIONAL: streaming file with torrent network
-      krugurtFrameworkPath + '/krunch+torrent.min.js',
+      // krugurtFrameworkPath + '/krunch+torrent.min.js',
       // OPTIONAL: sigmoid neural network
-      krugurtFrameworkPath + '/krunch+cerebrium.min.js',
+      // krugurtFrameworkPath + '/krunch+cerebrium.min.js',
       // CORE: build-in utilities api
       krugurtFrameworkPath + '/krunch+utility.js',
       distJsPath + '/scripts.pre.js'
