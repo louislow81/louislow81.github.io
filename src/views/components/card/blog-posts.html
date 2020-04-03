@@ -1,15 +1,15 @@
 <card-blog-posts>
 
-  <y class="js-scroll-reveal relative xs:max-w-{ props.xsscreen } sm:max-w-{ props.smscreen } md:max-w-{ props.mdscreen } 2k:max-w-lg m-2 bg-white rounded-lg shadow-lg overflow-hidden">
+  <y class="js-scroll-reveal relative xs:max-w-{ props.xsscreen } sm:max-w-{ props.smscreen } md:max-w-{ props.mdscreen } 2k:max-w-lg xs:my-2 xs:mx-0 xs:-mx-2 lg:m-4 bg-charcoal-300 border border-charcoal-200 rounded shadow overflow-hidden">
 
-    <y class="absolute top-0 left-0">
-      <y class="inline-block px-2 py-1 2k:inline-block 2k:px-3 2k:py-2 text-xs 2k:text-lg text-white font-semibold bg-charcoal-500 border-2 border-white rounded-lg">
+    <y class="absolute top-1 left-1">
+      <y class="inline-block px-2 py-1 2k:inline-block 2k:px-3 2k:py-2 text-xs 2k:text-lg text-gray-600 font-semibold">
         { props.date }
       </y>
     </y>
 
-    <y class="{ props.urloption } absolute top-0 right-0 pr-2 2k:pt-2 2k:pr-3 cursor-pointer">
-      <a class="text-xs 2k:text-lg font-semibold uppercase hover:underline"
+    <y class="{ props.urloption } absolute top-1 right-1">
+      <a class="inline-block px-2 py-1 2k:inline-block 2k:px-3 2k:py-2 text-xs 2k:text-lg text-gray-600 hover:text-charcoal-200 font-semibold bg-charcoal-100 hover:bg-gray-500 rounded"
          href="{ props.url }"
          title="View Project"
          target="_blank"
@@ -22,6 +22,7 @@
       <y class="text-sm 2k:text-xl depth-snug">
 
         <misc-show-more
+          textcolor="text-gray-500"
           inputid="{ props.inputid }"
           content="{ props.content }"
           labelid="{ props.labelid }">
@@ -30,8 +31,8 @@
       </y>
     </y>
 
-    <y class="2k:h-64">
-      <img class="fx:filter:aden adaptive { props.popimageid } h-{ props.imageheight } 2k:h-full w-full bg-gray-400 object-cover object-center overflow-hidden hover:opacity-75 transition duration-100 ease-in-out cursor-pointer"
+    <y class="p-2 2k:h-64">
+      <img class="adaptive { props.popimageid } h-{ props.imageheight } 2k:h-full w-full object-cover object-center rounded shadow cursor-pointer transition duration-200 ease-in-out transform hover:scale-150 hover:-translate-y-6 overflow-hidden"
            src="{ props.imagelow }"
            data-src="{ props.imagehigh }"
            data-title="{ props.imagetitle }"

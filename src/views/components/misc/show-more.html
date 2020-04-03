@@ -1,17 +1,21 @@
 <misc-show-more>
 
-  <input class="masked-input"
-         type="checkbox"
-         id="{ props.inputid }">
+  <y class="flex flex-wrap items-center">
 
-  <span class="content">
-    { props.content }
-  </span>
+    <input class="masked-input"
+           type="checkbox"
+           id="{ props.inputid }">
 
-  <label class="text-xs font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
-         for="{ props.labelid }"
-         role="button">
-    show more
-  </label>
+    <span class="content { props.textcolor } depth-normal">
+      { props.content }
+    </span>
+
+    <label class="text-xs 2k:text-lg { props.textcolor } font-semibold underline opacity-75 hover:opacity-100 cursor-pointer"
+           for="{ props.labelid }"
+           role="button">
+      show more
+    </label>
+
+  </y>
 
 </misc-show-more>

@@ -17,7 +17,7 @@
                data-src="{ data.imagehigh }"
                alt="{ data.title}" />
 
-          <y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-white hover:bg-charcoal-600 transition duration-200 ease-in-out">
+          <y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-gray-500 hover:bg-charcoal-200 transition duration-200 ease-in-out">
 
             <y class="hidden absolute right-0 bottom-0">
               <y class="flex justify-center items-center xs:p-0 md:p-4">
@@ -49,6 +49,7 @@
                 <y class="xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-snug pb-3">
 
                   <misc-show-more
+                    text-color="text-gray-500"
                     inputid="{ data.id }"
                     content="{ data.desc }"
                     labelid="{ data.id }">
@@ -57,7 +58,7 @@
                 </y>
 
                 <y class="{ data.urlVisibility } xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-loose pb-2">
-                  <a class="hover:text-orange-700"
+                  <a class="hover:text-orange-600"
                      href="{ data.url }"
                      title="{ data.urlText }"
                      aria-label="{ data.urlText }"
