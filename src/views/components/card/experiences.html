@@ -1,6 +1,6 @@
 <card-experiences>
 
-  <y class="js-scroll-reveal flex flex-wrap justify-start items-stretch">
+  <y class="flex flex-wrap justify-start items-stretch">
     <y class="flex-auto relative xs:max-w-lg sm:max-w-xl md:max-w-xs 2k:max-w-lg m-4 text-gray-400 bg-charcoal-200 border border-charcoal-200 rounded-lg"
        each="{ work in experiences }">
 
@@ -65,7 +65,7 @@
 
       <y class="absolute left-2 bottom-2">
 
-        <y class="p-2 2k:px-3 text-sm 2k:text-xl font-oswald uppercase text-charcoal-400 bg-gray-700 rounded">
+        <y class="p-2 2k:px-3 text-sm 2k:text-xl font-oswald font-semibold uppercase text-charcoal-400 bg-gray-700 rounded select-none">
           Project { work.project }
         </y>
 
@@ -141,9 +141,6 @@
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
-
-        // see `assets/js/components/_scroll_reveal.js`
-        ScrollReveal().reveal('.js-scroll-reveal')
 
       }
     }
