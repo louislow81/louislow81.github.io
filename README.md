@@ -30,6 +30,7 @@
   <img src="assets/screenshots/screenshot_06.png" width="420">
   <img src="assets/screenshots/screenshot_07.png" width="420">
   <img src="assets/screenshots/screenshot_08.png" width="420">
+  <img src="assets/screenshots/screenshot_09.png" width="420">
 </p>
 
 ## contents
@@ -54,7 +55,6 @@
 
 - `320` 320px screen (primitive)
 - `2k` 1920px screen (new)
-- `4k` 3840px screen (new)
 
 ## terminal
 
