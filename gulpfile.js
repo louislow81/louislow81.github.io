@@ -9,6 +9,7 @@ const jsonmin = require('gulp-jsonmin')
 const mozjpeg = require('imagemin-mozjpeg')
 const pngquant = require('imagemin-pngquant')
 const postCss = require('gulp-postcss')
+const purgeCss = require('gulp-purgecss')
 const rename = require('gulp-rename')
 const sass = require('gulp-sass')
 const sassGlob = require('gulp-sass-glob')
@@ -81,7 +82,7 @@ gulp.task('css', () => {
       krugurtFrameworkPath + '/yogurt.min.css',
       distCssPath + '/base.css'
     ])
-    .pipe(concat('style.css'))
+    .pipe(concat('style_merged.css'))
     .pipe(gulp.dest(distCssPath))
     .pipe(serve.reload({
       stream: true
@@ -209,6 +210,21 @@ gulp.task('app-manifest', () => {
 })
 
 
+// ...purge unused css
+gulp.task('purge-css', () => {
+  return gulp.src(distCssPath + '/style_merged.css')
+    .pipe(purgeCss({
+        content: [
+          'src/views/**/**/**/**/**/**/*.html'
+        ],
+        defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], // make compatible for `Yogurt CSS`
+        whitelistPatterns: [/-webkit-scrollbar-thumb$/]
+    }))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest(distCssPath))
+})
+
+
 // ...watch
 const watchSrcAppPath = 'src/views/**/*.js'
 const watchSrcHtmlPath = 'src/views/**/*.html'
@@ -225,6 +241,7 @@ gulp.task('watch', gulp.series([
     'scripts',
     'sass',
     'css',
+    'purge-css',
     'html',
     'data',
     // move files
@@ -249,10 +266,10 @@ gulp.task('watch', gulp.series([
       gulp.series(['pre-scripts', 'scripts', reload]))
 
     gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', 'css', reload]))
+      gulp.series(['sass', 'css', 'purge-css', reload]))
 
     gulp.watch(watchSrcHtmlPath,
-      gulp.series(['html', reload]))
+      gulp.series(['html', 'purge-css', reload]))
 
     gulp.watch(watchSrcJsonDataPath,
       gulp.series('data', reload))

@@ -7,7 +7,7 @@
     "gulp": "gulp",
     "watch": "gulp watch",
     "build": "npm run build-image && npm run build-scripts && npm run build-style && npm run build-html && npm run build-data && npm run locale && npm run service-worker && npm run app-manifest",
-    "build-style": "npm run gulp sass && npm run gulp css",
+    "build-style": "npm run gulp sass && npm run gulp css && npm run gulp purge-css",
     "build-scripts": "npm run gulp pre-scripts && npm run gulp scripts",
     "build-html": "npm run gulp html",
     "build-image": "npm run gulp image-high-quality && npm run gulp image-low-quality && npm run gulp webp-high-quality && npm run gulp webp-low-quality",
@@ -37,6 +37,7 @@
     "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.8",
     "gulp-webp": "^4.0.1",
+    "gulp-purgecss": "^2.1.2",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0"
   },
