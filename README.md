@@ -49,7 +49,7 @@
 - image adaptive loader for different connection speed.
 - use raw JSON as payload.
 - crafted in pure html-based web component.
-- all that above was built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt.css](https://github.com/yogurt-foundation) ui toolkits.
+- built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt CSS](https://github.com/yogurt-foundation/yogurt-css) ui toolkits.
 
 ## responsive screens support
 
