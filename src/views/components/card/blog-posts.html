@@ -1,6 +1,6 @@
 <card-blog-posts>
 
-  <y class="relative xs:max-w-{ props.xsscreen } sm:max-w-{ props.smscreen } md:max-w-{ props.mdscreen } 2k:max-w-lg xs:my-2 xs:mx-0 xs:-mx-2 lg:m-4 bg-charcoal-300 border border-charcoal-200 rounded shadow overflow-hidden">
+  <y class="relative { props.xsscreen } { props.smscreen } { props.mdscreen } 2k:max-w-lg xs:my-2 xs:mx-0 xs:-mx-2 lg:m-4 bg-charcoal-300 border border-charcoal-200 rounded shadow overflow-hidden">
 
     <y class="absolute top-1 left-1">
       <y class="inline-block px-2 py-1 2k:inline-block 2k:px-3 2k:py-2 text-xs 2k:text-lg text-gray-600 font-semibold select-none">
@@ -32,7 +32,7 @@
     </y>
 
     <y class="p-2 2k:h-64">
-      <img class="adaptive { props.popimageid } h-{ props.imageheight } 2k:h-full w-full object-cover object-center rounded shadow cursor-pointer transition duration-200 ease-in-out transform hover:scale-150 hover:-translate-y-6 overflow-hidden select-none"
+      <img class="adaptive { props.popimageid } { props.imageheight } 2k:h-full w-full object-cover object-center rounded shadow cursor-pointer transition duration-200 ease-in-out transform hover:scale-150 hover:-translate-y-6 overflow-hidden select-none"
            src="{ props.imagelow }"
            data-src="{ props.imagehigh }"
            data-title="{ props.imagetitle }"
