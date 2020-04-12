@@ -17,6 +17,7 @@ const serve = require('browser-sync').create()
 const uglifyCss = require('gulp-uglifycss')
 const uglify = require('gulp-uglify-es').default
 const webp = require('gulp-webp')
+const clean = require('gulp-clean')
 
 const krugurtFrameworkPath = 'framework'
 
@@ -218,11 +219,28 @@ gulp.task('purge-css', () => {
           'src/views/**/**/**/**/**/**/*.html',
           'src/assets/data/**/**/**/**/*.json'
         ],
-        defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], // make compatible for `Yogurt CSS`
+        // make compatible for `Yogurt CSS framework`
+        defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
         whitelistPatterns: [/-webkit-scrollbar-thumb$/]
     }))
     .pipe(rename('style.css'))
     .pipe(gulp.dest(distCssPath))
+})
+
+
+// ...remove artifact files
+gulp.task('remove-artifacts', () => {
+  return gulp.src([
+  './framework/.git',
+  distProdPath + '/assets/js/scripts.js',
+  distProdPath + '/assets/js/scripts.pre.js',
+  distProdPath + '/assets/css/base.css',
+  distProdPath + '/assets/css/style_merged.css',
+  ], {
+    read: false,
+    allowEmpty: true
+  })
+  .pipe(clean())
 })
 
 
@@ -237,7 +255,6 @@ const watchSrcJsonLocalePath = 'src/assets/locale/**/*.json'
 const watchSrcPwaPath = 'src/manifest.json'
 gulp.task('watch', gulp.series([
 
-    // minify files
     'pre-scripts',
     'scripts',
     'sass',
@@ -245,11 +262,10 @@ gulp.task('watch', gulp.series([
     'purge-css',
     'html',
     'data',
-    // move files
     'service-worker',
     'locale',
     'app-manifest',
-    // http
+    'remove-artifacts',
     'serve'
 
   ], () => {
@@ -261,16 +277,16 @@ gulp.task('watch', gulp.series([
       gulp.series('image-low-quality', 'webp-low-quality', reload))
 
     gulp.watch(watchSrcScriptsPath,
-      gulp.series(['pre-scripts', 'scripts', reload]))
+      gulp.series(['pre-scripts', 'scripts', 'remove-artifacts', reload]))
 
     gulp.watch(watchSrcAppPath,
-      gulp.series(['pre-scripts', 'scripts', reload]))
+      gulp.series(['pre-scripts', 'scripts', 'remove-artifacts', reload]))
 
     gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', 'css', 'purge-css', reload]))
+      gulp.series(['sass', 'css', 'purge-css', 'remove-artifacts', reload]))
 
     gulp.watch(watchSrcHtmlPath,
-      gulp.series(['html', 'purge-css', reload]))
+      gulp.series(['html', 'purge-css', 'remove-artifacts', reload]))
 
     gulp.watch(watchSrcJsonDataPath,
       gulp.series('data', reload))

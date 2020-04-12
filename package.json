@@ -1,17 +1,18 @@
 {
   "name": "loouislow",
   "version": "2.13.77",
-  "description": "My personal and portfolio website built with krugurt.js MVP framework",
+  "description": "My portfolio website built with Krugurt.js and Yogurt.css frameworks",
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
     "watch": "gulp watch",
-    "build": "rm -rf ./dist/* && npm run build-image && npm run build-scripts && npm run build-style && npm run build-html && npm run build-data && npm run locale && npm run service-worker && npm run app-manifest && rm -rfv ./dist/assets/css/base.css ./dist/assets/css/style_merged.css",
+    "build": "npm run build-image && npm run build-scripts && npm run build-style && npm run build-html && npm run build-data && npm run locale && npm run service-worker && npm run app-manifest && npm run remove-artifacts",
     "build-style": "npm run gulp sass && npm run gulp css && npm run gulp purge-css",
     "build-scripts": "npm run gulp pre-scripts && npm run gulp scripts",
     "build-html": "npm run gulp html",
     "build-image": "npm run gulp image-high-quality && npm run gulp image-low-quality && npm run gulp webp-high-quality && npm run gulp webp-low-quality",
     "build-data": "npm run gulp data",
+    "remove-artifacts": "npm run gulp remove-artifacts",
     "locale": "npm run gulp locale",
     "service-worker": "npm run gulp service-worker",
     "app-manifest": "npm run gulp app-manifest",
@@ -38,6 +39,7 @@
     "gulp-uglifycss": "^1.1.0",
     "gulp-util": "^3.0.8",
     "gulp-webp": "^4.0.1",
+    "gulp-clean": "^0.4.0",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-pngquant": "^8.0.0"
   },
