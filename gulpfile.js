@@ -229,13 +229,22 @@ gulp.task('purge-css', () => {
 
 
 // ...remove artifact files
-gulp.task('remove-artifacts', () => {
+gulp.task('remove-js', () => {
   return gulp.src([
   './framework/.git',
   distProdPath + '/assets/js/scripts.js',
-  distProdPath + '/assets/js/scripts.pre.js',
+  distProdPath + '/assets/js/scripts.pre.js'
+  ], {
+    read: false,
+    allowEmpty: true
+  })
+  .pipe(clean())
+})
+gulp.task('remove-css', () => {
+  return gulp.src([
+  './framework/.git',
   distProdPath + '/assets/css/base.css',
-  distProdPath + '/assets/css/style_merged.css',
+  distProdPath + '/assets/css/style_merged.css'
   ], {
     read: false,
     allowEmpty: true
@@ -265,38 +274,79 @@ gulp.task('watch', gulp.series([
     'service-worker',
     'locale',
     'app-manifest',
-    'remove-artifacts',
     'serve'
 
   ], () => {
 
     gulp.watch(watchSrcImagePath,
-      gulp.series('image-high-quality', 'webp-high-quality', reload))
+      gulp.series([
+        'image-high-quality',
+        'webp-high-quality',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcImagePath,
-      gulp.series('image-low-quality', 'webp-low-quality', reload))
+      gulp.series([
+        'image-low-quality',
+        'webp-low-quality',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcScriptsPath,
-      gulp.series(['pre-scripts', 'scripts', 'remove-artifacts', reload]))
+      gulp.series([
+        'pre-scripts',
+        'scripts',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcAppPath,
-      gulp.series(['pre-scripts', 'scripts', 'remove-artifacts', reload]))
+      gulp.series([
+        'pre-scripts',
+        'scripts',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcScssPath,
-      gulp.series(['sass', 'css', 'purge-css', 'remove-artifacts', reload]))
+      gulp.series([
+        'sass',
+        'css',
+        'purge-css',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcHtmlPath,
-      gulp.series(['html', 'purge-css', 'remove-artifacts', reload]))
+      gulp.series([
+        'html',
+        'purge-css',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcJsonDataPath,
-      gulp.series('data', reload))
+      gulp.series([
+        'data',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcJsonLocalePath,
-      gulp.series('locale', reload))
+      gulp.series([
+        'locale',
+        reload
+      ])
+    )
 
     gulp.watch(watchSrcPwaPath,
-      gulp.series('app-manifest', reload))
+      gulp.series([
+        'app-manifest',
+        reload
+      ])
+    )
 
   })
-
 )
