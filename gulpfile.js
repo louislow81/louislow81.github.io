@@ -215,7 +215,8 @@ gulp.task('purge-css', () => {
   return gulp.src(distCssPath + '/style_merged.css')
     .pipe(purgeCss({
         content: [
-          'src/views/**/**/**/**/**/**/*.html'
+          'src/views/**/**/**/**/**/**/*.html',
+          'src/assets/data/**/**/**/**/*.json'
         ],
         defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [], // make compatible for `Yogurt CSS`
         whitelistPatterns: [/-webkit-scrollbar-thumb$/]
