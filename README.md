@@ -33,7 +33,7 @@
   <img src="assets/screenshots/screenshot_09.png" width="420">
 </p>
 
-## contents
+## _contents
 
 - About
 - Experience
@@ -42,7 +42,7 @@
 - Blog
 - Contact
 
-## featuring
+## _featuring
 
 - PWA app for all platforms.
 - 100% work offline.
@@ -51,17 +51,29 @@
 - crafted in pure html-based web component.
 - built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt CSS](https://github.com/yogurt-foundation/yogurt-css) ui toolkits.
 
-## responsive screens support
+## _responsive screens support
 
 - `320` 320px screen (primitive)
 - `2k` 1920px screen (new)
 
-## terminal
+## _terminal
 
 if you prefer a nerdy way, use the Terminal version,
 
 ```bash
 $ npx loouislow-resume
+```
+## _build
+
+```bash
+# production build
+$ npm run prod-build
+
+# development build (with artifacts)
+$ npm run dev-build
+
+# development mode
+$ npm run watch
 ```
 
 Thanks for viewing.
