@@ -1,4 +1,5 @@
 const autoPrefixer = require('autoprefixer')
+const clean = require('gulp-clean')
 const concatCss = require('gulp-concat-css')
 const concat = require('gulp-concat')
 const gulp = require('gulp')
@@ -17,7 +18,6 @@ const serve = require('browser-sync').create()
 const uglifyCss = require('gulp-uglifycss')
 const uglify = require('gulp-uglify-es').default
 const webp = require('gulp-webp')
-const clean = require('gulp-clean')
 
 const krugurtFrameworkPath = 'framework'
 
@@ -281,7 +281,7 @@ gulp.task('watch', gulp.series([
     gulp.watch(watchSrcImagePath,
       gulp.series([
         'image-high-quality',
-        'webp-high-quality',
+        //'webp-high-quality',
         reload
       ])
     )
@@ -289,7 +289,7 @@ gulp.task('watch', gulp.series([
     gulp.watch(watchSrcImagePath,
       gulp.series([
         'image-low-quality',
-        'webp-low-quality',
+        //'webp-low-quality',
         reload
       ])
     )
