@@ -7,7 +7,7 @@
     "gulp": "gulp",
     "watch": "gulp watch",
     "build-dev": "npm run get-frameworks && npm run build-image && npm run build-scripts && npm run build-style && npm run build-html && npm run build-data && npm run build-locale && npm run build-sw && npm run build-manifest",
-    "build-prod": "npm run build-dev && npm run gulp remove-js && npm run gulp remove-css",
+    "build-prod": "npm run build-image && npm run build-scripts && npm run build-style && npm run build-html && npm run build-data && npm run build-locale && npm run build-sw && npm run build-manifest && npm run gulp remove-js && npm run gulp remove-css",
     "build-style": "npm run gulp sass && npm run gulp css && npm run gulp purge-css",
     "build-scripts": "npm run gulp pre-scripts && npm run gulp scripts",
     "build-html": "npm run gulp html",

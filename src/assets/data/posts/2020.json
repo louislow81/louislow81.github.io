@@ -5,7 +5,7 @@
     "urloption": "block",
     "imagelow": "assets/image/low/post/555d2e46c058189d99f3bbdbfaa719d0.png",
     "imagehigh": "assets/image/high/post/555d2e46c058189d99f3bbdbfaa719d0.png",
-    "content": "I a made a pandemic disease tracker for COVID-19 running in Linux Terminal. It so blazing fast fetching data than normal websites such as `worldometers.info`. It uses pre-existing data API from (https://github.com/novelcovid/api).",
+    "content": "I made a pandemic disease tracker for COVID-19 running in Linux Terminal. It so blazing fast fetching data than normal websites such as `worldometers.info`. It uses pre-existing data API from (https://github.com/novelcovid/api).",
     "date": "13 Apr 2020"
   },
   {
