@@ -1,0 +1,49 @@
+<card-pandemic-stats><y class="flex justify-center items-center"><text-tag class="bg-red-500" title="COVID-19 Disease" data="{ lastUpdatedDate }"></text-tag><text-tag title="World" data="{ totalCases}"></text-tag><text-tag title="Infected" data="{ totalTodayCases}"></text-tag><text-tag title="Deaths" data="{ totalDeaths}"></text-tag><text-tag title="Recovered" data="{ totalRecovered }"></text-tag><text-tag title="Quarantine" data="{ totalActive }"></text-tag><text-tag title="Dying" data="{ totalCritical }"></text-tag></y><script>export default {
+      onMounted() {
+
+        const self = this
+        self.world = []
+        const url = 'https://corona.lmao.ninja/all'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data =>{
+                delete self.error
+
+                // map data
+
+                self.lastUpdated = data.updated
+
+                const rawDate = parseInt(self.lastUpdated)
+                const date = new Date(rawDate)
+                const mm = date.getMonth() + 1 > 9 ? date.getMonth() + 1 : "0" + (date.getMonth() + 1)
+                const dd = date.getDate() > 9 ? date.getDate() : "0" + date.getDate()
+                const yyyy = date.getFullYear()
+                self.lastUpdatedDate = dd + '-' + mm + '-' + yyyy
+
+                self.cases = data.cases
+                self.todayCases = data.todayCases
+                self.deaths = data.deaths
+                self.recovered = data.recovered
+                self.active = data.active
+                self.critical = data.critical
+
+                const nf = new Intl.NumberFormat()
+                self.totalCases = nf.format(self.cases)
+                self.totalTodayCases = nf.format(self.todayCases)
+                self.totalDeaths = nf.format(self.deaths)
+                self.totalRecovered = nf.format(self.recovered)
+                self.totalActive = nf.format(self.active)
+                self.totalCritical = nf.format(self.critical)
+
+                self.update()
+              })
+              .catch(error => {
+                self.error = error
+                self.update()
+              })
+          })
+
+      }
+    }</script></card-pandemic-stats>
