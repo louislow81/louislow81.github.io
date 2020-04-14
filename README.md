@@ -67,10 +67,10 @@ $ npx loouislow-resume
 
 ```bash
 # production build
-$ npm run prod-build
+$ npm run build-prod
 
 # development build (with artifacts)
-$ npm run dev-build
+$ npm run build-dev
 
 # development mode
 $ npm run watch
