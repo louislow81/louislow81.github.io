@@ -19,19 +19,7 @@
   <img src="https://badgen.net/github/license/loouislow81/loouislow81.github.io">
 </p>
 
-> [project source code](https://github.com/loouislow81/loouislow81.github.io/tree/2.x.x)
-
-<p align="left">
-  <img src="assets/screenshots/screenshot_01.png" width="420">
-  <img src="assets/screenshots/screenshot_02.png" width="420">
-  <img src="assets/screenshots/screenshot_03.png" width="420">
-  <img src="assets/screenshots/screenshot_04.png" width="420">
-  <img src="assets/screenshots/screenshot_05.png" width="420">
-  <img src="assets/screenshots/screenshot_06.png" width="420">
-  <img src="assets/screenshots/screenshot_07.png" width="420">
-  <img src="assets/screenshots/screenshot_08.png" width="420">
-  <img src="assets/screenshots/screenshot_09.png" width="420">
-</p>
+> [Project Source Code](https://github.com/loouislow81/loouislow81.github.io/tree/2.x.x)
 
 ## _contents
 
