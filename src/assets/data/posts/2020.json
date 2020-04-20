@@ -1,5 +1,14 @@
 [
   {
+    "id": "02bb9919732e28d09686a3a5",
+    "url": "https://github.com/loouislow81/covid19-trend-predictor",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/72ac0bb34e985331a1fec6c51b247ae5.png",
+    "imagehigh": "assets/image/high/post/72ac0bb34e985331a1fec6c51b247ae5.png",
+    "content": "I created few machine learning models to predict future days of Coronavirus cases, deaths and infected. Dataset is scraped from `worldometers.info` website. Generated 90-Days prediction charts are published at new website (https://covid19-90days-prediction-charts.netlify.app/).",
+    "date": "18 Apr 2020"
+  },
+  {
     "id": "3ffc9253163b9b08917fd54c",
     "url": "https://github.com/loouislow81/pandemic-tracker-covid19-terminal",
     "urloption": "block",
