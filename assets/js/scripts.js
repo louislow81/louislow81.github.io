@@ -2192,8 +2192,8 @@ function totalPosts(id, data) {
   // krunch.register('router', route.Router)
   // krunch.register('route', route.Route)
 
-  // krunch.probeConnection() // check connection
-  // krunch.networkSpeed() // show network properties
+  krunch.probeConnection() // check connection
+  krunch.networkSpeed() // show network properties
   progressbar.pageRead() // show reading progress
 
   await krunch.compile() // init compiler
