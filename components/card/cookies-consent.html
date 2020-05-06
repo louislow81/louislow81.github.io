@@ -1,5 +1,4 @@
 <card-cookies-consent><y class="m-4 p-6 bg-gray-600 rounded shadow-lg" id="cookiesConsent"><y class="relative max-w-md"><y class="pb-2 pr-6 text-md text-white depth-tight">I serve cookies and third-party services on this content to analyze traffic, collect conversation, remember your preferences, and optimize your experience.</y><y class="pr-3 text-xs text-white"><span each="{ data in dataCollectors }"><a class="px-1 hover:text-gray-600 hover:bg-white underline hover:no-underline depth-snug rounded-full" href="{ data.url }" title="{ data.url }" target="_blank" rel="noopener">{ data.title }</a></span></y><y class="absolute bottom-0 right-0"><button class="px-2 text-white text-2xl font-semibold uppercase hover:underline cursor-pointer" id="acceptCookies">OK</button></y></y></y><script>export default {
-
       dataCollectors: [
         {
           url: 'https://analytics.google.com',
@@ -18,8 +17,8 @@
           title: 'DMCA'
         }
       ],
-
       onMounted() {
+
         krunch.adaptiveImageLoader()
 
         try {

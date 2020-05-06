@@ -4,9 +4,7 @@
     }
     .group:hover img.group-hover\:invert {
       filter: invert(0);
-    }</style><script>log('~/card/github-projects.~', '')
-
-    export default {
+    }</style><script>export default {
       onMounted() {
 
         const self = this
@@ -30,7 +28,6 @@
                   self.projects = data
                   self.update()
                 }
-                log('~/card/github-projects.~', data)
               })
               .catch(error => {
                 self.error = error
