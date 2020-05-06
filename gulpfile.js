@@ -119,7 +119,7 @@ gulp.task('scripts', () => {
       // CORE: html view compiler
       krugurtFrameworkPath + '/krunch+compiler.min.js',
       // OPTIONAL: isomorphic router
-      krugurtFrameworkPath + '/krunch+router.min.js',
+      // krugurtFrameworkPath + '/krunch+router.min.js',
       // OPTIONAL: localization
       // krugurtFrameworkPath + '/krunch+locale.min.js',
       // OPTIONAL: streaming file with torrent network
