@@ -19,7 +19,7 @@
 
           </y>
 
-          <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch 2k:items-cnter">
+          <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center md:items-stretch 2k:items-center">
 
             <y class="px-2 pb-4 text-md text-red-400"
               if="{ error }">
@@ -85,8 +85,6 @@
 
 
   <script>
-    log('~/block/skills.~', '')
-
     export default {
       onMounted() {
 
@@ -105,7 +103,6 @@
                 delete self.error
                 self.skills = data
                 self.update()
-                log('~/block/skills.~', data)
               })
               .catch(error => {
                 self.error = error
@@ -120,7 +117,6 @@
                 delete self.error
                 self.knowledge = data
                 self.update()
-                log('~/block/skills.~ (knowledge)', data)
               })
               .catch(error => {
                 self.error = error

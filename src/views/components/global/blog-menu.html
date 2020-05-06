@@ -30,9 +30,7 @@
       </y>
 
       <y class="absolute left-0 bottom-0">
-
         <global-small-footer></global-small-footer>
-
       </y>
 
     </y>
@@ -47,8 +45,6 @@
 
 
   <script>
-    log('~/global/blog-menu.~', '')
-
     export default {
       onMounted() {
 
@@ -64,7 +60,6 @@
                 delete self.error
                 self.menus = data
                 self.update()
-                log('~/global/blog-menu.~', data)
               })
               .catch(error => {
                 self.error = error

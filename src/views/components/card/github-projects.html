@@ -68,8 +68,6 @@
 
 
   <script>
-    log('~/card/github-projects.~', '')
-
     export default {
       onMounted() {
 
@@ -94,7 +92,6 @@
                   self.projects = data
                   self.update()
                 }
-                log('~/card/github-projects.~', data)
               })
               .catch(error => {
                 self.error = error

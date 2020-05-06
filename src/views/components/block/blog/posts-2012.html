@@ -52,8 +52,6 @@
 
 
   <script>
-    log('~/block/blog/post-2012.~', '')
-
     export default {
       onMounted() {
 
@@ -70,7 +68,6 @@
                 delete self.error
                 self.posts = data
                 self.update()
-                log('~/block/blog/post-2012.~', data)
                 totalPosts('twoTwelve', data)
               })
               .catch(error => {
