@@ -40,12 +40,13 @@
                 delete self.error
                 if (isMobile.any()){
                   data.splice(3,1) // remove `soundcloud` from array
-                  data.splice(-2,1) // remove `facebook` from array
+                  data.splice(4,1) // remove `facebook` from array
                   self.social = data
                   self.update()
                 }
                 else {
                   data.splice(3,1) // remove `soundcloud` from array
+                  data.splice(4,1) // remove `facebook` from array
                   self.social = data
                   self.update()
                 }

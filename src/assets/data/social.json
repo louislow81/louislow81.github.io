@@ -36,6 +36,12 @@
     "url": "https://www.facebook.com/loouislow"
   },
   {
+    "title": "Instagram",
+    "iconlow": "assets/image/low/misc/social/instagram.png",
+    "iconhigh": "assets/image/high/misc/social/instagram.png",
+    "url": "https://www.instagram.com/loouislow"
+  },
+  {
     "title": "LinkedIn",
     "iconlow": "assets/image/low/misc/social/linkedin.png",
     "iconhigh": "assets/image/high/misc/social/linkedin.png",
