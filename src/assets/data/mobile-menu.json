@@ -12,12 +12,6 @@
     "title": "About"
   },
   {
-    "url": "#experience",
-    "iconlow": "assets/image/low/misc/mobile-menu/experience.png",
-    "iconhigh": "assets/image/high/misc/mobile-menu/experience.png",
-    "title": "Experience"
-  },
-  {
     "url": "#projects",
     "iconlow": "assets/image/low/misc/mobile-menu/projects.png",
     "iconhigh": "assets/image/high/misc/mobile-menu/projects.png",
@@ -28,6 +22,12 @@
     "iconlow": "assets/image/low/misc/mobile-menu/blog.png",
     "iconhigh": "assets/image/high/misc/mobile-menu/blog.png",
     "title": "Blog"
+  },
+  {
+    "url": "#experience",
+    "iconlow": "assets/image/low/misc/mobile-menu/experience.png",
+    "iconhigh": "assets/image/high/misc/mobile-menu/experience.png",
+    "title": "Experience"
   },
   {
     "url": "#contact",

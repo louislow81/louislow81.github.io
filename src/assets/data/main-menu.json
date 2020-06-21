@@ -8,20 +8,20 @@
     "url": "#about"
   },
   {
+    "title": "Projects",
+    "url": "#projects"
+  },
+  {
+    "title": "Blog",
+    "url": "#blog"
+  },
+  {
     "title": "Experience",
     "url": "#experience"
   },
   {
     "title": "Skills",
     "url": "#skills"
-  },
-  {
-    "title": "Pet Project",
-    "url": "#projects"
-  },
-  {
-    "title": "Blog",
-    "url": "#blog"
   },
   {
     "title": "Contact",
