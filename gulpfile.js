@@ -253,6 +253,16 @@ gulp.task('remove-css', () => {
 })
 
 
+// ...move service worker
+const srcPdfResumePath = 'src/assets/pdf'
+gulp.task('pdf-resume', () => {
+  return gulp.src([
+      srcPdfResumePath + '/*.pdf'
+    ])
+    .pipe(gulp.dest(distProdPath + '/assets/pdf/'))
+})
+
+
 // ...watch
 const watchSrcAppPath = 'src/views/**/*.js'
 const watchSrcHtmlPath = 'src/views/**/*.html'
