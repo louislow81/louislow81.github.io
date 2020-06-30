@@ -253,7 +253,7 @@ gulp.task('remove-css', () => {
 })
 
 
-// ...move service worker
+// ...move pdf resume
 const srcPdfResumePath = 'src/assets/pdf'
 gulp.task('pdf-resume', () => {
   return gulp.src([
