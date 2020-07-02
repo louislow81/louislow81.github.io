@@ -260,6 +260,23 @@ function imageReplacer(className) {
 
 
 /*
+  Unsupported User Agents for,
+  `krunch.adaptiveImageLoader()`,
+  `krunch.adaptiveWebpLoader()`,
+  `krunch.networkSpeed()`
+*/
+let isFirefox = typeof InstallTrigger !== 'undefined';
+
+let isSafari = /constructor/i.test(window.HTMLElement) ||
+    (function(p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] ||
+    (typeof safari !== 'undefined' && safari.pushNotification));
+
+let isIE = /*@cc_on!@*/ false || !!document.documentMode;
+
+let isEdge = !isIE && !!window.StyleMedia;
+
+
+/*
   Adaptive Image Loader
   @param {null}
   @usage,
@@ -276,23 +293,31 @@ function imageReplacer(className) {
     DSL (2 MB/s 5ms RTT)
     WiFi (30 MB/s 2ms RTT)
 */
-const networkType = navigator.connection.effectiveType;
-const downLink = navigator.connection.downlink;
-const roundTripTime = navigator.connection.rtt;
-
-let maxMBps = 1;
-let maxRtt = 600;
-
 krunch.adaptiveImageLoader = function() {
   const triggerClassName = "adaptive";
 
-  if (downLink < maxMBps || roundTripTime > maxRtt) {
-    log("(CONN) slow, low-res image", "");
-    // no nothing, use default src=""
+  if (isFirefox === true ||
+      isSafari == true ||
+      isIE === true ||
+      isEdge === true) {
+    log("(ERR) adaptiveImageLoader is unsupported for this web browser", "")
   }
   else {
-    log("(CONN) fast, hi-res image", "");
-    imageReplacer(triggerClassName);
+
+    const downLink = navigator.connection.downlink;
+    const roundTripTime = navigator.connection.rtt;
+
+    let maxMBps = 1;
+    let maxRtt = 600;
+
+    if (downLink < maxMBps || roundTripTime > maxRtt) {
+      log("(CONN) slow, low-res image", "");
+      // no nothing, use default src=""
+    }
+    else {
+      log("(CONN) fast, hi-res image", "");
+      imageReplacer(triggerClassName);
+    }
   }
 };
 
@@ -312,35 +337,48 @@ krunch.adaptiveImageLoader = function() {
 krunch.adaptiveWebpLoader = function() {
   const triggerClassName = "adaptiveWebp";
 
-  if (downLink < maxMBps || roundTripTime > maxRtt) {
-    log("(CONN) slow, low-res image", "");
-
-    isWebP.then(supported => {
-      if (supported) {
-        log("(BROWSER) has-WebP", "");
-        imageReplacer(triggerClassName);
-      }
-      else {
-        log("(BROWSER) no-WebP", "");
-        // no nothing, use default src=""
-      }
-    });
-
+  if (isFirefox === true ||
+      isSafari == true ||
+      isIE === true ||
+      isEdge === true) {
+    log("(ERR) adaptiveImageLoader is unsupported for this web browser", "")
   }
   else {
-    log("(CONN) fast, hi-res image", "");
 
-    isWebP.then(supported => {
-      if (supported) {
-        log("(BROWSER) has-WebP", "");
-        imageReplacer(triggerClassName);
-      }
-      else {
-        log("(BROWSER) no-WebP", "");
-        // no nothing, use default src=""
-      }
-    });
+    const downLink = navigator.connection.downlink;
+    const roundTripTime = navigator.connection.rtt;
 
+    let maxMBps = 1;
+    let maxRtt = 600;
+
+    if (downLink < maxMBps || roundTripTime > maxRtt) {
+      log("(CONN) slow, low-res image", "");
+
+      isWebP.then(supported => {
+        if (supported) {
+          log("(BROWSER) has-WebP", "");
+          imageReplacer(triggerClassName);
+        }
+        else {
+          log("(BROWSER) no-WebP", "");
+          // no nothing, use default src=""
+        }
+      });
+    }
+    else {
+      log("(CONN) fast, hi-res image", "");
+
+      isWebP.then(supported => {
+        if (supported) {
+          log("(BROWSER) has-WebP", "");
+          imageReplacer(triggerClassName);
+        }
+        else {
+          log("(BROWSER) no-WebP", "");
+          // no nothing, use default src=""
+        }
+      });
+    }
   }
 };
 
@@ -350,20 +388,30 @@ krunch.adaptiveWebpLoader = function() {
   @param {null}
  */
 krunch.networkSpeed = function() {
-  // network type that browser uses
-  log("(Network Type) " + navigator.connection.type);
-  // effective bandwidth estimate
-  log("(Downlink) " + navigator.connection.downlink + " MBytes/s", "");
-  // effective round-trip time estimate
-  log("(Round-Trip Time) " + navigator.connection.rtt + " miliseconds", "");
-  // upper bound on the downlink speed of the first network hop
-  log("(Downlink Max) " + navigator.connection.downlinkMax + " MBytes/s", "");
-  // effective connection type determined using a combination of recently
-  // observed rtt and downlink values.
-  log("(Effective Type) " + navigator.connection.effectiveType, "");
-  // true if the user has requested a reduced data usage mode from the
-  // user agent.
-  log("(DataSaver Mode) " + navigator.connection.saveData, "");
+
+  if (isFirefox === true ||
+      isSafari == true ||
+      isIE === true ||
+      isEdge === true) {
+    log("(ERR) networkSpeed is unsupported for this web browser", "")
+  }
+  else {
+
+    // network type that browser uses
+    log("(Network Type) " + navigator.connection.type);
+    // effective bandwidth estimate
+    log("(Downlink) " + navigator.connection.downlink + " MBytes/s", "");
+    // effective round-trip time estimate
+    log("(Round-Trip Time) " + navigator.connection.rtt + " miliseconds", "");
+    // upper bound on the downlink speed of the first network hop
+    log("(Downlink Max) " + navigator.connection.downlinkMax + " MBytes/s", "");
+    // effective connection type determined using a combination of recently
+    // observed rtt and downlink values.
+    log("(Effective Type) " + navigator.connection.effectiveType, "");
+    // true if the user has requested a reduced data usage mode from the
+    // user agent.
+    log("(DataSaver Mode) " + navigator.connection.saveData, "");
+  }
 };
 
 
