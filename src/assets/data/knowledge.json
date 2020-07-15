@@ -17,27 +17,31 @@
   },
   {
     "title": "Linux",
-    "desc": "Debian, Arch"
+    "desc": "Debian"
   },
   {
     "title": "Steinberg Cubase",
-    "desc": "Sequencing"
+    "desc": "Music"
   },
   {
     "title": "Propellerh. Reason",
-    "desc": "Instrumental"
+    "desc": "Music"
   },
   {
     "title": "LXD, Docker",
-    "desc": "Workship"
+    "desc": "Worship"
   },
   {
     "title": "Git",
-    "desc": "Workship"
+    "desc": "Worship"
   },
   {
     "title": "C, C++, Vala",
-    "desc": "Workship"
+    "desc": "Worship"
+  },
+  {
+    "title": "Bash",
+    "desc": "General"
   },
   {
     "title": "JS, NodeJS",
@@ -48,11 +52,7 @@
     "desc": "General"
   },
   {
-    "title": "Bash",
-    "desc": "General"
-  },
-  {
-    "title": "HTML, Pug",
+    "title": "HTML, Nunjucks",
     "desc": "General"
   },
   {
@@ -64,10 +64,6 @@
     "desc": "General"
   },
   {
-    "title": "ElectronJS",
-    "desc": "General"
-  },
-  {
     "title": "NoSQL",
     "desc": "General"
   },
@@ -76,7 +72,7 @@
     "desc": "General"
   },
   {
-    "title": "Adobe AI",
+    "title": "Adobe XD",
     "desc": "General"
   }
 ]
