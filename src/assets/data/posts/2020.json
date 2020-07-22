@@ -1,5 +1,14 @@
 [
   {
+    "id": "93f65043a1897212ba62b1bd",
+    "url": "https://yogurt-css-documentation.netlify.app/",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/04a07e5647943209972913efadc4dbed.jpg",
+    "imagehigh": "assets/image/high/post/04a07e5647943209972913efadc4dbed.jpg",
+    "content": "New Yogurt version 1.0.8-solidcore has released with added several new utility modules, such as `Dissect`, `Dissect Color`, `Dissect Opacity`, `Equal`, `Gradient` and other minor updates. The v1.0.8 is mostly using the CSS Variables to dynamically reproduce functional CSS styling. Yogurt haven't decided to add `Grid`, but `Flexbox` is the default.",
+    "date": "22 July 2020"
+  },
+  {
     "id": "6f47a65c25c7734ba0f77745",
     "url": "",
     "urloption": "hidden",
