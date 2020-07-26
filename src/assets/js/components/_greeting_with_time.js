@@ -3,21 +3,20 @@ function greeting() {}
 greeting.withTime = function() {
 
   const time = new Date().getHours();
-  const msg = " Are you coming here to hire me?";
 
   if (time < 12) { // morning
 
-    const yelling = "<strong>Good morning!</strong>" + msg;
+    const yelling = "<strong>Good morning!</strong>"
     snicker.onLoad(yelling, 10000);
 
   } else if (time < 20) { // evening
 
-    const yelling = "<strong>Good evening!</strong>" + msg;
+    const yelling = "<strong>Good evening!</strong>"
     snicker.onLoad(yelling, 10000);
 
   } else { // night
 
-    const yelling = "<strong>Good night!</strong>" + msg;
+    const yelling = "<strong>Good night!</strong>"
     snicker.onLoad(yelling, 10000);
 
   }
