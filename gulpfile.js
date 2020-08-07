@@ -18,11 +18,12 @@ const serve = require('browser-sync').create()
 const uglifyCss = require('gulp-uglifycss')
 const uglify = require('gulp-uglify-es').default
 const webp = require('gulp-webp')
+const version = require('gulp-version-number')
+const gulpLoadPlugins = require('gulp-load-plugins')
+const inject = gulpLoadPlugins()
 
 const krugurtFrameworkPath = 'framework'
-
 const distJsPath = 'dist/assets/js'
-
 const distProdPath = 'dist'
 const distProdRecursivePath = 'dist/**/*'
 
@@ -47,7 +48,11 @@ gulp.task('serve', gulp.series(function(done) {
 
 
 // ...minify html
-const srcHtmlPath = 'src/views/**/*.html'
+const versionConfig = {
+  'value': '%MDS%', // using MDS hash
+  'append': { 'key': 'v', 'to': ['css', 'js'] }
+}
+const srcHtmlPath = 'src/views/**/**/**/**/*.html'
 gulp.task('html', () => {
   return gulp.src(srcHtmlPath)
     .pipe(htmlmin({
@@ -56,6 +61,8 @@ gulp.task('html', () => {
       jsmin: true, // inline js
       cssmin: true // inline css
     }))
+    // inject versioning to (css,js) static assets
+    .pipe(inject.versionNumber(versionConfig))
     .pipe(gulp.dest(distProdPath))
 })
 
