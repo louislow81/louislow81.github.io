@@ -18,7 +18,7 @@
               .then(data => {
                 delete self.error
                 if (isMobile.any()) { // item x limit for mobile device
-                  data.length = 3
+                  data.length = 5
                   self.posts = data
                   self.update()
                 }
