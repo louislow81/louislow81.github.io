@@ -46,5 +46,11 @@
     "iconlow": "assets/image/low/misc/social/linkedin.png",
     "iconhigh": "assets/image/high/misc/social/linkedin.png",
     "url": "https://www.linkedin.com/in/loouis-low/"
+  },
+  {
+    "title": "DEV",
+    "iconlow": "assets/image/low/misc/social/devto.png",
+    "iconhigh": "assets/image/high/misc/social/devto.png",
+    "url": "https://dev.to/loouislow"
   }
 ]
