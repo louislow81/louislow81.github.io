@@ -1,0 +1,29 @@
+<card-articles>
+
+  <a href="{ props.url }"
+     target="_blank"
+     rel="noopener">
+
+    <y class="group { props.xsscreen } { props.smscreen } { props.mdscreen } 2k:max-w-lg xs:my-2 xs:mx-0 xs:-mx-2 lg:m-4 p-5 text-gray-500 bg-charcoal-300 hover:bg-charcoal-100 border border-charcoal-200 rounded shadow overflow-hidden cursor-pointer">
+
+      <y class="pb-3 group-hover:text-white text-xl font-semibold depth-snug">
+        { props.title }
+      </y>
+
+      <y class="pb-3 group-hover:text-white text-sm depth-snug">
+        { props.description }
+      </y>
+
+      <y class="pb-3 text-gray-600 text-xs">
+        { props.tags }
+      </y>
+
+      <y class="text-sm text-gray-600">
+        { props.date }
+      </y>
+
+    </y>
+
+  </a>
+
+</card-articles>
