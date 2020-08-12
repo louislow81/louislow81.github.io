@@ -1,0 +1,46 @@
+<block-article><y class="py-4" id="article"><y class="md:px-10 md:h-full"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading class="text-white" title="Article" size="text-3xl 2k:text-5xl" padding="p-10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="hidden px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="lg:-ml-3 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-start"><y each="{ data in posts }"><card-blog-posts content="{ data.title }" xsscreen="xs:max-w-md" smscreen="sm:max-w-full" mdscreen="md:max-w-xs"></card-blog-posts></y></y></y></y></y><style>:host {
+      font-family: Poppins, Sans-Serif;
+    }</style><script>export default {
+      onMounted() {
+
+        // const message = 'Hang on, taking you to my development stories...'
+        // snicker.onClick('snickerBlogBtn', message, 5000)
+
+        const self = this
+        self.posts = []
+
+        const url = 'https://dev.to/api/articles?username=loouislow'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data => {
+                delete self.error
+                if (isMobile.any()) { // item x limit for mobile device
+                  data.length = 5
+                  self.posts = data
+                  self.update()
+                }
+                else {
+                  data.length = 6
+                  self.posts = data
+                  self.update()
+                }
+              })
+              .catch(error => {
+                self.error = error
+                self.update()
+              })
+          })
+
+      },
+      onUpdated() {
+
+        // see `assets/js/components/_image_popper.js`
+        // popup.imageTouchDevice('.pop-image-latest')
+
+        // lazyload low-res, hi-res image
+        // krunch.adaptiveImageLoader()
+
+      }
+    }</script></block-article>
