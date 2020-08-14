@@ -55,8 +55,8 @@
     "icon2high": "assets/image/high/misc/platforms/windows.png",
     "icon2Padding": "pr-4 pb-4",
     "icon2Visibility": "block",
-    "imagelow": "assets/image/low/promo/promo_noozy_desktop.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_noozy_desktop.jpeg",
+    "imagelow": "assets/image/low/promo/promo_noozy_desktop.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozy_desktop.jpg",
     "tech": "C++, QT"
   },
   {
@@ -75,8 +75,8 @@
     "icon2high": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/screenshot/screenshot_kraft.jpeg",
-    "imagehigh": "assets/image/high/screenshot/screenshot_kraft.jpeg",
+    "imagelow": "assets/image/low/screenshot/screenshot_kraft.jpg",
+    "imagehigh": "assets/image/high/screenshot/screenshot_kraft.jpg",
     "tech": "C++, JS, ElectronJS"
   },
   {
@@ -95,8 +95,8 @@
     "icon2high": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_evaclabs_arch_grid.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_evaclabs_arch_grid.jpeg",
+    "imagelow": "assets/image/low/promo/promo_evaclabs_arch_grid.jpg",
+    "imagehigh": "assets/image/high/promo/promo_evaclabs_arch_grid.jpg",
     "tech": "C, C++, Embedded"
   },
   {
@@ -115,8 +115,8 @@
     "icon2high": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_noozy_classic_android.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_noozy_classic_android.jpeg",
+    "imagelow": "assets/image/low/promo/promo_noozy_classic_android.png",
+    "imagehigh": "assets/image/high/promo/promo_noozy_classic_android.png",
     "tech": "C++, Android"
   },
   {
@@ -175,8 +175,8 @@
     "icon2high": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizorewire_pro_android.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizorewire_pro_android.jpeg",
+    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizorewire_pro_android.png",
+    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizorewire_pro_android.png",
     "tech": "C++, Java"
   },
   {
@@ -215,8 +215,8 @@
     "icon2high": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizorewire_n_android.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizorewire_n_android.jpeg",
+    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizorewire_n_android.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizorewire_n_android.jpg",
     "tech": "C++, Java"
   },
   {
@@ -235,8 +235,8 @@
     "icon2high": "",
     "icon2Padding": "",
     "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizonnxt.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizonnxt.jpeg",
+    "imagelow": "assets/image/low/promo/promo_noozxoidelabs_eizonnxt.jpg",
+    "imagehigh": "assets/image/high/promo/promo_noozxoidelabs_eizonnxt.jpg",
     "tech": "C, C++, DAC, Embedded"
   },
   {
