@@ -33,6 +33,8 @@
               description="{ data.description }"
               tags="{ data.tags }"
               date="{ data.readable_publish_date }"
+              reactions="{ data.public_reactions_count }"
+              comments="{ data.comments_count }"
               xsscreen="xs:max-w-md"
               smscreen="sm:max-w-full"
               mdscreen="md:max-w-xs">
@@ -100,6 +102,11 @@
                 self.update()
               })
           })
+
+      },
+      onUpdated() {
+
+        krunch.adaptiveImageLoader()
 
       }
     }
