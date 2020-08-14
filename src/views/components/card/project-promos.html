@@ -9,10 +9,10 @@
 
     <y each="{ data in projects }">
 
-      <y class="xs:max-w-full sm:max-w-full md:max-w-md 2k:max-w-screen-sm m-2 rounded-lg shadow overflow-hidden cursor-pointer">
+      <y class="xs:max-w-full sm:max-w-full md:max-w-md 2k:max-w-4xl m-2 2k:m-4 rounded-lg shadow overflow-hidden cursor-pointer">
         <y class="relative select-none">
 
-          <img class="adaptive h-auto w-full object-contain object-center overflow-hidden rounded-lg"
+          <img class="adaptive w-full h-full object-fit object-center overflow-hidden rounded-lg"
                src="{ data.imagelow }"
                data-src="{ data.imagehigh }"
                alt="{ data.title}" />
