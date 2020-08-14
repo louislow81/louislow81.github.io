@@ -1,4 +1,4 @@
-<block-article><y class="py-4" id="article"><y class="md:px-10 md:h-full bg-charcoal-400"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading class="text-white" title="Article" size="text-3xl 2k:text-5xl" padding="p-10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="lg:-ml-3 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-start"><y each="{ data in posts }"><card-articles url="{ data.url }" title="{ data.title }" description="{ data.description }" tags="{ data.tags }" date="{ data.readable_publish_date }" xsscreen="xs:max-w-md" smscreen="sm:max-w-full" mdscreen="md:max-w-xs"></card-articles></y></y><y id="snickerArticleBtn"><button-ultra url="https://dev.to/loouislow" text="More" tooltip="Read more at DEV" option="_blank"></button-ultra></y></y></y></y><style>:host {
+<block-article><y class="py-4" id="article"><y class="md:px-10 md:h-full bg-charcoal-400"><y class="xs:text-center sm:text-left md:text-left xs:pb-0"><text-heading class="text-white" title="Article" size="text-3xl 2k:text-5xl" padding="p-10"></text-heading></y><y class="xs:px-4 xs:py-0 sm:px-8 md:px-8"><y class="px-2 text-md text-red-400" if="{ error }">Data is missing.</y><y class="lg:-ml-3 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-start"><y each="{ data in posts }"><card-articles url="{ data.url }" title="{ data.title }" description="{ data.description }" tags="{ data.tags }" date="{ data.readable_publish_date }" reactions="{ data.public_reactions_count }" comments="{ data.comments_count }" xsscreen="xs:max-w-md" smscreen="sm:max-w-full" mdscreen="md:max-w-xs"></card-articles></y></y><y id="snickerArticleBtn"><button-ultra url="https://dev.to/loouislow" text="More" tooltip="Read more at DEV" option="_blank"></button-ultra></y></y></y></y><style>:host {
       font-family: Poppins, Sans-Serif;
     }</style><script>export default {
       onMounted() {
@@ -32,6 +32,11 @@
                 self.update()
               })
           })
+
+      },
+      onUpdated() {
+
+        krunch.adaptiveImageLoader()
 
       }
     }</script></block-article>
