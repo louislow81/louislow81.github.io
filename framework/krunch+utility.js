@@ -10,7 +10,7 @@ function krunch() {}
 */
 const log = function(msg, req) {
   console.log("krugurt:", msg, req);
-  // console.log();
+  //console.log();
 };
 
 
@@ -237,6 +237,33 @@ const isWebP = (function() {
 
 
 /*
+  Sanitizer broken images masked with transparent dummy image
+  @param {DOMimages}
+*/
+krunch.sanitizeBrokenImage = function (DOMimages) {
+  if (!DOMimages || !DOMimages.nodeName || DOMimages.nodeName != "IMG") {
+    // get all images from DOM
+    const getImg = document.getElementsByTagName("IMG");
+    let i = getImg.length;
+    if (i) {
+      while (i--) {
+        krunch.sanitizeBrokenImage(getImg[i]);
+      }
+    }
+    return;
+  }
+  // masking
+  const dummyImage = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWP4//8/AwAI/AL+hc2rNAAAAABJRU5ErkJggg==';
+  const replaceImg = new Image();
+  replaceImg.onerror = function () {
+    DOMimages.src = dummyImage;
+    log("(image) broken image masked with dummy", "");
+  };
+  replaceImg.src = DOMimages.src;
+};
+
+
+/*
   Image replacer for `krunch.adaptiveImageLoader()` and
   `krunch.adaptiveWebpLoader()`
   @param {className}
@@ -321,7 +348,6 @@ krunch.adaptiveImageLoader = function() {
   }
 };
 
-
 /*
   Adaptive Image Loader for WebP
   (with fallback to non-webp format)
@@ -381,6 +407,7 @@ krunch.adaptiveWebpLoader = function() {
     }
   }
 };
+
 
 
 /*
@@ -445,6 +472,55 @@ krunch.torrent = function(id, uri) {
 
 
 /*
+  Request user to install PWA app
+  @param {null}
+  @usage,
+          <y class="hidden"
+             id="requestAppInstall">
+            <y id="requestAppTrigger">
+              ...
+            </y>
+          </y>
+*/
+krunch.requestAppInstall = function() {
+  const appInstallContainer = document.getElementById("requestAppInstall");
+  const appTrigger = document.getElementById("requestAppTrigger");
+
+  self.addEventListener("beforeinstallprompt", function(event) {
+    log("(PWA)", event);
+    // stash the event so it can be triggered later
+    window.deferredPrompt = event;
+    // remove the 'hidden' class from the element
+    appInstallContainer.classList.toggle("hidden", false);
+  });
+
+  appTrigger.addEventListener("click", function() {
+    log("(PWA) app installed", "");
+    const promptEvent = window.deferredPrompt;
+    if (!promptEvent) {
+      // the deferred prompt isn't available
+      return;
+    }
+    // show the install prompt
+    promptEvent.prompt();
+    // log the result
+    promptEvent.userChoice.then(function(result) {
+      log("(PWA)", result);
+      // reset the deferred prompt variable, since
+      // prompt() can only be called once
+      window.deferredPrompt = null;
+      // hide the install button
+      appInstallContainer.classList.toggle("hidden", true);
+    });
+  });
+
+  self.addEventListener("appinstalled", function(event) {
+    log("(PWA) app installed", event);
+  });
+};
+
+
+/*
   (!! experiemental !!)
   Train with Sigmoid Neural Network
   @param {inputArray}
@@ -466,3 +542,4 @@ krunch.torrent = function(id, uri) {
 // krunch.predictNN = function (inputArray) {
 //   const predict = nn.predict(inputArray);
 // };
+

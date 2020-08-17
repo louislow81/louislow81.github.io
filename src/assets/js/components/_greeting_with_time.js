@@ -6,17 +6,17 @@ greeting.withTime = function() {
 
   if (time < 12) { // morning
 
-    const yelling = "<strong>Good morning!</strong>"
+    const yelling = "<strong>Good Morning!</strong>"
     snicker.onLoad(yelling, 10000);
 
   } else if (time < 20) { // evening
 
-    const yelling = "<strong>Good evening!</strong>"
+    const yelling = "<strong>Good Evening!</strong>"
     snicker.onLoad(yelling, 10000);
 
   } else { // night
 
-    const yelling = "<strong>Good night!</strong>"
+    const yelling = "<strong>Good Night!</strong>"
     snicker.onLoad(yelling, 10000);
 
   }
