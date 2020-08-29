@@ -1,0 +1,64 @@
+<image-followers>
+
+  <y class="flex">
+    <y class="m-2"
+       each="{ data in followers }">
+
+      <a href="https://dev.to{ data.path }"
+         target="_blank"
+         rel="noopener">
+
+        test
+        <img class="w-10 h-10 object-cover object-center overflow-hidden rounded-full"
+             src="{ data.profile_image }"
+             alt="@{ data.username }">
+
+      </a>
+
+    </y>
+  </y>
+
+
+  <script>
+    export default {
+      onMounted() {
+
+        const self = this
+        self.followers = []
+
+        const devUrl = 'https://dev.to/api/followers/users'
+
+        fetch(devUrl, {
+          mode: 'cors',
+          method: 'GET',
+          headers: {
+            'api-key': '4VQwztXu6sWnRUsH3FscxqTL'
+          }
+        })
+        .then(res => {
+          res.json()
+            .then(data => {
+              delete self.error
+              if (isMobile.any()) { // item x limit for mobile device
+                data.length = 10
+                self.followers = data
+                self.update()
+              }
+              else {
+                data.length = 10
+                self.followers = data
+                self.update()
+              }
+              console.log(data)
+            })
+            .catch(error => {
+              self.error = error
+              self.update()
+            })
+        })
+
+      }
+    }
+  </script>
+
+</image-followers>
