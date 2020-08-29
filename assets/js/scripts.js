@@ -68,17 +68,17 @@ greeting.withTime = function() {
 
   if (time < 12) { // morning
 
-    const yelling = "<strong>Good morning!</strong>"
+    const yelling = "<strong>Good Morning!</strong>"
     snicker.onLoad(yelling, 10000);
 
   } else if (time < 20) { // evening
 
-    const yelling = "<strong>Good evening!</strong>"
+    const yelling = "<strong>Good Evening!</strong>"
     snicker.onLoad(yelling, 10000);
 
   } else { // night
 
-    const yelling = "<strong>Good night!</strong>"
+    const yelling = "<strong>Good Night!</strong>"
     snicker.onLoad(yelling, 10000);
 
   }
@@ -2136,7 +2136,7 @@ function snicker() {};
 */
 function snickerUI(data, duration) {
   const element = document.createElement("y");
-  const css ="position:fixed; bottom:13%; left:3%; width:auto; color:#fff; background-color:#25313a; padding:1em; font-size:0.8em; font-family:inherit; border-radius:3px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
+  const css ="position:fixed; bottom:13%; left:3%; width:auto; color:#192127; background-color:#ffc300; padding:1em; font-size:0.8em; font-family:inherit; font-weight:600; border-radius:10px; box-shadow: 0 0 4px #0a0e10; z-index:999;";
   element.setAttribute("style", css);
   element.innerHTML = data;
   setTimeout(function() {

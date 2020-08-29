@@ -1,6 +1,4 @@
-<global-mobile-blog-menu><y class="xs:block sm:hidden md:hidden lg:hidden 2k:hidden w-screen select-none"><y class="h-24 p-0 border-t-2 border-charcoal-100 bg-charcoal-100 shadow-lg"><y class="flex flex-row justify-around items-center"><y each="{ data in menu }"><y class="p-4 text-center hover:bg-blue-800 rounded"><a href="{ data.url }" title="{ data.title }" rel="noopener"><img class="adaptive invert-color w-8 h-auto object-contain object-center opacity-50 hover:opacity-75" src="{ data.iconlow }" data-src="{ data.iconhigh }" alt="{ data.title }"></a></y></y></y></y></y><style>.invert-color {
-      filter: invert(1.0);
-    }</style><script>export default {
+<global-mobile-blog-menu><y class="xs:block sm:hidden md:hidden lg:hidden 2k:hidden w-screen select-none"><y class="h-24 p-0 border-t-2 border-charcoal-100 bg-charcoal-100 shadow-lg"><y class="flex flex-row justify-around items-center"><y each="{ data in menu }"><y class="p-4 text-center hover:bg-blue-800 rounded"><a href="{ data.url }" title="{ data.title }" rel="noopener"><img class="adaptive invert-1 w-8 h-auto object-contain object-center opacity-50 hover:opacity-75" src="{ data.iconlow }" data-src="{ data.iconhigh }" alt="{ data.title }"></a></y></y></y></y></y><script>export default {
       onMounted() {
 
         const self = this
