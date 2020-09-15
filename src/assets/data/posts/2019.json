@@ -46,8 +46,8 @@
   },
   {
     "id": "8f7f4b8e3bbf",
-    "url": "",
-    "urloption": "hidden",
+    "url": "https://github.com/loouislow81/kraft.ui",
+    "urloption": "block",
     "imagelow": "assets/image/low/post/da7dfc5ba005a354a2360077c9003367.jpeg",
     "imagehigh": "assets/image/high/post/da7dfc5ba005a354a2360077c9003367.jpeg",
     "content": "`kraft` prototype 3.x giving artist the superpower to produce UI components without knowing how to code, Kraft has it all, when you creating or organizing objects, it generates CSS code real-time, you just need to export it.",
@@ -100,8 +100,8 @@
   },
   {
     "id": "39b83f8d057c",
-    "url": "",
-    "urloption": "hidden",
+    "url": "https://yogurt-css-documentation.netlify.app",
+    "urloption": "block",
     "imagelow": "assets/image/low/post/40ac10a6d49a9601e2d894f8ecbeb0c1.jpeg",
     "imagehigh": "assets/image/high/post/40ac10a6d49a9601e2d894f8ecbeb0c1.jpeg",
     "content": "`Yogurt, CandyBar` prototype and the example. This tool crafts beautiful GPU Accelerated UI without user to learn CSS and write CSS code.",
