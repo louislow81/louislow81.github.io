@@ -148,7 +148,16 @@ gulp.task('scripts', () => {
 const srcImageRecursivePath = 'src/assets/image/**/*'
 const distLqImagePath = 'dist/assets/image/low'
 const distHqImagePath = 'dist/assets/image/high'
-// ...non-WebP format
+// ...move images (development)
+gulp.task('move-image-low-quality', () => {
+  return gulp.src(srcImageRecursivePath)
+    .pipe(gulp.dest(distLqImagePath))
+})
+gulp.task('move-image-high-quality', () => {
+  return gulp.src(srcImageRecursivePath)
+    .pipe(gulp.dest(distHqImagePath))
+})
+// ...optimize images (production)
 gulp.task('image-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
@@ -165,7 +174,6 @@ gulp.task('image-high-quality', () => {
     ]))
     .pipe(gulp.dest(distHqImagePath))
 })
-// ...WebP format
 gulp.task('webp-low-quality', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(webp({ quality: 60 })) // set webp quality
@@ -218,7 +226,15 @@ gulp.task('app-manifest', () => {
 })
 
 
-// ...purge unused css
+// ...move css (development)
+gulp.task('move-css', () => {
+  return gulp.src(distCssPath + '/style_merged.css')
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest(distCssPath))
+})
+
+
+// ...purge unused css (production)
 gulp.task('purge-css', () => {
   return gulp.src(distCssPath + '/style_merged.css')
     .pipe(purgeCss({
@@ -285,7 +301,9 @@ gulp.task('watch', gulp.series([
     'scripts',
     'sass',
     'css',
-    'purge-css',
+    'move-css',
+    'move-image-low-quality',
+    'move-image-high-quality',
     'html',
     'data',
     'service-worker',
@@ -297,16 +315,14 @@ gulp.task('watch', gulp.series([
 
     gulp.watch(watchSrcImagePath,
       gulp.series([
-        'image-high-quality',
-        //'webp-high-quality',
+        'move-image-low-quality',
         reload
       ])
     )
 
     gulp.watch(watchSrcImagePath,
       gulp.series([
-        'image-low-quality',
-        //'webp-low-quality',
+        'move-image-high-quality',
         reload
       ])
     )
@@ -331,7 +347,6 @@ gulp.task('watch', gulp.series([
       gulp.series([
         'sass',
         'css',
-        'purge-css',
         reload
       ])
     )
@@ -339,7 +354,6 @@ gulp.task('watch', gulp.series([
     gulp.watch(watchSrcHtmlPath,
       gulp.series([
         'html',
-        'purge-css',
         reload
       ])
     )

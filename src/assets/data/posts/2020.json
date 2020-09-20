@@ -1,12 +1,21 @@
 [
   {
+    "id": "fe2ddff4edafff55449feacd",
+    "url": "https://kraft.netlify.app",
+    "urloption": "block",
+    "imagelow": "assets/image/low/post/12d6ce6cef92db8dc63a7c068090d166.png",
+    "imagehigh": "assets/image/high/post/12d6ce6cef92db8dc63a7c068090d166.png",
+    "content": "Kraft is a professional UI prototyping tool to create a modular component design. It used to be my in-house proprietary tool, now I am sharing it with you. The app is available in PWA.",
+    "date": "19 Sep 2020"
+  },
+  {
     "id": "93f65043a1897212ba62b1bd",
-    "url": "https://yogurt-css-documentation.netlify.app/",
+    "url": "https://yogurtcss.netlify.app/",
     "urloption": "block",
     "imagelow": "assets/image/low/post/04a07e5647943209972913efadc4dbed.jpg",
     "imagehigh": "assets/image/high/post/04a07e5647943209972913efadc4dbed.jpg",
     "content": "New Yogurt version 1.0.8-solidcore has released with added several new utility modules, such as `Dissect`, `Dissect Color`, `Dissect Opacity`, `Equal`, `Gradient` and other minor updates. The v1.0.8 is mostly using the CSS Variables to dynamically reproduce functional CSS styling. Yogurt haven't decided to add `Grid`, but `Flexbox` is the default.",
-    "date": "22 July 2020"
+    "date": "22 Jul 2020"
   },
   {
     "id": "6f47a65c25c7734ba0f77745",
@@ -15,7 +24,7 @@
     "imagelow": "assets/image/low/post/abcdee22e6b0c1893cb7e9d0ecd302e7.jpeg",
     "imagehigh": "assets/image/high/post/abcdee22e6b0c1893cb7e9d0ecd302e7.jpeg",
     "content": "`noozy` the audiophile-grade music library for (Linux/Windows) desktop is getting a complete dark-themed. `noozy` has an independent VSP (virtual sound processor) to enhance the music listening to the next level. Several sound modeling to choose to suit your listening profile. Will introduce the new VSP `Noozxoide Maximizer UltraLinear` that smoothing out the loudness in listening content, the complex modeling design with (Gain, Limit, Release, Input, Output, Attenuate). As always... MUSIC . SOUNDOLOGY",
-    "date": "06 June 2020"
+    "date": "06 Jun 2020"
   },
   {
     "id": "02bb9919732e28d09686a3a5",
