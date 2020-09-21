@@ -6,19 +6,9 @@
   "scripts": {
     "gulp": "gulp",
     "watch": "gulp watch",
-    "build-dev": "npm run get-frameworks && gulp move-image-low-quality && gulp move-image-high-quality && npm run build-scripts && gulp sass && gulp css && gulp move-css && npm run build-html && npm run build-data && npm run build-locale && npm run build-sw && npm run build-manifest && gulp pdf-resume",
-    "build-prod": "npm run build-image && npm run build-scripts && npm run build-style && npm run build-html && npm run build-data && npm run build-locale && npm run build-sw && npm run build-manifest && gulp remove-js && gulp remove-css && gulp pdf-resume",
-    "build-style": "gulp sass && gulp css && gulp purge-css",
-    "build-scripts": "gulp pre-scripts && gulp scripts",
-    "build-html": "gulp html",
-    "build-image": "gulp image-high-quality && gulp image-low-quality",
-    "build-data": "gulp data",
-    "build-locale": "gulp locale",
-    "build-sw": "gulp service-worker",
-    "build-manifest": "gulp app-manifest",
-    "serve": "gulp serve",
-    "post-id": "openssl rand -hex 12",
-    "get-frameworks": "rm -rf ./framework && git clone https://github.com/loouislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git"
+    "build-dev": "npm run update-frameworks && gulp development",
+    "build-prod": "npm run update-frameworks && gulp production",
+    "update-frameworks": "rm -rf ./framework && git clone https://github.com/loouislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",
