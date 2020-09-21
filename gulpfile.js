@@ -149,7 +149,6 @@ gulp.task('move-image-high', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(gulp.dest(distHqImagePath))
 })
-
 gulp.task('optimize-image-low', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
@@ -161,8 +160,8 @@ gulp.task('optimize-image-low', () => {
 gulp.task('optimize-image-high', () => {
   return gulp.src(srcImageRecursivePath)
     .pipe(imagemin([
-      pngquant({ quality: [0.8, 0.8] }), // set png quality
-      mozjpeg({ quality: 80 }), // set jpg quality
+      pngquant({ quality: [0.9, 0.9] }), // set png quality
+      mozjpeg({ quality: 90 }), // set jpg quality
     ]))
     .pipe(gulp.dest(distHqImagePath))
 })
@@ -173,7 +172,7 @@ gulp.task('optimize-webp-low', () => {
 });
 gulp.task('optimize-webp-high', () => {
   return gulp.src(srcImageRecursivePath)
-    .pipe(webp({ quality: 80 })) // set webp quality
+    .pipe(webp({ quality: 90 })) // set webp quality
     .pipe(gulp.dest(distHqImagePath))
 });
 
