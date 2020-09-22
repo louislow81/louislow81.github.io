@@ -1,6 +1,6 @@
 <block-home>
 
-  <y class="render-auto-widest z-10 relative h-screen bg-charcoal-400"
+  <y class="z-10 relative h-screen bg-charcoal-400"
      id="home">
 
     <img class="adaptive h-full w-full object-cover object-left-top overflow-hidden opacity-50 rounded-b-lg select-none"
@@ -77,14 +77,15 @@
       onMounted() {
 
         krunch.adaptiveImageLoader()
-        greeting.withTime()
+
+        // greeting.withTime()
 
         // Services restricted by
         // Cookies Consent Controller
-        googleAnalytics()
+        // googleAnalytics()
         // twitter() (!! mount at ~/social/twitter.html separately)
-        driftMessenger()
-        dmcaProtection()
+        // driftMessenger()
+        // dmcaProtection()
 
       }
     }
