@@ -61,11 +61,11 @@
   },
   {
     "id": "747d2fb42d05",
-    "title": "Kraft.UI",
+    "title": "Kraft",
     "desc": "A high-fidelity modular UI crafting tool, GPU accelerated, infinite zoom, infinite FX and generates production-ready HTML+CSS.",
     "PromoText": "Download",
     "urlText": "Kraft.UI",
-    "url": "https://github.com/loouislow81/kraft.ui",
+    "url": "https://kraft.netlify.app",
     "urlVisibility": "block",
     "icon1low": "assets/image/low/misc/platforms/linux.png",
     "icon1high": "assets/image/low/misc/platforms/linux.png",
