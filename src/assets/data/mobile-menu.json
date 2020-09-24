@@ -18,7 +18,7 @@
     "title": "Project"
   },
   {
-    "url": "#blog",
+    "url": "blog.html",
     "iconlow": "assets/image/low/misc/mobile-menu/blog.png",
     "iconhigh": "assets/image/high/misc/mobile-menu/blog.png",
     "title": "Blog"
