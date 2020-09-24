@@ -1,6 +1,6 @@
 <card-github-projects>
 
-  <y class="mt-10 xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-start md:items-center">
+  <y class="mt-10 xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap justify-start items-start">
 
     <y class="px-2 pb-4 text-md text-red-400"
       if="{ error }">
@@ -15,15 +15,15 @@
          target="_blank"
          rel="noopener">
 
-        <y class="group xs:max-w-md sm:max-w-full md:max-w-xs 2k:max-w-lg m-2 hover:text-white bg-charcoal-200 hover:bg-charcoal-600 rounded shadow overflow-hidden transition duration-100 ease">
+        <y class="group xs:max-w-md sm:max-w-full md:max-w-xs 2k:max-w-md m-2 hover:text-white bg-charcoal-200 hover:bg-charcoal-600 rounded shadow overflow-hidden transition duration-100 ease">
           <y class="p-5 2k:p-8">
 
-            <y class="relative text-lg 2k:text-3xl text-gray-400 group-hover:text-white font-semibold depth-loose pb-1 select-none">
+            <y class="relative text-lg 2k:text-2xl text-gray-400 group-hover:text-white font-semibold depth-loose pb-1 select-none">
 
               { pet.title }
 
               <y class="absolute right-0 bottom-0">
-                <img class="adaptive mb-2 h-8 2k:h-12 w-auto object-contain object-center overflow-hidden"
+                <img class="adaptive mb-2 h-8 2k:h-10 w-auto object-contain object-center overflow-hidden opacity-75"
                      src="assets/image/low/misc/social/github.png"
                      data-src="assets/image/high/misc/social/github.png"
                      alt="Github">
@@ -31,7 +31,7 @@
 
             </y>
 
-            <y class="text-sm 2k:text-2xl depth-snug pb-2">
+            <y class="text-sm 2k:text-xl depth-snug pb-2">
 
               <misc-show-more
                 class="select-none"
@@ -43,7 +43,7 @@
 
             </y>
 
-            <y class="text-xs 2k:text-xl text-gray-600 group-hover:text-white depth-loose select-none">
+            <y class="text-xs 2k:text-lg text-gray-600 group-hover:text-white depth-loose select-none">
               { pet.tech }
             </y>
 

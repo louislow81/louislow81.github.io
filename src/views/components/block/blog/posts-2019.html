@@ -1,6 +1,6 @@
 <blog-posts-2019>
 
-  <y class="render-auto-normal relative xs:px-4 xs:py-0 sm:px-8 md:px-8 lg:-ml-2"
+  <y class="render-auto-normal relative xs:px-4 xs:py-0 sm:px-8 md:px-8 lg:px-0"
      id="2019">
 
     <y class="px-2 text-md text-red-400"
@@ -12,7 +12,7 @@
       text="2019">
     </text-year>
 
-    <y class="sticky top-0 right-0 float-right mt-2">
+    <y class="sticky top-0 right-32 float-right">
 
       <card-total-posts
         timeline="2019"
@@ -82,6 +82,7 @@
 
         // see `assets/js/components/_image_popper.js`
         popup.imageTouchDevice('.pop-image-2019')
+        popup.imageNotTouchDevice('.pop-image-2019')
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()

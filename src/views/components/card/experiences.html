@@ -1,11 +1,11 @@
 <card-experiences>
 
-  <y class="flex flex-wrap justify-start items-stretch">
-    <y class="flex-auto relative xs:max-w-full sm:max-w-xl md:max-w-xs 2k:max-w-lg xs:mx-2 xs:my-4 md:m-4 lg:m-4 2k:m-4 text-gray-400 bg-charcoal-200 border border-charcoal-200 rounded-lg"
+  <y class="flex flex-wrap justify-start items-start">
+    <y class="flex-auto relative xs:max-w-full sm:max-w-xl md:max-w-xs 2k:max-w-md xs:mx-2 xs:my-4 md:m-4 lg:m-2 2k:m-2 text-gray-400 bg-charcoal-200 border border-charcoal-200 rounded-lg"
        each="{ work in experiences }">
 
       <y class="p-1 static flex justify-center items-center">
-        <y class="2k:mr-4 2k:mt-2 2k:-mb-4 flex justify-center items-center cursor-pointer">
+        <y class="2k:mr-4 2k:mt-0 2k:-mb-4 flex justify-center items-center cursor-pointer">
 
           <image-preview-small
             previewpopup="pop-image-experiences"
@@ -35,7 +35,7 @@
 
         <y class="pb-1 flex justify-between items-center">
 
-          <y class="pr-2 text-lg 2k:text-3xl xs:truncate font-semibold depth-loose"
+          <y class="pr-2 text-lg 2k:text-2xl xs:truncate font-semibold depth-loose"
              title="{ work.company }">
             { work.company }
           </y>
@@ -136,6 +136,7 @@
 
         // see `assets/js/components/_image_popper.js`
         popup.imageTouchDevice('.pop-image-experiences')
+        popup.imageNotTouchDevice('.pop-image-experiences')
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()

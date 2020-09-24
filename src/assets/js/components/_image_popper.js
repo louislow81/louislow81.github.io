@@ -94,7 +94,7 @@ popup.image = (function() {
     }
     else {
       var widthRatio = window.innerWidth / source.w;
-      return { w: source.w * widthRatio, h: source.h * widthRatio, fit: false };
+      return { w: source.w * widthRatio, h: source.h * widthRatio, fit: true };
     }
   }
 

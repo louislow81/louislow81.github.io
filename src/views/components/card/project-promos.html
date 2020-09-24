@@ -5,48 +5,30 @@
     Data is missing.
   </y>
 
-  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap xs:justify-start md:justify-start xs:items-center">
+  <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8 flex flex-wrap justify-start items-start">
 
     <y each="{ data in projects }">
 
-      <y class="xs:max-w-full sm:max-w-full md:max-w-md lg:max-w-md 2k:max-w-3xl m-2 2k:m-4 rounded-lg shadow overflow-hidden cursor-pointer">
+      <y class="xs:max-w-full sm:max-w-full md:max-w-md lg:max-w-xs 2k:max-w-md m-2 2k:m-2 rounded-lg shadow overflow-hidden">
         <y class="relative select-none">
 
-          <img class="adaptive w-full h-full object-cover object-center overflow-hidden rounded-lg"
+          <img class="adaptive pop-image-github-promo w-full h-full object-cover object-center overflow-hidden hover:opacity-50 rounded-lg transition duration-300 ease-in-out cursor-pointer"
                src="{ data.imagelow }"
                data-src="{ data.imagehigh }"
+               data-title="{ data.title }"
+               data-caption="{ data.desc }"
                alt="{ data.title}" />
 
-          <y class="absolute left-0 bottom-0 h-full w-full text-transparent hover:text-gray-500 hover:bg-charcoal-200 transition duration-200 ease-in-out">
+          <y class="-mt-2 text-gray-500 bg-charcoal-100">
 
-            <y class="hidden absolute right-0 bottom-0">
-              <y class="flex justify-center items-center xs:p-0 md:p-4">
-
-                <icon-platform
-                  imagelow="{ data.icon1low }"
-                  imagehigh="{ data.icon1high }"
-                  padding="{ data.icon1Padding }"
-                  visibility="{ data.icon1Visibility }">
-                </icon-platform>
-
-                <icon-platform
-                  imagelow="{ data.icon2low }"
-                  imagehigh="{ data.icon2high }"
-                  padding="{ data.icon2Padding }"
-                  visibility="{ data.icon2Visibility }">
-                </icon-platform>
-
-              </y>
-            </y>
-
-            <y class="xs:p-4 sm:p-10 md:p-8">
+            <y class="xs:p-4 sm:p-10 md:p-8 lg:p-5 2k:p-8">
               <y class="flex flex-col justify-around items-start">
 
-                <y class="xs:text-sm sm:text-xl md:text-lg 2k:text-2xl font-semibold depth-loose pb-2">
+                <y class="pb-2 xs:text-md sm:text-xl md:text-lg 2k:text-2xl font-semibold depth-loose text-gray-400">
                   { data.title }
                 </y>
 
-                <y class="xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-snug pb-3">
+                <y class="xs:text-sm sm:text-lg md:text-sm 2k:text-xl depth-snug pb-3">
 
                   <misc-show-more
                     text-color="text-gray-300"
@@ -57,7 +39,7 @@
 
                 </y>
 
-                <y class="{ data.urlVisibility } xs:text-xs sm:text-lg md:text-sm 2k:text-xl depth-loose pb-2">
+                <y class="{ data.urlVisibility } xs:text-sm sm:text-lg md:text-sm 2k:text-xl depth-loose pb-2">
                   <a class="hover:text-orange-600"
                      href="{ data.url }"
                      title="{ data.urlText }"
@@ -126,6 +108,10 @@
 
       },
       onUpdated() {
+
+        // see `assets/js/components/_image_popper.js`
+        popup.imageTouchDevice('.pop-image-github-promo')
+        popup.imageNotTouchDevice('.pop-image-github-promo')
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
