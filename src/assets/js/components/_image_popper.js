@@ -402,7 +402,7 @@ popup.image = (function() {
   Should Call `popup.image()` On Touch Device
   @param {element_id}
 */
-popup.imageNotTouchDevice = function(id) {
+popup.imageTouchDevice = function(id) {
   try {
     document.createEvent("TouchEvent")
     const img = document.querySelectorAll(id)
@@ -416,10 +416,10 @@ popup.imageNotTouchDevice = function(id) {
 
 
 /*
-  Never Call `popup.image()` On Touch Device
+  Never Call `popup.image()` On Not Touch Device
   @param {element_id}
 */
-popup.imageTouchDevice = function(id) {
+popup.imageNotTouchDevice = function(id) {
   try {
     document.createEvent("TouchEvent")
     return true

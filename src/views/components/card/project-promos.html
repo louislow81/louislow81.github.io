@@ -12,7 +12,7 @@
       <y class="xs:max-w-full sm:max-w-full md:max-w-md lg:max-w-xs 2k:max-w-md m-2 2k:m-2 rounded-lg shadow overflow-hidden">
         <y class="relative select-none">
 
-          <img class="adaptive pop-image-github-promo w-full h-full object-cover object-center overflow-hidden hover:opacity-50 rounded-lg transition duration-300 ease-in-out cursor-pointer"
+          <img class="adaptive pop-image-github-promo w-full h-full object-cover object-center overflow-hidden bg-gray-700 rounded-lg transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
                src="{ data.imagelow }"
                data-src="{ data.imagehigh }"
                data-title="{ data.title }"
@@ -40,20 +40,25 @@
                 </y>
 
                 <y class="{ data.urlVisibility } xs:text-sm sm:text-lg md:text-sm 2k:text-xl depth-loose pb-2">
-                  <a class="hover:text-orange-600"
+
+                  <a class="inline-block my-1 px-3 py-1 text-charcoal-200 bg-gray-500 hover:bg-gray-300 rounded-md select-none"
                      href="{ data.url }"
                      title="{ data.urlText }"
                      aria-label="{ data.urlText }"
                      target="_blank"
                      rel="noopener">
+
                     { data.PromoText }
+
                     <strong class="pl-1">
                       { data.urlText }
                     </strong>
+
                   </a>
+
                 </y>
 
-                <y class="xs:text-xs sm:text-md md:text-xs 2k:text-lg hover:text-orange-600 depth-loose">
+                <y class="xs:text-xs sm:text-md md:text-xs 2k:text-lg depth-loose">
                   { data.tech}
                 </y>
 
@@ -110,7 +115,6 @@
       onUpdated() {
 
         // see `assets/js/components/_image_popper.js`
-        popup.imageTouchDevice('.pop-image-github-promo')
         popup.imageNotTouchDevice('.pop-image-github-promo')
 
         // lazyload low-res, hi-res image
