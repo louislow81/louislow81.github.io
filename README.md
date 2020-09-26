@@ -1,73 +1,91 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7466fa18-16da-413d-8a39-c6dbc17d6a77/deploy-status)](https://app.netlify.com/sites/loouislow-portfolio-44af06/deploys)
 
-# My Personal Portfolio Website
+# My Porfolio Website
 
 > [https://loouislow81.github.io](https://loouislow81.github.io)
 
+---
+
+### _prototype
+
+The UI prototyping is done with my in-house prorietary design tool, it's called ~ [Kraft](https://kraft.netlify.app).
+
 <p align="left">
-  <img src="https://badgen.net/github/release/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/releases/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/assets-dl/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/branches/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/forks/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/stars/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/watchers/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/tag/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/commits/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/last-commit/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/contributors/loouislow81/loouislow81.github.io">
-  <img src="https://badgen.net/github/license/loouislow81/loouislow81.github.io">
+  <img src="assets/mockup_01.png" width="100%" height="auto">
 </p>
 
-> [Project Source Code](https://github.com/loouislow81/loouislow81.github.io/tree/2.x.x)
+### _screenshots
 
-## _contents
+<p align="left">
+  <img src="assets/screenshot_01.png" width="45%" height="auto">
+  <img src="assets/screenshot_02.png" width="45%" height="auto">
+  <img src="assets/screenshot_03.png" width="45%" height="auto">
+  <img src="assets/screenshot_04.png" width="45%" height="auto">
+  <img src="assets/screenshot_05.png" width="45%" height="auto">
+  <img src="assets/screenshot_06.png" width="45%" height="auto">
+  <img src="assets/screenshot_07.png" width="45%" height="auto">
+  <img src="assets/screenshot_08.png" width="45%" height="auto">
+</p>
+
+### _content
 
 - About
+- Projects
+- Blog
+- Article
 - Experience
 - Skills
-- Pet Projects
-- Blog
 - Contact
 
-## _featuring
+### _terminal
 
-- PWA app for all platforms.
-- 100% work offline.
-- image adaptive loader for different connection speed.
-- use raw JSON as payload.
-- crafted in pure html-based web component.
-- built with [Krugurt.js](https://github.com/loouislow81/krugurt) and [Yogurt CSS](https://github.com/yogurt-foundation/yogurt-css) ui toolkits.
-
-## _responsive screens support
-
-- `320` 320px screen (primitive)
-- `2k` 1920px screen (new)
-
-## _terminal
-
-if you prefer a nerdy way, use the Terminal version,
+view resume in Terminal,
 
 ```bash
 $ npx loouislow-resume
 ```
-## _build
+
+### _development
+
+The project is using my in-house proprietary development tools: Model-View-Presenter framework is [KrugurtJS](https://github.com/loouislow81/krugurt) to create functional web components with API callbacks, and the styling is a low-level CSS framework ~ [Yogurt CSS](https://yogurtcss.netlify.app).
+
+Some contents are live feeding from [Twitter](https://twitter.com/loouislow) account by embedding the widget and the articles are from [DEV](https://dev.to/loouislow) by fetching API. The rest of the contents are JSON serves locally.
+
+The website user experience benefits from the `krugurt.js` MVP framework that has PWA on-demand-caching and an adaptive image loader (load either low/high quality images depends on connection speeds) mechas. Also benefit from the `yogurt.css` framework by using `render` utilities on the selected elements, which the web browser viewport only renders when the user is viewing it, elements that are off-screen would not be rendered, which vastly improve page load and rendering time.
+
+### _screens
+
+Responsive screens support for mobile, laptop `1k` and, large screen size `2k`.
+
+### _build
+
+Grab a repo and installing necessary packages,
 
 ```bash
-# production build
-$ npm run build-prod
-
-# development build (with artifacts)
-$ npm run build-dev
-
-# development mode
-$ npm run watch
+$ git clone --branch 2.x.x https://github.com/loouislow81/loouislow81.github.io.git
+# YARN
+$ yarn
+# NPM
+$ npm i
 ```
 
-Thanks for viewing.
+For development mode,
+
+```bash
+# YARN
+$ yarn build-dev
+# NPM
+$ npm run build-dev
+```
+
+For production mode,
+
+```bash
+# YARN
+$ yarn build-prod
+# NPM
+$ npm run build-prod
+```
 
 Enjoy!
 
----
-
-MIT
