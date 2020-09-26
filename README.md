@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7466fa18-16da-413d-8a39-c6dbc17d6a77/deploy-status)](https://app.netlify.com/sites/loouislow-portfolio-44af06/deploys)
 
-# My Porfolio Website
+# My Portfolio Website
 
 > [https://loouislow81.github.io](https://loouislow81.github.io)
 
