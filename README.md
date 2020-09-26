@@ -17,14 +17,14 @@ The UI prototyping is done with my in-house prorietary design tool, it's called 
 ### _screenshots
 
 <p align="left">
-  <img src="assets/screenshot_01.png" width="48%" height="auto">
-  <img src="assets/screenshot_02.png" width="48%" height="auto">
-  <img src="assets/screenshot_03.png" width="48%" height="auto">
-  <img src="assets/screenshot_04.png" width="48%" height="auto">
-  <img src="assets/screenshot_05.png" width="48%" height="auto">
-  <img src="assets/screenshot_06.png" width="48%" height="auto">
-  <img src="assets/screenshot_07.png" width="48%" height="auto">
-  <img src="assets/screenshot_08.png" width="48%" height="auto">
+  <img src="assets/screenshot_01.png" width="49%" height="auto">
+  <img src="assets/screenshot_02.png" width="49%" height="auto">
+  <img src="assets/screenshot_03.png" width="49%" height="auto">
+  <img src="assets/screenshot_04.png" width="49%" height="auto">
+  <img src="assets/screenshot_05.png" width="49%" height="auto">
+  <img src="assets/screenshot_06.png" width="49%" height="auto">
+  <img src="assets/screenshot_07.png" width="49%" height="auto">
+  <img src="assets/screenshot_08.png" width="49%" height="auto">
 </p>
 
 ### _content
