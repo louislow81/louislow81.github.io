@@ -202,7 +202,7 @@ popup.image = (function() {
       wordSpacing: "0.2px",
       webkitFontSmoothing: "antialiased",
       textShadow: "-1px 0px 1px rgba(0,0,0,0.4)",
-      backgroundColor: "rgba(0,0,0,0.9)"
+      backgroundColor: "rgba(0,0,0,0.8)"
     };
     var captionContainer = document.createElement("figcaption");
     applyProperties(captionContainer, captionContainerProperties);
@@ -214,8 +214,8 @@ popup.image = (function() {
       var captionTitleProperties = {
         margin: "0px",
         padding: "0px",
-        fontWeight: "normal",
-        fontSize: "14px",
+        fontWeight: "bold",
+        fontSize: "18px",
         letterSpacing: "0.1px",
         maxWidth: "500px",
         textAlign: "left",

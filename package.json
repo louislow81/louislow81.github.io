@@ -8,7 +8,8 @@
     "watch": "gulp watch",
     "build-dev": "gulp development",
     "build-prod": "npm run update-frameworks && gulp production",
-    "update-frameworks": "rm -rf ./framework && git clone https://github.com/loouislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git"
+    "update-frameworks": "rm -rf ./framework && git clone https://github.com/loouislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
+    "post-id": "openssl rand -hex 12"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",

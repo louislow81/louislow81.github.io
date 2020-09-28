@@ -131,11 +131,9 @@
 
       <!-- preloader -->
       <y class="h-screen flex justify-center items-center">
-        <y>
-          <img class="w-24 h-24 2k:w-32 2k:h-32 border-4 border-gray-400 rounded-full shadow-lg"
-               src="assets/image/low/misc/me.png"
-               alt="Loouis Low">
-        </y>
+        <img class="inline-block w-24 h-24 2k:w-32 2k:h-32 border-4 border-gray-400 rounded-full shadow-lg"
+             src="assets/image/low/misc/me.png"
+             alt="Loouis Low">
       </y>
 
       <!-- layout -->
@@ -149,16 +147,18 @@
         </y>
 
         <!-- main content -->
-        <y class="z-10 md:ml-40 lg:ml-40 2k:ml-64 h-screen w-screen">
+        <y class="md:ml-40 lg:ml-40 2k:ml-64 h-screen w-screen">
 
           <block-posts></block-posts>
+
+          <!--<panel-hire-me></panel-hire-me>-->
 
         </y>
 
         <global-recent-active-projects></global-recent-active-projects>
 
         <!-- mobile (fixed) -->
-        <y class="z-10 fixed bottom-0 left-0">
+        <y class="z-50 fixed bottom-0 left-0">
 
           <global-mobile-blog-menu></global-mobile-blog-menu>
 
@@ -191,9 +191,9 @@
             type="krunch"></script>
     <script async data-src="components/global/mobile-blog-menu.html"
             type="krunch"></script>
-    <script async data-src="components/global/dmca-badge.html"
-            type="krunch"></script>
     <script async data-src="components/block/posts.html"
+            type="krunch"></script>
+    <script async data-src="components/block/blog/nostalgia.html"
             type="krunch"></script>
     <script async data-src="components/block/blog/posts-2020.html"
             type="krunch"></script>
@@ -239,6 +239,8 @@
             type="krunch"></script>
     <script async data-src="components/button/ultra.html"
             type="krunch"></script>
+    <!--<script async data-src="components/panel/hire-me.html"-->
+    <!--        type="krunch"></script>-->
     <script async data-src="components/icon/platform.html"
             type="krunch"></script>
     <script async data-src="components/misc/divider-bar.html"
