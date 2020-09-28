@@ -11,7 +11,7 @@
            rel="noopener"
            title="Home">
 
-          <y class="relative md:hidden xs:m-4 xs:p-2 flex flex-row justify-start items-center border border-gray-700 focus:bg-gray-700 hover:bg-gray-700 rounded-full w-full">
+          <y class="relative md:hidden xs:m-2 xs:p-1 flex flex-row justify-start items-center border border-gray-700 focus:bg-gray-700 hover:bg-gray-700 rounded-full w-full">
 
             <img class="adaptive w-10 h-10 border-2 border-gray-500 hover:border-gray-100 rounded-full overflow-hidden"
                  src="assets/image/low/misc/me.png"
@@ -26,36 +26,33 @@
 
         </a>
 
-        <y class="xs:hidden sm:block md:block lg:block 2k:block">
+        <y class="xs:mx-2 xs:mt-1 xs:pb-4 lg:mx-2 lg:my-4 2k:my-6">
 
-          <text-heading
-            class="text-gray-400"
-            title="Micro Blog"
-            size="text-xl 2k:text-3xl"
-            padding="pl-2 pt-8 pb-4">
-          </text-heading>
+          <y class="flex flex-gap-4 justify-start items-center">
 
-        </y>
+            <y class="text-gray-100 text-4xl font-semibold font-oswald uppercase">
+              BLOG
+            </y>
 
-        <y class="xs:mx-5 xs:mt-1 xs:-mb-3 lg:mx-2 2k:-my-2">
+            <text-paragraph
+              class="xs:text-sm md:text-lg lg:text-lg 2k:text-2xl text-gray-500 depth-snug select-none"
+              text="A short story of my thought to share with you, think of something I can inspiring you.">
+            </text-paragraph>
 
-          <text-paragraph
-            class="xs:text-md md:text-lg lg:text-lg 2k:text-2xl text-gray-500 select-none"
-            text="A short story of my thought to share with you, think of something I can inspiring you.">
-          </text-paragraph>
+          </y>
 
         </y>
 
       </y>
 
 
-      <y class="lg:block 2k:block px-2 text-gray-500 text-xl xs:text-sm 2k:text-xl font-semibold">
+      <y class="lg:block 2k:block px-2 text-gray-100 text-xl xs:text-sm 2k:text-xl font-semibold">
         Feeling Nostalgia
       </y>
 
       <blog-nostalgia></blog-nostalgia>
 
-      <y class="lg:block 2k:block xs:-mt-6 px-2 pb-2 text-gray-500 text-xl xs:text-sm 2k:text-xl font-semibold">
+      <y class="lg:block 2k:block xs:-mt-6 px-2 pb-2 text-gray-100 text-xl xs:text-sm 2k:text-xl font-semibold">
         Timeline
       </y>
 
@@ -96,6 +93,9 @@
   <style>
     :host {
       font-family: Poppins, Sans-Serif;
+    }
+    .font-oswald {
+      font-family: Oswald, Sans-Serif;
     }
   </style>
 
