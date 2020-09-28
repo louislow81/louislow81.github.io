@@ -1,0 +1,50 @@
+<blog-featured><y class="render-auto pl-10 pb-12 fixed-scroll-width select-none"><y class="scrollbar-horizontal flex flex-gap-8 scroll-snap x-mandatory align-start overflow-x-scroll overflow-y-hidden"><y each="{ data in featured }"><y class="relative cursor-pointer"><y class="my-4 w-48 2k:48 h-40 2k:56 bg-gray-700 rounded-md shadow-dreamy"><img class="adaptive w-full h-40 object-cover object-center overflow-hidden rounded-md" src="{ data.imagelow }" data-src="{ data.imagehigh }" alt="{ data.content }"></y><y class="my-2 text-sm text-gray-600 text-center font-oswald font-semibold uppercase">{ data.date }</y><y class="z-20 absolute bottom-0 left-0 opacity-0 hover:opacity-100 transition duration-100 ease-in-out"><y class="z-10 absolute top-1 left-0 w-full"><y class="mx-2 px-2 bg-charcoal-100 rounded-t-lg"><a class="{ data.urloption } my-1 py-1 w-16 text-xs text-charcoal-200 font-semibold text-center bg-gray-500 hover:bg-gray-300 rounded cursor-pointer" href="{ data.url }" target="_blank" rel="noopener">Project</a></y></y><y class="p-2 w-64 absolute bottom-2 left-2 bg-charcoal-100 rounded-b-lg"></y><y class="p-2 h-48"><y class="slim-scrollbar p-1 w-64 h-full text-sm 2k:text-md font-semibold depth-snug text-gray-500 bg-charcoal-100 rounded-lg shadow-dreamy-sm overscroll-contain overflow-y-auto cursor-default"><y class="px-3 pt-8 pb-3"><misc-show-more inputid="{ data.id }" labelid="{ data.id }" content="{ data.content }" textsize="text-xs 2k:text-sm"></misc-show-more></y></y></y></y></y></y></y></y><style>@media (min-width: 1024px) {
+      .fixed-scroll-width {
+        width: 1000px
+      }
+    }
+    @media (min-width: 1920px) {
+      .fixed-scroll-width {
+        width: 1380px
+      }
+    }
+    .scrollbar-horizontal::-webkit-scrollbar-track {
+      background-color: #192127
+    }
+    .slim-scrollbar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .slim-scrollbar::-webkit-scrollbar-track {
+      background-color: #222C35
+    }
+    .font-oswald {
+      font-family: Oswald, Sans-Serif;
+    }</style><script>export default {
+      onMounted() {
+
+        const self = this
+        self.featured = []
+
+        const url = 'assets/data/posts/nostalgia.json'
+
+        fetch(url)
+          .then(res => {
+            res.json()
+              .then(data => {
+                delete self.error
+                self.featured = data
+                self.update()
+              })
+              .catch(error => {
+                self.error = error
+                self.update()
+              })
+          })
+
+      },
+      onUpdated() {
+
+        krunch.adaptiveImageLoader()
+
+      }
+    }</script></blog-featured>
