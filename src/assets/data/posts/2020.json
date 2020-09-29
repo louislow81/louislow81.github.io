@@ -30,6 +30,26 @@
     "date": "06 Jun 2020"
   },
   {
+    "id": "5f15ca73aedcee8496f6bce1",
+    "url": "https://covid19-90days-prediction-charts.netlify.app",
+    "urloption": "block",
+    "projectstatus": "bg-green-600",
+    "imagelow": "assets/image/low/post/082a35955a83b00b217fed8cf090d91c.jpeg",
+    "imagehigh": "assets/image/high/post/082a35955a83b00b217fed8cf090d91c.jpeg",
+    "content": "This is the second time I overhauled the firmware CLI into much much more minimalist. This prototype `SONAR.ai` doesn't rely on GPS (X and Y dimensions, `SONAR.ai` is X, Y and Z dimensions), it uses radio frequencies as an object and can be tuned to target specific frequency, there are 2 modules in my design (tracer and marker). This 3D positioning technology can be used for some practical applications such as outdoor tracker for a mountain climber, hostile area (by implementing cheap marker module), and indoor buildings. Another use case such as the asset tracking system. It is running on an NVIDIA Jetson Nano development board with huge computing power for machine learning. The training model speed with the huge size of dataset collecting via the input RF module just makes me drooling on the floor.",
+    "date": "23 Apr 2020"
+  },
+  {
+    "id": "e91b4c3566d3c4083011e3ae",
+    "url": "https://covid19-90days-prediction-charts.netlify.app",
+    "urloption": "block",
+    "projectstatus": "bg-red-600",
+    "imagelow": "assets/image/low/post/9a310f87fcb3070856d7d5b15e327459.jpeg",
+    "imagehigh": "assets/image/high/post/9a310f87fcb3070856d7d5b15e327459.jpeg",
+    "content": "I made a COVID-19 90-days country prediction charts website with `Python`, as for the backend is `Krugurt.js` and `Yogurt.css`, frontend is. If you want to generate a chart for your country that not on the website, visit the Github repo page from the website.",
+    "date": "19 Apr 2020"
+  },
+  {
     "id": "02bb9919732e28d09686a3a5",
     "url": "https://github.com/loouislow81/covid19-trend-predictor",
     "urloption": "block",
@@ -98,6 +118,16 @@
     "imagehigh": "assets/image/high/post/a46cf9dc5d85486ca6062d03f35737ff.png",
     "content": "Spending two hours making an `FX-Gradient` web page with Krugurt.js and Yogurt.css",
     "date": "28 Mar 2020"
+  },
+  {
+    "id": "416c95f85b14458a9989e2ec",
+    "url": "https://fx-filter-previewer.netlify.app/",
+    "urloption": "block",
+    "projectstatus": "bg-green-600",
+    "imagelow": "assets/image/low/post/f48a50d7fe7ff1d55bf6d0a75ad76328.jpeg",
+    "imagehigh": "assets/image/high/post/f48a50d7fe7ff1d55bf6d0a75ad76328.jpeg",
+    "content": "The pre-release of `{FX}.css` ~ `basic presets` roll out today! It's a CSS micro-library that adds a filter effect on image or video.",
+    "date": "21 Mar 2020"
   },
   {
     "id": "70648bac288233bb01f374bbee850c02",
