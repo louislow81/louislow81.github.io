@@ -15,12 +15,12 @@
 
   -->
 
-  <y class="m-4 xs:p-6 sm:p-6 md:p-6 lg:p-6 2k:p-8 text-gray-100 bg-gray-700 rounded shadow-lg"
+  <y class="m-4 xs:p-6 sm:p-6 md:p-6 lg:p-6 2k:p-8 text-gray-500 bg-charcoal-100 border border-gray-800 rounded shadow-lg"
      id="cookiesConsent">
 
-    <y class="relative xs:max-w-full sm:max-w-full md:max-w-sm lg:max-w-sm 2k:max-w-lg">
+    <y class="relative group xs:max-w-full sm:max-w-full md:max-w-sm lg:max-w-sm 2k:max-w-lg">
 
-      <y class="ml-1 pb-3 xs:text-md sm:text-md md:text-md lg:text-md 2k:text-2xl text-white depth-tight">
+      <y class="ml-1 pb-3 xs:text-md sm:text-md md:text-md lg:text-md 2k:text-2xl text-gray-100 depth-tight">
         I serve cookies and third-party services on this content to analyze traffic, collect conversation, remember your preferences, and optimize your experience.
       </y>
 
@@ -28,7 +28,7 @@
 
         <span each="{ data in dataCollectors }">
 
-          <a class="mr-1 px-1 hover:text-gray-600 hover:bg-gray-200 underline hover:no-underline depth-snug rounded-full"
+          <a class="mr-1 px-1 hover:text-gray-400 hover:underline depth-snug rounded"
              href="{ data.url }"
              title="{ data.url }"
              target="_blank"
@@ -42,13 +42,14 @@
 
       <y class="z-10 -mt-8 2k:-mt-12 absolute right-0">
 
-        <y class="w-20 2k:w-32 h-20 2k:h-32 bg-gray-600 rounded-full"></y>
+        <y class="w-20 2k:w-32 h-20 2k:h-32 bg-gray-800 group-hover:bg-gray-700 rounded-full"></y>
 
       </y>
 
       <y class="z-20 -mt-6 2k:-mt-8 2k:mr-2 absolute right-2">
 
-        <button class="w-16 2k:w-24 h-16 2k:h-24 text-2xl 2k:text-4xl text-gray-600 hover:text-white font-semibold uppercase focus:outline-none bg-white hover:bg-gray-700 rounded-full cursor-pointer"
+        <button class="w-16 2k:w-24 h-16 2k:h-24 text-2xl 2k:text-4xl text-charcoal-100 group-hover:text-gray-600 font-semibold uppercase focus:outline-none bg-gray-600 group-hover:bg-gray-800 rounded-full cursor-pointer"
+                type="button"
                 id="acceptCookies">
           OK
         </button>

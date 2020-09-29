@@ -2,7 +2,7 @@
 
   <y class="render-auto xs:-ml-2 lg:ml-2 pl-10 pb-12 fixed-scroll-width select-none">
 
-    <y class="scrollbar-horizontal flex xs:flex-gap-6 lg:flex-gap-10 2k:flex-gap-10 scroll-snap x-mandatory align-start overflow-x-scroll overflow-y-hidden scroll-smooth">
+    <y class="scrollbar-horizontal flex xs:flex-gap-6 lg:flex-gap-8 2k:flex-gap-8 scroll-snap x-mandatory align-start overflow-x-scroll overflow-y-hidden scroll-smooth">
 
       <y each="{ data in nostalgia }">
 
@@ -10,7 +10,7 @@
 
           <y class="my-4 w-56 xs:w-64 2k:48 h-48 2k:56 bg-gray-700 rounded-md shadow-dreamy">
 
-            <img class="adaptive w-full h-48 object-cover object-center overflow-hidden rounded-md"
+            <img class="adaptive w-full h-48 object-cover object-center overflow-hidden rounded-md cursor-pointer"
                  src="{ data.imagelow }"
                  data-src="{ data.imagehigh }"
                  alt="{ data.content }">
