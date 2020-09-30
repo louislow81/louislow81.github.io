@@ -1,54 +1,58 @@
 <blog-posts-2017>
 
-  <y class="render-auto-normal relative xs:px-4 xs:py-0 sm:px-8 md:px-8 lg:px-0"
-     id="2017">
+  <y class="{ props.render }">
 
-    <y class="px-2 text-md text-red-400"
-       if="{ error }">
-      Data is missing.
-    </y>
+    <y class="render-auto-normal relative xs:px-4 xs:py-0 sm:px-8 md:px-8 lg:px-0"
+       id="2017">
 
-    <text-year
-      text="2017">
-    </text-year>
+      <y class="px-2 text-md text-red-400"
+         if="{ error }">
+        Data is missing.
+      </y>
 
-    <y class="sticky top-0 right-32 float-right">
+      <text-year
+        text="2017">
+      </text-year>
 
-      <card-total-posts
-        timeline="2017"
-        timelineid="twoSeventeen"
-        bgcolor="bg-blue-700">
-      </card-total-posts>
+      <y class="sticky top-0 right-32 float-right">
 
-    </y>
-
-    <y class="flex flex-wrap justify-start items-start">
-      <y each="{ data in posts }">
-
-        <card-blog-posts
-          inputid="{ data.id }"
-          labelid="{ data.id }"
-          url="{ data.url }"
-          urloption="{ data.urloption }"
-          projectstatus="{ data.projectstatus }"
-          imagelow="{ data.imagelow }"
-          imagehigh="{ data.imagehigh }"
-          imageheight="h-64"
-          popimageid="pop-image-2017"
-          imagecaption="{ data.content }"
-          content="{ data.content }"
-          date="{ data.date }"
-          xsscreen="xs:max-w-md"
-          smscreen="sm:max-w-full"
-          mdscreen="md:max-w-md">
-        </card-blog-posts>
+        <card-total-posts
+          timeline="2017"
+          timelineid="twoSeventeen"
+          bgcolor="bg-blue-700">
+        </card-total-posts>
 
       </y>
-    </y>
 
-    <misc-divider-bar
-      opacity="75">
-    </misc-divider-bar>
+      <y class="flex flex-wrap justify-start items-start">
+        <y each="{ data in posts }">
+
+          <card-blog-posts
+            inputid="{ data.id }"
+            labelid="{ data.id }"
+            url="{ data.url }"
+            urloption="{ data.urloption }"
+            projectstatus="{ data.projectstatus }"
+            imagelow="{ data.imagelow }"
+            imagehigh="{ data.imagehigh }"
+            imageheight="h-64"
+            popimageid="pop-image-2017"
+            imagecaption="{ data.content }"
+            content="{ data.content }"
+            date="{ data.date }"
+            xsscreen="xs:max-w-md"
+            smscreen="sm:max-w-full"
+            mdscreen="md:max-w-md">
+          </card-blog-posts>
+
+        </y>
+      </y>
+
+      <misc-divider-bar
+        opacity="75">
+      </misc-divider-bar>
+
+    </y>
 
   </y>
 
