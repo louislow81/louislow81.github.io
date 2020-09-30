@@ -31,8 +31,8 @@
   },
   {
     "id": "5f15ca73aedcee8496f6bce1",
-    "url": "https://covid19-90days-prediction-charts.netlify.app",
-    "urloption": "block",
+    "url": "",
+    "urloption": "hidden",
     "projectstatus": "bg-green-600",
     "imagelow": "assets/image/low/post/082a35955a83b00b217fed8cf090d91c.jpeg",
     "imagehigh": "assets/image/high/post/082a35955a83b00b217fed8cf090d91c.jpeg",
