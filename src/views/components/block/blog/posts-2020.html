@@ -2,12 +2,18 @@
 
   <y class="{ props.render }">
 
-    <y class="relative xs:px-4 xs:py-0 sm:px-8 md:px-8 lg:px-0"
+    <y class="relative xs:px-4 { props.stateyearspacing } sm:px-8 md:px-8 lg:px-0"
        id="2020">
 
       <y class="px-2 text-md text-red-400"
          if="{ error }">
         Data is missing.
+      </y>
+
+      <y class="{ props.stateshowyear }">
+        <text-year
+          text="2020">
+        </text-year>
       </y>
 
       <y class="sticky top-0 right-32 float-right mt-2">
