@@ -1,5 +1,6 @@
 ::-webkit-scrollbar {
   width: 15px;
+  height: 15px
 }
 
 ::-webkit-scrollbar-thumb {
@@ -8,7 +9,7 @@
   background-clip: padding-box;
 
   &:hover {
-    background-color: rgba(168, 168, 168, 1);
+    background-color: rgba(168, 168, 168, 1)
   }
 
 }
