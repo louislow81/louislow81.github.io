@@ -3,80 +3,14 @@
   <y class="xs:pt-0 pt-4 pb-8 h-screen bg-charcoal-400 container">
     <y class="md:px-4 md:h-full">
 
-      <y class="flex xs:flex-col md:flex-wrap xs:justify-start sm:justify-center md:justify-start xs:items-start md:items-start xs:pb-0">
-
-        <y class="z-50 fixed top-0 left-0 flex justify-between items-center backdrop-filter blur-4 bg-charcoal-400 bg-opacity-75 shadow-dreamy w-full">
-
-          <a class="select-none"
-             href="/"
-             target="_self"
-             rel="noopener"
-             title="Home">
-
-            <y class="relative md:hidden xs:m-2 flex flex-row justify-start items-center border-2 border-gray-500 focus:bg-gray-700 hover:bg-gray-700 rounded-full w-full">
-
-              <img class="adaptive w-8 h-8 object-cover object-center rounded-full overflow-hidden"
-                   src="assets/image/low/misc/me.png"
-                   data-src="assets/image/high/misc/me.png"
-                   title="Me">
-
-              <y class="pl-2 text-sm text-gray-500">
-                Loouis Low
-              </y>
-
-            </y>
-
-          </a>
-
-          <y class="z-50 absolute top-2 right-2 xs:block md:hidden lg:hidden 2k:hidden">
-
-            <y class="{ state.timelineon } absolute top-0 right-0 px-3 py-1 text-sm text-gray-500 border-2 border-gray-500 rounded-full shadow-dreamy-sm select-none"
-               onclick="{ openTimelineMenu }">
-              Timeline
-            </y>
-
-            <y class="{ state.timelineoff } absolute top-0 right-0 px-3 py-1 text-sm text-charcoal-400 border-2 border-gray-500 bg-gray-500 rounded-full shadow-dreamy-sm select-none"
-               onclick="{ closeTimelineMenu }">
-              Close
-            </y>
-
-            <y class="{ state.timelinemenu } absolute top-10 right-0 py-1 w-20 h-56 bg-gray-700 rounded shadow-dreamy overscroll-contain overflow-y-scroll scroll-snap y-mandatory align-start">
-
-              <a class="block"
-                 href="#2020"
-                 target="_self"
-                 rel="noopener"
-                 title="2020"
-                 onclick="{ openLatestTimeline }">
-
-                <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 hover:text-charcoal-100 hover:bg-gray-400 select-none">
-                  2020
-                </y>
-
-              </a>
-
-              <y each="{ data in timeline }">
-
-                <a href="{ data.url }"
-                   target="_self"
-                   rel="noopener"
-                   title="{ data.title }">
-
-                  <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 hover:text-charcoal-100 hover:bg-gray-400 select-none">
-                    { data.title }
-                  </y>
-
-                </a>
-
-              </y>
-
-            </y>
-
-          </y>
-
-        </y>
-
-      </y>
+      <global-mobile-blog-topbar
+        showyearpanel="{ openLatestTimeline }"
+        opentimelinemenu="{ openTimelineMenu }"
+        closetimelinemenu="{ closeTimelineMenu }"
+        statetimelinemenu=" { state.timelinemenu }"
+        statetimelineon="{ state.timelineon }"
+        statetimelineoff="{ state.timelineoff }">
+      </global-mobile-blog-topbar>
 
       <y class="xs:mx-2 xs:pt-16 xs:pb-4 lg:mx-2 lg:-mt-10 lg:my-4 2k:-mt-10 2k:my-6">
 
@@ -173,6 +107,12 @@
         showyear: 'hidden',
         showyearspacing: ''
       },
+      openLatestTimeline() {
+        this.update({
+          showyear: 'block',
+          showyearspacing: 'xs:pt-16 xs:pb-0'
+        })
+      },
       openTimelineMenu() {
         this.update({
           timelinemenu: 'block',
@@ -189,38 +129,11 @@
           showyearspacing: ''
         })
       },
-      openLatestTimeline() {
-        this.update({
-          showyear: 'block',
-          showyearspacing: 'xs:pt-16 xs:pb-0'
-        })
-      },
       onMounted() {
-
-        const self = this
-        self.timeline = []
-
-        const url = 'assets/data/blog-menu.json'
-
-        fetch(url)
-          .then(res => {
-            res.json()
-              .then(data => {
-                delete self.error
-                self.timeline = data
-                data.splice(0,1) // remove `home` from array
-                data.splice(0,1) // remove `2020` from array
-                self.update()
-              })
-              .catch(error => {
-                self.error = error
-                self.update()
-              })
-          })
 
         krunch.adaptiveImageLoader()
 
-        const tour = 'Alright, welcome to my blackhole!'
+        const tour = 'Welcome to my blackhole!'
         snicker.onLoad(tour, 5000)
 
         // Services restricted by
