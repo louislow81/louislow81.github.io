@@ -12,7 +12,7 @@
     "title": "Performance-X",
     "desc": "Accelerate page load, enhance the image and video color, anti-aliased typography, and more for Chrome, Chrome OS and other Chrome-based web browsers.",
     "icon": "fab fa-github",
-    "url": "https://chrome.google.com/webstore/detail/performance-x/ejhcfhdghpippilemgcagchdkpheiabf",
+    "url": "https://github.com/loouislow81/performance-x-extension",
     "tech": "CRX, NEX, JS, CSS"
   },
   {
