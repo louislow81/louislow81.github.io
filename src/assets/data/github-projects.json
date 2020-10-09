@@ -40,12 +40,12 @@
     "tech": "C++, Bash, NodeJS"
   },
   {
-    "id": "393e129cdc77",
-    "title": "golem-sdk",
-    "desc": "Software development kit to craft GOLEM apps out of thin air",
+    "id": "28c7d6164a679854d2f909d7",
+    "title": "ionizer",
+    "desc": "System-wide ads filter with just DNSMASQ and BASH for Linux",
     "icon": "fab fa-github",
-    "url": "https://github.com/loouislow81/golem-sdk",
-    "tech": "ElectronJS, NodeJS"
+    "url": "https://github.com/loouislow81/ionizer",
+    "tech": "Python, NodeJS, Bash"
   },
   {
     "id": "5ce4b93b2be6",
