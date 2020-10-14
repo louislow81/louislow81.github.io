@@ -18,11 +18,13 @@
                 delete self.error
                 if (isMobile.any()) { // item x limit for mobile device
                   data.length = 5
+                  // data.sort((a, b) => parseFloat(b.public_reactions_count) - parseFloat(a.public_reactions_count)) // sort top articles
                   self.posts = data
                   self.update()
                 }
                 else {
                   data.length = 6
+                  // data.sort((a, b) => parseFloat(b.public_reactions_count) - parseFloat(a.public_reactions_count)) // sort top articles
                   self.posts = data
                   self.update()
                 }
