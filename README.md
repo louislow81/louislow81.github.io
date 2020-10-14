@@ -8,8 +8,6 @@
 
 ### _prototype
 
-The UI prototyping is done with my in-house prorietary design tool, it's called ~ [Kraft](https://kraft.netlify.app).
-
 <p align="left">
   <img src="assets/mockup_01.png" width="100%" height="auto">
 </p>
