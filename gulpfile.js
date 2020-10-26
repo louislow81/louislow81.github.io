@@ -223,6 +223,12 @@ gulp.task('move-css', () => {
     .pipe(gulp.dest(distCssPath))
 })
 
+gulp.task('move-404', () => {
+  return gulp.src([
+      'src/404.html',
+    ])
+    .pipe(gulp.dest(distProdPath))
+})
 
 gulp.task('purge-css', () => {
   return gulp.src(distCssPath + '/style_merged.css')
@@ -251,7 +257,6 @@ gulp.task('remove-junk-js', () => {
     .pipe(clean())
 })
 
-
 gulp.task('remove-junk-css', () => {
   return gulp.src([
       distProdPath + '/assets/css/base.css',
@@ -263,7 +268,6 @@ gulp.task('remove-junk-css', () => {
     .pipe(clean())
 })
 
-
 gulp.task('move-pdf-resume', () => {
   const srcPdfResumePath = 'src/assets/pdf'
   return gulp.src([
@@ -271,7 +275,6 @@ gulp.task('move-pdf-resume', () => {
     ])
     .pipe(gulp.dest(distProdPath + '/assets/pdf/'))
 })
-
 
 gulp.task('production', gulp.series(
   'build-js',
@@ -287,6 +290,7 @@ gulp.task('production', gulp.series(
   'move-service-worker',
   'build-app-manifest',
   'move-pdf-resume',
+  'move-404',
   'remove-junk-js',
   'remove-junk-css'
 ))
@@ -307,6 +311,7 @@ gulp.task('development', gulp.series([
   'move-service-worker',
   'move-app-manifest',
   'move-pdf-resume',
+  'move-404',
   'serve'
 
 ], () => {
