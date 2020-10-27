@@ -361,11 +361,12 @@ gulp.task('development', gulp.series([
     ])
   )
 
-  const watchSrcHtmlPath = 'src/views/**/*.html'
+  const watchSrcHtmlPath = 'src/**/**/**/**/**/*.html'
   gulp.watch(watchSrcHtmlPath,
     gulp.series([
       'build-html',
       'move-css',
+      'move-404',
       reload
     ])
   )
