@@ -140,23 +140,64 @@
       <y class="h-screen flex justify-center items-center">
         <img class="inline-block w-24 h-24 2k:w-32 2k:h-32 border-4 border-gray-400 rounded-full shadow-lg"
              src="assets/image/low/misc/me.png"
+             loading="lazy"
              alt="Loouis Low">
       </y>
 
       <!-- layout -->
-      <y class="absolute top-0 left-0 w-full md:flex lg:flex xl:flex bg-charcoal-400">
+      <y class="absolute top-0 left-0 w-full md:flex lg:flex xl:flex">
 
         <!-- main content -->
-        <y class="p-10 h-screen w-screen flex justify-center items-center">
+        <y class="relative h-screen w-screen flex justify-center items-center font-default overflow-hidden">
 
-          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <y class="h-screen w-screen flex flex-row justify-center items-stretch">
 
-          <lottie-player class="lg:max-w-lg 2k:max-w-xl filter saturate-0"
-                         src="https://assets8.lottiefiles.com/packages/lf20_xRmNN8.json"
-                         background="transparent"
-                         speed="2"
-                         loop autoplay>
-          </lottie-player>
+            <y class="relative w-1/2 flex justify-center items-center bg-nero-400 overflow-hidden">
+
+              <y class="z-10 absolute top-0 left-0 animation fade-in delay-3">
+                <img class="h-screen w-screen object-cover object-center opacity-50"
+                     src="assets/image/low/slide/404.jpg"
+                     loading="lazy"
+                     alt="404">
+              </y>
+
+              <y class="z-20 flex flex-col justify-center items-center animation roll-in-right duration-500 delay-2">
+
+                <y class="text-8xl text-white font-semibold">
+                  404
+                </y>
+
+                <a class="px-8 py-2 text-charcoal-100 hover:text-white bg-white hover:bg-charcoal-100 rounded-md shadow-dreamy-sm"
+                   href="/"
+                   target="_self"
+                   title="Back to home...">
+                  Back to home
+                </a>
+
+              </y>
+
+            </y>
+
+            <y class="relative w-1/2 flex justify-center items-center bg-nero-500">
+
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+              <lottie-player class="z-20 xs:max-w-xs lg:max-w-md 2k:max-w-2xl filter saturate-0 animation fade-in-left duration-500 delay-2"
+                             src="https://assets9.lottiefiles.com/packages/lf20_ed9D2z.json"
+                             background="transparent"
+                             speed="2"
+                             loop autoplay>
+              </lottie-player>
+
+            </y>
+
+          </y>
+
+          <y class="z-20 absolute top-10 animation roll-in-left duration-300 delay-2">
+            <img class="inline-block w-16 h-16 2k:w-24 2k:h-24 bg-nero-300 border-4 border-nero-300 rounded-full shadow-lg"
+                 src="assets/image/low/misc/me.png"
+                 alt="Loouis Low">
+          </y>
 
         </y>
 
