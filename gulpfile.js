@@ -234,7 +234,7 @@ gulp.task('purge-css', () => {
   return gulp.src(distCssPath + '/style_merged.css')
     .pipe(purgeCss({
       content: [
-        'src/views/**/**/**/**/**/**/*.html',
+        'src/**/**/**/**/**/*.html',
         'src/assets/js/**/**/**/**/*.js',
         'src/assets/data/**/**/**/**/*.json'
       ],
