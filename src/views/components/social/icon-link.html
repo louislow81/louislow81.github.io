@@ -1,6 +1,6 @@
 <social-icon-link>
 
-  <y class="sm:pr-6 md:pr-6 2k:pr-10 select-none">
+  <y class="(sm)pr-6 (md)pr-6 (2k)pr-10 select-none">
     <y class="{ props.iconorientation }">
       <y each="{ profile in social }">
 
@@ -8,9 +8,9 @@
            href="{ profile.url }"
            title="{ profile.title }"
            target="_blank"
-           rel="noopener">
+           rel="noopener noreferrer">
 
-          <img class="adaptive { props.iconmargin } { props.iconsize } object-contain object-center hover:opacity-50"
+          <img class="adaptive { props.iconmargin } { props.iconsize } object-contain object-center (hover)opacity-50"
                src="{ profile.iconlow }"
                data-src="{ profile.iconhigh }"
                alt="{ profile.title }">

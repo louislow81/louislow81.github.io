@@ -1,6 +1,6 @@
 <global-mobile-blog-topbar>
 
-  <y class="flex xs:flex-col md:flex-wrap xs:justify-start sm:justify-center md:justify-start xs:items-start md:items-start xs:pb-0">
+  <y class="flex (xs)flex-col (md)flex-wrap (xs)justify-start (sm)justify-center (md)justify-start (xs)items-start (md)items-start (xs)pb-0">
 
     <y class="z-50 fixed top-0 left-0 flex justify-between items-center backdrop-filter blur-4 bg-charcoal-400 bg-opacity-75 shadow-dreamy w-full">
 
@@ -10,7 +10,7 @@
          rel="noopener"
          title="Home">
 
-        <y class="relative md:hidden xs:m-2 flex flex-row justify-start items-center border-2 border-gray-500 focus:bg-gray-700 hover:bg-gray-700 rounded-full w-full">
+        <y class="relative (md)hidden (xs)m-2 flex flex-row justify-start items-center border-2 border-gray-500 (focus)bg-gray-700 (hover)bg-gray-700 rounded-full w-full">
 
           <img class="adaptive w-8 h-8 object-cover object-center rounded-full overflow-hidden"
                src="assets/image/low/misc/me.png"
@@ -25,7 +25,7 @@
 
       </a>
 
-      <y class="z-50 absolute top-2 right-2 xs:block md:hidden lg:hidden 2k:hidden">
+      <y class="z-50 absolute top-2 right-2 (xs)block (md)hidden (lg)hidden (2k)hidden">
 
         <y class="{ props.statetimelineon } absolute top-0 right-0 px-3 py-1 text-sm text-gray-500 border-2 border-gray-500 rounded-full shadow-dreamy-sm select-none"
            onclick="{ props.opentimelinemenu }">
@@ -46,7 +46,7 @@
              title="2020"
              onclick="{ props.showyearpanel }">
 
-            <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 hover:text-charcoal-100 hover:bg-gray-400 select-none">
+            <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 (hover)text-charcoal-100 (hover)bg-gray-400 select-none">
               2020
             </y>
 
@@ -59,7 +59,7 @@
                rel="noopener"
                title="{ data.title }">
 
-              <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 hover:text-charcoal-100 hover:bg-gray-400 select-none">
+              <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 (hover)text-charcoal-100 (hover)bg-gray-400 select-none">
                 { data.title }
               </y>
 

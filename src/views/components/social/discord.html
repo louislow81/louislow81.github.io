@@ -1,19 +1,19 @@
 <social-discord>
 
-  <y class="z-50 relative group { props.visibility } lg:block 2k:block">
+  <y class="z-50 relative (group) { props.visibility } (lg)block (2k)block">
 
-    <img class="adaptive { props.iconsize } object-contain object-center hover:opacity-50 cursor-pointer select-none animation fade-in duration-3000 delay-2"
+    <img class="adaptive { props.iconsize } object-contain object-center (hover)opacity-50 cursor-pointer select-none animation fade-in duration-3000 delay-2"
          src="assets/image/low/misc/social/{ props.icon }"
          data-src="assets/image/low/misc/social/{ props.icon }"
          loading="lazy"
          alt="{ props.title }">
 
 
-    <y class="mr-px absolute top-0 right-0 hidden group-hover:block">
+    <y class="mr-px absolute top-0 right-0 hidden (group-hover)block">
 
       <a href="{ props.url }"
          target="_blank"
-         rel="noopener"
+         rel="noopener noreferrer"
          title="">
 
         <y class="px-4 w-64 h-24 flex justify-center items-center font-titillium font-semibold text-charcoal-200 bg-white shadow-dreamy rounded-md overflow-hidden">
@@ -22,7 +22,7 @@
              src="assets/image/low/misc/social/{ props.icon }"
              data-src="assets/image/low/misc/social/{ props.icon }"
              loading="lazy"
-             alt="">
+             alt="{ props.iconname }">
 
            <y class="pl-4">
 

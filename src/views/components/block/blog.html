@@ -5,27 +5,27 @@
   <y class="py-4"
      id="blog">
 
-    <y class="md:px-10 md:h-full">
+    <y class="(md)px-10 (md)h-full">
 
-      <y class="xs:text-center sm:text-left md:text-left xs:pb-0">
+      <y class="(xs)text-center (sm)text-left (md)text-left (xs)pb-0">
 
         <text-heading
           class="text-white"
           title="Blog"
-          size="text-3xl 2k:text-4xl"
+          size="text-3xl (2k)text-4xl"
           padding="p-10">
         </text-heading>
 
       </y>
 
-      <y class="xs:px-4 xs:py-0 sm:px-8 md:px-8">
+      <y class="(xs)px-4 (xs)py-0 (sm)px-8 (md)px-8">
 
         <y class="hidden px-2 text-md text-red-400"
            if="{ error }">
           Data is missing.
         </y>
 
-        <y class="lg:-ml-3 flex flex-wrap justify-start items-start ">
+        <y class="(lg)-ml-3 flex flex-wrap justify-start items-start ">
 
           <y each="{ data in posts }">
 
@@ -42,9 +42,9 @@
               imagecaption="{ data.content }"
               content="{ data.content }"
               date="{ data.date }"
-              xsscreen="xs:max-w-md"
-              smscreen="sm:max-w-full"
-              mdscreen="md:max-w-xs">
+              xsscreen="(xs)max-w-md"
+              smscreen="(sm)max-w-full"
+              mdscreen="(md)max-w-xs">
             </card-blog-posts>
 
           </y>

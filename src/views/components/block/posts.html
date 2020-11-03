@@ -1,7 +1,7 @@
 <block-posts>
 
-  <y class="xs:pt-0 pt-4 pb-8 h-screen bg-charcoal-400 container">
-    <y class="md:px-4 md:h-full">
+  <y class="(xs)pt-0 pt-4 pb-8 h-screen bg-charcoal-400 container">
+    <y class="(md)px-4 (md)h-full">
 
       <global-mobile-blog-topbar
         showyearpanel="{ openLatestTimeline }"
@@ -12,7 +12,7 @@
         statetimelineoff="{ state.timelineoff }">
       </global-mobile-blog-topbar>
 
-      <y class="xs:mx-2 xs:pt-16 xs:pb-4 lg:mx-2 lg:-mt-10 lg:my-4 2k:-mt-10 2k:my-6">
+      <y class="(xs)mx-2 (xs)pt-16 (xs)pb-4 (lg)mx-2 (lg)-mt-10 (lg)my-4 (2k)-mt-10 (2k)my-6">
 
         <y class="flex flex-gap-4 justify-start items-center select-none">
 
@@ -21,7 +21,7 @@
           </y>
 
           <text-paragraph
-            class="xs:text-sm md:text-lg lg:text-lg 2k:text-2xl text-gray-500 depth-snug select-none"
+            class="(xs)text-sm (md)text-lg (lg)text-lg (2k)text-2xl text-gray-500 depth-snug select-none"
             text="A short story of my thought to share with you, think of something I can inspiring you.">
           </text-paragraph>
 
@@ -29,7 +29,7 @@
 
       </y>
 
-      <y class="lg:block 2k:block px-2 text-gray-100 text-xl xs:text-sm 2k:text-xl font-semibold select-none">
+      <y class="(lg)block (2k)block px-2 text-gray-100 text-xl (xs)text-sm (2k)text-xl font-semibold select-none">
         Feeling Nostalgia
       </y>
 
@@ -37,7 +37,7 @@
         render="{ state.render }">
       </blog-nostalgia>
 
-      <y class="lg:block 2k:block xs:-mt-6 px-2 pb-2 text-gray-100 text-xl xs:text-sm 2k:text-xl font-semibold select-none">
+      <y class="(lg)block (2k)block (xs)-mt-6 px-2 pb-2 text-gray-100 text-xl (xs)text-sm (2k)text-xl font-semibold select-none">
         Timeline
       </y>
 
@@ -110,7 +110,7 @@
       openLatestTimeline() {
         this.update({
           showyear: 'block',
-          showyearspacing: 'xs:pt-16 xs:pb-0'
+          showyearspacing: '(xs)pt-16 (xs)pb-0'
         })
       },
       openTimelineMenu() {

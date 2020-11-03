@@ -225,7 +225,7 @@ gulp.task('move-css', () => {
 
 gulp.task('move-404', () => {
   return gulp.src([
-      'src/404.html',
+      'src/views/404.html',
     ])
     .pipe(gulp.dest(distProdPath))
 })
@@ -239,7 +239,7 @@ gulp.task('purge-css', () => {
         'src/assets/data/**/**/**/**/*.json'
       ],
       // make compatible for `Yogurt CSS` framework
-      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
+      defaultExtractor: content => content.match(/[\w-/:()]+(?<!:)/g) || [],
       whitelistPatterns: [/-webkit-scrollbar-thumb$/]
     }))
     .pipe(rename('style.css'))
