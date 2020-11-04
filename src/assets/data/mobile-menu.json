@@ -24,12 +24,6 @@
     "title": "Blog"
   },
   {
-    "url": "#experience",
-    "iconlow": "assets/image/low/misc/mobile-menu/experience.png",
-    "iconhigh": "assets/image/high/misc/mobile-menu/experience.png",
-    "title": "Experience"
-  },
-  {
     "url": "#contact",
     "iconlow": "assets/image/low/misc/mobile-menu/contact.png",
     "iconhigh": "assets/image/high/misc/mobile-menu/contact.png",
