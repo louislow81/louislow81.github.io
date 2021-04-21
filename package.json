@@ -4,12 +4,12 @@
   "description": "My portfolio website built with Krugurt.js and Yogurt.css frameworks",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp",
-    "watch": "gulp watch",
     "build-dev": "gulp development",
     "build-prod": "gulp production",
+    "gulp": "gulp",
+    "post-id": "openssl rand -hex 12",
     "update-frameworks": "rm -rf ./framework && git clone https://github.com/loouislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
-    "post-id": "openssl rand -hex 12"
+    "watch": "gulp watch"
   },
   "author": "Loouis Low <loouis@gmail.com>",
   "license": "MIT",
