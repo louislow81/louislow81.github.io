@@ -1,9 +1,9 @@
-<blog-posts-2020>
+<blog-posts-2021>
 
   <y class="{ props.render }">
 
-    <y class="relative (xs)px-4 { props.stateyearspacing } (xs)pt-16 (sm)px-8 (md)px-8 (lg)px-0"
-       id="2020">
+    <y class="relative (xs)px-4 { props.stateyearspacing } (sm)px-8 (md)px-8 (lg)px-0"
+       id="2021">
 
       <y class="px-2 text-md text-red-400"
          if="{ error }">
@@ -12,15 +12,15 @@
 
       <y class="{ props.stateshowyear }">
         <text-year
-          text="2020">
+          text="2021">
         </text-year>
       </y>
 
       <y class="sticky top-0 right-32 float-right mt-2">
 
         <card-total-posts
-          timeline="2020"
-          timelineid="twoTwenty"
+          timeline="2021"
+          timelineid="twoTwentyOne"
           bgcolor="bg-blue-700">
         </card-total-posts>
 
@@ -38,7 +38,7 @@
             imagelow="{ data.imagelow }"
             imagehigh="{ data.imagehigh }"
             imageheight="h-64"
-            popimageid="pop-image-2020"
+            popimageid="pop-image-2021"
             imagecaption="{ data.content }"
             content="{ data.content }"
             date="{ data.date }"
@@ -67,7 +67,7 @@
         self.posts = []
 
         const base = './assets/data'
-        const url = base + '/posts/2020.json'
+        const url = base + '/posts/2021.json'
 
         fetch(url)
           .then(res => {
@@ -76,7 +76,7 @@
                 delete self.error
                 self.posts = data
                 self.update()
-                totalPosts('twoTwenty', data)
+                totalPosts('twoTwentyOne', data)
               })
               .catch(error => {
                 self.error = error
@@ -88,7 +88,7 @@
       onUpdated() {
 
         // see `assets/js/components/_image_popper.js`
-        popup.imageNotTouchDevice('.pop-image-2020')
+        popup.imageNotTouchDevice('.pop-image-2021')
 
         // lazyload low-res, hi-res image
         krunch.adaptiveImageLoader()
@@ -97,4 +97,4 @@
     }
   </script>
 
-</blog-posts-2020>
+</blog-posts-2021>
