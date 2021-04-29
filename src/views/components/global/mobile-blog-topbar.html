@@ -40,14 +40,14 @@
         <y class="{ props.statetimelinemenu } absolute top-10 right-0 py-1 w-20 h-56 bg-gray-700 rounded shadow-dreamy overscroll-contain overflow-y-scroll scroll-snap y-mandatory align-start">
 
           <a class="block"
-             href="#2020"
+             href="#2021"
              target="_self"
              rel="noopenner"
-             title="2020"
+             title="2021"
              onclick="{ props.showyearpanel }">
 
             <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 (hover)text-charcoal-100 (hover)bg-gray-400 select-none">
-              2020
+              2021
             </y>
 
           </a>
@@ -92,7 +92,7 @@
                 delete self.error
                 self.timeline = data
                 data.splice(0,1) // remove `home` from array
-                data.splice(0,1) // remove `2020` from array use static button
+                // data.splice(0,1) // remove `2020` from array use static button
                 self.update()
               })
               .catch(error => {
