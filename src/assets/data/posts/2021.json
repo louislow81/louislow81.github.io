@@ -1,6 +1,16 @@
 
 [
   {
+    "id": "f03b421ce9d43f00ca6a75af",
+    "url": "https://yogurtcss.netlify.app",
+    "urloption": "block",
+    "projectstatus": "bg-green-600",
+    "imagelow": "assets/image/low/post/5cf39635a5db3d0b391967e5.jpg",
+    "imagehigh": "assets/image/high/post/5cf39635a5db3d0b391967e5.jpg",
+    "content": "New Yogurt CSS v1.1.5 has released! Completely framework rewritten and refactored including the documentation website has several changes.",
+    "date": "13 May 2021"
+  },
+  {
     "id": "d964fdba533f5de5b990ecaf",
     "url": "",
     "urloption": "hidden",
