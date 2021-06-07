@@ -35,7 +35,8 @@
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0"
+    "imagemin-pngquant": "^8.0.0",
+    "yogurt-css": "^1.1.5"
   },
   "dependencies": {
     "node-sass": "^4.14.1"

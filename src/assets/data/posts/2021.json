@@ -1,5 +1,14 @@
-
 [
+  {
+    "id": "ddfb3c5ba273ab092534cfed",
+    "url": "https://yogurtcss.netlify.app/playground",
+    "urloption": "block",
+    "projectstatus": "bg-green-600",
+    "imagelow": "assets/image/low/post/ddfb3c5ba273ab092534cfed.png",
+    "imagehigh": "assets/image/high/post/ddfb3c5ba273ab092534cfed.png",
+    "content": "Yogurt Playground (v0.1.4-beta) has released with a whole new advanced code editor just like VSCODE. This developer tool is for testing or build prototype with the Yogurt CSS framework.",
+    "date": "29 May 2021"
+  },
   {
     "id": "f03b421ce9d43f00ca6a75af",
     "url": "https://yogurtcss.netlify.app",
@@ -7,8 +16,18 @@
     "projectstatus": "bg-green-600",
     "imagelow": "assets/image/low/post/5cf39635a5db3d0b391967e5.jpg",
     "imagehigh": "assets/image/high/post/5cf39635a5db3d0b391967e5.jpg",
-    "content": "New Yogurt CSS v1.1.5 has released! Completely framework rewritten and refactored including the documentation website has several changes.",
+    "content": "New Yogurt CSS (v1.1.5) has released! Completely framework rewritten and refactored many parts in the framework structure. The documentation website also getting a new revamped.",
     "date": "13 May 2021"
+  },
+    {
+    "id": "322281e46b26702c6807ca1d",
+    "url": "https://github.com/yogurt-foundation/yogurt-css",
+    "urloption": "block",
+    "projectstatus": "bg-green-600",
+    "imagelow": "assets/image/low/post/322281e46b26702c6807ca1d.jpeg",
+    "imagehigh": "assets/image/high/post/322281e46b26702c6807ca1d.jpeg",
+    "content": "Overhauling the new Yogurt CSS (v1.1.5) including the core engine, API, utilities modules and docs. Refactoring the codes to look more cleaner than before.",
+    "date": "10 April 2021"
   },
   {
     "id": "d964fdba533f5de5b990ecaf",
