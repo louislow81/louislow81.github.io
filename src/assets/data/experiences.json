@@ -1,25 +1,5 @@
 [
   {
-    "id": "6a24f5ce14a8",
-      "previewTitle1": "",
-    "preview1low": "assets/image/low/promo/promo_noozxoide_rebirth.jpeg",
-    "preview1high": "assets/image/high/promo/promo_noozxoide_rebirth.jpeg",
-    "previewTitle2": "",
-    "preview2low": "assets/image/low/promo/promo_noozxoide_workbench_2.jpeg",
-    "preview2high": "assets/image/high/promo/promo_noozxoide_workbench_2.jpeg",
-    "previewTitle3": "",
-    "preview3low": "assets/image/low/promo/promo_embrio.jpeg",
-    "preview3high": "assets/image/high/promo/promo_embrio.jpeg",
-    "company": "dogsbark",
-    "position": "Software Architect",
-    "status1": "Leisure",
-    "status2": "Remote",
-    "location": "Canada",
-    "date": "2004 - 2020",
-    "desc": "Embedded Design, Firmware Design, Prototyping, Automation and, Sound Effect middleware engineering.",
-    "project": "604"
-  },
-  {
     "id": "b73346d4ec1d",
     "previewTitle1": "",
     "preview1low": "assets/image/low/screenshot/screenshot_goody25.jpeg",
