@@ -161,7 +161,7 @@
   },
   {
     "id": "8eddb3bfa587",
-    "title": "EIZO-rewire™ PRO Series",
+    "title": "EIZO-rewire PRO Series",
     "desc": "A professional audio processor reproduces surround sound and high quality contents.",
     "PromoText": "Visit",
     "urlText": "Google Play",
@@ -201,7 +201,7 @@
   },
   {
     "id": "1079256b2b21",
-    "title": "EIZO-rewire™ N Series",
+    "title": "EIZO-rewire N Series",
     "desc": "A professional audio processor reproduces elemental sound and high quality contents.",
     "PromoText": "Visit",
     "urlText": "Google Play",
@@ -221,7 +221,7 @@
   },
   {
     "id": "6d2a783ab770",
-    "title": "EIZO-NNXT™ Series DAC",
+    "title": "EIZO-NNXT Series DAC",
     "desc": "A programmable DAC allows developers to add it into their AMP design, built-in flagship Noozxoide Labs digital premium sound processors, a 24Bit-float audio processing.",
     "PromoText": "Visit",
     "urlText": "",
@@ -258,43 +258,5 @@
     "imagelow": "assets/image/low/promo/promo_noozxoide_studioone.jpeg",
     "imagehigh": "assets/image/high/promo/promo_noozxoide_studioone.jpeg",
     "tech": "C++, QT"
-  },
-  {
-    "id": "57ab99d435aa",
-    "title": "Twisted Mind EP (2 tracks)",
-    "desc": "The tracks trying to reflex my imagination with no purpose, just a random frequencies in my mind.",
-    "PromoText": "Visit",
-    "urlText": "SoundCloud.com",
-    "url": "https://soundcloud.com/overload-project/sets/twisted-mind",
-    "urlVisibility": "block",
-    "icon1low": "",
-    "icon1high": "",
-    "icon1Padding": "",
-    "icon1Visibility": "hidden",
-    "icon2low": "",
-    "icon2high": "",
-    "icon2Padding": "",
-    "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_overloadproject_twisted_mind.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_overloadproject_twisted_mind.jpeg",
-    "tech": "Propellerheads Reason, Steinberg Cubase, Waves"
-  },
-  {
-    "id": "72bac98cc908",
-    "title": "Dream Travel EP (3 tracks)",
-    "desc": "I remember back in year 2006, I was watching TV Channel broadcasting `Alice The Wonderland`, that was a very old video.",
-    "PromoText": "Visit",
-    "urlText": "SoundCloud.com",
-    "url": "https://soundcloud.com/overload-project/sets/dream-travel",
-    "urlVisibility": "block",
-    "icon1low": "",
-    "icon1high": "",
-    "icon1Visibility": "hidden",
-    "icon2low": "",
-    "icon2high": "",
-    "icon2Visibility": "hidden",
-    "imagelow": "assets/image/low/promo/promo_overloadproject_dream_travel.jpeg",
-    "imagehigh": "assets/image/high/promo/promo_overloadproject_dream_travel.jpeg",
-    "tech": "Propellerheads Reason, Steinberg Cubase, Waves"
   }
 ]
