@@ -1,8 +1,8 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7466fa18-16da-413d-8a39-c6dbc17d6a77/deploy-status)](https://app.netlify.com/sites/loouislow-portfolio-44af06/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/63ee7e9f-e651-4ad1-b055-82bc1b31cf8b/deploy-status)](https://app.netlify.com/sites/louislow/deploys)
 
 # My Portfolio Website
 
-> [https://loouislow81.github.io](https://loouislow81.github.io)
+> [https://louislow81.github.io](https://louislow81.github.io)
 
 ---
 
@@ -48,7 +48,7 @@ $ npx loouislow-resume
 
 The project is using my in-house proprietary development tools: Model-View-Presenter framework is [KrugurtJS](https://github.com/loouislow81/krugurt) to create functional web components with API callbacks, and the styling is a low-level CSS framework ~ [Yogurt CSS](https://yogurtcss.netlify.app).
 
-Some contents are live feeding from [Twitter](https://twitter.com/loouislow) account by embedding the widget and the articles are from [DEV](https://dev.to/loouislow) by fetching API. The rest of the contents are JSON serves locally.
+Some contents are live feeding from [Twitter](https://twitter.com/louislow) account by embedding the widget and the articles are from [DEV](https://dev.to/louislow) by fetching API. The rest of the contents are JSON serves locally.
 
 The website user experience benefits from the `krugurt.js` MVP framework that has PWA on-demand-caching and an adaptive image loader (load either low/high quality images depends on connection speeds) mechas. Also benefit from the `yogurt.css` framework by using `render` utilities on the selected elements, which the web browser viewport only renders when the user is viewing it, elements that are off-screen would not be rendered, which vastly improve page load and rendering time.
 
@@ -61,7 +61,7 @@ Responsive screens support for mobile, laptop `1k` and, large screen size `2k`.
 Grab a repo and installing necessary packages,
 
 ```bash
-$ git clone --branch 2.x.x https://github.com/loouislow81/loouislow81.github.io.git
+$ git clone --branch 2.x.x https://github.com/louislow81/louislow81.github.io.git
 # YARN
 $ yarn
 # NPM
