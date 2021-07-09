@@ -125,7 +125,7 @@
     "desc": "Download music and video in a playlist on the web page you visited. An extension app for Chrome CRX and Opera NEX platforms.",
     "PromoText": "Visit",
     "urlText": "Github.com",
-    "url": "https://github.com/loouislow81/elixir-extension/releases",
+    "url": "https://github.com/louislow81/elixir-extension/releases",
     "urlVisibility": "block",
     "icon1low": "assets/image/low/misc/platforms/chrome.png",
     "icon1high": "assets/image/high/misc/platforms/chrome.png",

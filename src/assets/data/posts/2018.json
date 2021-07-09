@@ -1,7 +1,7 @@
 [
   {
     "id": "00790edd3cdf",
-    "url": "https://hub.docker.com/r/loouislow81/arch-primitive",
+    "url": "https://hub.docker.com/r/louislow81/arch-primitive",
     "urloption": "block",
     "projectstatus": "bg-red-600",
     "imagelow": "assets/image/low/post/fbc8fb21206cd3c5e503e556b3a3e788.jpeg",
@@ -51,7 +51,7 @@
   },
   {
     "id": "14c378181085",
-    "url": "https://github.com/loouislow81/golem-cli",
+    "url": "https://github.com/louislow81/golem-cli",
     "urloption": "block",
     "projectstatus": "bg-red-600",
     "imagelow": "assets/image/low/post/0d693259c80b8d8b373b97c366bdba5f.jpeg",
@@ -101,7 +101,7 @@
   },
   {
     "id": "d1cc2ecaccd7",
-    "url": "https://github.com/loouislow81/golem-cli",
+    "url": "https://github.com/louislow81/golem-cli",
     "urloption": "block",
     "projectstatus": "bg-red-600",
     "imagelow": "assets/image/low/post/2263715de7785a6f0b3aa7fdd049bd11.jpeg",
@@ -111,7 +111,7 @@
   },
   {
     "id": "bac4d58c2f82",
-    "url": "https://github.com/loouislow81/golem-gui-appstore",
+    "url": "https://github.com/louislow81/golem-gui-appstore",
     "urloption": "block",
     "projectstatus": "bg-red-600",
     "imagelow": "assets/image/low/post/9868d269327daea6ed9e19f898f3dfd1.jpeg",
