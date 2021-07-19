@@ -1,17 +1,17 @@
 {
   "name": "louislow",
   "version": "2.13.77",
-  "description": "My portfolio website built with Krugurt.js and Yogurt.css frameworks",
+  "description": "My portfolio website built with Yogurt.css framework",
   "main": "index.js",
   "scripts": {
     "build-dev": "gulp development",
     "build-prod": "gulp production",
     "gulp": "gulp",
     "post-id": "openssl rand -hex 12",
-    "update-frameworks": "rm -rf ./framework && git clone https://github.com/loouislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
+    "update-frameworks": "rm -rf ./framework && git clone https://github.com/louislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
     "watch": "gulp watch"
   },
-  "author": "Louis Low <loouis@gmail.com>",
+  "author": "Louis Low <lowyawchong@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.3",

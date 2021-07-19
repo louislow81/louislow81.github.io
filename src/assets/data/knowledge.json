@@ -1,31 +1,11 @@
 [
   {
-    "title": "PCB/Schema Design",
-    "desc": "Electronic"
-  },
-  {
     "title": "Firmware Design",
-    "desc": "Electronic"
-  },
-  {
-    "title": "Embedded Design",
-    "desc": "Electronic"
-  },
-  {
-    "title": "Prototype Design",
     "desc": "Electronic"
   },
   {
     "title": "Linux",
     "desc": "Debian Distro"
-  },
-  {
-    "title": "Steinberg Cubase",
-    "desc": "Track Mixing & Editing"
-  },
-  {
-    "title": "Propellerh. Reason",
-    "desc": "Track Sequencing"
   },
   {
     "title": "Docker",
@@ -36,10 +16,6 @@
     "desc": "Source Versioning Control"
   },
   {
-    "title": "C, C++, Vala",
-    "desc": "Firmware & Software Development"
-  },
-  {
     "title": "Bash",
     "desc": "Automation Scripts"
   },
@@ -48,20 +24,12 @@
     "desc": "Frontend Web Development"
   },
   {
-    "title": "Python",
-    "desc": "Software Prototyping"
-  },
-  {
     "title": "HTML, Nunjucks, CSS, Sass",
     "desc": "Web Templating Development"
   },
   {
-    "title": "Yogurt, Bootstrap",
+    "title": "Bootstrap",
     "desc": "Web Design & Styling"
-  },
-  {
-    "title": "NoSQL",
-    "desc": "Flat Database Development"
   },
   {
     "title": "Adobe PS",
