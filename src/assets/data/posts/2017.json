@@ -13,7 +13,7 @@
     "id": "ffa33e54ce2c",
     "url": "",
     "urloption": "hidden",
-    "projectstatus": "bg-green-600",
+    "projectstatus": "",
     "imagelow": "assets/image/low/post/4db721dc0b8f3b01b4981c2be0d5bd1d.jpeg",
     "imagehigh": "assets/image/high/post/4db721dc0b8f3b01b4981c2be0d5bd1d.jpeg",
     "content": "New completely makeover `Rebirth V5`. This baby took me 2 months of work, she has several new features that never had in the previous version. Added scripting to allow musician to write code for their custom effects and use the script as presets. It's called `EVS` (Effect Curves Script).",

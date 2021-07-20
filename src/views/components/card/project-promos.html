@@ -12,27 +12,27 @@
       <y class="(xs)max-w-full (sm)max-w-full (md)max-w-md (lg)max-w-xs (2k)max-w-md m-2 (2k)m-2 rounded-lg shadow overflow-hidden">
         <y class="relative select-none">
 
-          <img class="adaptive pop-image-github-promo w-full h-full object-cover object-center overflow-hidden bg-gray-700 rounded-lg transition duration-300 ease-in-out transform (hover)scale-110 cursor-pointer"
+          <img class="adaptive pop-image-github-promo w-full h-full object-cover object-center overflow-hidden bg-gray-400 rounded-lg transition duration-300 ease-in-out transform (hover)scale-110 cursor-pointer"
                src="{ data.imagelow }"
                data-src="{ data.imagehigh }"
                data-title="{ data.title }"
                data-caption="{ data.desc }"
                loading="lazy"
-               alt="{ data.title}" />
+               alt="{ data.title}">
 
-          <y class="-mt-2 text-gray-500 bg-charcoal-200">
+          <y class="-mt-2 text-gray-500 bg-white">
 
             <y class="(xs)p-4 (sm)p-10 (md)p-8 (lg)p-5 (2k)p-8">
               <y class="flex flex-col justify-around items-start">
 
-                <y class="pb-2 (xs)text-md (sm)text-xl (md)text-lg (2k)text-2xl font-semibold depth-loose text-gray-400">
+                <y class="pb-2 (xs)text-md (sm)text-xl (md)text-lg (2k)text-2xl font-semibold depth-loose text-charcoal-100">
                   { data.title }
                 </y>
 
                 <y class="(xs)text-sm (sm)text-lg (md)text-sm (2k)text-xl depth-snug pb-3">
 
                   <misc-show-more
-                    textcolor="text-gray-500"
+                    textcolor="text-charcoal-100"
                     inputid="{ data.id }"
                     content="{ data.desc }"
                     labelid="{ data.id }"
@@ -43,7 +43,7 @@
 
                 <y class="{ data.urlVisibility } (xs)text-sm (sm)text-lg (md)text-sm (2k)text-xl depth-loose pb-2">
 
-                  <a class="inline-block my-1 px-3 py-1 text-charcoal-200 bg-gray-500 (hover)bg-gray-300 rounded-md select-none"
+                  <a class="inline-block my-1 px-3 py-1 text-white (hover)text-charcoal-100 bg-charcoal-100 (hover)bg-gray-300 (hover)shadow rounded-md transition duration-300 ease-in-out select-none"
                      href="{ data.url }"
                      title="{ data.urlText }"
                      aria-label="{ data.urlText }"

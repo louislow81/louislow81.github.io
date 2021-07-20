@@ -1,6 +1,6 @@
 <block-posts>
 
-  <y class="(xs)pt-0 pt-4 pb-8 h-screen bg-charcoal-400 container">
+  <y class="(xs)pt-0 pt-4 pb-8 h-screen bg-gray-200 container">
     <y class="(md)px-4 (md)h-full">
 
       <global-mobile-blog-topbar
@@ -16,7 +16,7 @@
 
         <y class="flex flex-gap-4 justify-start items-center select-none">
 
-          <y class="text-gray-100 text-4xl font-semibold font-oswald uppercase">
+          <y class="text-charcoal-100 text-4xl font-semibold font-oswald uppercase">
             BLOG
           </y>
 
@@ -29,7 +29,7 @@
 
       </y>
 
-      <y class="(lg)block (2k)block px-2 (xs)pt-0 (lg)pt-2 (xs)pb-2 (lg)pb-4 text-gray-100 text-xl (xs)text-sm (2k)text-xl font-semibold select-none">
+      <y class="(lg)block (2k)block px-2 (xs)pt-0 (lg)pt-2 (xs)pb-2 (lg)pb-4 text-charcoal-100 text-xl (xs)text-sm (2k)text-xl font-semibold select-none">
         Feeling Nostalgia
       </y>
 
@@ -37,55 +37,59 @@
         render="{ state.render }">
       </blog-nostalgia>
 
-      <y class="(lg)block (2k)block (xs)-mt-6 px-2 (xs)pt-2 (xs)pb-4 (lg)py-8 text-gray-100 text-xl (xs)text-sm (2k)text-xl font-semibold select-none">
+      <y class="(lg)block (2k)block (xs)-mt-6 px-2 (xs)pt-2 (xs)pb-4 (lg)py-8 text-charcoal-100 text-xl (xs)text-sm (2k)text-xl font-semibold select-none">
         Timeline
       </y>
 
-      <blog-posts-2021
-        render="{ state.render }"
-        stateshowyear="{ state.showyear }"
-        stateyearspacing="{ state.showyearspacing }">
-      </blog-posts-2021>
+      <y class="-ml-4">
 
-      <blog-posts-2020
-        render="{ state.render }">
-      </blog-posts-2020>
+        <blog-posts-2021
+          render="{ state.render }"
+          stateshowyear="{ state.showyear }"
+          stateyearspacing="{ state.showyearspacing }">
+        </blog-posts-2021>
 
-      <blog-posts-2019
-        render="{ state.render }">
-      </blog-posts-2019>
+        <blog-posts-2020
+          render="{ state.render }">
+        </blog-posts-2020>
 
-      <blog-posts-2018
-        render="{ state.render }">
-      </blog-posts-2018>
+        <blog-posts-2019
+          render="{ state.render }">
+        </blog-posts-2019>
 
-      <blog-posts-2017
-        render="{ state.render }">
-      </blog-posts-2017>
+        <blog-posts-2018
+          render="{ state.render }">
+        </blog-posts-2018>
 
-      <blog-posts-2016
-        render="{ state.render }">
-      </blog-posts-2016>
+        <blog-posts-2017
+          render="{ state.render }">
+        </blog-posts-2017>
 
-      <blog-posts-2015
-        render="{ state.render }">
-      </blog-posts-2015>
+        <blog-posts-2016
+          render="{ state.render }">
+        </blog-posts-2016>
 
-      <blog-posts-2014
-        render="{ state.render }">
-      </blog-posts-2014>
+        <blog-posts-2015
+          render="{ state.render }">
+        </blog-posts-2015>
 
-      <blog-posts-2013
-        render="{ state.render }">
-      </blog-posts-2013>
+        <blog-posts-2014
+          render="{ state.render }">
+        </blog-posts-2014>
 
-      <blog-posts-2012
-        render="{ state.render }">
-      </blog-posts-2012>
+        <blog-posts-2013
+          render="{ state.render }">
+        </blog-posts-2013>
 
-      <blog-posts-2011
-        render="{ state.render }">
-      </blog-posts-2011>
+        <blog-posts-2012
+          render="{ state.render }">
+        </blog-posts-2012>
+
+        <blog-posts-2011
+          render="{ state.render }">
+        </blog-posts-2011>
+
+      </y>
 
     </y>
   </y>

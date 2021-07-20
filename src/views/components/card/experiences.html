@@ -1,33 +1,33 @@
 <card-experiences>
 
   <y class="flex flex-wrap justify-start items-start">
-    <y class="flex-auto relative (xs)max-w-full (sm)max-w-xl (md)max-w-xs (2k)max-w-md (xs)mx-2 (xs)my-4 (md)m-4 (lg)m-2 (2k)m-2 text-gray-400 bg-charcoal-200 border border-charcoal-200 rounded-lg"
+    <y class="flex-auto relative (xs)max-w-full (sm)max-w-xl (md)max-w-xs (2k)max-w-md (xs)mx-2 (xs)my-4 (md)m-4 (lg)m-2 (2k)m-2 text-gray-400 bg-white rounded-lg"
        each="{ work in experiences }">
 
       <y class="px-5 pt-5 pb-2 (2k)px-8 (2k)pt-8 (2k)pb-4">
 
         <y class="-mt-3 flex justify-between items-center">
 
-          <y class="pr-2 text-lg (2k)text-2xl (xs)truncate font-semibold depth-loose"
+          <y class="pr-2 text-lg (2k)text-2xl text-charcoal-100 (xs)truncate font-semibold depth-loose"
              title="{ work.company }">
             { work.company }
           </y>
 
-          <y class="text-sm (2k)text-2xl text-gray-600 (xs)truncate font-sans depth-loose"
+          <y class="text-sm (2k)text-2xl text-charcoal-100 (xs)truncate font-sans depth-loose"
              title="{ work.date }">
             { work.date }
           </y>
 
         </y>
 
-        <y class="-mt-2 pb-4 text-sm (2k)text-2xl text-gray-600 font-oswald">
+        <y class="-mt-2 pb-4 text-sm (2k)text-2xl text-charcoal-100 font-oswald">
           { work.position }
         </y>
 
         <y class="(2k)my-4 pb-4 text-sm (2k)text-xl depth-snug">
 
           <misc-show-more
-            textcolor="text-gray-300"
+            textcolor="text-charcoal-100"
             inputid="{ work.id }"
             content="{ work.desc }"
             labelid="{ work.id }"
@@ -38,7 +38,7 @@
 
         <y class="pb-6 flex justify-between items-center">
 
-          <y class="text-sm (2k)text-xl font-oswald font-semibold uppercase text-gray-400 rounded select-none">
+          <y class="text-sm (2k)text-xl font-oswald font-semibold uppercase text-charcoal-100 rounded select-none">
             { work.project } Projects
           </y>
 
