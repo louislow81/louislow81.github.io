@@ -2,7 +2,7 @@
 
   <y class="flex (xs)flex-col (md)flex-wrap (xs)justify-start (sm)justify-center (md)justify-start (xs)items-start (md)items-start (xs)pb-0">
 
-    <y class="z-50 fixed top-0 left-0 flex justify-between items-center backdrop-filter blur-4 bg-charcoal-400 bg-opacity-75 shadow-dreamy w-full">
+    <y class="z-50 fixed top-0 left-0 flex justify-between items-center backdrop-filter blur-4 bg-white (focus)bg-gray-700 bg-opacity-75 shadow-dreamy w-full">
 
       <a class="select-none"
          href="/"
@@ -10,14 +10,14 @@
          rel="noopener"
          title="Home">
 
-        <y class="relative (md)hidden (xs)m-2 flex flex-row justify-start items-center border-2 border-gray-500 (focus)bg-gray-700 (hover)bg-gray-700 rounded-full w-full">
+        <y class="relative (md)hidden (xs)m-2 flex flex-row justify-start items-center border-2 border-gray-500 rounded-full w-full">
 
           <img class="adaptive w-8 h-8 object-cover object-center rounded-full overflow-hidden"
                src="assets/image/low/misc/me.png"
                data-src="assets/image/high/misc/me.png"
                title="Me">
 
-          <y class="pl-2 text-sm text-gray-500">
+          <y class="pl-2 text-sm text-gray-600">
             Louis Low
           </y>
 
@@ -27,17 +27,17 @@
 
       <y class="z-50 absolute top-2 right-2 (xs)block (md)hidden (lg)hidden (2k)hidden">
 
-        <y class="{ props.statetimelineon } absolute top-0 right-0 px-3 py-1 text-sm text-gray-500 border-2 border-gray-500 rounded-full shadow-dreamy-sm select-none"
+        <y class="{ props.statetimelineon } absolute top-1 right-0 px-3 py-1 text-sm text-gray-600 border-2 border-gray-500 rounded-full shadow-dreamy-sm select-none"
            onclick="{ props.opentimelinemenu }">
           Timeline
         </y>
 
-        <y class="{ props.statetimelineoff } absolute top-0 right-0 px-3 py-1 text-sm text-charcoal-400 border-2 border-gray-500 bg-gray-500 rounded-full shadow-dreamy-sm select-none"
+        <y class="{ props.statetimelineoff } absolute top-1 right-0 px-3 py-1 text-sm text-gray-600 border-2 border-gray-500 bg-white rounded-full shadow-dreamy-sm select-none"
            onclick="{ props.closetimelinemenu }">
           Close
         </y>
 
-        <y class="{ props.statetimelinemenu } absolute top-10 right-0 py-1 w-20 h-56 bg-gray-700 rounded shadow-dreamy overscroll-contain overflow-y-scroll scroll-snap y-mandatory align-start">
+        <y class="{ props.statetimelinemenu } absolute top-10 right-0 py-1 w-20 h-56 bg-white rounded shadow-dreamy-xs overscroll-contain overflow-y-scroll scroll-snap y-mandatory align-start">
 
           <a class="block"
              href="#2021"
@@ -46,7 +46,7 @@
              title="2021"
              onclick="{ props.showyearpanel }">
 
-            <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-400 (hover)text-charcoal-100 (hover)bg-gray-400 select-none">
+            <y class="p-3 font-oswald text-lg text-center font-semibold text-gray-600 (hover)text-charcoal-100 (hover)bg-gray-400 select-none">
               2021
             </y>
 
