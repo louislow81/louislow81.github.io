@@ -94,14 +94,15 @@
                 if (isMobile.any()) { // item x limit for mobile device
                   // data.splice(4,1) // remove `elixir` from array
                   // data.splice(-2,2) // remove `overloadproject` from array
-                  data.length = 5
+                  data.length = 1
                   self.projects = data
                   self.update()
                 }
                 else {
-                  data.splice(12,1) // remove `elixir` from array
-                  data.splice(13,1) // remove `eizo-rewire-n` from array
-                  data.splice(-1,2) // remove `overloadproject` from array
+                  // data.splice(12,1) // remove `elixir` from array
+                  // data.splice(13,1) // remove `eizo-rewire-n` from array
+                  // data.splice(-1,2) // remove `overloadproject` from array
+                  data.length = 1
                   self.projects = data
                   self.update()
                 }
