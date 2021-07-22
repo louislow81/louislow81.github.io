@@ -1,6 +1,6 @@
 <card-github-projects>
 
-  <y class="mt-10 (xs)px-4 (xs)py-0 (sm)px-8 (md)px-8 flex flex-wrap justify-start items-start">
+  <y class="mt-10__ (xs)px-4 (xs)py-0 (sm)px-8 (md)px-8 flex flex-wrap justify-start items-start">
 
     <y class="px-2 pb-4 text-md text-red-400"
       if="{ error }">
@@ -74,12 +74,12 @@
               .then(data => {
                 delete self.error
                 if (isMobile.any()) { // item x limit for mobile device
-                  data.length = 3
+                  data.length = 2
                   self.projects = data
                   self.update()
                 }
                 else {
-                  data.length = 3
+                  data.length = 2
                   self.projects = data
                   self.update()
                 }
