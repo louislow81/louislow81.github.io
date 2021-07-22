@@ -1,7 +1,7 @@
 {
-  "name": "louislow",
+  "name": "lewislow",
   "version": "2.13.77",
-  "description": "My portfolio website built with Yogurt.css framework",
+  "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
     "build-dev": "gulp development",
@@ -11,7 +11,7 @@
     "update-frameworks": "rm -rf ./framework && git clone https://github.com/louislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
     "watch": "gulp watch"
   },
-  "author": "Louis Low <lowyawchong@gmail.com>",
+  "author": "Lewis Low <lewislow81@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
@@ -35,8 +35,7 @@
     "gulp-version-number": "^0.2.4",
     "gulp-webp": "^4.0.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-pngquant": "^8.0.0",
-    "yogurt-css": "^1.1.6"
+    "imagemin-pngquant": "^8.0.0"
   },
   "dependencies": {
     "node-sass": "^4.14.1"

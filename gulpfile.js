@@ -82,7 +82,8 @@ gulp.task('build-sass', () => {
 gulp.task('bundle-css', () => {
   return gulp.src([
       srcFontsPath + '/fonts.css',
-      './node_modules/yogurt-css/dist/yogurt-1.1.6_solidcore.min.css',
+      // TODO: use npm instead
+      'src/assets/css/yogurt-1.1.7_solidcore.min.css',
       distCssPath + '/base.css'
     ])
     .pipe(concat('style_merged.css'))
