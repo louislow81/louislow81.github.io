@@ -7,10 +7,9 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(70, 70, 70);
-    // border: 2px solid transparent;
+    background-color: #222c35;
     background-clip: padding-box;
-    border-radius: 5px;
+    border-radius: 1px;
 
     &:hover {
       background-color: rgba(168, 168, 168, 1)

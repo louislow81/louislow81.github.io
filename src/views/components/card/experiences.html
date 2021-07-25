@@ -76,12 +76,12 @@
             previewtitle="{ work.previewTitle2 }">
           </image-preview-small>
 
-          <image-preview-small
+          <!-- <image-preview-small
             previewpopup="pop-image-experiences"
             previewlow="{ work.preview3low }"
             previewhigh="{ work.preview3high }"
             previewtitle="{ work.previewTitle3 }">
-          </image-preview-small>
+          </image-preview-small> -->
 
         </y>
 
@@ -113,12 +113,12 @@
               .then(data => {
                 delete self.error
                 if (isMobile.any()) { // item x limit for mobile device
-                  data.length = 3
+                  data.length = 4
                   self.experiences = data
                   self.update()
                 }
                 else {
-                  data.length = 3
+                  data.length = 4
                   self.experiences = data
                   self.update()
                 }
