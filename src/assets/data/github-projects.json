@@ -12,7 +12,7 @@
     "title": "equilibrium",
     "desc": "Lightweight low-level time machine backup utility for Linux",
     "icon": "fab fa-github",
-    "url": "https://github.com/lewislow81/equilibrium",
+    "url": "https://github.com/louislow81/equilibrium",
     "tech": "Bash, Rsync, SSH"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "name": "lewislow",
+  "name": "louislow",
   "version": "2.13.77",
   "description": "My portfolio website",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "update-frameworks": "rm -rf ./framework && git clone https://github.com/louislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
     "watch": "gulp watch"
   },
-  "author": "Lewis Low <lewislow81@gmail.com>",
+  "author": "Lewis Low <louislow81@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
