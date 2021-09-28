@@ -11,7 +11,7 @@
     "update-frameworks": "rm -rf ./framework && git clone https://github.com/louislow81/precompiled-krugurt-core-libs.git ./framework && rm -rf ./framework/.git",
     "watch": "gulp watch"
   },
-  "author": "Lewis Low <louislow81@gmail.com>",
+  "author": "Louis Low <louislow81@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.3",
