@@ -1,8 +1,8 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4df26c7f-e3bd-4a7d-b0aa-aaa3e7896aaf/deploy-status)](https://app.netlify.com/sites/lewislow/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4df26c7f-e3bd-4a7d-b0aa-aaa3e7896aaf/deploy-status)](https://app.netlify.com/sites/louislow/deploys)
 
 # My Portfolio Website
 
-> [https://lewislow81.github.io](https://lewislow81.github.io)
+> [https://louislow81.github.io](https://louislow81.github.io)
 
 ---
 
